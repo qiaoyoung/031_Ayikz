@@ -11,8 +11,8 @@
 
 
 @interface UIScrollView ()
-@property (assign, nonatomic) AAAA_USERScrollViewDirection_BBBB horizontalScrollingDirection;
-@property (assign, nonatomic) AAAA_USERScrollViewDirection_BBBB verticalScrollingDirection;
+@property (assign, nonatomic) VerifyProjectorPolicy horizontalScrollingDirection;
+@property (assign, nonatomic) VerifyProjectorPolicy verticalScrollingDirection;
 @end
 
 
@@ -40,39 +40,39 @@ static const char verticalScrollingDirectionKey;
     CGPoint oldContentOffset = [[change valueForKey:NSKeyValueChangeOldKey] CGPointValue];
     
     if (oldContentOffset.x < newContentOffset.x) {
-        self.horizontalScrollingDirection = AAAA_USERScrollViewDirection_BBBBRight;
+        self.horizontalScrollingDirection = VerifyProjectorPolicyRight;
     } else if (oldContentOffset.x > newContentOffset.x) {
-        self.horizontalScrollingDirection = AAAA_USERScrollViewDirection_BBBBLeft;
+        self.horizontalScrollingDirection = VerifyProjectorPolicyLeft;
     } else {
-        self.horizontalScrollingDirection = AAAA_USERScrollViewDirection_BBBBNone;
+        self.horizontalScrollingDirection = VerifyProjectorPolicyNone;
     }
     
     if (oldContentOffset.y < newContentOffset.y) {
-        self.verticalScrollingDirection = AAAA_USERScrollViewDirection_BBBBDown;
+        self.verticalScrollingDirection = VerifyProjectorPolicyDown;
     } else if (oldContentOffset.y > newContentOffset.y) {
-        self.verticalScrollingDirection = AAAA_USERScrollViewDirection_BBBBUp;
+        self.verticalScrollingDirection = VerifyProjectorPolicyUp;
     } else {
-        self.verticalScrollingDirection = AAAA_USERScrollViewDirection_BBBBNone;
+        self.verticalScrollingDirection = VerifyProjectorPolicyNone;
     }
 }
 
 #pragma mark - Properties
-- (AAAA_USERScrollViewDirection_BBBB)horizontalScrollingDirection
+- (VerifyProjectorPolicy)horizontalScrollingDirection
 {
     return [objc_getAssociatedObject(self, (void *)&horizontalScrollingDirectionKey) intValue];
 }
 
-- (void)setHorizontalScrollingDirection:(AAAA_USERScrollViewDirection_BBBB)horizontalScrollingDirection
+- (void)setHorizontalScrollingDirection:(VerifyProjectorPolicy)horizontalScrollingDirection
 {
     objc_setAssociatedObject(self, (void *)&horizontalScrollingDirectionKey, [NSNumber numberWithInt:horizontalScrollingDirection], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (AAAA_USERScrollViewDirection_BBBB)verticalScrollingDirection
+- (VerifyProjectorPolicy)verticalScrollingDirection
 {
     return [objc_getAssociatedObject(self, (void *)&verticalScrollingDirectionKey) intValue];
 }
 
-- (void)setVerticalScrollingDirection:(AAAA_USERScrollViewDirection_BBBB)verticalScrollingDirection
+- (void)setVerticalScrollingDirection:(VerifyProjectorPolicy)verticalScrollingDirection
 {
     objc_setAssociatedObject(self, (void *)&verticalScrollingDirectionKey, [NSNumber numberWithInt:verticalScrollingDirection], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }

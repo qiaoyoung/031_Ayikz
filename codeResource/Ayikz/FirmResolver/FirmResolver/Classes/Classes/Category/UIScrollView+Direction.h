@@ -10,13 +10,13 @@
 #import <UIKit/UIKit.h>
 
 
-typedef enum AAAA_USERScrollViewDirection_BBBB {
-    AAAA_USERScrollViewDirection_BBBBNone,
-    AAAA_USERScrollViewDirection_BBBBRight,
-    AAAA_USERScrollViewDirection_BBBBLeft,
-    AAAA_USERScrollViewDirection_BBBBUp,
-    AAAA_USERScrollViewDirection_BBBBDown,
-} AAAA_USERScrollViewDirection_BBBB;
+typedef enum VerifyProjectorPolicy {
+    VerifyProjectorPolicyNone,
+    VerifyProjectorPolicyRight,
+    VerifyProjectorPolicyLeft,
+    VerifyProjectorPolicyUp,
+    VerifyProjectorPolicyDown,
+} VerifyProjectorPolicy;
 
 
 @interface UIScrollView (Direction)
@@ -24,7 +24,7 @@ typedef enum AAAA_USERScrollViewDirection_BBBB {
 - (void)startObservingDirection;
 - (void)stopObservingDirection;
 
-@property (readonly, nonatomic) AAAA_USERScrollViewDirection_BBBB horizontalScrollingDirection;
-@property (readonly, nonatomic) AAAA_USERScrollViewDirection_BBBB verticalScrollingDirection;
+@property (readonly, nonatomic) VerifyProjectorPolicy horizontalScrollingDirection;
+@property (readonly, nonatomic) VerifyProjectorPolicy verticalScrollingDirection;
 
 @end
