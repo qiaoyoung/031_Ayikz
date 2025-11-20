@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>workbenchBeaconUpward</key>
+    <string>DesertMysticTag</string>
+    <key>extractScheduler</key>
+    <string>TerminalBadge</string>
+    <key>terminalTableBelow</key>
+    <string>KeenFancyOptimizeSelect</string>
+    <key>workbenchEdgeHinted</key>
+    <string>TimelessApplyPaginate</string>
+    <key>consistentTideAlong</key>
+    <string>DelegateSnapshotterRavenWorkbenchStore</string>
+</dict>
+</plist>

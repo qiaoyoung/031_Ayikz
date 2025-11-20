@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>composerManageLock</key>
+    <string>HiveBaseOn</string>
+    <key>mergeCarefreeStyler</key>
+    <string>HybridUpdaterWindFair</string>
+    <key>writeDecorator</key>
+    <string>InterpreterReflectBlithe</string>
+    <key>plannerVictorious</key>
+    <string>DocumentScheduleWatch</string>
+    <key>depotForceful</key>
+    <string>LightmapOutline</string>
+    <key>journeyImportResolver</key>
+    <string>WorkbenchFromCheck</string>
+</dict>
+</plist>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>upNotable</key>
+    <string>QualityPreviewChart</string>
+    <key>replaceCollection</key>
+    <string>FetchAdapterMagnetPush</string>
+    <key>dismissTerrain</key>
+    <string>ParseHelperRemoveAlong</string>
+    <key>parserToastBold</key>
+    <string>PresentTimeBoardCoordinate</string>
+    <key>fromForceTransformer</key>
+    <string>TimelineOfLayoutLightmap</string>
+    <key>visitorHide</key>
+    <string>UntilGreatGate</string>
+    <key>kineticPromisePlayDatasetter</key>
+    <string>TurnLineScanInitialize</string>
+</dict>
+</plist>

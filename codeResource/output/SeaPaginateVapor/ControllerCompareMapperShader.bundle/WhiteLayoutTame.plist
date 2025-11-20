@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>flukeValid</key>
+    <string>WholeScopeDataset</string>
+    <key>insertParser</key>
+    <string>TorchDurableSublimeWorkbenchStack</string>
+    <key>volumeSternStyler</key>
+    <string>TreeSenseCycleAddReturn</string>
+    <key>plannerElevate</key>
+    <string>FeasibleFloraLayoutCataloger</string>
+    <key>previewBirchSaver</key>
+    <string>MapSignerDocumentMount</string>
+    <key>tupleMagicalSelectorInitialize</key>
+    <string>CompositeScrollViewWatchDawn</string>
+    <key>warehouseSensorConsistent</key>
+    <string>DeepSeasonalUpdate</string>
+</dict>
+</plist>

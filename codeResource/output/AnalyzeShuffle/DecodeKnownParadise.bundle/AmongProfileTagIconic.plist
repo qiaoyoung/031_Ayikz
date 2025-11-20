@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>cohesiveCore</key>
+    <string>DatasetBeforeSegmentTiny</string>
+    <key>onFactoryPacific</key>
+    <string>ResolverCelestialSilver</string>
+    <key>plannerFileSetLight</key>
+    <string>SchedulerTerrainEnable</string>
+    <key>fitWavePlannerParse</key>
+    <string>MergePlay</string>
+    <key>visibleFixtureBinder</key>
+    <string>PositionerUpbeat</string>
+    <key>globeThemeAppend</key>
+    <string>StyleHostBeneathPolicy</string>
+    <key>entryProjectorSearch</key>
+    <string>SourceByInFind</string>
+    <key>alongMapper</key>
+    <string>DomeGrandRock</string>
+</dict>
+</plist>

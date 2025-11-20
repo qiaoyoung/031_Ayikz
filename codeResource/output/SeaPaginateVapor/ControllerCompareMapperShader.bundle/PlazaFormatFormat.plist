@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>builderRegister</key>
+    <string>BalancerArchiveEnqueue</string>
+    <key>facadeInference</key>
+    <string>ConsumeResetRenderer</string>
+    <key>atlasFabric</key>
+    <string>ForwardAfterPack</string>
+    <key>resourceExtractLucentController</key>
+    <string>MobileVisualizeTower</string>
+    <key>balancerExpert</key>
+    <string>ContinueLiberalAble</string>
+</dict>
+</plist>
