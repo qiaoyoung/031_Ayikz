@@ -373,7 +373,7 @@ static NSArray * speakerPaths() {
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
         //: _AFHTTPRequestSerializerObservedKeyPaths = @[NSStringFromSelector(@selector(allowsCellularAccess)), NSStringFromSelector(@selector(cachePolicy)), NSStringFromSelector(@selector(HTTPShouldHandleCookies)), NSStringFromSelector(@selector(HTTPShouldUsePipelining)), NSStringFromSelector(@selector(networkServiceType)), NSStringFromSelector(@selector(timeoutInterval))];
-        _AFHTTPRequestSerializerObservedKeyPaths = @[NSStringFromSelector(@selector(constructLasted)), NSStringFromSelector(@selector(cacheCommitted)), NSStringFromSelector(@selector(mishandleEnabled)), NSStringFromSelector(@selector(shouldFullPipelining)), NSStringFromSelector(@selector(poolDetecting)), NSStringFromSelector(@selector(styleConnectioning))];
+        _AFHTTPRequestSerializerObservedKeyPaths = @[NSStringFromSelector(@selector(constructLasted)), NSStringFromSelector(@selector(cacheCommitted)), NSStringFromSelector(@selector(mishandleEnabled)), NSStringFromSelector(@selector(shouldFullPipelining)), NSStringFromSelector(@selector(poolDetecting)), NSStringFromSelector(@selector(timeoutInterval))];
     //: });
     });
 
@@ -517,14 +517,10 @@ static void *componentIncludeTitle = &componentIncludeTitle;
     return value;
 }
 
-//: - (void)setTimeoutInterval:(NSTimeInterval)timeoutInterval {
-- (void)setStyleConnectioning:(NSTimeInterval)timeoutInterval {
-    //: [self willChangeValueForKey:NSStringFromSelector(@selector(timeoutInterval))];
-    [self willChangeValueForKey:NSStringFromSelector(@selector(styleConnectioning))];
-    //: _timeoutInterval = timeoutInterval;
-    _styleConnectioning = timeoutInterval;
-    //: [self didChangeValueForKey:NSStringFromSelector(@selector(timeoutInterval))];
-    [self didChangeValueForKey:NSStringFromSelector(@selector(styleConnectioning))];
+- (void)setTimeoutInterval:(NSTimeInterval)timeoutInterval {
+    [self willChangeValueForKey:NSStringFromSelector(@selector(timeoutInterval))];
+    _timeoutInterval = timeoutInterval;
+    [self didChangeValueForKey:NSStringFromSelector(@selector(timeoutInterval))];
 }
 
 //: #pragma mark -

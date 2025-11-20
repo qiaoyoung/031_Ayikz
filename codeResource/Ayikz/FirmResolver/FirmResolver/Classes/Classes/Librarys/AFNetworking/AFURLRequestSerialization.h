@@ -273,7 +273,7 @@ nestle:(NSString *)field;
  @see NSMutableURLRequest -setTimeoutInterval:
  */
 //: @property (nonatomic, assign) NSTimeInterval timeoutInterval;
-@property (nonatomic, assign) NSTimeInterval styleConnectioning;
+@property (nonatomic, assign) NSTimeInterval timeoutInterval;
 
 /**
  Creates and returns a serializer with default configuration.

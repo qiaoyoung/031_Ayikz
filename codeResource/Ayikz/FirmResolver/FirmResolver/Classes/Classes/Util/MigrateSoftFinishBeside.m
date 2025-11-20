@@ -332,7 +332,7 @@ Byte k_giftedText[] = {4, 10, 13, 213, 80, 90, 1, 134, 140, 252, 214, 218, 217, 
     //: AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
     AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager me];
     //: sessionManager.requestSerializer.timeoutInterval = 5.f;
-    sessionManager.serializerAntied.styleConnectioning = 5.f;
+    sessionManager.serializerAntied.timeoutInterval = 5.f;
     //: sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"text/json", @"text/plain", @"text/javascript", @"text/xml", @"image/|*", nil];
     sessionManager.slipBefored.connectModed = [NSSet setWithObjects:StringFromMeSurfaceData(featureTurnTitle), StringFromMeSurfaceData(moduleSignalBondPath), StringFromMeSurfaceData(appDisturbPage), StringFromMeSurfaceData(viewSignalStickKey), StringFromMeSurfaceData(themeDarkValue), StringFromMeSurfaceData(layoutPreachInherentSettings), StringFromMeSurfaceData(kDrillHelper), nil];
     //: [sessionManager setResponseSerializer:[AFHTTPResponseSerializer serializer]];

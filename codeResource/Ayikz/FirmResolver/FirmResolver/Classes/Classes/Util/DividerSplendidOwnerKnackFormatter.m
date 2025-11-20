@@ -446,7 +446,7 @@ static AFHTTPSessionManager *k_basicPath;
     //: _sessionManager = [AFHTTPSessionManager manager];
     k_basicPath = [AFHTTPSessionManager me];
     //: _sessionManager.requestSerializer.timeoutInterval = 15.f;
-    k_basicPath.serializerAntied.styleConnectioning = 15.f;
+    k_basicPath.serializerAntied.timeoutInterval = 15.f;
     //: _sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"text/json", @"text/plain", @"text/javascript", @"text/xml", @"image/|*", nil];
     k_basicPath.slipBefored.connectModed = [NSSet setWithObjects:[PresideData kSmoothName], [PresideData spacingGiftedDevice], [PresideData stylePraiseDarkSettings], [PresideData styleSeniorPreference], [PresideData kCreateerTitle], [PresideData corePictureData], [PresideData themeSceneHelper], nil];
     // 打开状态栏的等待菊花
@@ -1039,7 +1039,7 @@ static AFHTTPSessionManager *k_basicPath;
 //: + (void)setRequestTimeoutInterval:(NSTimeInterval)time {
 + (void)setHistorical:(NSTimeInterval)time {
     //: _sessionManager.requestSerializer.timeoutInterval = time;
-    k_basicPath.serializerAntied.styleConnectioning = time;
+    k_basicPath.serializerAntied.timeoutInterval = time;
 }
 
 //: #pragma mark - 下载文件

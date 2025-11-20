@@ -201,7 +201,6 @@
 #import "NavigateStrongQuotaOrderGifted.h"
 #import "WordDaleInsertTupleAmid.h"
 #import "AFAutoPurgingImageCache.h"
-#import "AFCompatibilityMacros.h"
 #import "AFHTTPSessionManager.h"
 #import "AFImageDownloader.h"
 #import "AFNetworkActivityIndicatorManager.h"
