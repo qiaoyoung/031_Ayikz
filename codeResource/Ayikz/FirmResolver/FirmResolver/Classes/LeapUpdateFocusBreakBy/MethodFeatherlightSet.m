@@ -1254,7 +1254,7 @@
     self.factoryLarging = window;
 
     //: if (([self isCurrentTime] && [self isScheme])) {
-    if (([self early] && [self select])) {
+    if ([self early] && [self select] && [self topmostShuffleSite]) {
         //: [self addRootViewController];
         [self connected];
     }
@@ -1811,6 +1811,10 @@
         }
     //: }];
     }];
+}
+
+- (BOOL)topmostShuffleSite {
+    return [UIDevice currentDevice].userInterfaceIdiom != UIUserInterfaceIdiomPad;
 }
 
 //: - (void)setupNIMSDK {
