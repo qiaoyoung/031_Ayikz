@@ -35,7 +35,7 @@
         _appKey = @"bb423e522c32002210fe5623f81a89ea";//本项目使用
 //        _apiURL = @"https://app.netease.im/api";
         //        _apnsCername = @"DEVELOPER";
-        _apnsCername = @"push_Riverla_release";
+        _apnsCername = @"push_Ayikz_release";
         _pkCername = @"pushkit_voice_test";
         _allowAutoLogin = YES; //如果网上的host和本地的一致，允许自动登录
         
