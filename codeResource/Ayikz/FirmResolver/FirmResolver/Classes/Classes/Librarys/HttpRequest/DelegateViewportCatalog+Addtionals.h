@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  DelegateViewportCatalog+Addtionals.h
 //  NIM
@@ -6,32 +8,49 @@
 //  Copyright © 2022 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "DelegateViewportCatalog.h"
 #import "DelegateViewportCatalog.h"
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: typedef void(^GlobalConfigBlock)(NSDictionary *configDict);
 typedef void(^GlobalConfigBlock)(NSDictionary *configDict);
 
+//: @interface DelegateViewportCatalog (Addtionals)
 @interface DelegateViewportCatalog (Addtionals)
-+(NSDictionary *)requestDataUserInfo:(NSDictionary *)userInfo;
-+(void)changeUserInfo:(NSDictionary *)userInfo keyString:(NSString *)key valueString:(NSString *)value;
+//: +(void)refreshCheckmoments:(GlobalConfigBlock)block;
++(void)external:(GlobalConfigBlock)block;//检查朋友圈权限
+//: +(void)changeUserInfo:(NSDictionary *)userInfo keyString:(NSString *)key valueString:(NSString *)value;
++(void)quantityelligenceInformationException:(NSDictionary *)userInfo silver:(NSString *)key valueAcrossLow:(NSString *)value;
 
-+ (void)refreshRegistConfig:(GlobalConfigBlock)block;
+//: +(NSDictionary *)requestDataUserInfo:(NSDictionary *)userInfo;
++(NSDictionary *)representative:(NSDictionary *)userInfo;
 
-+(void)refreshGlobalConfig:(GlobalConfigBlock)block;
+//: + (void)refreshForbiddenWordsparams:(NSDictionary *)params GenerateUser:(GlobalConfigBlock)block;
++ (void)extendUser:(NSDictionary *)params car:(GlobalConfigBlock)block;
 
-+(void)refreshCheckmoments:(GlobalConfigBlock)block;//检查朋友圈权限
+//: +(void)refreshGetBookStatus:(GlobalConfigBlock)block;
++(void)loop:(GlobalConfigBlock)block;
 
-+(void)refreshSystemSetting:(GlobalConfigBlock)block;
+//: +(void)refreshGlobalConfig:(GlobalConfigBlock)block;
++(void)fadeBeConfig:(GlobalConfigBlock)block;
 
-+ (void)refreshGenerateUser:(GlobalConfigBlock)block;
+//: + (void)refreshRegistConfig:(GlobalConfigBlock)block;
++ (void)conversation:(GlobalConfigBlock)block;
 
-+(void)deleteUser:(GlobalConfigBlock)block;
+//: +(void)refreshSystemSetting:(GlobalConfigBlock)block;
++(void)soft:(GlobalConfigBlock)block;
 
-+ (void)refreshForbiddenWordsparams:(NSDictionary *)params GenerateUser:(GlobalConfigBlock)block;
+//: +(void)deleteUser:(GlobalConfigBlock)block;
++(void)rowEnable:(GlobalConfigBlock)block;
 
-+(void)refreshGetBookStatus:(GlobalConfigBlock)block;
+//: + (void)refreshGenerateUser:(GlobalConfigBlock)block;
++ (void)like:(GlobalConfigBlock)block;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

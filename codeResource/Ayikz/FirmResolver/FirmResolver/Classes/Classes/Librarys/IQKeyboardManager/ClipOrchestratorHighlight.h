@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ClipOrchestratorHighlight.h
 //  https://github.com/hackiftekhar/LayoutBuildOutlinedQuill
@@ -21,53 +23,65 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-
+//: #import "LayoutBuildOutlinedQuillConstants.h"
 #import "LayoutBuildOutlinedQuillConstants.h"
+//: #import "WarehouseSelectorBinaryRefresh.h"
 #import "WarehouseSelectorBinaryRefresh.h"
-
 
 /**
  BarButtonItem with title text.
  */
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @interface ClipOrchestratorHighlight : WarehouseSelectorBinaryRefresh
 @interface ClipOrchestratorHighlight : WarehouseSelectorBinaryRefresh
 
 /**
  Font to be used in bar button. Default is (system font 12.0 bold).
  */
-@property(nullable, nonatomic, strong) UIFont *titleFont;
-
-/**
- titleColor to be used for displaying button text when displaying title (disabled state).
- */
-@property(nullable, nonatomic, strong) UIColor *titleColor;
+//: @property(nullable, nonatomic, strong) UIFont *titleFont;
+@property(nullable, nonatomic, strong) UIFont *standNim;
 
 /**
  selectableTitleColor to be used for displaying button text when button is enabled.
  */
-@property(nullable, nonatomic, strong) UIColor *selectableTitleColor;
+//: @property(nullable, nonatomic, strong) UIColor *selectableTitleColor;
+@property(nullable, nonatomic, strong) UIColor *albumStarColor;
+
+/**
+ titleColor to be used for displaying button text when displaying title (disabled state).
+ */
+//: @property(nullable, nonatomic, strong) UIColor *titleColor;
+@property(nullable, nonatomic, strong) UIColor *magnitudeTemp;
 
 /**
  Initialize with frame and title.
  
  @param title Title of barButtonItem.
  */
--(nonnull instancetype)initWithTitle:(nullable NSString *)title NS_DESIGNATED_INITIALIZER;
+//: -(nonnull instancetype)initWithTitle:(nullable NSString *)title NS_DESIGNATED_INITIALIZER;
+-(nonnull instancetype)initWithTinyOn:(nullable NSString *)title NS_DESIGNATED_INITIALIZER;
 
 /**
  Unavailable. Please use initWithFrame:title: method
  */
--(nonnull instancetype)init NS_UNAVAILABLE;
+//: -(nonnull instancetype)initWithCoder:(nullable NSCoder *)aDecoder UNAVAILABLE_ATTRIBUTE;
+-(nonnull instancetype)initWithCoder:(nullable NSCoder *)aDecoder UNAVAILABLE_ATTRIBUTE;
 
 /**
  Unavailable. Please use initWithFrame:title: method
  */
--(nonnull instancetype)initWithCoder:(nullable NSCoder *)aDecoder NS_UNAVAILABLE;
+//: -(nonnull instancetype)init UNAVAILABLE_ATTRIBUTE;
+-(nonnull instancetype)init UNAVAILABLE_ATTRIBUTE;
 
 /**
  Unavailable. Please use initWithFrame:title: method
  */
-+ (nonnull instancetype)new NS_UNAVAILABLE;
+//: + (nonnull instancetype)new UNAVAILABLE_ATTRIBUTE;
++ (nonnull instancetype)new UNAVAILABLE_ATTRIBUTE;
 
+//: @end
 @end

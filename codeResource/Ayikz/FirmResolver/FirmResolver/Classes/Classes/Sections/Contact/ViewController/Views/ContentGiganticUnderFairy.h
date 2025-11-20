@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ContentGiganticUnderFairy.h
 //  NIM
@@ -6,40 +8,63 @@
 //  Copyright © 2024 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
+//: #import "DisplayCollector.h"
 #import "DisplayCollector.h"
+//: #import "RoundReportSheet.h"
 #import "RoundReportSheet.h"
+//: #import "FriendlyDecoratorPastWithPoplar.h"
 #import "FriendlyDecoratorPastWithPoplar.h"
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @protocol AssembleDeriveComputeDelegate <NSObject>
 @protocol AssembleDeriveComputeDelegate <NSObject>
 
-- (void)didTouchMessageButton:(NSString *)memberId;
+//: - (void)didTouchMessageButton:(NSString *)memberId;
+- (void)actionned:(NSString *)memberId;
 
+//: @end
 @end
 
+//: @interface ContentGiganticUnderFairy : UITableViewCell
 @interface ContentGiganticUnderFairy : UITableViewCell
 
-@property(nonatomic, strong) UIImageView *iconImageView;
-@property(nonatomic, strong) UILabel *titleLabel;
-@property (nonatomic,strong) UIButton *messageBtn;
-@property (nonatomic,strong) UIButton *videoBtn;
+//: @property(nonatomic, strong) UILabel *titleLabel;
+@property(nonatomic, strong) UILabel *site;
+//: @property (nonatomic,copy) NSString *memberId;
+@property (nonatomic,copy) NSString *decision;
+//: @property (nonatomic,strong) UIButton *videoBtn;
+@property (nonatomic,strong) UIButton *show;
+//: @property(nonatomic, strong) UIImageView *iconImageView;
+@property(nonatomic, strong) UIImageView *connectDisturbing;
 
-@property (nonatomic,copy) NSString *memberId;
+//: @property (nonatomic,weak) id<AssembleDeriveComputeDelegate> delegate;
+@property (nonatomic,weak) id<AssembleDeriveComputeDelegate> manHiveTransformerses;
 
-+ (instancetype)cellWithTableView:(UITableView *)tableView;
+//: + (CGFloat)getCellHeight:(NSDictionary*)information;
++ (CGFloat)worldWide:(NSDictionary*)information;
 
-+ (CGFloat)getCellHeight:(NSDictionary*)information;
+//: - (void)reloadUserItem:(NIMUser *)user;
+- (void)max:(NIMUser *)user;
 
-- (void)refreshUser:(id<AssignTheoryDatasetterTameHelper>)member;
+//: + (instancetype)cellWithTableView:(UITableView *)tableView;
++ (instancetype)structuralSteel:(UITableView *)tableView;
 
-- (void)reloadUserItem:(NIMUser *)user;
+//: - (void)refreshTeam:(NIMTeam *)team;
+- (void)restore:(NIMTeam *)team;
 
-- (void)refreshTeam:(NIMTeam *)team;
+//: - (void)refreshUser:(id<AssignTheoryDatasetterTameHelper>)member;
+- (void)size:(id<AssignTheoryDatasetterTameHelper>)member;
 
-@property (nonatomic,weak) id<AssembleDeriveComputeDelegate> delegate;
+//: @property (nonatomic,strong) UIButton *messageBtn;
+@property (nonatomic,strong) UIButton *eventMemory;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

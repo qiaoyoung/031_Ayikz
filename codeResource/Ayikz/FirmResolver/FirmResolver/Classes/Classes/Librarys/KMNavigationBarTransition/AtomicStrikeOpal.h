@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  AtomicStrikeOpal.h
 //
@@ -20,15 +22,20 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
-
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-
 //! Project version number for AtomicStrikeOpal.
+
+// __M_A_C_R_O__
+
+//: FOUNDATION_EXPORT double AtomicStrikeOpalVersionNumber;
 FOUNDATION_EXPORT double AtomicStrikeOpalVersionNumber;
 
 //! Project version string for AtomicStrikeOpal.
+//: FOUNDATION_EXPORT const unsigned char AtomicStrikeOpalVersionString[];
 FOUNDATION_EXPORT const unsigned char AtomicStrikeOpalVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <AtomicStrikeOpal/PublicHeader.h>
 
+//: #import <AtomicStrikeOpal/UINavigationController+AtomicStrikeOpal.h>
 #import <AtomicStrikeOpal/UINavigationController+AtomicStrikeOpal.h>

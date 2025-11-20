@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  USERNetStatusHeaderView.h
 //  NIM
@@ -6,11 +8,17 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "NascentBalancerSnackbarWrite.h"
 #import "NascentBalancerSnackbarWrite.h"
 
+//: @interface VividMineTransformableCreator : UIButton<NascentBalancerSnackbarWriteView>
 @interface VividMineTransformableCreator : UIButton<NascentBalancerSnackbarWriteView>
 
-@property (nonatomic,strong) UILabel *label;
-@property (nonatomic,strong) UIImageView *img;
+//: @property (nonatomic,strong) UIImageView *img;
+@property (nonatomic,strong) UIImageView *refuse;
+//: @property (nonatomic,strong) UILabel *label;
+@property (nonatomic,strong) UILabel *movieMode;
 
+//: @end
 @end

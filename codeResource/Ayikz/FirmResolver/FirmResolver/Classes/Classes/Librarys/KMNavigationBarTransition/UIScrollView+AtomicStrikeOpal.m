@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UIScrollView+AtomicStrikeOpal.m
 //
@@ -21,29 +23,44 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import "UIScrollView+AtomicStrikeOpal.h"
 #import "UIScrollView+AtomicStrikeOpal.h"
+//: #import "UIScrollView+AtomicStrikeOpal_internal.h"
 #import "UIScrollView+AtomicStrikeOpal_internal.h"
+//: #import <objc/runtime.h>
 #import <objc/runtime.h>
+//: #import "RadarDriveCircuit.h"
 #import "RadarDriveCircuit.h"
 
+//: @implementation UIScrollView (AtomicStrikeOpal)
 @implementation UIScrollView (AtomicStrikeOpal)
 
-#ifdef __IPHONE_11_0
-- (UIScrollViewContentInsetAdjustmentBehavior)km_originalContentInsetAdjustmentBehavior {
-    return [objc_getAssociatedObject(self, _cmd) integerValue];
-}
 
-- (void)setKm_originalContentInsetAdjustmentBehavior:(UIScrollViewContentInsetAdjustmentBehavior)contentInsetAdjustmentBehavior {
-    objc_setAssociatedObject(self, @selector(km_originalContentInsetAdjustmentBehavior), @(contentInsetAdjustmentBehavior), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-- (BOOL)km_shouldRestoreContentInsetAdjustmentBehavior {
+//: - (BOOL)km_shouldRestoreContentInsetAdjustmentBehavior {
+- (BOOL)reversePaint {
+    //: return [objc_getAssociatedObject(self, _cmd) boolValue];
     return [objc_getAssociatedObject(self, _cmd) boolValue];
 }
 
-- (void)setKm_shouldRestoreContentInsetAdjustmentBehavior:(BOOL)isShould {
-    objc_setAssociatedObject(self, @selector(km_shouldRestoreContentInsetAdjustmentBehavior), @(isShould), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+//: - (void)setKm_shouldRestoreContentInsetAdjustmentBehavior:(BOOL)isShould {
+- (void)setReversePaint:(BOOL)isShould {
+    //: objc_setAssociatedObject(self, @selector(km_shouldRestoreContentInsetAdjustmentBehavior), @(isShould), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(reversePaint), @(isShould), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
-#endif
 
+//: - (void)setKm_originalContentInsetAdjustmentBehavior:(UIScrollViewContentInsetAdjustmentBehavior)contentInsetAdjustmentBehavior {
+- (void)setCornerImmediately:(UIScrollViewContentInsetAdjustmentBehavior)contentInsetAdjustmentBehavior {
+    //: objc_setAssociatedObject(self, @selector(km_originalContentInsetAdjustmentBehavior), @(contentInsetAdjustmentBehavior), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(cornerImmediately), @(contentInsetAdjustmentBehavior), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+//: - (UIScrollViewContentInsetAdjustmentBehavior)km_originalContentInsetAdjustmentBehavior {
+- (UIScrollViewContentInsetAdjustmentBehavior)cornerImmediately {
+    //: return [objc_getAssociatedObject(self, _cmd) integerValue];
+    return [objc_getAssociatedObject(self, _cmd) integerValue];
+}
+
+
+//: @end
 @end

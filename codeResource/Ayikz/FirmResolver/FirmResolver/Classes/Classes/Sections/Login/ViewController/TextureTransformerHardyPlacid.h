@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  TextureTransformerHardyPlacid.h
 //  NIMDemo
@@ -6,10 +8,15 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @interface TextureTransformerHardyPlacid : UIViewController
 @interface TextureTransformerHardyPlacid : UIViewController
 
--(void)inputAccount:(NSString*)account password:(NSString *)password;
+//: -(void)inputAccount:(NSString*)account password:(NSString *)password;
+-(void)first:(NSString*)account corner:(NSString *)password;
 
+//: @end
 @end

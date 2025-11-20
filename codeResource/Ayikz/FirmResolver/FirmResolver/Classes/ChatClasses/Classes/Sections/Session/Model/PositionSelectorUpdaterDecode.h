@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  PositionSelectorUpdaterDecode.h
 // TowerTinyGranularLarge
@@ -6,33 +8,50 @@
 //  Copyright (c) 2015年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
+//: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
 
+//: @class TowerTinyGranularLargeLocationPoint;
 @class TowerTinyGranularLargeLocationPoint;
 
+//: @interface PositionSelectorUpdaterDecode : NSObject
 @interface PositionSelectorUpdaterDecode : NSObject
 
-+ (NIMMessage*)msgWithText:(NSString *)text;
+//: + (NIMMessage *)msgWithImagePath:(NSString *)path;
++ (NIMMessage *)image:(NSString *)path;
 
-+ (NIMMessage *)msgWithAudio:(NSString *)filePath;
+//: + (NIMMessage *)msgWithImageData:(NSData *)data extension:(NSString *)extension;
++ (NIMMessage *)resolve:(NSData *)data current:(NSString *)extension;
 
-+ (NIMMessage *)msgWithImage:(UIImage *)image;
+//: + (NIMMessage*)msgWithText:(NSString *)text;
++ (NIMMessage*)smooth:(NSString *)text;
 
-+ (NIMMessage *)msgWithImagePath:(NSString *)path;
+//: + (NIMMessage *)msgWithVideo:(NSString *)filePath;
++ (NIMMessage *)arcDevice:(NSString *)filePath;
 
-+ (NIMMessage *)msgWithImageData:(NSData *)data extension:(NSString *)extension;
+//: + (NIMMessage *)msgWithAudio:(NSString *)filePath;
++ (NIMMessage *)vocalism:(NSString *)filePath;
 
-+ (NIMMessage *)msgWithVideo:(NSString *)filePath;
+//: + (NIMMessage *)msgWithImage:(UIImage *)image;
++ (NIMMessage *)cover:(UIImage *)image;
 
 
+//: @end
 @end
 
 
+//: @interface AnimateGroveFertileSharp : NSObject
 @interface AnimateGroveFertileSharp : NSObject
 
-+ (NIMQuickComment *)commentWithType:(int64_t)type
-                             content:(NSString *)content
-                                 ext:(NSString *)ext;
+//: + (NIMQuickComment *)commentWithType:(int64_t)type
++ (NIMQuickComment *)formation:(int64_t)type
+                             //: content:(NSString *)content
+                             arrangement:(NSString *)content
+                                 //: ext:(NSString *)ext;
+                                 sendFormErase:(NSString *)ext;
 
+//: @end
 @end

@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  SpectrumLocalOnLoadHearty.h
 //  NIM
@@ -6,25 +8,39 @@
 //  Copyright © 2021 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
+//: #import "TextureTransformerHardyPlacid.h"
 #import "TextureTransformerHardyPlacid.h"
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface SpectrumLocalOnLoadHearty : NSObject
 @interface SpectrumLocalOnLoadHearty : NSObject
-@property (nonatomic ,strong) TextureTransformerHardyPlacid *loginVC;
-@property (nonatomic ,strong) NSMutableDictionary *registDict;
-@property (nonatomic ,strong) UIImage *headerImage;
+//: @property (nonatomic ,strong) UIImage *headerImage;
+@property (nonatomic ,strong) UIImage *labelImage;
+//: @property (nonatomic ,strong) NSMutableDictionary *registDict;
+@property (nonatomic ,strong) NSMutableDictionary *define;
+//: @property (nonatomic ,strong) TextureTransformerHardyPlacid *loginVC;
+@property (nonatomic ,strong) TextureTransformerHardyPlacid *topographicPoint;
 
-+ (SpectrumLocalOnLoadHearty *)shareConfigManager;
+//: + (SpectrumLocalOnLoadHearty *)shareConfigManager;
++ (SpectrumLocalOnLoadHearty *)jumpWay;
 
-+ (void)refreshRegistConfig;
+//: + (void)firstSendRegistName:(NSString *)name pd:(NSString *)pd RequestWithComplete:(void(^)(BOOL ,NSString *))complete;
++ (void)screen:(NSString *)name submit_strong:(NSString *)pd repair:(void(^)(BOOL ,NSString *))complete;
 
-+ (void)sendRegistRequest:(UINavigationController *)nav;
+//: + (void)sendRegistRequest:(UINavigationController *)nav;
++ (void)continuity:(UINavigationController *)nav;
 
 
-+ (void)firstSendRegistName:(NSString *)name pd:(NSString *)pd RequestWithComplete:(void(^)(BOOL ,NSString *))complete;
+//: + (void)refreshRegistConfig;
++ (void)employ;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

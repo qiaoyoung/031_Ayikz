@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  FlexibleWinterSelfPreview.h
 // TowerTinyGranularLarge
@@ -6,15 +8,83 @@
 //  Copyright (c) 2015年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
+//: #import "WishDisplayWeightlessTrim.h"
 #import "WishDisplayWeightlessTrim.h"
 
+//: @interface FlexibleWinterSelfPreview : NSObject
 @interface FlexibleWinterSelfPreview : NSObject
 
 /**
  *  消息数据
  */
-@property (nonatomic,strong) NIMMessage *message;
+//: @property (nonatomic, readonly) UIEdgeInsets bubbleViewInsets;
+@property (nonatomic, readonly) UIEdgeInsets path;
+
+//: @property (nonatomic, readonly) CGPoint nickNameMargin;
+@property (nonatomic, readonly) CGPoint domainNameMember;
+
+
+//: @property (nonatomic) BOOL shouldShowPinContent; 
+@property (nonatomic) BOOL chainExtensionsed;//显示PIN标记
+
+//: @property (nonatomic,copy) NSArray *childMessages;
+@property (nonatomic,copy) NSArray *capMessages;
+
+//: @property (nonatomic) BOOL focreShowAvatar; 
+@property (nonatomic) BOOL even;//强制显示头像
+
+//: @property (nonatomic, readonly) UIEdgeInsets replyContentViewInsets;
+@property (nonatomic, readonly) UIEdgeInsets rest;
+
+//: @property (nonatomic, readonly) CGPoint avatarMargin;
+@property (nonatomic, readonly) CGPoint conceptAlbum;
+
+/*** 该消息的父、子消息 ***/
+//: @property (nonatomic) BOOL enableSubMessages;
+@property (nonatomic) BOOL stormMessages;
+
+//: @property (nonatomic,strong) NSMapTable *quickComments;
+@property (nonatomic,strong) NSMapTable *comments;
+
+//: @property (nonatomic) BOOL focreShowNickName; 
+@property (nonatomic) BOOL tour;//强制显示昵称
+
+//: @property (nonatomic, readonly) CGSize avatarSize;
+@property (nonatomic, readonly) CGSize policy;
+
+//: @property (nonatomic,strong) NIMMessage *message;
+@property (nonatomic,strong) NIMMessage *signal;
+
+//: @property (nonatomic) CGSize emoticonsContainerSize; 
+@property (nonatomic) CGSize riverData;//显示快捷表情回复内容
+
+//: @property (nonatomic, strong) NSString *pinUserName;
+@property (nonatomic, strong) NSString *woodSelected;
+
+//: @property (nonatomic, readonly) BOOL shouldShowNickName;
+@property (nonatomic, readonly) BOOL shouldPackPublish;
+
+//: @property (nonatomic) BOOL shouldShowReadLabel; 
+@property (nonatomic) BOOL group;//显示已读
+
+//: @property (nonatomic,assign) NSInteger childMessagesCount;
+@property (nonatomic,assign) NSInteger redundant;
+
+//@property (nonatomic, readonly) BOOL shouldShowAvatar;
+//: @property (nonatomic) BOOL shouldShowAvatar;
+@property (nonatomic) BOOL workRemove;
+
+//: @property (nonatomic, readonly) BOOL shouldShowLeft;
+@property (nonatomic, readonly) BOOL owner;
+
+//: @property (nonatomic) BOOL shouldShowSelect; 
+@property (nonatomic) BOOL maneuver;//显示选择按钮
+
+
+
 
 /**
  *  时间戳
@@ -24,73 +94,72 @@
  *              改导致的消息界面位置跳跃。
  *              messageTime 和 message.timestamp 会有一定的误差。
  */
-@property (nonatomic,readonly) NSTimeInterval messageTime;
+//: @property (nonatomic,readonly) NSTimeInterval messageTime;
+@property (nonatomic,readonly) NSTimeInterval clipComment;
 
+//: @property (nonatomic, readonly) UIEdgeInsets contentViewInsets;
+@property (nonatomic, readonly) UIEdgeInsets titleOpinionInsets;
 
-@property (nonatomic, readonly) UIEdgeInsets  contentViewInsets;
+//: @property (nonatomic,strong) NIMMessage *parentMessage;
+@property (nonatomic,strong) NIMMessage *output;
 
-@property (nonatomic, readonly) UIEdgeInsets  bubbleViewInsets;
+//: @property (nonatomic) BOOL focreShowLeft; 
+@property (nonatomic) BOOL spotPolicy;//强制左边显示
 
-@property (nonatomic, readonly) UIEdgeInsets  replyContentViewInsets;
-
-@property (nonatomic, readonly) UIEdgeInsets  replyBubbleViewInsets;
-
-@property (nonatomic, strong) NSString *pinUserName;
-
-@property (nonatomic, readonly) CGPoint avatarMargin;
-
-@property (nonatomic, readonly) CGPoint nickNameMargin;
-
-@property (nonatomic, readonly) CGSize avatarSize;
-
-//@property (nonatomic, readonly) BOOL shouldShowAvatar;
-@property (nonatomic) BOOL shouldShowAvatar;
-
-@property (nonatomic, readonly) BOOL shouldShowNickName;
-
-@property (nonatomic, readonly) BOOL shouldShowLeft;
-
-@property (nonatomic) BOOL focreShowAvatar; //强制显示头像
-
-@property (nonatomic) BOOL focreShowNickName; //强制显示昵称
-
-@property (nonatomic) BOOL focreShowLeft; //强制左边显示
-
-@property (nonatomic) BOOL shouldShowReadLabel; //显示已读
-
-@property (nonatomic) BOOL shouldShowSelect; //显示选择按钮
-
-@property (nonatomic) BOOL disableSelected; //不允许用户选择
-
-@property (nonatomic) BOOL selected; //选择状态
-
-
-
-
-@property (nonatomic) BOOL shouldShowPinContent; //显示PIN标记
-
-/*** 该消息的父、子消息 ***/
-@property (nonatomic) BOOL enableSubMessages;
-
-@property (nonatomic,strong) NIMMessage *parentMessage;
-
-@property (nonatomic,copy) NSArray *childMessages;
-
-@property (nonatomic,assign) NSInteger childMessagesCount;
+//: @property (nonatomic, readonly) UIEdgeInsets replyBubbleViewInsets;
+@property (nonatomic, readonly) UIEdgeInsets wealthy;
 
 
 /*** 该消息回复的消息内容 ****/
-@property (nonatomic,strong) NIMMessage *repliedMessage;
-
-@property (nonatomic) BOOL enableRepliedContent; //显示被回复消息内容
+//: @property (nonatomic,strong) NIMMessage *repliedMessage;
+@property (nonatomic,strong) NIMMessage *replied;
 
 /*** 快捷回复数据 ***/
-@property (nonatomic) BOOL enableQuickComments; //显示快捷表情回复内容
+//: @property (nonatomic) BOOL enableQuickComments; 
+@property (nonatomic) BOOL direct;//显示快捷表情回复内容
 
-@property (nonatomic,strong) NSMapTable *quickComments;
+//: @property (nonatomic) BOOL selected; 
+@property (nonatomic) BOOL heavenChild;//选择状态
 
-@property (nonatomic) CGSize emoticonsContainerSize; //显示快捷表情回复内容
+//: @property (nonatomic) BOOL disableSelected; 
+@property (nonatomic) BOOL res;//不允许用户选择
 
+//: @property (nonatomic) BOOL enableRepliedContent; 
+@property (nonatomic) BOOL sitePersist;//显示被回复消息内容
+
+
+/**
+ *  @param message 目标消息
+ *  @param completion 完成回调
+ */
+//: - (void)quickComments:(NIMMessage *)message
+- (void)keepCompletion:(NIMMessage *)message
+           //: completion:(void(^)(NSMapTable *))completion;
+           islet:(void(^)(NSMapTable *))completion;
+/**
+ *  更新布局配置
+ */
+//: - (void)updateLayoutConfig;
+- (void)refreshShould;
+
+
+/**
+ *  清楚缓存的排版数据
+ */
+//: - (void)cleanCache;
+- (void)greatUnsullied;
+
+/**
+ *  计算回复内容大小
+ */
+//: - (CGSize)replyContentSize:(CGFloat)width;
+- (CGSize)storm:(CGFloat)width;
+
+/**
+ *  @return 是否显示该消息被回复的条数内容
+ */
+//: - (BOOL)needShowReplyCountContent;
+- (BOOL)account;
 
 /**
  *  NIMMessage封装成FlexibleWinterSelfPreview的方法
@@ -99,51 +168,29 @@
  *
  *  @return FlexibleWinterSelfPreview实例
  */
-- (instancetype)initWithMessage:(NIMMessage*)message;
-
-/**
- *  清楚缓存的排版数据
- */
-- (void)cleanCache;
-
-
-/**
- *  计算内容大小
- */
-- (CGSize)contentSize:(CGFloat)width;
-
-/**
- *  计算回复内容大小
- */
-- (CGSize)replyContentSize:(CGFloat)width;
-
-/**
- *  更新布局配置
- */
-- (void)updateLayoutConfig;
+//: - (instancetype)initWithMessage:(NIMMessage*)message;
+- (instancetype)initWithCutLanguage:(NIMMessage*)message;
 
 /**
  * thread talk 显示被回复内容
  *
  * @return 是否显示回复内容
  */
-- (BOOL)needShowRepliedContent;
-
-/**
- *  @return 是否显示该消息被回复的条数内容
- */
-- (BOOL)needShowReplyCountContent;
+//: - (BOOL)needShowRepliedContent;
+- (BOOL)tit;
 
 /**
  *  @return 是否显示快捷表情内容
  */
-- (BOOL)needShowEmoticonsView;
+//: - (BOOL)needShowEmoticonsView;
+- (BOOL)tense;
 
 /**
- *  @param message 目标消息
- *  @param completion 完成回调
+ *  计算内容大小
  */
-- (void)quickComments:(NIMMessage *)message
-           completion:(void(^)(NSMapTable *))completion;
+//: - (CGSize)contentSize:(CGFloat)width;
+- (CGSize)generateDistance:(CGFloat)width;
 
+
+//: @end
 @end

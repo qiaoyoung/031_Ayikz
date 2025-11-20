@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  RoundReportSheet.h
 // TowerTinyGranularLarge
@@ -6,24 +8,34 @@
 //  Copyright © 2016年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: typedef NS_ENUM(NSInteger, ParserModalEnum){
 typedef NS_ENUM(NSInteger, ParserModalEnum){
-    ParserModalEnumNomal  = 0,
-    ParserModalEnumSuper  = 1,
+    //: ParserModalEnumNomal = 0,
+    ParserModalEnumNomal = 0,
+    //: ParserModalEnumSuper = 1,
+    ParserModalEnumSuper = 1,
+//: };
 };
 
+//: @interface RoundReportSheet : NSObject
 @interface RoundReportSheet : NSObject
 /**
  *   id,如果是用户信息，为用户id；如果是群信息，为群id
  */
-@property (nonatomic,copy) NSString *infoId;
+//: @property (nonatomic,copy) NSString *infoId;
+@property (nonatomic,copy) NSString *be;
 
 /**
- *  显示名
+ *  头像图片
  */
-@property (nonatomic,copy)   NSString *showName;
+//: @property (nonatomic,strong) UIImage *avatarImage;
+@property (nonatomic,strong) UIImage *bePan;
 
 
 //如果avatarUrlString为nil，则显示头像图片
@@ -32,11 +44,14 @@ typedef NS_ENUM(NSInteger, ParserModalEnum){
 /**
  *  头像url
  */
-@property (nonatomic,copy)   NSString *avatarUrlString;
+//: @property (nonatomic,copy) NSString *avatarUrlString;
+@property (nonatomic,copy) NSString *sceneWhole;
 
 /**
- *  头像图片
+ *  显示名
  */
-@property (nonatomic,strong) UIImage  *avatarImage;
+//: @property (nonatomic,copy) NSString *showName;
+@property (nonatomic,copy) NSString *showNumberro;
 
+//: @end
 @end

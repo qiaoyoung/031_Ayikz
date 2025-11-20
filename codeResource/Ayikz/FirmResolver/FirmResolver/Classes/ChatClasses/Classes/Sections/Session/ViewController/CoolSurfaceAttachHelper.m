@@ -1,3 +1,113 @@
+
+#import <Foundation/Foundation.h>
+
+NSString *StringFromCraftProfileData(Byte *data);
+
+
+//: IMAGE
+Byte styleIndustryPlatform[] = {90, 5, 37, 4, 110, 114, 102, 108, 106, 126};
+
+//: #EA7AFF
+Byte spacingAliveLogger[] = {80, 7, 86, 13, 168, 146, 247, 54, 29, 199, 131, 160, 11, 121, 155, 151, 141, 151, 156, 156, 190};
+
+//: head_default_group
+Byte screenOrientationUtility[] = {56, 18, 27, 14, 132, 96, 19, 78, 184, 139, 149, 59, 78, 105, 131, 128, 124, 127, 122, 127, 128, 129, 124, 144, 135, 143, 122, 130, 141, 138, 144, 139, 212};
+
+//: ic_block
+Byte viewIndependencePreference[] = {73, 8, 49, 13, 22, 239, 244, 164, 228, 117, 18, 25, 112, 154, 148, 144, 147, 157, 160, 148, 156, 81};
+
+//: TEXT
+Byte colorGraveText[] = {94, 4, 20, 9, 145, 235, 204, 160, 34, 104, 89, 108, 104, 95};
+
+//: group_info_activity_op_failed
+Byte k_fluentCommunicationDevice[] = {82, 29, 11, 4, 114, 125, 122, 128, 123, 106, 116, 121, 113, 122, 106, 108, 110, 127, 116, 129, 116, 127, 132, 106, 122, 123, 106, 113, 108, 116, 119, 112, 111, 148};
+
+//: %@在群里@了你
+Byte viewIndeedError[] = {4, 18, 58, 10, 207, 78, 50, 47, 115, 24, 95, 122, 31, 214, 226, 33, 248, 222, 35, 193, 198, 122, 30, 244, 192, 30, 247, 218, 71};
+
+//: icon_toolview_camera
+Byte commonServingPath[] = {14, 20, 89, 10, 236, 36, 182, 244, 25, 184, 194, 188, 200, 199, 184, 205, 200, 200, 197, 207, 194, 190, 208, 184, 188, 186, 198, 190, 203, 186, 175};
+
+//: 离线
+Byte screenBlinkDevice[] = {53, 6, 5, 12, 224, 54, 22, 6, 21, 210, 222, 96, 236, 171, 192, 236, 191, 196, 236};
+
+//: icon_toolview_voice_normal
+Byte coreTalentPage[] = {78, 26, 80, 9, 124, 143, 35, 193, 118, 185, 179, 191, 190, 175, 196, 191, 191, 188, 198, 185, 181, 199, 175, 198, 191, 185, 179, 181, 175, 190, 191, 194, 189, 177, 188, 48};
+
+//: messageid
+Byte styleTheoryPageUtility[] = {28, 9, 57, 9, 241, 74, 167, 33, 51, 166, 158, 172, 172, 154, 160, 158, 162, 157, 59};
+
+//: back_arrow_bl
+Byte styleInspirationName[] = {10, 13, 94, 11, 114, 100, 235, 99, 186, 15, 133, 192, 191, 193, 201, 189, 191, 208, 208, 205, 213, 189, 192, 202, 252};
+
+//: message_send_album
+Byte componentAccomplishHelper[] = {37, 18, 68, 14, 160, 92, 22, 70, 100, 99, 125, 122, 56, 54, 177, 169, 183, 183, 165, 171, 169, 163, 183, 169, 178, 168, 163, 165, 176, 166, 185, 177, 18};
+
+//: type
+Byte themeShockPlatform[] = {20, 4, 47, 9, 52, 194, 213, 216, 185, 163, 168, 159, 148, 155};
+
+//: temp_image_%@.jpg
+Byte featureBorderPlatform[] = {90, 17, 57, 6, 59, 255, 173, 158, 166, 169, 152, 162, 166, 154, 160, 158, 152, 94, 121, 103, 163, 169, 160, 225};
+
+//: content
+Byte commonDisturbLogger[] = {85, 7, 32, 9, 97, 229, 246, 201, 187, 131, 143, 142, 148, 133, 142, 148, 82};
+
+//: user_profile_avtivity_send
+Byte appAccurateName[] = {57, 26, 73, 10, 220, 241, 187, 150, 241, 123, 190, 188, 174, 187, 168, 185, 187, 184, 175, 178, 181, 174, 168, 170, 191, 189, 178, 191, 178, 189, 194, 168, 188, 174, 183, 173, 166};
+
+//: message_send_camera
+Byte widgetDifferentData[] = {81, 19, 81, 8, 73, 94, 219, 245, 190, 182, 196, 196, 178, 184, 182, 176, 196, 182, 191, 181, 176, 180, 178, 190, 182, 195, 178, 209};
+
+//: AUDIO
+Byte colorTendedSettings[] = {54, 5, 10, 9, 166, 125, 90, 122, 176, 75, 95, 78, 83, 89, 226};
+
+//: F6F7FA
+Byte moduleMoreError[] = {14, 6, 16, 5, 144, 86, 70, 86, 71, 86, 81, 122};
+
+//: 扩展
+Byte styleOccasionalConfig[] = {5, 6, 7, 9, 144, 151, 5, 47, 81, 237, 144, 176, 236, 184, 156, 119};
+
+//: #F6F7FA
+Byte spacingCoveSettings[] = {95, 7, 21, 12, 61, 174, 89, 115, 154, 58, 136, 251, 56, 91, 75, 91, 76, 91, 86, 138};
+
+//: icon_toolview_album
+Byte colorShrugPlatform[] = {68, 19, 92, 7, 172, 218, 46, 197, 191, 203, 202, 187, 208, 203, 203, 200, 210, 197, 193, 211, 187, 189, 200, 190, 209, 201, 150};
+
+//: userName
+Byte widgetTendedHelper[] = {49, 8, 43, 4, 160, 158, 144, 157, 121, 140, 152, 144, 174};
+
+//: temp_video_%@.mp4
+Byte screenGatorAlert[] = {6, 17, 3, 12, 142, 108, 131, 102, 22, 70, 91, 109, 119, 104, 112, 115, 98, 121, 108, 103, 104, 114, 98, 40, 67, 49, 112, 115, 55, 200};
+
+//: #00B01B
+Byte kSecretUtility[] = {16, 7, 51, 9, 224, 245, 234, 87, 152, 86, 99, 99, 117, 99, 100, 117, 100};
+
+//: ic_block_no
+Byte viewVeteranNeedPage[] = {69, 11, 53, 9, 237, 13, 201, 67, 237, 158, 152, 148, 151, 161, 164, 152, 160, 148, 163, 164, 34};
+
+//: VIDEO
+Byte kTransportLogger[] = {36, 5, 81, 6, 34, 88, 167, 154, 149, 150, 160, 93};
+
+//: reply
+Byte featureMetropolitanMessage[] = {18, 5, 12, 5, 89, 126, 113, 124, 120, 133, 132};
+
+//: FFFKitEventNameTapAudio
+Byte k_coolSelectPlatform[] = {71, 23, 26, 13, 72, 158, 33, 22, 7, 199, 2, 150, 148, 96, 96, 96, 101, 131, 142, 95, 144, 127, 136, 142, 104, 123, 135, 127, 110, 123, 138, 91, 143, 126, 131, 137, 8};
+
+//: ic_more
+Byte commonMatedDevice[] = {87, 7, 40, 5, 123, 145, 139, 135, 149, 151, 154, 141, 128};
+
+//: message_administrator_speak
+Byte kLackHelper[] = {14, 27, 46, 13, 40, 18, 127, 255, 98, 177, 216, 162, 30, 155, 147, 161, 161, 143, 149, 147, 141, 143, 146, 155, 151, 156, 151, 161, 162, 160, 143, 162, 157, 160, 141, 161, 158, 147, 143, 153, 184};
+
+//: message_please_enter_content
+Byte commonRumorPage[] = {54, 28, 27, 9, 47, 30, 165, 220, 190, 136, 128, 142, 142, 124, 130, 128, 122, 139, 135, 128, 124, 142, 128, 122, 128, 137, 143, 128, 141, 122, 126, 138, 137, 143, 128, 137, 143, 132};
+
+//: 777777
+Byte featureCurveId[] = {54, 6, 28, 11, 94, 232, 191, 56, 144, 210, 76, 83, 83, 83, 83, 83, 83, 56};
+
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  CoolSurfaceAttachHelper.m
 // TowerTinyGranularLarge
@@ -6,260 +116,258 @@
 //  Copyright (c) 2015年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "PoolDaleMarshModel.h"
 #import "PoolDaleMarshModel.h"
+//: #import "TowerTinyGranularLarge.h"
 #import "TowerTinyGranularLarge.h"
+//: #import "WiseUpdaterEnvelope.h"
 #import "WiseUpdaterEnvelope.h"
+//: #import "FlexibleWinterSelfPreview.h"
 #import "FlexibleWinterSelfPreview.h"
+//: #import "LoadHoldLoosePeaceful.h"
 #import "LoadHoldLoosePeaceful.h"
+//: #import "ByBeneathParserSoft.h"
 #import "ByBeneathParserSoft.h"
+//: #import "UITableView+ProjectorBalancerAroundSymbol.h"
 #import "UITableView+ProjectorBalancerAroundSymbol.h"
+//: #import "PositionSelectorUpdaterDecode.h"
 #import "PositionSelectorUpdaterDecode.h"
+//: #import "WaitAfterHavenCacheLine.h"
 #import "WaitAfterHavenCacheLine.h"
+//: #import "DeriveFacade.h"
 #import "DeriveFacade.h"
+//: #import "NovelHillConverterInspector.h"
 #import "NovelHillConverterInspector.h"
+//: #import "ConductorHideContinue.h"
 #import "ConductorHideContinue.h"
+//: #import "WarehouseCreatorOnto.h"
 #import "WarehouseCreatorOnto.h"
+//: #import "ConductorClassRun.h"
 #import "ConductorClassRun.h"
+//: #import "TuneFormatterDistinct.h"
 #import "TuneFormatterDistinct.h"
+//: #import "HeaderProjector.h"
 #import "HeaderProjector.h"
+//: #import "ToMediatorShore.h"
 #import "ToMediatorShore.h"
+//: #import "AtlasBehindPrairieScheduler.h"
 #import "AtlasBehindPrairieScheduler.h"
+//: #import "NSObject+CheckRiverEnum.h"
 #import "NSObject+CheckRiverEnum.h"
+//: #import "ToMediatorShore.h"
 #import "ToMediatorShore.h"
+//: #import "MarkTransformerConductorOutline.h"
 #import "MarkTransformerConductorOutline.h"
+//: #import "FetchOutlinedEntryConsistent.h"
 #import "FetchOutlinedEntryConsistent.h"
+//: #import "FaithfulHumanePortraitTupleWithin.h"
 #import "FaithfulHumanePortraitTupleWithin.h"
+//: #import "UIView+Layout.h"
 #import "UIView+Layout.h"
+//: #import "BreezyOnyxSpontaneousStair.h"
 #import "BreezyOnyxSpontaneousStair.h"
+//: #import "OntoTopHandlerRotate.h"
 #import "OntoTopHandlerRotate.h"
+//: #import "ResizeCoherentCollector.h"
 #import "ResizeCoherentCollector.h"
+//: #import "ObjectToCalibrateJovial.h"
 #import "ObjectToCalibrateJovial.h"
+//: #import "FertileViableAssemblerManager.h"
 #import "FertileViableAssemblerManager.h"
+//: #import "JunctionCacheLarge.h"
 #import "JunctionCacheLarge.h"
+
+//: @interface CoolSurfaceAttachHelper ()<NIMMediaManagerDelegate,TrustSpace,IntoSleekDuskEnvelope,NIMConversationManagerDelegate,BeaconSync,UIGestureRecognizerDelegate>
 @interface CoolSurfaceAttachHelper ()<NIMMediaManagerDelegate,TrustSpace,IntoSleekDuskEnvelope,NIMConversationManagerDelegate,BeaconSync,UIGestureRecognizerDelegate>
 
-@property (nonatomic,readwrite) NIMMessage *messageForMenu;
+//: @property (nonatomic,readwrite) NIMMessage *messageForMenu;
+@property (nonatomic,readwrite) NIMMessage *balloon;
 
-@property (nonatomic,strong)    UILabel *titleLabel;
+//: @property (nonatomic,strong) UITapGestureRecognizer *tableViewTapGesture;
+@property (nonatomic,strong) UITapGestureRecognizer *deepVideo;
 
-@property (nonatomic,strong)    UILabel *subTitleLabel;
+//: @property (nonatomic,strong) ByBeneathParserSoft *badgeView;
+@property (nonatomic,strong) ByBeneathParserSoft *gravity;
 
-@property (nonatomic,strong)    NSIndexPath *lastVisibleIndexPathBeforeRotation;
+//: @property (nonatomic, strong) UIButton *btnAudio;
+@property (nonatomic, strong) UIButton *listen;
 
-@property (nonatomic,strong)    DeriveFacade *configurator;
+//: @property (nonatomic,strong) UILabel *subTitleLabel;
+@property (nonatomic,strong) UILabel *advanced;
 
-@property (nonatomic,strong)    UITapGestureRecognizer *tableViewTapGesture;
+//: @property (nonatomic, strong) ObjectToCalibrateJovial *customAlbumView;
+@property (nonatomic, strong) ObjectToCalibrateJovial *candidCalibrateJovial;
 
-@property (nonatomic,assign) NSInteger sessionUnreadCount;
-@property (nonatomic,strong) ByBeneathParserSoft *badgeView;
-@property (nonatomic,strong) UIImageView *headerImage;
-@property (nonatomic,strong) UILabel *labtitle;
-@property (nonatomic,strong) UILabel *subtitle;
-@property (nonatomic,strong) UIButton *btnBlock;
+//: @property (nonatomic, strong) UIView *topview;
+@property (nonatomic, strong) UIView *createRandom;
+//: @property (nonatomic,strong) UILabel *subtitle;
+@property (nonatomic,strong) UILabel *softLabel;
+//: @property (nonatomic,strong) UIButton *btnBlock;
+@property (nonatomic,strong) UIButton *style;
+//: @property (nonatomic,strong) NSIndexPath *lastVisibleIndexPathBeforeRotation;
+@property (nonatomic,strong) NSIndexPath *stateTransitionMagnitudeeract;
+//: @property (nonatomic, strong) UIView *photopicview;
+@property (nonatomic, strong) UIView *multi;
+//: @property (nonatomic,assign) NSInteger sessionUnreadCount;
+@property (nonatomic,assign) NSInteger royalConnect;
 
-@property (nonatomic, strong) UIView *topview;
-@property (nonatomic, strong) UIButton *btnAudio;
-@property (nonatomic, strong) FaithfulHumanePortraitTupleWithin *audioContent;
+//: @property (nonatomic,strong) UILabel *titleLabel;
+@property (nonatomic,strong) UILabel *remote;
+//: @property (nonatomic,strong) DeriveFacade *configurator;
+@property (nonatomic,strong) DeriveFacade *host;
+//: @property (nonatomic,strong) UILabel *labtitle;
+@property (nonatomic,strong) UILabel *receive;
 
-@property (nonatomic, strong) UIView *photopicview;
-@property (nonatomic, strong) ObjectToCalibrateJovial *customAlbumView;
+//: @property (nonatomic,strong) UIImageView *headerImage;
+@property (nonatomic,strong) UIImageView *below;
+//: @property (nonatomic, strong) FaithfulHumanePortraitTupleWithin *audioContent;
+@property (nonatomic, strong) FaithfulHumanePortraitTupleWithin *label;
 
 
+//: @end
 @end
 
+//: @implementation CoolSurfaceAttachHelper
 @implementation CoolSurfaceAttachHelper
 
-- (instancetype)initWithSession:(NIMSession *)session{
-    self = [super initWithNibName:nil bundle:nil];
-    if (self) {
-        _session = session;
+// 获取视频路径
+//: - (void)getVideoPathFromPHAsset:(PHAsset *)asset completion:(void (^)(NSString *path))completion {
+- (void)offe:(PHAsset *)asset tap:(void (^)(NSString *path))completion {
+    //: if (asset.mediaType != PHAssetMediaTypeVideo) {
+    if (asset.mediaType != PHAssetMediaTypeVideo) {
+        //: if (completion) completion(nil);
+        if (completion) completion(nil);
+        //: return;
+        return;
     }
-    return self;
+
+    //: PHVideoRequestOptions *options = [[PHVideoRequestOptions alloc] init];
+    PHVideoRequestOptions *options = [[PHVideoRequestOptions alloc] init];
+    //: options.version = PHVideoRequestOptionsVersionOriginal;
+    options.version = PHVideoRequestOptionsVersionOriginal;
+    //: options.deliveryMode = PHVideoRequestOptionsDeliveryModeAutomatic;
+    options.deliveryMode = PHVideoRequestOptionsDeliveryModeAutomatic;
+    //: options.networkAccessAllowed = YES;
+    options.networkAccessAllowed = YES;
+
+    //: [[PHImageManager defaultManager] requestAVAssetForVideo:asset options:options resultHandler:^(AVAsset * _Nullable avAsset, AVAudioMix * _Nullable audioMix, NSDictionary * _Nullable info) {
+    [[PHImageManager defaultManager] requestAVAssetForVideo:asset options:options resultHandler:^(AVAsset * _Nullable avAsset, AVAudioMix * _Nullable audioMix, NSDictionary * _Nullable info) {
+        //: if ([avAsset isKindOfClass:[AVURLAsset class]]) {
+        if ([avAsset isKindOfClass:[AVURLAsset class]]) {
+            //: AVURLAsset *urlAsset = (AVURLAsset *)avAsset;
+            AVURLAsset *urlAsset = (AVURLAsset *)avAsset;
+            //: NSURL *url = urlAsset.URL;
+            NSURL *url = urlAsset.URL;
+            //: if (completion) completion(url.path);
+            if (completion) completion(url.path);
+        //: } else {
+        } else {
+            // 如果无法直接获取URL，则需要导出到临时文件
+            //: [self exportVideoToTempFile:avAsset completion:completion];
+            [self exportTempVideoDigitizerRegisterCompletionCommon:avAsset polo:completion];
+        }
+    //: }];
+    }];
 }
 
-- (void)dealloc
+//: - (void)recordAudioProgress:(NSTimeInterval)currentTime {
+- (void)recordAudioProgress:(NSTimeInterval)currentTime {
+    //: [_sessionInputView updateAudioRecordTime:currentTime];
+    [_delivery expert:currentTime];
+}
+
+//: - (void)handleAlbumBtn
+- (void)nowStorm
 {
-    [self removeListener];
-    
-    _tableView.delegate = nil;
-    _tableView.dataSource = nil;
+    //: _photopicview.hidden = YES;
+    _multi.hidden = YES;
+    //: [self.interactor mediaPicturePressed];
+    [self.numberro betweenPicturePressed];
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    self.view.backgroundColor = RGB_COLOR_String(@"F6F7FA");
-//        UIImageView *bg = [[UIImageView alloc]initWithFrame:self.view.bounds];
-//        bg.image = [UIImage imageNamed:@"chating_bg"];
-//        [self.view addSubview:bg];
-    
-    UIView *bottomview = [[UIView alloc]initWithFrame:CGRectMake(0, SCREEN_HEIGHT-SCREEN_BOTTOM_HEIGHT, SCREEN_WIDTH, SCREEN_BOTTOM_HEIGHT)];
-    bottomview.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:bottomview];
-    
-    //消息 tableView
-    [self setupTableView];
-    //导航栏
-    [self setupNav];
-    
-    //输入框 inputView
-    [self setupInputView];
-    //会话相关逻辑配置器安装
-    [self setupConfigurator];
-    //进入会话时，标记所有消息已读，并发送已读回执
-    [self markRead];
-    //更新已读位置
-    
-    
-//    [self.view addSubview:self.btnAudio];
-    
-    
-     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-         [self setBanned];
-     });
-    
-//    [[NIMSDK sharedSDK].conversationManager addDelegate:self];
-    
-    // 执行设置回调监听
-//    [NERtcCallKit.sharedInstance addDelegate:self];
- }
-
-//- (void)onInvited:(NSString *)invitor
-//          userIDs:(NSArray<NSString *> *)userIDs
-//      isFromGroup:(BOOL)isFromGroup
-//          groupID:(nullable NSString *)groupID
-//             type:(NERtcCallType)type
-//       attachment:(nullable NSString *)attachment
-//{
-//    ZMONVideoCallViewController *vc = [[ZMONVideoCallViewController alloc] init];
-//    vc.isInvait = YES;
-//    vc.userId = invitor;
-//    vc.roomId = self.session.sessionId;
-//    [self.navigationController pushViewController:vc animated:YES];
-//}
-
- - (void)setBanned {
-     NIMSessionType type = self.session.sessionType;
-     switch (type) {
-         case NIMSessionTypeTeam:{
-             NIMTeam *team = [[[NIMSDK sharedSDK] teamManager] teamById:self.session.sessionId];
-             if (team.inAllMuteMode) {
-                 if (team.allMuteMode == NIMTeamAllMuteModeMuteNormal || team.allMuteMode == NIMTeamAllMuteModeMuteAll) {
-                     NSString *userID = [NIMSDK sharedSDK].loginManager.currentAccount;
-                     NIMTeamMember *member = [[NIMSDK sharedSDK].teamManager teamMember:userID inTeam:self.session.sessionId];
-                     if (member.isMuted) {
-                         [self setInputViewPlaceholder:YES];
-                     }
-                 }
-             }
-         }
-             break;
-
-             break;
-         case NIMSessionTypeSuperTeam: {
-             NIMTeam *team = [[[NIMSDK sharedSDK] superTeamManager] teamById:self.session.sessionId];
-             if (team.inAllMuteMode) {
-                 if (team.allMuteMode == NIMTeamAllMuteModeMuteNormal || team.allMuteMode == NIMTeamAllMuteModeMuteAll) {
-                     NSString *userID = [NIMSDK sharedSDK].loginManager.currentAccount;
-                     NIMTeamMember *member = [[NIMSDK sharedSDK].teamManager teamMember:userID inTeam:self.session.sessionId];
-                     if (member.isMuted) {
-                         [self setInputViewPlaceholder:YES];
-                     }
-                 }
-             }
-         }
-         default:
-             break;
-     }
- }
-
-#pragma mark - NIMConversationManagerDelegate
-- (void)didAddRecentSession:(NIMRecentSession *)recentSession
-           totalUnreadCount:(NSInteger)totalUnreadCount{
-    self.sessionUnreadCount = totalUnreadCount;
-    [self refreshSessionBadge];
-//    [self changeUnreadCount:recentSession totalUnreadCount:totalUnreadCount];
+//: - (void)CustomPickerDidSelectCamera
+- (void)leaveCamera
+{
+    //: [self.customAlbumView animationClose];
+    [self.candidCalibrateJovial coolMode];
+    //: [self.interactor mediaShootPressed];
+    [self.numberro bootPressed];
 }
 
-
-- (void)didUpdateRecentSession:(NIMRecentSession *)recentSession
-              totalUnreadCount:(NSInteger)totalUnreadCount{
-    self.sessionUnreadCount = totalUnreadCount;
-    [self refreshSessionBadge];
-//    [self changeUnreadCount:recentSession totalUnreadCount:totalUnreadCount];
-
-}
-
-
-- (void)didRemoveRecentSession:(NIMRecentSession *)recentSession totalUnreadCount:(NSInteger)totalUnreadCount{
-    self.sessionUnreadCount = totalUnreadCount;
-    [self refreshSessionBadge];
-//    [self changeUnreadCount:recentSession totalUnreadCount:totalUnreadCount];
-}
-
+//: - (void)messagesDeletedInSession:(NIMSession *)session{
 - (void)messagesDeletedInSession:(NIMSession *)session{
-    self.sessionUnreadCount = [NIMSDK sharedSDK].conversationManager.allUnreadCount;
-    [self refreshSessionBadge];
-    [self.interactor resetMessages:nil];
-    [self.tableView reloadData];
+    //: self.sessionUnreadCount = [NIMSDK sharedSDK].conversationManager.allUnreadCount;
+    self.royalConnect = [NIMSDK sharedSDK].conversationManager.allUnreadCount;
+    //: [self refreshSessionBadge];
+    [self flush];
+    //: [self.interactor resetMessages:nil];
+    [self.numberro spiritualty:nil];
+    //: [self.tableView reloadData];
+    [self.quickResponse reloadData];
 }
 
-- (void)allMessagesDeleted{
-    self.sessionUnreadCount = 0;
-    [self refreshSessionBadge];
-}
 
-- (void)allMessagesRead
+//: - (void)removeListener
+- (void)detoxifyBrace
 {
-    self.sessionUnreadCount = 0;
-    [self refreshSessionBadge];
+    //: [[NIMSDK sharedSDK].chatManager removeDelegate:self];
+    [[NIMSDK sharedSDK].chatManager removeDelegate:self];
+    //: [[NIMSDK sharedSDK].conversationManager removeDelegate:self];
+    [[NIMSDK sharedSDK].conversationManager removeDelegate:self];
+    //: [[NIMSDK sharedSDK].mediaManager removeDelegate:self];
+    [[NIMSDK sharedSDK].mediaManager removeDelegate:self];
+    //: [[NIMSDK sharedSDK].chatExtendManager removeDelegate:self];
+    [[NIMSDK sharedSDK].chatExtendManager removeDelegate:self];
+
 }
 
-- (void)onBatchMarkMessagesReadInSessions:(NSArray<NIMSession *> *)sessions
-{
-    self.sessionUnreadCount = [NIMSDK sharedSDK].conversationManager.allUnreadCount;
-    [self refreshSessionBadge];
-}
 
-
-- (void)refreshSessionBadge
+//: - (void)setupNav
+- (void)historicalOrbit
 {
-  
-    if(self.sessionUnreadCount>0){
-        _badgeView.badgeValue = self.sessionUnreadCount ? @(self.sessionUnreadCount).stringValue : nil;
-        _badgeView.hidden = NO;
-//        _labtitle.frame = CGRectMake(_badgeView.right+10, SCREEN_STATUS_HEIGHT, 100, 40);
-    }
-    else{
-        _badgeView.hidden = YES;
-//        _labtitle.frame = CGRectMake(65, SCREEN_STATUS_HEIGHT, 200, 40);
-    }
-}
+    //: _topview = [[UIView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, (44.0f + [UIDevice vg_statusBarHeight]))];
+    _createRandom = [[UIView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, (44.0f + [UIDevice filing]))];
+    //: _topview.backgroundColor = [UIColor colorWithHexString:@"#F6F7FA"];
+    _createRandom.backgroundColor = [UIColor tin:StringFromCraftProfileData(spacingCoveSettings)];
+    //: [self.view addSubview:_topview];
+    [self.view addSubview:_createRandom];
 
-- (void)setupNav
-{
-    _topview = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_TOP_HEIGHT)];
-    _topview.backgroundColor = RGB_COLOR_String(@"#F6F7FA");
-    [self.view addSubview:_topview];
-    
+    //: UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    backBtn.frame = CGRectMake(15, SCREEN_STATUS_HEIGHT, 40, 40);
-    [backBtn addTarget:self action:@selector(gotoBack:) forControlEvents:UIControlEventTouchUpInside];
-    [backBtn setImage:[UIImage imageNamed:@"back_arrow_bl"] forState:UIControlStateNormal];
-    [_topview addSubview:backBtn];
-    
-    self.sessionUnreadCount = [NIMSDK sharedSDK].conversationManager.allUnreadCount;
-     _badgeView = [ByBeneathParserSoft viewWithBadgeTip:@""];
-    _badgeView.frame = CGRectMake(backBtn.right+5, backBtn.top+8, 24, 24);
-    [_topview addSubview:_badgeView];
-    _badgeView.badgeValue = self.sessionUnreadCount ? @(self.sessionUnreadCount).stringValue : nil;
-    
-    _labtitle = [[UILabel alloc]initWithFrame:CGRectMake((SCREEN_WIDTH-200)/2, SCREEN_STATUS_HEIGHT, 200, 40)];
-    _labtitle.textColor = [UIColor blackColor];
-    _labtitle.textAlignment = NSTextAlignmentCenter;
-    _labtitle.font = [UIFont boldSystemFontOfSize:16];
-    _labtitle.text = self.sessionTitle;
-    [_topview addSubview:_labtitle];
-    
+    //: backBtn.frame = CGRectMake(15, [UIDevice vg_statusBarHeight], 40, 40);
+    backBtn.frame = CGRectMake(15, [UIDevice filing], 40, 40);
+    //: [backBtn addTarget:self action:@selector(gotoBack:) forControlEvents:UIControlEventTouchUpInside];
+    [backBtn addTarget:self action:@selector(historyState:) forControlEvents:UIControlEventTouchUpInside];
+    //: [backBtn setImage:[UIImage imageNamed:@"back_arrow_bl"] forState:UIControlStateNormal];
+    [backBtn setImage:[UIImage imageNamed:StringFromCraftProfileData(styleInspirationName)] forState:UIControlStateNormal];
+    //: [_topview addSubview:backBtn];
+    [_createRandom addSubview:backBtn];
+
+    //: self.sessionUnreadCount = [NIMSDK sharedSDK].conversationManager.allUnreadCount;
+    self.royalConnect = [NIMSDK sharedSDK].conversationManager.allUnreadCount;
+     //: _badgeView = [ByBeneathParserSoft viewWithBadgeTip:@""];
+     _gravity = [ByBeneathParserSoft beside:@""];
+    //: _badgeView.frame = CGRectMake(backBtn.right+5, backBtn.top+8, 24, 24);
+    _gravity.frame = CGRectMake(backBtn.translate+5, backBtn.civil+8, 24, 24);
+    //: [_topview addSubview:_badgeView];
+    [_createRandom addSubview:_gravity];
+    //: _badgeView.badgeValue = self.sessionUnreadCount ? @(self.sessionUnreadCount).stringValue : nil;
+    _gravity.blueDisplay = self.royalConnect ? @(self.royalConnect).stringValue : nil;
+
+    //: _labtitle = [[UILabel alloc]initWithFrame:CGRectMake(([[UIScreen mainScreen] bounds].size.width-200)/2, [UIDevice vg_statusBarHeight], 200, 40)];
+    _receive = [[UILabel alloc]initWithFrame:CGRectMake(([[UIScreen mainScreen] bounds].size.width-200)/2, [UIDevice filing], 200, 40)];
+    //: _labtitle.textColor = [UIColor blackColor];
+    _receive.textColor = [UIColor blackColor];
+    //: _labtitle.textAlignment = NSTextAlignmentCenter;
+    _receive.textAlignment = NSTextAlignmentCenter;
+    //: _labtitle.font = [UIFont boldSystemFontOfSize:16];
+    _receive.font = [UIFont boldSystemFontOfSize:16];
+    //: _labtitle.text = self.sessionTitle;
+    _receive.text = self.valley;
+    //: [_topview addSubview:_labtitle];
+    [_createRandom addSubview:_receive];
+
 //    _subtitle = [[UILabel alloc]initWithFrame:CGRectMake(_headerImage.right+10, _labtitle.bottom, 100, 20)];
 //    _subtitle.textColor = RGB_COLOR_String(@"777777");
 //    _subtitle.font = [UIFont boldSystemFontOfSize:12];
@@ -270,389 +378,660 @@
 //    }else{
 //        self.subtitle.textColor = RGB_COLOR_String(@"#00B01B");
 //    }
-    
 
-    if (self.session.sessionType == NIMSessionTypeTeam)
+
+    //: if (self.session.sessionType == NIMSessionTypeTeam)
+    if (self.shot.sessionType == NIMSessionTypeTeam)
     {
-        NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.session.sessionId];
-        
+        //: NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.session.sessionId];
+        NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.shot.sessionId];
+
+        //: CGFloat width = 30;
         CGFloat width = 30;
+        //: UIButton *enterTeamCard = [UIButton buttonWithType:UIButtonTypeCustom];
         UIButton *enterTeamCard = [UIButton buttonWithType:UIButtonTypeCustom];
-        [enterTeamCard addTarget:self action:@selector(enterTeamCard:) forControlEvents:UIControlEventTouchUpInside];
+        //: [enterTeamCard addTarget:self action:@selector(enterTeamCard:) forControlEvents:UIControlEventTouchUpInside];
+        [enterTeamCard addTarget:self action:@selector(slided:) forControlEvents:UIControlEventTouchUpInside];
+        //: [enterTeamCard sd_setImageWithURL:[NSURL URLWithString:team.avatarUrl] forState:UIControlStateNormal];
         [enterTeamCard sd_setImageWithURL:[NSURL URLWithString:team.avatarUrl] forState:UIControlStateNormal];
-        [enterTeamCard sd_setImageWithURL:[NSURL URLWithString:team.avatarUrl] forState:(UIControlState)UIControlStateNormal placeholderImage:[UIImage imageNamed:@"head_default_group"]];
-        enterTeamCard.frame = CGRectMake(SCREEN_WIDTH-width-15, SCREEN_STATUS_HEIGHT+10, width, width);
+        //: [enterTeamCard sd_setImageWithURL:[NSURL URLWithString:team.avatarUrl] forState:(UIControlState)UIControlStateNormal placeholderImage:[UIImage imageNamed:@"head_default_group"]];
+        [enterTeamCard sd_setImageWithURL:[NSURL URLWithString:team.avatarUrl] forState:(UIControlState)UIControlStateNormal placeholderImage:[UIImage imageNamed:StringFromCraftProfileData(screenOrientationUtility)]];
+        //: enterTeamCard.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width-width-15, [UIDevice vg_statusBarHeight]+10, width, width);
+        enterTeamCard.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width-width-15, [UIDevice filing]+10, width, width);
+        //: enterTeamCard.layer.cornerRadius = width/2;
         enterTeamCard.layer.cornerRadius = width/2;
+        //: enterTeamCard.layer.masksToBounds = YES;
         enterTeamCard.layer.masksToBounds = YES;
-        [_topview addSubview:enterTeamCard];
+        //: [_topview addSubview:enterTeamCard];
+        [_createRandom addSubview:enterTeamCard];
     }
-    else if(self.session.sessionType == NIMSessionTypeP2P)
+    //: else if(self.session.sessionType == NIMSessionTypeP2P)
+    else if(self.shot.sessionType == NIMSessionTypeP2P)
     {
+        //: CGFloat width = 20;
         CGFloat width = 20;
 
 
-        _btnBlock = [UIButton buttonWithType:UIButtonTypeCustom];
-        _btnBlock.frame = CGRectMake(SCREEN_WIDTH-width*2-15*2, SCREEN_STATUS_HEIGHT+10, width, width);
-        [_btnBlock addTarget:self action:@selector(handlerBtnBlock:) forControlEvents:UIControlEventTouchUpInside];
-        [_btnBlock setImage:[UIImage imageNamed:@"ic_block"] forState:UIControlStateNormal];
-        [_btnBlock setImage:[UIImage imageNamed:@"ic_block_no"] forState:UIControlStateSelected];
-        [_topview addSubview:_btnBlock];
-        
-        BOOL needNotify = [[NIMSDK sharedSDK].userManager notifyForNewMsg:self.session.sessionId];
-        _btnBlock.selected = needNotify;
-        
-        
+        //: _btnBlock = [UIButton buttonWithType:UIButtonTypeCustom];
+        _style = [UIButton buttonWithType:UIButtonTypeCustom];
+        //: _btnBlock.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width-width*2-15*2, [UIDevice vg_statusBarHeight]+10, width, width);
+        _style.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width-width*2-15*2, [UIDevice filing]+10, width, width);
+        //: [_btnBlock addTarget:self action:@selector(handlerBtnBlock:) forControlEvents:UIControlEventTouchUpInside];
+        [_style addTarget:self action:@selector(handlers:) forControlEvents:UIControlEventTouchUpInside];
+        //: [_btnBlock setImage:[UIImage imageNamed:@"ic_block"] forState:UIControlStateNormal];
+        [_style setImage:[UIImage imageNamed:StringFromCraftProfileData(viewIndependencePreference)] forState:UIControlStateNormal];
+        //: [_btnBlock setImage:[UIImage imageNamed:@"ic_block_no"] forState:UIControlStateSelected];
+        [_style setImage:[UIImage imageNamed:StringFromCraftProfileData(viewVeteranNeedPage)] forState:UIControlStateSelected];
+        //: [_topview addSubview:_btnBlock];
+        [_createRandom addSubview:_style];
+
+        //: BOOL needNotify = [[NIMSDK sharedSDK].userManager notifyForNewMsg:self.session.sessionId];
+        BOOL needNotify = [[NIMSDK sharedSDK].userManager notifyForNewMsg:self.shot.sessionId];
+        //: _btnBlock.selected = needNotify;
+        _style.selected = needNotify;
+
+
+        //: UIButton *infoBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         UIButton *infoBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [infoBtn addTarget:self action:@selector(enterPersonInfoCard:) forControlEvents:UIControlEventTouchUpInside];
-        [infoBtn setImage:[UIImage imageNamed:@"ic_more"] forState:UIControlStateNormal];
-        infoBtn.frame = CGRectMake(SCREEN_WIDTH-width-15, SCREEN_STATUS_HEIGHT+10, width, width);
-        [_topview addSubview:infoBtn];
+        //: [infoBtn addTarget:self action:@selector(enterPersonInfoCard:) forControlEvents:UIControlEventTouchUpInside];
+        [infoBtn addTarget:self action:@selector(findEnable:) forControlEvents:UIControlEventTouchUpInside];
+        //: [infoBtn setImage:[UIImage imageNamed:@"ic_more"] forState:UIControlStateNormal];
+        [infoBtn setImage:[UIImage imageNamed:StringFromCraftProfileData(commonMatedDevice)] forState:UIControlStateNormal];
+        //: infoBtn.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width-width-15, [UIDevice vg_statusBarHeight]+10, width, width);
+        infoBtn.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width-width-15, [UIDevice filing]+10, width, width);
+        //: [_topview addSubview:infoBtn];
+        [_createRandom addSubview:infoBtn];
     }
- 
-    
-    
-}
-#pragma mark - 导航按钮
-- (void)handlerBtnBlock:(UIButton *)sender
-{
-    sender.selected = !sender.selected;
-        [SpiceHandyKnack show];
-        __weak typeof(self) wself = self;
-    [[NIMSDK sharedSDK].userManager updateNotifyState:sender.selected forUser:self.session.sessionId completion:^(NSError *error) {
-            [SpiceHandyKnack dismiss];
-            if (error) {
-                [wself.view makeToast:LangKey(@"group_info_activity_op_failed") duration:2.0f position:CSToastPositionCenter];
-            }
-        }];
-}
-- (void)enterPersonInfoCard:(id)sender
-{
-    BreezyOnyxSpontaneousStair *vc = [[BreezyOnyxSpontaneousStair alloc] initWithUserId:self.session.sessionId];
-    [self.navigationController pushViewController:vc animated:YES];
-    
-}
-- (void)enterTeamCard:(id)sender {
-    OntoTopHandlerRotate *vc = nil;
-    OntoTopHandlerRotateOption *option = [[OntoTopHandlerRotateOption alloc] init];
-    option.isTop = [NIMSDK.sharedSDK.chatExtendManager stickTopInfoForSession:self.session] != nil;
 
-    NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.session.sessionId];
-    if(team.type == NIMTeamTypeAdvanced){
-            vc = [[ResizeCoherentCollector alloc] initWithTeam:team
-                                                                 session:self.session
-                                                                  option:option];
-            vc.delegate = self;
-            vc.canMemberInfo = self.canMemberInfo;
+
+
+}
+
+//: - (void)refreshSessionBadge
+- (void)flush
+{
+
+    //: if(self.sessionUnreadCount>0){
+    if(self.royalConnect>0){
+        //: _badgeView.badgeValue = self.sessionUnreadCount ? @(self.sessionUnreadCount).stringValue : nil;
+        _gravity.blueDisplay = self.royalConnect ? @(self.royalConnect).stringValue : nil;
+        //: _badgeView.hidden = NO;
+        _gravity.hidden = NO;
+//        _labtitle.frame = CGRectMake(_badgeView.right+10, SCREEN_STATUS_HEIGHT, 100, 40);
     }
-    
-    if (vc) {
-        [self.navigationController pushViewController:vc animated:YES];
+    //: else{
+    else{
+        //: _badgeView.hidden = YES;
+        _gravity.hidden = YES;
+//        _labtitle.frame = CGRectMake(65, SCREEN_STATUS_HEIGHT, 200, 40);
     }
 }
 
-- (void)gotoBack:(id)sender {
-    [self.navigationController popViewControllerAnimated:NO];
+//: - (void)uiPinMessage:(NIMMessage *)message
+- (void)pinFootTelegram:(NIMMessage *)message
+{
+    //: [self.interactor addPinForMessage:message];
+    [self.numberro mixHideCommunicationDate:message];
 }
 
-- (void)setupTableView
+//: #pragma mark - DeriveFacadeDelegate
+#pragma mark - DeriveFacadeDelegate
+
+//: - (void)didFetchMessageData
+- (void)fetchAndData
 {
-    CGFloat safeAreaInsetsBottom = [UIDevice vg_safeDistanceBottom];
-    CGFloat containerSafeHeight = [UIScreen mainScreen].bounds.size.height - safeAreaInsetsBottom - SCREEN_TOP_HEIGHT;
-    
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, SCREEN_TOP_HEIGHT, [UIScreen mainScreen].bounds.size.width, containerSafeHeight-51) style:UITableViewStylePlain];
-//    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, SCREEN_TOP_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT-SCREEN_TOP_HEIGHT-SCREEN_TABBAR_HEIGHT-SCREEN_BOTTOM_HEIGHT) style:UITableViewStylePlain];
-//    self.tableView.backgroundColor = NEEKIT_UIColorFromRGB(0xe4e7ec);
-    self.tableView.backgroundColor = [UIColor clearColor];
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    self.tableView.estimatedRowHeight = 0;
-    self.tableView.estimatedSectionHeaderHeight = 0;
-    self.tableView.estimatedSectionFooterHeight = 0;
-    self.tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    self.tableViewTapGesture = [[UITapGestureRecognizer alloc] init];
-    self.tableViewTapGesture.cancelsTouchesInView = NO;
-    [self.tableViewTapGesture addTarget:self action:@selector(onTapTableView:)];
-    [self.tableView addGestureRecognizer:self.tableViewTapGesture];
-    self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
-    
-//    if ([self.sessionConfig respondsToSelector:@selector(sessionBackgroundImage)] && [self.sessionConfig sessionBackgroundImage]) {
-//        UIImageView *imgView = [[UIImageView alloc] initWithFrame:self.view.bounds];
-//        imgView.image = [self.sessionConfig sessionBackgroundImage];
-//        imgView.contentMode = UIViewContentModeScaleAspectFill;
-//        self.tableView.backgroundView = imgView;
-//    }
-    [self.view addSubview:self.tableView];
-    
+//    [self uiCheckReceipts:nil];
+    //: [self.tableView reloadData];
+    [self.quickResponse reloadData];
+//    [self.tableView nim_scrollToBottom:NO];
 }
 
-
-- (void)setupInputView
+//: - (UIView *)photopicview
+- (UIView *)multi
 {
-    if ([self shouldShowInputView])
-    {
-        self.sessionInputView = [[LoyalOverResume alloc] initWithFrame:CGRectMake(0, 0, self.view.device_width,0) config:self.sessionConfig];
-        self.sessionInputView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
-        [self.sessionInputView setSession:self.session];
-        [self.sessionInputView setInputDelegate:self];
-        [self.sessionInputView setInputActionDelegate:self];
-        [self.sessionInputView refreshStatus:LayoutMerryOntoText];
-        [self.view addSubview:_sessionInputView];
-        self.tableView.bottom = self.sessionInputView.top;
-//        self.tableView.top = self.topview.bottom;
-        [self.tableView sizeToFit];
+    //: if (!_photopicview) {
+    if (!_multi) {
+        //: _photopicview = [[UIView alloc]initWithFrame:CGRectMake(([[UIScreen mainScreen] bounds].size.width-240)/2, [[UIScreen mainScreen] bounds].size.height-(({UIEdgeInsets i; if(@available(iOS 11.0, *)) {i = ({UIWindow *win = nil; if (@available(iOS 13.0, *)) { NSSet *connectedScenes = [UIApplication sharedApplication].connectedScenes; for (UIScene *scene in connectedScenes) { if ([scene isKindOfClass:[UIWindowScene class]] && scene.activationState == UISceneActivationStateForegroundActive) { UIWindowScene *windowScene = (UIWindowScene *)scene; for (UIWindow *w in windowScene.windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = windowScene.windows.firstObject; } if (win) { break; } } } } if (!win) { for (UIWindow *w in [UIApplication sharedApplication].windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = [UIApplication sharedApplication].windows.firstObject; } } if (!win) { if ([[UIApplication sharedApplication] delegate] && [[[UIApplication sharedApplication] delegate] respondsToSelector:@selector(window)]) { win = [[[UIApplication sharedApplication] delegate] window]; } } win;}).safeAreaInsets;} else {i = UIEdgeInsetsZero;} i;}).bottom)-78-60, 240, 78)];
+        _multi = [[UIView alloc]initWithFrame:CGRectMake(([[UIScreen mainScreen] bounds].size.width-240)/2, [[UIScreen mainScreen] bounds].size.height-(({UIEdgeInsets i; if(@available(iOS 11.0, *)) {i = ({UIWindow *win = nil; if (@available(iOS 13.0, *)) { NSSet *connectedScenes = [UIApplication sharedApplication].connectedScenes; for (UIScene *scene in connectedScenes) { if ([scene isKindOfClass:[UIWindowScene class]] && scene.activationState == UISceneActivationStateForegroundActive) { UIWindowScene *windowScene = (UIWindowScene *)scene; for (UIWindow *w in windowScene.windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = windowScene.windows.firstObject; } if (win) { break; } } } } if (!win) { for (UIWindow *w in [UIApplication sharedApplication].windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = [UIApplication sharedApplication].windows.firstObject; } } if (!win) { if ([[UIApplication sharedApplication] delegate] && [[[UIApplication sharedApplication] delegate] respondsToSelector:@selector(factoryLarging)]) { win = [[[UIApplication sharedApplication] delegate] window]; } } win;}).safeAreaInsets;} else {i = UIEdgeInsetsZero;} i;}).bottom)-78-60, 240, 78)];
+        //: _photopicview.backgroundColor = [UIColor whiteColor];
+        _multi.backgroundColor = [UIColor whiteColor];
+        //: _photopicview.layer.cornerRadius = 12;
+        _multi.layer.cornerRadius = 12;
+        //: _photopicview.layer.masksToBounds = YES;
+        _multi.layer.masksToBounds = YES;
+        //: _photopicview.hidden = YES;
+        _multi.hidden = YES;
+
+        //: UIButton *btnAlbum = [UIButton buttonWithType:UIButtonTypeCustom];
+        UIButton *btnAlbum = [UIButton buttonWithType:UIButtonTypeCustom];
+        //: btnAlbum.frame = CGRectMake(0, 0, 120, 78);
+        btnAlbum.frame = CGRectMake(0, 0, 120, 78);
+//        btnAlbum.backgroundColor = ThemeColor;
+        //: [btnAlbum setImage:[UIImage imageNamed:@"icon_toolview_album"] forState:UIControlStateNormal];
+        [btnAlbum setImage:[UIImage imageNamed:StringFromCraftProfileData(colorShrugPlatform)] forState:UIControlStateNormal];
+//        btnAlbum.layer.cornerRadius = 20;
+        //: [btnAlbum addTarget:self action:@selector(handleAlbumBtn) forControlEvents:UIControlEventTouchUpInside];
+        [btnAlbum addTarget:self action:@selector(nowStorm) forControlEvents:UIControlEventTouchUpInside];
+        //: btnAlbum.titleLabel.font = [UIFont systemFontOfSize:14];
+        btnAlbum.titleLabel.font = [UIFont systemFontOfSize:14];
+        //: [btnAlbum setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [btnAlbum setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        //: [btnAlbum setTitle:[PluginTulipOptimize getTextWithKey:@"message_send_album"] forState:UIControlStateNormal];
+        [btnAlbum setTitle:[PluginTulipOptimize richness:StringFromCraftProfileData(componentAccomplishHelper)] forState:UIControlStateNormal];
+        //: [btnAlbum layoutButtonWithEdgeInsetsStyle:(PositiveEstuaryWarehouseDapperEdgeInsetsStyleTop) imageTitleSpace:10];
+        [btnAlbum delay:(PositiveEstuaryWarehouseDapperEdgeInsetsStyleTop) reign:10];
+        //: [_photopicview addSubview:btnAlbum];
+        [_multi addSubview:btnAlbum];
+
+        //: UIButton *btnShot = [UIButton buttonWithType:UIButtonTypeCustom];
+        UIButton *btnShot = [UIButton buttonWithType:UIButtonTypeCustom];
+        //: btnShot.frame = CGRectMake(120, 0, 120, 78);
+        btnShot.frame = CGRectMake(120, 0, 120, 78);
+//        btnShot.backgroundColor = ThemeColor;
+        //: [btnShot setImage:[UIImage imageNamed:@"icon_toolview_camera"] forState:UIControlStateNormal];
+        [btnShot setImage:[UIImage imageNamed:StringFromCraftProfileData(commonServingPath)] forState:UIControlStateNormal];
+//        btnShot.layer.cornerRadius = 20;
+        //: [btnShot addTarget:self action:@selector(handleShotBtn) forControlEvents:UIControlEventTouchUpInside];
+        [btnShot addTarget:self action:@selector(juggleGunshot) forControlEvents:UIControlEventTouchUpInside];
+        //: btnShot.titleLabel.font = [UIFont systemFontOfSize:14];
+        btnShot.titleLabel.font = [UIFont systemFontOfSize:14];
+        //: [btnShot setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [btnShot setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        //: [btnShot setTitle:[PluginTulipOptimize getTextWithKey:@"message_send_camera"] forState:UIControlStateNormal];
+        [btnShot setTitle:[PluginTulipOptimize richness:StringFromCraftProfileData(widgetDifferentData)] forState:UIControlStateNormal];
+        //: [btnShot layoutButtonWithEdgeInsetsStyle:(PositiveEstuaryWarehouseDapperEdgeInsetsStyleTop) imageTitleSpace:10];
+        [btnShot delay:(PositiveEstuaryWarehouseDapperEdgeInsetsStyleTop) reign:10];
+        //: [_photopicview addSubview:btnShot];
+        [_multi addSubview:btnShot];
     }
+    //: return _photopicview;
+    return _multi;
 }
 
 
-- (void)setupConfigurator
+//: #pragma mark - 会话title
+#pragma mark - 会话title
+//: - (NSString *)sessionTitle
+- (NSString *)valley
 {
-    _configurator = [[DeriveFacade alloc] init];
-    [_configurator setup:self];
-    
-    BOOL needProximityMonitor = [self needProximityMonitor];
-    [[NIMSDK sharedSDK].mediaManager setNeedProximityMonitor:needProximityMonitor];
-}
+    //: NSString *title = @"";
+    NSString *title = @"";
+    //: NIMSessionType type = self.session.sessionType;
+    NIMSessionType type = self.shot.sessionType;
+    //: switch (type) {
+    switch (type) {
+        //: case NIMSessionTypeTeam:{
+        case NIMSessionTypeTeam:{
+            //: NIMTeam *team = [[[NIMSDK sharedSDK] teamManager] teamById:self.session.sessionId];
+            NIMTeam *team = [[[NIMSDK sharedSDK] teamManager] teamById:self.shot.sessionId];
+            //: title = [NSString stringWithFormat:@"%@(%zd)",[team teamName],[team memberNumber]];
+            title = [NSString stringWithFormat:@"%@(%zd)",[team teamName],[team memberNumber]];
+            //: title = [NSString stringWithFormat:@"%@",[team teamName]];
+            title = [NSString stringWithFormat:@"%@",[team teamName]];//不要人数
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    [self.interactor onViewWillAppear];
-    [self addListener];
-    
-    self.sessionUnreadCount = [NIMSDK sharedSDK].conversationManager.allUnreadCount;
-    [self refreshSessionBadge];
-    [self.navigationController.navigationBar setHidden:YES];
-    [self.tableView reloadData];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-    [self.sessionInputView endEditing:YES];
-    // 隐藏长按弹窗
-    [ToMediatorShore.shareMenuView removeFromSuperview];
-    [self.navigationController.navigationBar setHidden:NO];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-    [super viewDidDisappear:animated];
-    [self.interactor onViewDidDisappear];
-    [[NIMSDK sharedSDK].mediaManager removeDelegate:self];
-}
-
-- (void)viewDidLayoutSubviews
-{
-    [super viewDidLayoutSubviews];
-//    [self changeLeftBarBadge:self.conversationManager.allUnreadCount];
-    [self.interactor resetLayout];
-}
-
-- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-//    [self.serviceContentTextView hideTextSelection];
-    [ToMediatorShore.shareMenuView removeFromSuperview];
-    [self.view endEditing:YES];
-}
-
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    if ([scrollView isKindOfClass:[UITextView class]]) {
-        [ToMediatorShore.shareMenuView removeFromSuperview];
-    }
-    [self.view endEditing:YES];
-}
-
-
-
-#pragma mark - 消息收发接口
-- (void)sendMessage:(NIMMessage *)message
-{
-    [self.interactor sendMessage:message toMessage:nil];
-    dispatch_async(dispatch_get_main_queue(), ^{
-       [self cleanMenuMessage];
-    });
-}
-
-- (void)sendMessage:(NIMMessage *)message completion:(void(^)(NSError * err))completion
-{
-    __weak typeof(self) weakSelf = self;
-    [self.interactor sendMessage:message
-                        toMessage:nil
-                      completion:^(NSError *err)
-    {
-        if (completion)
-        {
-            completion(err);
         }
-        [weakSelf cleanMenuMessage];
+            //: break;
+            break;
+        //: case NIMSessionTypeP2P:{
+        case NIMSessionTypeP2P:{
+            //: title = [LoadHoldLoosePeaceful showNick:self.session.sessionId inSession:self.session];
+            title = [LoadHoldLoosePeaceful apply:self.shot.sessionId refuse:self.shot];
+        }
+            //: break;
+            break;
+        //: case NIMSessionTypeSuperTeam: {
+        case NIMSessionTypeSuperTeam: {
+            //: NIMTeam *team = [[[NIMSDK sharedSDK] superTeamManager] teamById:self.session.sessionId];
+            NIMTeam *team = [[[NIMSDK sharedSDK] superTeamManager] teamById:self.shot.sessionId];
+            //: title = [NSString stringWithFormat:@"%@(%zd)",[team teamName],[team memberNumber]];
+            title = [NSString stringWithFormat:@"%@(%zd)",[team teamName],[team memberNumber]];
+            //: title = [NSString stringWithFormat:@"%@",[team teamName]];
+            title = [NSString stringWithFormat:@"%@",[team teamName]];//不要人数
+
+        }
+        //: default:
+        default:
+            //: break;
+            break;
+    }
+    //: return title;
+    return title;
+}
+
+//: - (void)onSelectChartlet:(NSString *)chartletId
+- (void)trackOf:(NSString *)chartletId
+                 //: catalog:(NSString *)catalogId
+                 handle:(NSString *)catalogId
+{
+//    NSBundle *bundle = [TowerTinyGranularLarge sharedKit].emoticonBundle;
+//    NSData *imageData = [NSData dataWithContentsOfFile:[bundle pathForResource:chartletId ofType:nil inDirectory:NEEKIT_EmojiPath]];
+    //: NSString *emojiPath = [[FertileViableAssemblerManager sharedManager] getEmojiPath];
+    NSString *emojiPath = [[FertileViableAssemblerManager commonSumManagingDirector] takePathEmoji];
+    //: NSString *imagePath = [emojiPath stringByAppendingPathComponent:chartletId];
+    NSString *imagePath = [emojiPath stringByAppendingPathComponent:chartletId];
+    //: NSData *imageData = [NSData dataWithContentsOfFile:imagePath];
+    NSData *imageData = [NSData dataWithContentsOfFile:imagePath];
+
+//    UIImage *gif = [UIImage sd_imageWithGIFData:imageData];
+//
+//    NIMMessage *message = [PositionSelectorUpdaterDecode msgWithImage:gif];
+//    [self sendMessage:message];
+//
+
+    //: NIMMessage *message = [PositionSelectorUpdaterDecode msgWithImageData:imageData extension:@""];
+    NIMMessage *message = [PositionSelectorUpdaterDecode resolve:imageData current:@""];
+//    message.messageSubType = 77;//标记gif用
+    //: NSMutableDictionary *dic = [[JunctionCacheLarge sharedConfig] Gdic];
+    NSMutableDictionary *dic = [[JunctionCacheLarge ceremony] characteristicGdic];
+//    NSData *imageData = UIImagePNGRepresentation(image);
+    //: [dic setObject:imageData forKey:message.messageId];
+    [dic setObject:imageData forKey:message.messageId];
+
+    //: [self sendMessage:message];
+    [self circuitWritten:message];
+
+    //: [self.sessionInputView.toolBar setPlaceHolder:[PluginTulipOptimize getTextWithKey:@"message_please_enter_content"]];
+    [self.delivery.bar setBeyondSuspend:[PluginTulipOptimize richness:StringFromCraftProfileData(commonRumorPage)]];
+
+//    [self.sessionInputView endEditing:YES];
+}
+//: - (void)handleParentTap
+- (void)searchionRaw
+{
+    //: [self.customAlbumView animationClose];
+    [self.candidCalibrateJovial coolMode];
+}
+//: - (BOOL)canBecomeFirstResponder
+- (BOOL)canBecomeFirstResponder
+{
+    //: return YES;
+    return YES;
+}
+//: - (UIButton *)btnAudio
+- (UIButton *)listen
+{
+    //: if (!_btnAudio) {
+    if (!_listen) {
+        //: _btnAudio = [UIButton buttonWithType:UIButtonTypeCustom];
+        _listen = [UIButton buttonWithType:UIButtonTypeCustom];
+        //: _btnAudio.frame = CGRectMake(12, ([[UIScreen mainScreen] bounds].size.height - (44.0f + [UIDevice vg_statusBarHeight]) - (({UIEdgeInsets i; if(@available(iOS 11.0, *)) {i = ({UIWindow *win = nil; if (@available(iOS 13.0, *)) { NSSet *connectedScenes = [UIApplication sharedApplication].connectedScenes; for (UIScene *scene in connectedScenes) { if ([scene isKindOfClass:[UIWindowScene class]] && scene.activationState == UISceneActivationStateForegroundActive) { UIWindowScene *windowScene = (UIWindowScene *)scene; for (UIWindow *w in windowScene.windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = windowScene.windows.firstObject; } if (win) { break; } } } } if (!win) { for (UIWindow *w in [UIApplication sharedApplication].windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = [UIApplication sharedApplication].windows.firstObject; } } if (!win) { if ([[UIApplication sharedApplication] delegate] && [[[UIApplication sharedApplication] delegate] respondsToSelector:@selector(window)]) { win = [[[UIApplication sharedApplication] delegate] window]; } } win;}).safeAreaInsets;} else {i = UIEdgeInsetsZero;} i;}).bottom))-(({UIEdgeInsets i; if(@available(iOS 11.0, *)) {i = ({UIWindow *win = nil; if (@available(iOS 13.0, *)) { NSSet *connectedScenes = [UIApplication sharedApplication].connectedScenes; for (UIScene *scene in connectedScenes) { if ([scene isKindOfClass:[UIWindowScene class]] && scene.activationState == UISceneActivationStateForegroundActive) { UIWindowScene *windowScene = (UIWindowScene *)scene; for (UIWindow *w in windowScene.windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = windowScene.windows.firstObject; } if (win) { break; } } } } if (!win) { for (UIWindow *w in [UIApplication sharedApplication].windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = [UIApplication sharedApplication].windows.firstObject; } } if (!win) { if ([[UIApplication sharedApplication] delegate] && [[[UIApplication sharedApplication] delegate] respondsToSelector:@selector(window)]) { win = [[[UIApplication sharedApplication] delegate] window]; } } win;}).safeAreaInsets;} else {i = UIEdgeInsetsZero;} i;}).bottom)-40, 40, 40);
+        _listen.frame = CGRectMake(12, ([[UIScreen mainScreen] bounds].size.height - (44.0f + [UIDevice filing]) - (({UIEdgeInsets i; if(@available(iOS 11.0, *)) {i = ({UIWindow *win = nil; if (@available(iOS 13.0, *)) { NSSet *connectedScenes = [UIApplication sharedApplication].connectedScenes; for (UIScene *scene in connectedScenes) { if ([scene isKindOfClass:[UIWindowScene class]] && scene.activationState == UISceneActivationStateForegroundActive) { UIWindowScene *windowScene = (UIWindowScene *)scene; for (UIWindow *w in windowScene.windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = windowScene.windows.firstObject; } if (win) { break; } } } } if (!win) { for (UIWindow *w in [UIApplication sharedApplication].windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = [UIApplication sharedApplication].windows.firstObject; } } if (!win) { if ([[UIApplication sharedApplication] delegate] && [[[UIApplication sharedApplication] delegate] respondsToSelector:@selector(factoryLarging)]) { win = [[[UIApplication sharedApplication] delegate] window]; } } win;}).safeAreaInsets;} else {i = UIEdgeInsetsZero;} i;}).bottom))-(({UIEdgeInsets i; if(@available(iOS 11.0, *)) {i = ({UIWindow *win = nil; if (@available(iOS 13.0, *)) { NSSet *connectedScenes = [UIApplication sharedApplication].connectedScenes; for (UIScene *scene in connectedScenes) { if ([scene isKindOfClass:[UIWindowScene class]] && scene.activationState == UISceneActivationStateForegroundActive) { UIWindowScene *windowScene = (UIWindowScene *)scene; for (UIWindow *w in windowScene.windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = windowScene.windows.firstObject; } if (win) { break; } } } } if (!win) { for (UIWindow *w in [UIApplication sharedApplication].windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = [UIApplication sharedApplication].windows.firstObject; } } if (!win) { if ([[UIApplication sharedApplication] delegate] && [[[UIApplication sharedApplication] delegate] respondsToSelector:@selector(factoryLarging)]) { win = [[[UIApplication sharedApplication] delegate] window]; } } win;}).safeAreaInsets;} else {i = UIEdgeInsetsZero;} i;}).bottom)-40, 40, 40);
+        //: _btnAudio.backgroundColor = [UIColor colorWithHexString:@"#EA7AFF"];
+        _listen.backgroundColor = [UIColor tin:StringFromCraftProfileData(spacingAliveLogger)];
+        //: [_btnAudio setImage:[UIImage imageNamed:@"icon_toolview_voice_normal"] forState:UIControlStateNormal];
+        [_listen setImage:[UIImage imageNamed:StringFromCraftProfileData(coreTalentPage)] forState:UIControlStateNormal];
+        //: _btnAudio.layer.cornerRadius = 20;
+        _listen.layer.cornerRadius = 20;
+        //: [_btnAudio addTarget:self action:@selector(handleAudioBtn) forControlEvents:UIControlEventTouchUpInside];
+        [_listen addTarget:self action:@selector(versionBtn) forControlEvents:UIControlEventTouchUpInside];
+
+    }
+    //: return _btnAudio;
+    return _listen;
+}
+
+//: - (void)uiInsertMessages:(NSArray *)messages
+- (void)pick:(NSArray *)messages
+{
+    //: [self.interactor insertMessages:messages];
+    [self.numberro singleMessages:messages];
+}
+
+//获取图片
+//: - (void)getOriginalImageFromAsset:(PHAsset *)asset completion:(void (^)(UIImage *image))completion {
+- (void)unitOfTime:(PHAsset *)asset appOf:(void (^)(UIImage *image))completion {
+    //: PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
+    PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
+    //: options.version = PHImageRequestOptionsVersionOriginal;
+    options.version = PHImageRequestOptionsVersionOriginal;
+    //: options.deliveryMode = PHImageRequestOptionsDeliveryModeHighQualityFormat;
+    options.deliveryMode = PHImageRequestOptionsDeliveryModeHighQualityFormat;
+    //: options.networkAccessAllowed = YES;
+    options.networkAccessAllowed = YES;
+
+    //: [[PHImageManager defaultManager] requestImageDataForAsset:asset
+    [[PHImageManager defaultManager] requestImageDataForAsset:asset
+                                                     //: options:options
+                                                     options:options
+                                               //: resultHandler:^(NSData * _Nullable imageData, NSString * _Nullable dataUTI, UIImageOrientation orientation, NSDictionary * _Nullable info) {
+                                               resultHandler:^(NSData * _Nullable imageData, NSString * _Nullable dataUTI, UIImageOrientation orientation, NSDictionary * _Nullable info) {
+        //: if (imageData) {
+        if (imageData) {
+            //: UIImage *image = [UIImage imageWithData:imageData];
+            UIImage *image = [UIImage imageWithData:imageData];
+            //: completion(image);
+            completion(image);
+        //: } else {
+        } else {
+            //: completion(nil);
+            completion(nil);
+        }
+    //: }];
     }];
 }
 
 
-#pragma mark - DeriveFacadeDelegate
-
-- (void)didFetchMessageData
-{
-//    [self uiCheckReceipts:nil];
-    [self.tableView reloadData];
-//    [self.tableView nim_scrollToBottom:NO];
-}
-
-- (void)didRefreshMessageData
-{
-    [self refreshSessionTitle:self.sessionTitle];
-    [self refreshSessionSubTitle:self.sessionSubTitle];
-    [self.tableView reloadData];
-}
-
-- (void)didPullUpMessageData {}
-
-#pragma mark - 会话title
-- (NSString *)sessionTitle
-{
-    NSString *title = @"";
-    NIMSessionType type = self.session.sessionType;
-    switch (type) {
-        case NIMSessionTypeTeam:{
-            NIMTeam *team = [[[NIMSDK sharedSDK] teamManager] teamById:self.session.sessionId];
-            title = [NSString stringWithFormat:@"%@(%zd)",[team teamName],[team memberNumber]];
-            title = [NSString stringWithFormat:@"%@",[team teamName]];//不要人数
-
-        }
-            break;
-        case NIMSessionTypeP2P:{
-            title = [LoadHoldLoosePeaceful showNick:self.session.sessionId inSession:self.session];
-        }
-            break;
-        case NIMSessionTypeSuperTeam: {
-            NIMTeam *team = [[[NIMSDK sharedSDK] superTeamManager] teamById:self.session.sessionId];
-            title = [NSString stringWithFormat:@"%@(%zd)",[team teamName],[team memberNumber]];
-            title = [NSString stringWithFormat:@"%@",[team teamName]];//不要人数
-
-        }
-        default:
-            break;
-    }
-    return title;
-}
-
-- (NSString *)sessionSubTitle{return @"";};
-
-#pragma mark - 状态操作
-- (DropdownSpringEndExtract)sessionState {
-    return [self.interactor sessionState];
-}
-
-- (void)setSessionState:(DropdownSpringEndExtract)state {
-    [self.interactor setSessionState:state];
-}
-
-#pragma mark - NIMChatManagerDelegate
-//开始发送
-- (void)willSendMessage:(NIMMessage *)message
-{
-    id<ThreadDurableSturdyBuoyant> interactor = self.interactor;
-    
-    if ([message.session isEqual:self.session]) {
-        if ([interactor findMessageModel:message]) {
-            [interactor updateMessage:message];
+//: - (void)recordAudio:(NSString *)filePath didCompletedWithError:(NSError *)error {
+- (void)recordAudio:(NSString *)filePath didCompletedWithError:(NSError *)error {
+    //: if(!error) {
+    if(!error) {
+        //: if ([self recordFileCanBeSend:filePath]) {
+        if ([self with:filePath]) {
+            //: [self sendMessage:[PositionSelectorUpdaterDecode msgWithAudio:filePath]];
+            [self circuitWritten:[PositionSelectorUpdaterDecode vocalism:filePath]];
+        //: }else{
         }else{
-            [interactor addMessages:@[message]];
+            //: [self showRecordFileNotSendReason];
+            [self perspectiveCur];
         }
+    //: } else {
+    } else {
+        //: [self onRecordFailed:error];
+        [self mark:error];
     }
+    //: _sessionInputView.recording = NO;
+    _delivery.delay = NO;
 }
 
-//上传资源文件成功
-- (void)uploadAttachmentSuccess:(NSString *)urlString
-                     forMessage:(NIMMessage *)message
+
+//: - (void)onCancelRecording
+- (void)convertReplace
 {
-    //如果需要使用富文本推送，可以在这里进行 message apns payload 的设置
+    //: [[NIMSDK sharedSDK].mediaManager cancelRecord];
+    [[NIMSDK sharedSDK].mediaManager cancelRecord];
+}
+
+//: #pragma mark - 标记已读
+#pragma mark - 标记已读
+//: - (void)markRead
+- (void)untilOrientationRead
+{
+    //: [self.interactor markRead:YES];
+    [self.numberro construct:YES];
+}
+
+//: - (void)hadCommentThisMessage:(NIMMessage *)message
+- (void)magnitudeDown:(NIMMessage *)message
+                         //: type:(int64_t)type
+                         bank4t:(int64_t)type
+                    //: compltion:(void(^)(NSMapTable *))completion
+                    chase:(void(^)(NSMapTable *))completion
+{
+    //: [[NIMSDK sharedSDK].chatExtendManager quickCommentsByMessage:message completion:^(NSError * _Nullable error, NSMapTable<NSNumber *,NSArray<NIMQuickComment *> * >* _Nullable result) {
+    [[NIMSDK sharedSDK].chatExtendManager quickCommentsByMessage:message completion:^(NSError * _Nullable error, NSMapTable<NSNumber *,NSArray<NIMQuickComment *> * >* _Nullable result) {
+        //: if (completion)
+        if (completion)
+        {
+            //: completion(result);
+            completion(result);
+        }
+    //: }];
+    }];
+}
+
+//: - (void)onSendText:(NSString *)text atUsers:(NSArray *)atUsers
+- (void)alongTing:(NSString *)text writtenMatter_strong:(NSArray *)atUsers
+{
+    //: NSMutableArray *users = [NSMutableArray arrayWithArray:atUsers];
+    NSMutableArray *users = [NSMutableArray arrayWithArray:atUsers];
+    //: if (self.session.sessionType == NIMSessionTypeP2P)
+    if (self.shot.sessionType == NIMSessionTypeP2P)
+    {
+        //: [users addObject:self.session.sessionId];
+        [users addObject:self.shot.sessionId];
+    }
+
+    //: NIMMessage *message = [PositionSelectorUpdaterDecode msgWithText:text];
+    NIMMessage *message = [PositionSelectorUpdaterDecode smooth:text];
+    //: if (atUsers.count)
+    if (atUsers.count)
+    {
+        //: NIMMessageApnsMemberOption *apnsOption = [[NIMMessageApnsMemberOption alloc] init];
+        NIMMessageApnsMemberOption *apnsOption = [[NIMMessageApnsMemberOption alloc] init];
+        //: apnsOption.userIds = atUsers;
+        apnsOption.userIds = atUsers;
+        //: apnsOption.forcePush = YES;
+        apnsOption.forcePush = YES;
+
+        //: NovelHillConverterInspector *option = [[NovelHillConverterInspector alloc] init];
+        NovelHillConverterInspector *option = [[NovelHillConverterInspector alloc] init];
+        //: option.session = self.session;
+        option.careful = self.shot;
+
+        //: NSString *me = [[TowerTinyGranularLarge sharedKit].provider infoByUser:[NIMSDK sharedSDK].loginManager.currentAccount option:option].showName;
+        NSString *me = [[TowerTinyGranularLarge basicDragKit].conditionCompareVisitor screenOption:[NIMSDK sharedSDK].loginManager.currentAccount byProduct:option].showNumberro;
+        //: apnsOption.apnsContent = [NSString stringWithFormat:@"%@在群里@了你".nim_localized, me];
+        apnsOption.apnsContent = [NSString stringWithFormat:StringFromCraftProfileData(viewIndeedError).totalroStructure, me];
+        //: message.apnsMemberOption = apnsOption;
+        message.apnsMemberOption = apnsOption;
+    }
+
+    //: [self sendMessage:message];
+    [self circuitWritten:message];
+}
+
+//: - (void)refreshMessages
+- (void)perform
+{
+    //: [self.interactor resetMessages:nil];
+    [self.numberro spiritualty:nil];
+}
+
+//: - (void)viewDidLayoutSubviews
+- (void)viewDidLayoutSubviews
+{
+    //: [super viewDidLayoutSubviews];
+    [super viewDidLayoutSubviews];
+//    [self changeLeftBarBadge:self.conversationManager.allUnreadCount];
+    //: [self.interactor resetLayout];
+    [self.numberro specklessEarly];
+}
+
+//: - (void)uiUnpinMessage:(NIMMessage *)message
+- (void)past:(NIMMessage *)message
+{
+    //: [self.interactor removePinForMessage:message];
+    [self.numberro knapDownSkyDedication:message];
+}
+
+
+
+//获取当前最上层的控制器
+//: - (UIViewController *)getTopMostController {
+- (UIViewController *)regionAlong {
+    //: UIViewController *topVC = [UIApplication sharedApplication].windows.firstObject.rootViewController;
+    UIViewController *topVC = [UIApplication sharedApplication].windows.firstObject.rootViewController;
+    //循环之前tempVC和topVC是一样的
+    //: UIViewController *tempVC = topVC;
+    UIViewController *tempVC = topVC;
+    //: while (1) {
+    while (1) {
+        //: if ([topVC isKindOfClass:[UITabBarController class]]) {
+        if ([topVC isKindOfClass:[UITabBarController class]]) {
+            //: topVC = ((UITabBarController*)topVC).selectedViewController;
+            topVC = ((UITabBarController*)topVC).selectedViewController;
+        }
+        //: if ([topVC isKindOfClass:[UINavigationController class]]) {
+        if ([topVC isKindOfClass:[UINavigationController class]]) {
+            //: topVC = ((UINavigationController*)topVC).visibleViewController;
+            topVC = ((UINavigationController*)topVC).visibleViewController;
+        }
+        //: if (topVC.presentedViewController) {
+        if (topVC.presentedViewController) {
+            //: topVC = topVC.presentedViewController;
+            topVC = topVC.presentedViewController;
+        }
+        //如果两者一样，说明循环结束了
+        //: if ([tempVC isEqual:topVC]) {
+        if ([tempVC isEqual:topVC]) {
+            //: break;
+            break;
+        //: } else {
+        } else {
+        //如果两者不一样，继续循环
+            //: tempVC = topVC;
+            tempVC = topVC;
+        }
+    }
+    //: return topVC;
+    return topVC;
+}
+
+//: #pragma mark - NIMConversationManagerDelegate
+#pragma mark - NIMConversationManagerDelegate
+//- (void)messagesDeletedInSession:(NIMSession *)session{
+//    [self.interactor resetMessages:nil];
 //    [self.tableView reloadData];
+//}
+
+// 远端消息清空回调
+//: - (void)onRecvAllRemoteMessagesInSessionDeleted:(NIMSessionDeleteAllRemoteMessagesInfo *)info
+- (void)onRecvAllRemoteMessagesInSessionDeleted:(NIMSessionDeleteAllRemoteMessagesInfo *)info
+{
+    //: [self refreshMessages];
+    [self perform];
 }
 
 
-//发送结果
-- (void)sendMessage:(NIMMessage *)message didCompleteWithError:(NSError *)error
+//: #pragma mark -
+#pragma mark -
+//: #pragma mark - 长按菜单事件
+#pragma mark - 长按菜单事件
+//: - (NIMMessage *)messageForMenu
+- (NIMMessage *)balloon
 {
-    if ([message.session isEqual:_session])
+    //: return _messageForMenu;
+    return _balloon;
+}
+
+//: - (BOOL)disableAudioPlayedStatusIcon:(NIMMessage *)message
+- (BOOL)constrainted:(NIMMessage *)message
+{
+    //: BOOL disable = NO;
+    BOOL disable = NO;
+    //: if ([self.sessionConfig respondsToSelector:@selector(disableAudioPlayedStatusIcon)])
+    if ([self.load respondsToSelector:@selector(disableSince)])
     {
-        if( message.messageType == NIMMessageTypeImage){
-            //缓存图片URL
-            NIMImageObject *imageObject = message.messageObject;
-            NSString *urlString = imageObject.url;
-
-            NSMutableDictionary *dic = [[JunctionCacheLarge sharedConfig] Gdic];
-            NSData *data =  [dic objectForKey:message.messageId];
-            if(data && urlString){
-                NSString *key = [[SDWebImageManager sharedManager]cacheKeyForURL:[NSURL URLWithString:urlString]];
-                dic[message.messageId] = nil;
-                __weak typeof(self) weakSelf = self;
-                [[SDImageCache sharedImageCache] storeImageData:data forKey:key completion:^{
-                    [weakSelf.interactor updateMessage:message];
-                }];
-            }
-        }else{
-            [self.interactor updateMessage:message];
-//            [self.tableView reloadData];
-        }
-      
-        
-        if (message.session.sessionType == NIMSessionTypeTeam ||
-            message.session.sessionType == NIMSessionTypeSuperTeam)
-        {
-            //如果是群的话需要检查一下回执显示情况
-            NIMMessageReceipt *receipt = [[NIMMessageReceipt alloc] initWithMessage:message];
-            [self.interactor checkReceipts:@[receipt]];
-        }
+        //: disable = [self.sessionConfig disableAudioPlayedStatusIcon];
+        disable = [self.load disableSince];
     }
-    
+    //: return disable;
+    return disable;
 }
 
-
-//发送进度
--(void)sendMessage:(NIMMessage *)message progress:(float)progress
+//: - (void)viewWillAppear:(BOOL)animated
+- (void)viewWillAppear:(BOOL)animated
 {
-    if ([message.session isEqual:_session]) {
-        [self.interactor updateMessage:message];
+    //: [super viewWillAppear:animated];
+    [super viewWillAppear:animated];
+    //: [self.interactor onViewWillAppear];
+    [self.numberro chart];
+    //: [self addListener];
+    [self lapsing];
+
+    //: self.sessionUnreadCount = [NIMSDK sharedSDK].conversationManager.allUnreadCount;
+    self.royalConnect = [NIMSDK sharedSDK].conversationManager.allUnreadCount;
+    //: [self refreshSessionBadge];
+    [self flush];
+    //: [self.navigationController.navigationBar setHidden:YES];
+    [self.navigationController.navigationBar setHidden:YES];
+    //: [self.tableView reloadData];
+    [self.quickResponse reloadData];
+}
+//: - (void)showMenuWithMessage:(NIMMessage *)message withView:(UIView *)view {
+- (void)view:(NIMMessage *)message source:(UIView *)view {
+
+    //: [[ToMediatorShore shareMenuView] removeFromSuperview];
+    [[ToMediatorShore minuteResponse] removeFromSuperview];
+
+    //: NSArray *btns = [self genMediaButtonsWithMessage:message];
+    NSArray *btns = [self elementBy:message];
+
+    //: if (btns.count > 0) {
+    if (btns.count > 0) {
+
+        //: CGRect tempRect = [view convertRect:view.bounds toView:self.view];
+        CGRect tempRect = [view convertRect:view.bounds toView:self.view];
+        //: CGRect cursorStartRectToWindow = [view convertRect:view.bounds toView:self.view];
+        CGRect cursorStartRectToWindow = [view convertRect:view.bounds toView:self.view];
+
+        @
+         //: autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
+         autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
+                      ;
+        //: [[ToMediatorShore shareMenuView] showViewWithButtonModels:btns cursorStartRect:cursorStartRectToWindow selectionTextRectInWindow:tempRect selectBlock:^(StylerConfigTexture *item) {
+        [[ToMediatorShore minuteResponse] rect:btns cherished:cursorStartRectToWindow evidenceBlock:tempRect response:^(StylerConfigTexture *item) {
+            @
+             //: try{} @finally{} __typeof__(self) self = __weak_self__;
+             try{} @finally{} __typeof__(self) self = __weak_self__;
+                            ;
+            //: [self onTapMediaItem:item];
+            [self tapItem:item];
+
+            //: [ToMediatorShore.shareMenuView removeFromSuperview];
+            [ToMediatorShore.minuteResponse removeFromSuperview];
+        //: }praiseBlock:^(NSInteger tag) {
+        }draw:^(NSInteger tag) {
+            //: [self praiseViewdidSelectIndex:tag];
+            [self redIndex:tag];
+        //: }];
+        }];
     }
+
 }
 
-//接收消息
-- (void)onRecvMessages:(NSArray *)messages
+//: - (BOOL)onLongPressCell:(NIMMessage *)message complete:(void(^)(id data))complete; {
+- (BOOL)comeThrough:(NIMMessage *)message correlation:(void(^)(id data))complete; {
+    //: BOOL handle = NO;
+    BOOL handle = NO;
+    //: _messageForMenu = message;
+    _balloon = message;
+    //: [self.interactor setReferenceMessage:message];
+    [self.numberro setVehicle:message];
+
+    //: handle = [self shouldShowMenuByMessage:message];
+    handle = [self emberGenuine:message];
+    //: __weak typeof(self) wself = self;
+    __weak typeof(self) wself = self;
+    //: !complete ? : complete(wself);
+    !complete ? : complete(wself);
+
+    //: return handle;
+    return handle;
+};
+
+//: - (void)fetchMessageAttachment:(NIMMessage *)message progress:(float)progress
+- (void)fetchMessageAttachment:(NIMMessage *)message progress:(float)progress
 {
-    if ([self shouldAddListenerForNewMsg])
+    //: if ([message.session isEqual:_session])
+    if ([message.session isEqual:_shot])
     {
-        NIMMessage *message = messages.firstObject;
-        NIMSession *session = message.session;
-        
-        UIViewController *topvc = [self getTopMostController];
-        if (![topvc isKindOfClass:NSClassFromString(@"RoyalDividerPlayContinue")] && ![topvc isKindOfClass:[CoolSurfaceAttachHelper class]]) {
-            return;
-        }
-        
-        if (![session isEqual:self.session] || !messages.count)
-        {
-            return;
-        }
-        
-        [self uiInsertMessages:messages];
-        [self.interactor markRead:NO];
-        
-        // 群禁言后输入框改变占位符文字
-        [self setBannedSpeakingWithMessage:messages];
+        //: [self.interactor updateMessage:message];
+        [self.numberro draft:message];
     }
 }
 
-- (void)setBannedSpeakingWithMessage:(NSArray <NIMMessage *>*)messages {
-    
+//: - (void)setBannedSpeakingWithMessage:(NSArray <NIMMessage *>*)messages {
+- (void)setShore:(NSArray <NIMMessage *>*)messages {
+
+    //: [messages enumerateObjectsUsingBlock:^(NIMMessage * _Nonnull message, NSUInteger idx, BOOL * _Nonnull stop) {
     [messages enumerateObjectsUsingBlock:^(NIMMessage * _Nonnull message, NSUInteger idx, BOOL * _Nonnull stop) {
-        
+
+        //: NIMNotificationObject *object = message.messageObject;
         NIMNotificationObject *object = message.messageObject;
+        //: if (object && [object isKindOfClass:NIMNotificationObject.class] && object.notificationType == NIMNotificationTypeTeam)
         if (object && [object isKindOfClass:NIMNotificationObject.class] && object.notificationType == NIMNotificationTypeTeam)
         {
+            //: NIMTeamNotificationContent *content = (NIMTeamNotificationContent*)object.content;
             NIMTeamNotificationContent *content = (NIMTeamNotificationContent*)object.content;
+            //: id attachment = [content attachment];
             id attachment = [content attachment];
+            //: if (attachment && [attachment isKindOfClass:[NIMUpdateTeamInfoAttachment class]]) {
             if (attachment && [attachment isKindOfClass:[NIMUpdateTeamInfoAttachment class]]) {
 
+                //: NIMUpdateTeamInfoAttachment *teamAttachment = (NIMUpdateTeamInfoAttachment *)attachment;
                 NIMUpdateTeamInfoAttachment *teamAttachment = (NIMUpdateTeamInfoAttachment *)attachment;
+                //: if (teamAttachment && [teamAttachment.values count] > 0) {
                 if (teamAttachment && [teamAttachment.values count] > 0) {
 
                     /**
@@ -665,122 +1044,343 @@
                      *  @discussion 参考NIMTeamAllMuteMode定义。0: 禁言关闭 1: 全员禁言，不包括管理员 3: 全员禁言，包括群组和管理员
                      */
                     // NIMTeamUpdateTagAllMuteMode    = 101,
-                    
+
                     //                        if ([[teamAttachment.values allKeys] containsObject:@(100)]) {
                     //                            BOOL banned = [teamAttachment.values objectForKey:@(100)];
                     //                        }
-                    
-                    
+
+
+                    //: if ([[teamAttachment.values allKeys] containsObject:@(101)]) {
                     if ([[teamAttachment.values allKeys] containsObject:@(101)]) {
-                        BOOL banned = [teamAttachment.values boolValueForKey:@(101)];
-                        [self setInputViewPlaceholder:banned];
+                        //: BOOL banned = [teamAttachment.values boolValueForKey:@(101)];
+                        BOOL banned = [teamAttachment.values clear:@(101)];
+                        //: [self setInputViewPlaceholder:banned];
+                        [self setBelowView:banned];
                     }
-                    
+
+                    //: else if ([[teamAttachment.values allKeys] containsObject:@(100)]) {
                     else if ([[teamAttachment.values allKeys] containsObject:@(100)]) {
-                        BOOL banned = [teamAttachment.values boolValueForKey:@(100)];
-                        [self setInputViewPlaceholder:banned];
+                        //: BOOL banned = [teamAttachment.values boolValueForKey:@(100)];
+                        BOOL banned = [teamAttachment.values clear:@(100)];
+                        //: [self setInputViewPlaceholder:banned];
+                        [self setBelowView:banned];
                     }
-                    
+
                 }
-                
+
             }
         }
+    //: }];
     }];
 }
 
-- (void)setInputViewPlaceholder:(BOOL)ban {
-    if (ban){
-        [self.sessionInputView setInputTextPlaceHolder:LangKey(@"message_administrator_speak") color:[UIColor redColor]];
-        self.sessionInputView.userInteractionEnabled = NO;
-        self.canTapVoiceBtn = NO;
+//: - (void)exportVideoToTempFile:(AVAsset *)avAsset completion:(void (^)(NSString *path))completion {
+- (void)exportTempVideoDigitizerRegisterCompletionCommon:(AVAsset *)avAsset polo:(void (^)(NSString *path))completion {
+    //: NSArray *presets = [AVAssetExportSession exportPresetsCompatibleWithAsset:avAsset];
+    NSArray *presets = [AVAssetExportSession exportPresetsCompatibleWithAsset:avAsset];
+    //: if ([presets containsObject:AVAssetExportPresetHighestQuality]) {
+    if ([presets containsObject:AVAssetExportPresetHighestQuality]) {
+        //: AVAssetExportSession *session = [[AVAssetExportSession alloc] initWithAsset:avAsset presetName:AVAssetExportPresetHighestQuality];
+        AVAssetExportSession *session = [[AVAssetExportSession alloc] initWithAsset:avAsset presetName:AVAssetExportPresetHighestQuality];
+
+        //: NSString *outputPath = [NSTemporaryDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"temp_video_%@.mp4", [NSUUID UUID].UUIDString]];
+        NSString *outputPath = [NSTemporaryDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:StringFromCraftProfileData(screenGatorAlert), [NSUUID UUID].UUIDString]];
+        //: session.outputURL = [NSURL fileURLWithPath:outputPath];
+        session.outputURL = [NSURL fileURLWithPath:outputPath];
+        //: session.outputFileType = AVFileTypeMPEG4;
+        session.outputFileType = AVFileTypeMPEG4;
+        //: session.shouldOptimizeForNetworkUse = YES;
+        session.shouldOptimizeForNetworkUse = YES;
+
+        //: [session exportAsynchronouslyWithCompletionHandler:^{
+        [session exportAsynchronouslyWithCompletionHandler:^{
+            //: dispatch_async(dispatch_get_main_queue(), ^{
+            dispatch_async(dispatch_get_main_queue(), ^{
+                //: if (session.status == AVAssetExportSessionStatusCompleted) {
+                if (session.status == AVAssetExportSessionStatusCompleted) {
+                    //: if (completion) completion(outputPath);
+                    if (completion) completion(outputPath);
+                //: } else {
+                } else {
+                    //: if (completion) completion(nil);
+                    if (completion) completion(nil);
+                }
+            //: });
+            });
+        //: }];
+        }];
+    //: } else {
     } else {
-        [self.sessionInputView setInputTextPlaceHolder:LangKey(@"message_please_enter_content") color:[UIColor grayColor]];
-        self.sessionInputView.userInteractionEnabled = YES;
-        self.canTapVoiceBtn = YES;
+        //: if (completion) completion(nil);
+        if (completion) completion(nil);
     }
 }
 
-
-//获取当前最上层的控制器
-- (UIViewController *)getTopMostController {
-    UIViewController *topVC = [UIApplication sharedApplication].windows.firstObject.rootViewController;
-    //循环之前tempVC和topVC是一样的
-    UIViewController *tempVC = topVC;
-    while (1) {
-        if ([topVC isKindOfClass:[UITabBarController class]]) {
-            topVC = ((UITabBarController*)topVC).selectedViewController;
-        }
-        if ([topVC isKindOfClass:[UINavigationController class]]) {
-            topVC = ((UINavigationController*)topVC).visibleViewController;
-        }
-        if (topVC.presentedViewController) {
-            topVC = topVC.presentedViewController;
-        }
-        //如果两者一样，说明循环结束了
-        if ([tempVC isEqual:topVC]) {
-            break;
-        } else {
-        //如果两者不一样，继续循环
-            tempVC = topVC;
-        }
-    }
-    return topVC;
-}
-
-
-- (void)fetchMessageAttachment:(NIMMessage *)message progress:(float)progress
+//: - (BOOL)canPerformAction:(SEL)action withSender:(id)sender
+- (BOOL)canPerformAction:(SEL)action withSender:(id)sender
 {
-    if ([message.session isEqual:_session])
-    {
-        [self.interactor updateMessage:message];
-    }
-}
-
-- (void)fetchMessageAttachment:(NIMMessage *)message didCompleteWithError:(NSError *)error
-{
-    if ([message.session isEqual:_session])
-    {
-        FlexibleWinterSelfPreview *model = [self.interactor findMessageModel:message];
-        //下完缩略图之后，因为比例有变化，重新刷下宽高。
-        [model cleanCache];
-        [self.interactor updateMessage:message];
-    }
-}
-
-- (void)onRecvMessageReceipts:(NSArray<NIMMessageReceipt *> *)receipts
-{
-    if ([self shouldAddListenerForNewMsg])
-    {
-        NSMutableArray *handledReceipts = [[NSMutableArray alloc] init];
-        for (NIMMessageReceipt *receipt in receipts) {
-            if ([receipt.session isEqual:self.session])
-            {
-                [handledReceipts addObject:receipt];
-            }
-        }
-        if (handledReceipts.count)
-        {
-            [self uiCheckReceipts:handledReceipts];
+    //: NSArray *items = [[UIMenuController sharedMenuController] menuItems];
+    NSArray *items = [[UIMenuController sharedMenuController] menuItems];
+    //: for (UIMenuItem *item in items) {
+    for (UIMenuItem *item in items) {
+        //: if (action == [item action]){
+        if (action == [item action]){
+            //: return YES;
+            return YES;
         }
     }
+    //: return NO;
+    return NO;
 }
 
+
+//: - (void)deleteMsg:(id)sender
+- (void)doing:(id)sender
+{
+    //: NIMMessage *message = [self messageForMenu];
+    NIMMessage *message = [self balloon];
+    //: [self uiDeleteMessage:message];
+    [self attach:message];
+    //: [self.conversationManager deleteMessage:message];
+    [self.stopStorage deleteMessage:message];
+}
+
+
+//: - (void)onSendText:(NSString *)text atUsers:(NSArray *)atUsers replymessage:(NIMMessage *)replymessage
+- (void)alongDisplaceAtReplymessageUsersCookie:(NSString *)text max:(NSArray *)atUsers brand_strong:(NIMMessage *)replymessage
+{
+    //: NSMutableArray *users = [NSMutableArray arrayWithArray:atUsers];
+    NSMutableArray *users = [NSMutableArray arrayWithArray:atUsers];
+    //: if (self.session.sessionType == NIMSessionTypeP2P)
+    if (self.shot.sessionType == NIMSessionTypeP2P)
+    {
+        //: [users addObject:self.session.sessionId];
+        [users addObject:self.shot.sessionId];
+    }
+
+    //: NIMMessage *message = [PositionSelectorUpdaterDecode msgWithText:text];
+    NIMMessage *message = [PositionSelectorUpdaterDecode smooth:text];
+    //: NSString *type = @"";
+    NSString *type = @"";
+    //: NSString *contents = @"";
+    NSString *contents = @"";
+
+    //: if(replymessage.messageType == NIMMessageTypeText){
+    if(replymessage.messageType == NIMMessageTypeText){
+        //: type = @"TEXT";
+        type = StringFromCraftProfileData(colorGraveText);
+        //: contents = replymessage.text;
+        contents = replymessage.text;
+    //: }else if (replymessage.messageType == NIMMessageTypeImage){
+    }else if (replymessage.messageType == NIMMessageTypeImage){
+        //: type = @"IMAGE";
+        type = StringFromCraftProfileData(styleIndustryPlatform);
+        //: NIMImageObject *imageObject = (NIMImageObject*)replymessage.messageObject;
+        NIMImageObject *imageObject = (NIMImageObject*)replymessage.messageObject;
+        //: NSString *url = [imageObject.url?:@"" stringByReplacingOccurrencesOfString:@" " withString:@""];
+        NSString *url = [imageObject.url?:@"" stringByReplacingOccurrencesOfString:@" " withString:@""];
+        //: contents = url;
+        contents = url;
+    //: }else if (replymessage.messageType == NIMMessageTypeVideo){
+    }else if (replymessage.messageType == NIMMessageTypeVideo){
+        //: type = @"VIDEO";
+        type = StringFromCraftProfileData(kTransportLogger);
+        //: NIMVideoObject *videoObject = (NIMVideoObject*)replymessage.messageObject;
+        NIMVideoObject *videoObject = (NIMVideoObject*)replymessage.messageObject;
+        //: contents = videoObject.coverUrl;
+        contents = videoObject.coverUrl;
+    //: }else if (replymessage.messageType == NIMMessageTypeAudio){
+    }else if (replymessage.messageType == NIMMessageTypeAudio){
+        //: type = @"AUDIO";
+        type = StringFromCraftProfileData(colorTendedSettings);
+        //: NIMAudioObject *audioObject = (NIMAudioObject*)replymessage.messageObject;
+        NIMAudioObject *audioObject = (NIMAudioObject*)replymessage.messageObject;
+        //: contents = [NSString stringWithFormat:@"%zd\"",(NSInteger)((audioObject.duration+500)/1000)];
+        contents = [NSString stringWithFormat:@"%zd\"",(NSInteger)((audioObject.duration+500)/1000)];
+    }
+
+    //: NovelHillConverterInspector *option = [[NovelHillConverterInspector alloc] init];
+    NovelHillConverterInspector *option = [[NovelHillConverterInspector alloc] init];
+    //: option.message = replymessage;
+    option.fragmentProud = replymessage;
+    //: RoundReportSheet *info = [[TowerTinyGranularLarge sharedKit] infoByUser:replymessage.from option:option];
+    RoundReportSheet *info = [[TowerTinyGranularLarge basicDragKit] screenOption:replymessage.from byProduct:option];
+
+    //: NSDictionary *dic = @{
+    NSDictionary *dic = @{
+            //: @"type": type,//type:TEXT、IMAGE、VIDEO
+            StringFromCraftProfileData(themeShockPlatform): type,//type:TEXT、IMAGE、VIDEO
+            //: @"content": contents,//content:文本内容、图片url、视频url
+            StringFromCraftProfileData(commonDisturbLogger): contents,//content:文本内容、图片url、视频url
+            //: @"userName": info.showName,//消息发送者
+            StringFromCraftProfileData(widgetTendedHelper): info.showNumberro,//消息发送者
+            //: @"messageid": replymessage.messageId,//messageid：留着备用
+            StringFromCraftProfileData(styleTheoryPageUtility): replymessage.messageId,//messageid：留着备用
+    //: };
+    };
+
+    //: message.remoteExt = @{@"reply": dic };
+    message.remoteExt = @{StringFromCraftProfileData(featureMetropolitanMessage): dic };
+
+    //: if (atUsers.count)
+    if (atUsers.count)
+    {
+        //: NIMMessageApnsMemberOption *apnsOption = [[NIMMessageApnsMemberOption alloc] init];
+        NIMMessageApnsMemberOption *apnsOption = [[NIMMessageApnsMemberOption alloc] init];
+        //: apnsOption.userIds = atUsers;
+        apnsOption.userIds = atUsers;
+        //: apnsOption.forcePush = YES;
+        apnsOption.forcePush = YES;
+
+        //: NovelHillConverterInspector *option = [[NovelHillConverterInspector alloc] init];
+        NovelHillConverterInspector *option = [[NovelHillConverterInspector alloc] init];
+        //: option.session = self.session;
+        option.careful = self.shot;
+
+        //: NSString *me = [[TowerTinyGranularLarge sharedKit].provider infoByUser:[NIMSDK sharedSDK].loginManager.currentAccount option:option].showName;
+        NSString *me = [[TowerTinyGranularLarge basicDragKit].conditionCompareVisitor screenOption:[NIMSDK sharedSDK].loginManager.currentAccount byProduct:option].showNumberro;
+        //: apnsOption.apnsContent = [NSString stringWithFormat:@"%@在群里@了你".nim_localized, me];
+        apnsOption.apnsContent = [NSString stringWithFormat:StringFromCraftProfileData(viewIndeedError).totalroStructure, me];
+        //: message.apnsMemberOption = apnsOption;
+        message.apnsMemberOption = apnsOption;
+    }
+
+    //: [self sendMessage:message completion:^(NSError *err) {
+    [self odd:message buildCompletion:^(NSError *err) {
+        //: [self.tableView reloadData];
+        [self.quickResponse reloadData];
+    //: }];
+    }];
+}
+
+//: - (void)onRetryMessage:(NIMMessage *)message
+- (void)unrighteousnesses:(NIMMessage *)message
+{
+    //: if (message.isReceivedMsg) {
+    if (message.isReceivedMsg) {
+        //: [[[NIMSDK sharedSDK] chatManager] fetchMessageAttachment:message
+        [[[NIMSDK sharedSDK] chatManager] fetchMessageAttachment:message
+                                                           //: error:nil];
+                                                           error:nil];
+    //: }else{
+    }else{
+        //: [[[NIMSDK sharedSDK] chatManager] resendMessage:message
+        [[[NIMSDK sharedSDK] chatManager] resendMessage:message
+                                                  //: error:nil];
+                                                  error:nil];
+    }
+}
+
+//: #pragma mark - NIMConversationManagerDelegate
 #pragma mark - NIMConversationManagerDelegate
-//- (void)messagesDeletedInSession:(NIMSession *)session{
-//    [self.interactor resetMessages:nil];
-//    [self.tableView reloadData];
-//}
-
-// 远端消息清空回调
-- (void)onRecvAllRemoteMessagesInSessionDeleted:(NIMSessionDeleteAllRemoteMessagesInfo *)info
-{
-    [self refreshMessages];
+//: - (void)didAddRecentSession:(NIMRecentSession *)recentSession
+- (void)didAddRecentSession:(NIMRecentSession *)recentSession
+           //: totalUnreadCount:(NSInteger)totalUnreadCount{
+           totalUnreadCount:(NSInteger)totalUnreadCount{
+    //: self.sessionUnreadCount = totalUnreadCount;
+    self.royalConnect = totalUnreadCount;
+    //: [self refreshSessionBadge];
+    [self flush];
+//    [self changeUnreadCount:recentSession totalUnreadCount:totalUnreadCount];
 }
 
-// 远端消息批量删除删除回调
-- (void)onRecvMessagesDeleted:(NSArray<NIMMessage *> *)messages exts:(NSDictionary<NSString *,NSString *> *)exts
+// 获取图片路径
+//: - (void)getImagePathFromPHAsset:(PHAsset *)asset completion:(void (^)(NSString *path))completion {
+- (void)wayOfLife:(PHAsset *)asset letter:(void (^)(NSString *path))completion {
+    //: if (asset.mediaType != PHAssetMediaTypeImage) {
+    if (asset.mediaType != PHAssetMediaTypeImage) {
+        //: if (completion) completion(nil);
+        if (completion) completion(nil);
+        //: return;
+        return;
+    }
+
+    //: PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
+    PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
+    //: options.version = PHImageRequestOptionsVersionOriginal;
+    options.version = PHImageRequestOptionsVersionOriginal;
+    //: options.deliveryMode = PHImageRequestOptionsDeliveryModeHighQualityFormat;
+    options.deliveryMode = PHImageRequestOptionsDeliveryModeHighQualityFormat;
+    //: options.networkAccessAllowed = YES;
+    options.networkAccessAllowed = YES;
+    //: options.synchronous = NO;
+    options.synchronous = NO;
+
+    //: [[PHImageManager defaultManager] requestImageDataForAsset:asset options:options resultHandler:^(NSData * _Nullable imageData, NSString * _Nullable dataUTI, UIImageOrientation orientation, NSDictionary * _Nullable info) {
+    [[PHImageManager defaultManager] requestImageDataForAsset:asset options:options resultHandler:^(NSData * _Nullable imageData, NSString * _Nullable dataUTI, UIImageOrientation orientation, NSDictionary * _Nullable info) {
+        //: if (imageData) {
+        if (imageData) {
+            //: NSString *filePath = [NSTemporaryDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"temp_image_%@.jpg", [NSUUID UUID].UUIDString]];
+            NSString *filePath = [NSTemporaryDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:StringFromCraftProfileData(featureBorderPlatform), [NSUUID UUID].UUIDString]];
+            //: [imageData writeToFile:filePath atomically:YES];
+            [imageData writeToFile:filePath atomically:YES];
+            //: if (completion) completion(filePath);
+            if (completion) completion(filePath);
+        //: } else {
+        } else {
+            //: if (completion) completion(nil);
+            if (completion) completion(nil);
+        }
+    //: }];
+    }];
+}
+
+
+//: - (FaithfulHumanePortraitTupleWithin *)audioContent
+- (FaithfulHumanePortraitTupleWithin *)label
 {
-    [self refreshMessages];
+    //: if(!_audioContent){
+    if(!_label){
+        //: _audioContent = [[FaithfulHumanePortraitTupleWithin alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
+        _label = [[FaithfulHumanePortraitTupleWithin alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
+//        _audioContent.hidden = YES;
+    }
+    //: return _audioContent;
+    return _label;
+}
+
+
+//: - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+- (void)permission:(UIScrollView *)scrollView {
+    //: if ([scrollView isKindOfClass:[UITextView class]]) {
+    if ([scrollView isKindOfClass:[UITextView class]]) {
+        //: [ToMediatorShore.shareMenuView removeFromSuperview];
+        [ToMediatorShore.minuteResponse removeFromSuperview];
+    }
+    //: [self.view endEditing:YES];
+    [self.view endEditing:YES];
+}
+
+//: - (void)viewDidDisappear:(BOOL)animated
+- (void)viewDidDisappear:(BOOL)animated
+{
+    //: [super viewDidDisappear:animated];
+    [super viewDidDisappear:animated];
+    //: [self.interactor onViewDidDisappear];
+    [self.numberro sub];
+    //: [[NIMSDK sharedSDK].mediaManager removeDelegate:self];
+    [[NIMSDK sharedSDK].mediaManager removeDelegate:self];
+}
+
+// 实现UIGestureRecognizerDelegate方法
+//: - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+    // 获取触摸点位置
+    //: CGPoint touchPoint = [touch locationInView:self.customAlbumView];
+    CGPoint touchPoint = [touch locationInView:self.candidCalibrateJovial];
+
+    // 检查触摸点是否在子视图上
+    //: for (UIView *subview in self.customAlbumView.subviews) {
+    for (UIView *subview in self.candidCalibrateJovial.subviews) {
+        //: if (CGRectContainsPoint(subview.frame, touchPoint) && subview.userInteractionEnabled) {
+        if (CGRectContainsPoint(subview.frame, touchPoint) && subview.userInteractionEnabled) {
+            //: return NO; 
+            return NO; // 如果触摸点在子视图上，父视图手势不响应
+        }
+    }
+
+    //: return YES; 
+    return YES; // 其他区域父视图手势响应
 }
 
 //- (void)didAddRecentSession:(NIMRecentSession *)recentSession
@@ -799,1147 +1399,1745 @@
 //}
 
 
-- (void)changeUnreadCount:(NIMRecentSession *)recentSession
-         totalUnreadCount:(NSInteger)totalUnreadCount{
-    if ([recentSession.session isEqual:self.session]) {
+//: - (void)changeUnreadCount:(NIMRecentSession *)recentSession
+- (void)numberNeed:(NIMRecentSession *)recentSession
+         //: totalUnreadCount:(NSInteger)totalUnreadCount{
+         label:(NSInteger)totalUnreadCount{
+    //: if ([recentSession.session isEqual:self.session]) {
+    if ([recentSession.session isEqual:self.shot]) {
+        //: return;
         return;
     }
-    
+
 }
 
-#pragma mark - NIMMediaManagerDelegate
-- (void)recordAudio:(NSString *)filePath didBeganWithError:(NSError *)error {
-    if (!filePath || error) {
-        _sessionInputView.recording = NO;
-        [self onRecordFailed:error];
-    }
-}
-
-- (void)recordAudio:(NSString *)filePath didCompletedWithError:(NSError *)error {
-    if(!error) {
-        if ([self recordFileCanBeSend:filePath]) {
-            [self sendMessage:[PositionSelectorUpdaterDecode msgWithAudio:filePath]];
-        }else{
-            [self showRecordFileNotSendReason];
-        }
+//: - (void)setInputViewPlaceholder:(BOOL)ban {
+- (void)setBelowView:(BOOL)ban {
+    //: if (ban){
+    if (ban){
+        //: [self.sessionInputView setInputTextPlaceHolder:[PluginTulipOptimize getTextWithKey:@"message_administrator_speak"] color:[UIColor redColor]];
+        [self.delivery multipleLook:[PluginTulipOptimize richness:StringFromCraftProfileData(kLackHelper)] adjustmentColor:[UIColor redColor]];
+        //: self.sessionInputView.userInteractionEnabled = NO;
+        self.delivery.userInteractionEnabled = NO;
+        //: self.canTapVoiceBtn = NO;
+        self.segmentTap = NO;
+    //: } else {
     } else {
-        [self onRecordFailed:error];
-    }
-    _sessionInputView.recording = NO;
-}
-
-
-- (void)recordAudioDidCancelled {
-    _sessionInputView.recording = NO;
-}
-
-- (void)recordAudioProgress:(NSTimeInterval)currentTime {
-    [_sessionInputView updateAudioRecordTime:currentTime];
-}
-
-- (void)recordAudioInterruptionBegin {
-    [[NIMSDK sharedSDK].mediaManager cancelRecord];
-}
-
-#pragma mark - 录音相关接口
-- (void)onRecordFailed:(NSError *)error{}
-
-- (BOOL)recordFileCanBeSend:(NSString *)filepath
-{
-    return YES;
-}
-
-- (void)showRecordFileNotSendReason{}
-
-#pragma mark - TrustSpace
-
-- (void)didChangeInputHeight:(CGFloat)inputHeight
-{
-    [self.interactor changeLayout:inputHeight];
-    
-//    self.btnAudio.bottom = self.sessionInputView.top-20;
-}
-
-#pragma mark - ExtractPresentValidate
-- (void)onTapPraiseItem:(NSInteger)index withMessage:(NIMMessage *)message
-{
-//    self.messageForMenu = message;
-//    [self praiseViewdidSelectIndex:index];
-    
-    __block NIMQuickComment *newComment = [AnimateGroveFertileSharp commentWithType:index content:@"" ext:@"扩展"];
-
-    __weak typeof(self) weakSelf = self;
-            [weakSelf.interactor addQuickComment:newComment toMessage:message completion:^(NSError *error)
-            {
-                if (error)
-                {
-                    [weakSelf.view makeToast:LangKey(@"group_info_activity_op_failed") duration:2 position:CSToastPositionCenter];
-                }
-
-                [weakSelf cleanMenuMessage];
-            }];
-      
-}
-- (BOOL)onTapMediaItem:(StylerConfigTexture *)item{
-    SEL sel = item.selctor;
-    BOOL handled = sel && [self respondsToSelector:sel];
-    if (handled) {
-        NEEKIT_SuppressPerformSelectorLeakWarning([self performSelector:sel withObject:item]);
-        handled = YES;
-    }
-    return handled;
-}
-
-- (void)onTextChanged:(id)sender{}
-
-- (void)onSendText:(NSString *)text atUsers:(NSArray *)atUsers
-{
-    NSMutableArray *users = [NSMutableArray arrayWithArray:atUsers];
-    if (self.session.sessionType == NIMSessionTypeP2P)
-    {
-        [users addObject:self.session.sessionId];
-    }
-
-    NIMMessage *message = [PositionSelectorUpdaterDecode msgWithText:text];
-    if (atUsers.count)
-    {
-        NIMMessageApnsMemberOption *apnsOption = [[NIMMessageApnsMemberOption alloc] init];
-        apnsOption.userIds = atUsers;
-        apnsOption.forcePush = YES;
-        
-        NovelHillConverterInspector *option = [[NovelHillConverterInspector alloc] init];
-        option.session = self.session;
-        
-        NSString *me = [[TowerTinyGranularLarge sharedKit].provider infoByUser:[NIMSDK sharedSDK].loginManager.currentAccount option:option].showName;
-        apnsOption.apnsContent = [NSString stringWithFormat:@"%@在群里@了你".nim_localized, me];
-        message.apnsMemberOption = apnsOption;
-    }
-    
-    [self sendMessage:message];
-}
-
-- (void)onSendText:(NSString *)text atUsers:(NSArray *)atUsers replymessage:(NIMMessage *)replymessage
-{
-    NSMutableArray *users = [NSMutableArray arrayWithArray:atUsers];
-    if (self.session.sessionType == NIMSessionTypeP2P)
-    {
-        [users addObject:self.session.sessionId];
-    }
-
-    NIMMessage *message = [PositionSelectorUpdaterDecode msgWithText:text];
-    NSString *type = @"";
-    NSString *contents = @"";
-    
-    if(replymessage.messageType == NIMMessageTypeText){
-        type = @"TEXT";
-        contents = replymessage.text;
-    }else if (replymessage.messageType == NIMMessageTypeImage){
-        type = @"IMAGE";
-        NIMImageObject *imageObject = (NIMImageObject*)replymessage.messageObject;
-        NSString *url = [imageObject.url?:@"" stringByReplacingOccurrencesOfString:@" " withString:@""];
-        contents = url;
-    }else if (replymessage.messageType == NIMMessageTypeVideo){
-        type = @"VIDEO";
-        NIMVideoObject *videoObject = (NIMVideoObject*)replymessage.messageObject;
-        contents = videoObject.coverUrl;
-    }else if (replymessage.messageType == NIMMessageTypeAudio){
-        type = @"AUDIO";
-        NIMAudioObject *audioObject = (NIMAudioObject*)replymessage.messageObject;
-        contents = [NSString stringWithFormat:@"%zd\"",(NSInteger)((audioObject.duration+500)/1000)];
-    }
-    
-    NovelHillConverterInspector *option = [[NovelHillConverterInspector alloc] init];
-    option.message = replymessage;
-    RoundReportSheet *info = [[TowerTinyGranularLarge sharedKit] infoByUser:replymessage.from option:option];
-    
-    NSDictionary *dic = @{
-            @"type": type,//type:TEXT、IMAGE、VIDEO
-            @"content": contents,//content:文本内容、图片url、视频url
-            @"userName": info.showName,//消息发送者
-            @"messageid": replymessage.messageId,//messageid：留着备用
-    };
-    
-    message.remoteExt = @{@"reply": dic };
-    
-    if (atUsers.count)
-    {
-        NIMMessageApnsMemberOption *apnsOption = [[NIMMessageApnsMemberOption alloc] init];
-        apnsOption.userIds = atUsers;
-        apnsOption.forcePush = YES;
-        
-        NovelHillConverterInspector *option = [[NovelHillConverterInspector alloc] init];
-        option.session = self.session;
-        
-        NSString *me = [[TowerTinyGranularLarge sharedKit].provider infoByUser:[NIMSDK sharedSDK].loginManager.currentAccount option:option].showName;
-        apnsOption.apnsContent = [NSString stringWithFormat:@"%@在群里@了你".nim_localized, me];
-        message.apnsMemberOption = apnsOption;
-    }
-    
-    [self sendMessage:message completion:^(NSError *err) {
-        [self.tableView reloadData];
-    }];
-}
-
-- (void)onSelectEmoticon:(CardStormDocument *)emoticon
-{
-    NSString *emoticonID = emoticon.emoticonID;
-    NSArray *array = [emoticonID componentsSeparatedByString:@"_"];
-    NSString *numberStr = [array lastObject];
-    NSInteger number = [numberStr integerValue];
-    __block NIMQuickComment *newComment = [AnimateGroveFertileSharp commentWithType:number content:emoticon.tag ext:@"扩展"];
-    
-    __weak typeof(self) weakSelf = self;
-    [self hadCommentThisMessage:self.messageForMenu type:number
-                      compltion:^(NSMapTable *result)
-     {
-        NIMQuickComment *oldComment = [HeaderProjector myCommentFromComments:0 keys:@[@(number)] comments:result];
-        BOOL contains = oldComment ? YES : NO;
-        if (!contains)
-        {
-            [weakSelf.interactor addQuickComment:newComment
-                                  completion:^(NSError *error)
-            {
-//                [self.view hideToasts];
-                if (error)
-                {
-                    [weakSelf.view makeToast:LangKey(@"group_info_activity_op_failed") duration:2 position:CSToastPositionCenter];
-                }
-                
-                [weakSelf cleanMenuMessage];
-            }];
-        }
-        else
-        {
-            [weakSelf.interactor delQuickComment:oldComment
-                                   targetMessage:weakSelf.messageForMenu
-                                      completion:^(NSError *error)
-            {
-//                [self.view hideToasts];
-                if (error)
-                {
-                    [weakSelf.view makeToast:LangKey(@"group_info_activity_op_failed") duration:2 position:CSToastPositionCenter];
-                }
-
-                [weakSelf cleanMenuMessage];
-            }];
-        }
-    }];
-}
-
-- (void)didReplyCancelled
-{
-    self.messageForMenu = nil;
-    [self.interactor setReferenceMessage:nil];
-    
-    if ([self.sessionConfig respondsToSelector:@selector(clearThreadMessageAfterSent)])
-    {
-        if ([self.sessionConfig clearThreadMessageAfterSent])
-        {
-            [self.sessionConfig cleanThreadMessage];
-        }
+        //: [self.sessionInputView setInputTextPlaceHolder:[PluginTulipOptimize getTextWithKey:@"message_please_enter_content"] color:[UIColor grayColor]];
+        [self.delivery multipleLook:[PluginTulipOptimize richness:StringFromCraftProfileData(commonRumorPage)] adjustmentColor:[UIColor grayColor]];
+        //: self.sessionInputView.userInteractionEnabled = YES;
+        self.delivery.userInteractionEnabled = YES;
+        //: self.canTapVoiceBtn = YES;
+        self.segmentTap = YES;
     }
 }
 
+//: - (void)viewDidLoad {
+- (void)viewDidLoad {
+    //: [super viewDidLoad];
+    [super viewDidLoad];
+    //: self.view.backgroundColor = [UIColor colorWithHexString:@"F6F7FA"];
+    self.view.backgroundColor = [UIColor tin:StringFromCraftProfileData(moduleMoreError)];
+//        UIImageView *bg = [[UIImageView alloc]initWithFrame:self.view.bounds];
+//        bg.image = [UIImage imageNamed:@"chating_bg"];
+//        [self.view addSubview:bg];
 
-- (void)onSelectChartlet:(NSString *)chartletId
-                 catalog:(NSString *)catalogId
-{
-//    NSBundle *bundle = [TowerTinyGranularLarge sharedKit].emoticonBundle;
-//    NSData *imageData = [NSData dataWithContentsOfFile:[bundle pathForResource:chartletId ofType:nil inDirectory:NEEKIT_EmojiPath]];
-    NSString *emojiPath = [[FertileViableAssemblerManager sharedManager] getEmojiPath];
-    NSString *imagePath = [emojiPath stringByAppendingPathComponent:chartletId];
-    NSData *imageData = [NSData dataWithContentsOfFile:imagePath];
+    //: UIView *bottomview = [[UIView alloc]initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height-(({UIEdgeInsets i; if(@available(iOS 11.0, *)) {i = ({UIWindow *win = nil; if (@available(iOS 13.0, *)) { NSSet *connectedScenes = [UIApplication sharedApplication].connectedScenes; for (UIScene *scene in connectedScenes) { if ([scene isKindOfClass:[UIWindowScene class]] && scene.activationState == UISceneActivationStateForegroundActive) { UIWindowScene *windowScene = (UIWindowScene *)scene; for (UIWindow *w in windowScene.windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = windowScene.windows.firstObject; } if (win) { break; } } } } if (!win) { for (UIWindow *w in [UIApplication sharedApplication].windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = [UIApplication sharedApplication].windows.firstObject; } } if (!win) { if ([[UIApplication sharedApplication] delegate] && [[[UIApplication sharedApplication] delegate] respondsToSelector:@selector(window)]) { win = [[[UIApplication sharedApplication] delegate] window]; } } win;}).safeAreaInsets;} else {i = UIEdgeInsetsZero;} i;}).bottom), [[UIScreen mainScreen] bounds].size.width, (({UIEdgeInsets i; if(@available(iOS 11.0, *)) {i = ({UIWindow *win = nil; if (@available(iOS 13.0, *)) { NSSet *connectedScenes = [UIApplication sharedApplication].connectedScenes; for (UIScene *scene in connectedScenes) { if ([scene isKindOfClass:[UIWindowScene class]] && scene.activationState == UISceneActivationStateForegroundActive) { UIWindowScene *windowScene = (UIWindowScene *)scene; for (UIWindow *w in windowScene.windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = windowScene.windows.firstObject; } if (win) { break; } } } } if (!win) { for (UIWindow *w in [UIApplication sharedApplication].windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = [UIApplication sharedApplication].windows.firstObject; } } if (!win) { if ([[UIApplication sharedApplication] delegate] && [[[UIApplication sharedApplication] delegate] respondsToSelector:@selector(window)]) { win = [[[UIApplication sharedApplication] delegate] window]; } } win;}).safeAreaInsets;} else {i = UIEdgeInsetsZero;} i;}).bottom))];
+    UIView *bottomview = [[UIView alloc]initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height-(({UIEdgeInsets i; if(@available(iOS 11.0, *)) {i = ({UIWindow *win = nil; if (@available(iOS 13.0, *)) { NSSet *connectedScenes = [UIApplication sharedApplication].connectedScenes; for (UIScene *scene in connectedScenes) { if ([scene isKindOfClass:[UIWindowScene class]] && scene.activationState == UISceneActivationStateForegroundActive) { UIWindowScene *windowScene = (UIWindowScene *)scene; for (UIWindow *w in windowScene.windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = windowScene.windows.firstObject; } if (win) { break; } } } } if (!win) { for (UIWindow *w in [UIApplication sharedApplication].windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = [UIApplication sharedApplication].windows.firstObject; } } if (!win) { if ([[UIApplication sharedApplication] delegate] && [[[UIApplication sharedApplication] delegate] respondsToSelector:@selector(factoryLarging)]) { win = [[[UIApplication sharedApplication] delegate] window]; } } win;}).safeAreaInsets;} else {i = UIEdgeInsetsZero;} i;}).bottom), [[UIScreen mainScreen] bounds].size.width, (({UIEdgeInsets i; if(@available(iOS 11.0, *)) {i = ({UIWindow *win = nil; if (@available(iOS 13.0, *)) { NSSet *connectedScenes = [UIApplication sharedApplication].connectedScenes; for (UIScene *scene in connectedScenes) { if ([scene isKindOfClass:[UIWindowScene class]] && scene.activationState == UISceneActivationStateForegroundActive) { UIWindowScene *windowScene = (UIWindowScene *)scene; for (UIWindow *w in windowScene.windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = windowScene.windows.firstObject; } if (win) { break; } } } } if (!win) { for (UIWindow *w in [UIApplication sharedApplication].windows) { if (w.isKeyWindow) { win = w; break; } } if (!win) { win = [UIApplication sharedApplication].windows.firstObject; } } if (!win) { if ([[UIApplication sharedApplication] delegate] && [[[UIApplication sharedApplication] delegate] respondsToSelector:@selector(factoryLarging)]) { win = [[[UIApplication sharedApplication] delegate] window]; } } win;}).safeAreaInsets;} else {i = UIEdgeInsetsZero;} i;}).bottom))];
+    //: bottomview.backgroundColor = [UIColor whiteColor];
+    bottomview.backgroundColor = [UIColor whiteColor];
+    //: [self.view addSubview:bottomview];
+    [self.view addSubview:bottomview];
 
-//    UIImage *gif = [UIImage sd_imageWithGIFData:imageData];
-//
-//    NIMMessage *message = [PositionSelectorUpdaterDecode msgWithImage:gif];
-//    [self sendMessage:message];
-//
-    
-    NIMMessage *message = [PositionSelectorUpdaterDecode msgWithImageData:imageData extension:@""];
-//    message.messageSubType = 77;//标记gif用
-    NSMutableDictionary *dic = [[JunctionCacheLarge sharedConfig] Gdic];
-//    NSData *imageData = UIImagePNGRepresentation(image);
-    [dic setObject:imageData forKey:message.messageId];
-    
-    [self sendMessage:message];
-    
-    [self.sessionInputView.toolBar setPlaceHolder:LangKey(@"message_please_enter_content")];
- 
-//    [self.sessionInputView endEditing:YES];
-}
+    //消息 tableView
+    //: [self setupTableView];
+    [self expected];
+    //导航栏
+    //: [self setupNav];
+    [self historicalOrbit];
 
-- (void)onCancelRecording
-{
-    [[NIMSDK sharedSDK].mediaManager cancelRecord];
-}
-
-- (void)onStopRecording
-{
-    [[NIMSDK sharedSDK].mediaManager stopRecord];
-//    [self.audioContent animationClose];
-}
-
-- (void)onStartRecording
-{
-    _sessionInputView.recording = YES;
-//    [_sessionInputView endEditing:YES];
-    
-    NIMAudioType type = [self recordAudioType];
-    NSTimeInterval duration = [TowerTinyGranularLarge sharedKit].config.recordMaxDuration;
-    
-    [[NIMSDK sharedSDK].mediaManager addDelegate:self];
-    
-    [[NIMSDK sharedSDK].mediaManager record:type
-                                   duration:duration];
-}
-
-#pragma mark NIMChatExtendManagerDelegate
-
-- (void)onRecvQuickComment:(NIMQuickComment *)comment
-{
-    [self.interactor updateMessage:comment.message];
-}
+    //输入框 inputView
+    //: [self setupInputView];
+    [self restrictionFragment];
+    //会话相关逻辑配置器安装
+    //: [self setupConfigurator];
+    [self relative];
+    //进入会话时，标记所有消息已读，并发送已读回执
+    //: [self markRead];
+    [self untilOrientationRead];
+    //更新已读位置
 
 
-- (void)onRemoveQuickComment:(NIMQuickComment *)comment
-{
-    [self.interactor updateMessage:comment.message];
-}
+//    [self.view addSubview:self.btnAudio];
 
-- (void)onNotifyAddMessagePin:(NIMMessagePinItem *)item
-{
-    NIMMessage *message = [NIMSDK.sharedSDK.conversationManager messagesInSession:self.session messageIds:@[item.messageId]].lastObject;
-    [self uiPinMessage:message];
-}
 
-- (void)onNotifyRemoveMessagePin:(NIMMessagePinItem *)item
-{
-    NIMMessage *message = [NIMSDK.sharedSDK.conversationManager messagesInSession:self.session messageIds:@[item.messageId]].lastObject;
-    [self uiUnpinMessage:message];
-}
+     //: dispatch_after(dispatch_time((0ull), (int64_t)(0.3 * 1000000000ull)), dispatch_get_main_queue(), ^{
+     dispatch_after(dispatch_time((0ull), (int64_t)(0.3 * 1000000000ull)), dispatch_get_main_queue(), ^{
+         //: [self setBanned];
+         [self begin];
+     //: });
+     });
 
-#pragma mark - ConverterEnqueueTimeline
-- (BOOL)onTapCell:(GracefulMixerAmongCollectionPreload *)event{
-    BOOL handle = NO;
-    NSString *eventName = event.eventName;
-    if ([eventName isEqualToString:@"FFFKitEventNameTapAudio"])
-    {
-        [self.interactor mediaAudioPressed:event.messageModel];
-        handle = YES;
-    }
-    return handle;
-}
+//    [[NIMSDK sharedSDK].conversationManager addDelegate:self];
 
-- (void)onRetryMessage:(NIMMessage *)message
-{
-    if (message.isReceivedMsg) {
-        [[[NIMSDK sharedSDK] chatManager] fetchMessageAttachment:message
-                                                           error:nil];
-    }else{
-        [[[NIMSDK sharedSDK] chatManager] resendMessage:message
-                                                  error:nil];
+    // 执行设置回调监听
+//    [NERtcCallKit.sharedInstance addDelegate:self];
+ }
+
+//: #pragma mark - NIMMediaManagerDelegate
+#pragma mark - NIMMediaManagerDelegate
+//: - (void)recordAudio:(NSString *)filePath didBeganWithError:(NSError *)error {
+- (void)recordAudio:(NSString *)filePath didBeganWithError:(NSError *)error {
+    //: if (!filePath || error) {
+    if (!filePath || error) {
+        //: _sessionInputView.recording = NO;
+        _delivery.delay = NO;
+        //: [self onRecordFailed:error];
+        [self mark:error];
     }
 }
 
-- (BOOL)onLongPressCell:(NIMMessage *)message
-                 inView:(UIView *)view
+//: - (void)setupTableView
+- (void)expected
 {
-    BOOL handle = NO;
-    _messageForMenu = message;
-    [self.interactor setReferenceMessage:message];
-    if (![self becomeFirstResponder]) {
-        handle = NO;
-        return handle;
-    }
-    if ([self shouldShowMenuByMessage:message])
-    {
-        [ToMediatorShore.shareMenuView removeFromSuperview];
-        [self showMenuWithMessage:message withView:view];
-    }
-    handle = YES;
-    return handle;
-}
+    //: CGFloat safeAreaInsetsBottom = [UIDevice vg_safeDistanceBottom];
+    CGFloat safeAreaInsetsBottom = [UIDevice representation];
+    //: CGFloat containerSafeHeight = [UIScreen mainScreen].bounds.size.height - safeAreaInsetsBottom - (44.0f + [UIDevice vg_statusBarHeight]);
+    CGFloat containerSafeHeight = [UIScreen mainScreen].bounds.size.height - safeAreaInsetsBottom - (44.0f + [UIDevice filing]);
 
-- (BOOL)onLongPressCell:(NIMMessage *)message complete:(void(^)(id data))complete; {
-    BOOL handle = NO;
-    _messageForMenu = message;
-    [self.interactor setReferenceMessage:message];
-    
-    handle = [self shouldShowMenuByMessage:message];
-    __weak typeof(self) wself = self;
-    !complete ? : complete(wself);
-    
-    return handle;
-}
+    //: self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, (44.0f + [UIDevice vg_statusBarHeight]), [UIScreen mainScreen].bounds.size.width, containerSafeHeight-51) style:UITableViewStylePlain];
+    self.quickResponse = [[UITableView alloc] initWithFrame:CGRectMake(0, (44.0f + [UIDevice filing]), [UIScreen mainScreen].bounds.size.width, containerSafeHeight-51) style:UITableViewStylePlain];
+//    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, SCREEN_TOP_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT-SCREEN_TOP_HEIGHT-SCREEN_TABBAR_HEIGHT-SCREEN_BOTTOM_HEIGHT) style:UITableViewStylePlain];
+//    self.tableView.backgroundColor = NEEKIT_UIColorFromRGB(0xe4e7ec);
+    //: self.tableView.backgroundColor = [UIColor clearColor];
+    self.quickResponse.backgroundColor = [UIColor clearColor];
+    //: self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.quickResponse.separatorStyle = UITableViewCellSeparatorStyleNone;
+    //: self.tableView.estimatedRowHeight = 0;
+    self.quickResponse.estimatedRowHeight = 0;
+    //: self.tableView.estimatedSectionHeaderHeight = 0;
+    self.quickResponse.estimatedSectionHeaderHeight = 0;
+    //: self.tableView.estimatedSectionFooterHeight = 0;
+    self.quickResponse.estimatedSectionFooterHeight = 0;
+    //: self.tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    self.quickResponse.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    //: self.tableViewTapGesture = [[UITapGestureRecognizer alloc] init];
+    self.deepVideo = [[UITapGestureRecognizer alloc] init];
+    //: self.tableViewTapGesture.cancelsTouchesInView = NO;
+    self.deepVideo.cancelsTouchesInView = NO;
+    //: [self.tableViewTapGesture addTarget:self action:@selector(onTapTableView:)];
+    [self.deepVideo addTarget:self action:@selector(conveys:)];
+    //: [self.tableView addGestureRecognizer:self.tableViewTapGesture];
+    [self.quickResponse addGestureRecognizer:self.deepVideo];
+    //: self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
+    self.quickResponse.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
 
-- (BOOL)onLongPressCell:(NIMMessage *)message
-{
-    BOOL handle = NO;
-    _messageForMenu = message;
-    [self.interactor setReferenceMessage:message];
-    if (![self becomeFirstResponder]) {
-        handle = NO;
-        return handle;
-    }
-    handle = YES;
-    return handle;
-}
+//    if ([self.sessionConfig respondsToSelector:@selector(sessionBackgroundImage)] && [self.sessionConfig sessionBackgroundImage]) {
+//        UIImageView *imgView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+//        imgView.image = [self.sessionConfig sessionBackgroundImage];
+//        imgView.contentMode = UIViewContentModeScaleAspectFill;
+//        self.tableView.backgroundView = imgView;
+//    }
+    //: [self.view addSubview:self.tableView];
+    [self.view addSubview:self.quickResponse];
 
-
-- (BOOL)disableAudioPlayedStatusIcon:(NIMMessage *)message
-{
-    BOOL disable = NO;
-    if ([self.sessionConfig respondsToSelector:@selector(disableAudioPlayedStatusIcon)])
-    {
-        disable = [self.sessionConfig disableAudioPlayedStatusIcon];
-    }
-    return disable;
-}
-
-- (void)onClickEmoticon:(NIMMessage *)message
-                comment:(NIMQuickComment *)comment
-               selected:(BOOL)isSelected
-{
-    __weak typeof(self) weakSelf = self;
-    if (isSelected)
-    {
-        [self.interactor delQuickComment:comment
-                           targetMessage:message
-                              completion:^(NSError *error)
-         {
-//            [self.view hideToasts];
-            if (!error)
-            {
-                return;
-            }
-            [weakSelf.view makeToast:LangKey(@"group_info_activity_op_failed") duration:2 position:CSToastPositionCenter];
-        }];
-    }
-    else
-    {
-        NIMQuickComment *aComment = [comment copy];
-        [self.interactor addQuickComment:aComment
-                               toMessage:message
-                              completion:^(NSError *error)
-         {
-//            [self.view hideToasts];
-            if (!error)
-            {
-                return;
-            }
-            [weakSelf.view makeToast:LangKey(@"group_info_activity_op_failed") duration:2 position:CSToastPositionCenter];
-        }];
-    }
-    
-}
-
-#pragma mark - 配置项
-- (id<WishDisplayWeightlessTrim>)sessionConfig
-{
-    return nil; //使用默认配置
-}
-
-#pragma mark - 配置项列表
-//是否需要监听新消息通知 : 某些场景不需要监听新消息，如浏览服务器消息历史界面
-- (BOOL)shouldAddListenerForNewMsg
-{
-    BOOL should = YES;
-    if ([self.sessionConfig respondsToSelector:@selector(disableReceiveNewMessages)]) {
-        should = ![self.sessionConfig disableReceiveNewMessages];
-    }
-    return should;
 }
 
 
-
-//是否需要显示输入框 : 某些场景不需要显示输入框，如使用 3D touch 的场景预览会话界面内容
-- (BOOL)shouldShowInputView
-{
-    BOOL should = YES;
-    if ([self.sessionConfig respondsToSelector:@selector(disableInputView)]) {
-        should = ![self.sessionConfig disableInputView];
-    }
-    return should;
-}
-
-
-//当前录音格式 : NIMSDK 支持 aac 和 amr 两种格式
-- (NIMAudioType)recordAudioType
-{
-    NIMAudioType type = NIMAudioTypeAAC;
-    if ([self.sessionConfig respondsToSelector:@selector(recordType)]) {
-        type = [self.sessionConfig recordType];
-    }
-    return type;
+//: - (void)allMessagesDeleted{
+- (void)allMessagesDeleted{
+    //: self.sessionUnreadCount = 0;
+    self.royalConnect = 0;
+    //: [self refreshSessionBadge];
+    [self flush];
 }
 
 //是否需要监听感应器事件
-- (BOOL)needProximityMonitor
+//: - (BOOL)needProximityMonitor
+- (BOOL)itchMonitor
 {
+    //: BOOL needProximityMonitor = YES;
     BOOL needProximityMonitor = YES;
-    if ([self.sessionConfig respondsToSelector:@selector(disableProximityMonitor)]) {
-        needProximityMonitor = !self.sessionConfig.disableProximityMonitor;
+    //: if ([self.sessionConfig respondsToSelector:@selector(disableProximityMonitor)]) {
+    if ([self.load respondsToSelector:@selector(infoLarge)]) {
+        //: needProximityMonitor = !self.sessionConfig.disableProximityMonitor;
+        needProximityMonitor = !self.load.infoLarge;
     }
+    //: return needProximityMonitor;
     return needProximityMonitor;
 }
 
-
-#pragma mark -
-#pragma mark - 长按菜单事件
-- (NIMMessage *)messageForMenu
+//: - (void)onTapMenuItemCopy:(StylerConfigTexture *)item
+- (void)ovals:(StylerConfigTexture *)item
 {
-    return _messageForMenu;
-}
-
-- (BOOL)canBecomeFirstResponder
-{
-    return YES;
-}
-
-- (BOOL)canPerformAction:(SEL)action withSender:(id)sender
-{
-    NSArray *items = [[UIMenuController sharedMenuController] menuItems];
-    for (UIMenuItem *item in items) {
-        if (action == [item action]){
-            return YES;
-        }
-    }
-    return NO;
-}
-
-
-- (void)copyText:(id)sender
-{
-    NIMMessage *message = [self messageForMenu];
-    if (message.CheckRiverEnum.length) {
+    //: NIMMessage *message = [self messageForMenu];
+    NIMMessage *message = [self balloon];
+    //: if (message.CheckRiverEnum.length) {
+    if (message.amidField.length) {
+        //: UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
         UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
-        [pasteboard setString:message.CheckRiverEnum];
+        //: [pasteboard setString:message.CheckRiverEnum];
+        [pasteboard setString:message.amidField];
     }
+    //: else if (message.text.length) {
     else if (message.text.length) {
+        //: UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
         UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+        //: [pasteboard setString:message.text];
         [pasteboard setString:message.text];
     }
 }
 
-- (void)deleteMsg:(id)sender
+//: - (void)copyText:(id)sender
+- (void)saveWindow:(id)sender
 {
-    NIMMessage *message    = [self messageForMenu];
-    [self uiDeleteMessage:message];
-    [self.conversationManager deleteMessage:message];
-}
-
-- (void)menuDidHide:(NSNotification *)notification
-{
-    [UIMenuController sharedMenuController].menuItems = nil;
-}
-
-- (void)onTapMenuItemCopy:(StylerConfigTexture *)item
-{
-    NIMMessage *message = [self messageForMenu];
-    if (message.CheckRiverEnum.length) {
+    //: NIMMessage *message = [self messageForMenu];
+    NIMMessage *message = [self balloon];
+    //: if (message.CheckRiverEnum.length) {
+    if (message.amidField.length) {
+        //: UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
         UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
-        [pasteboard setString:message.CheckRiverEnum];
+        //: [pasteboard setString:message.CheckRiverEnum];
+        [pasteboard setString:message.amidField];
     }
+    //: else if (message.text.length) {
     else if (message.text.length) {
+        //: UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
         UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+        //: [pasteboard setString:message.text];
         [pasteboard setString:message.text];
     }
 }
-
-- (void)onTapMenuItemDelete:(StylerConfigTexture *)item
-{
-    NIMMessage *message    = [self messageForMenu];
-    [self uiDeleteMessage:message];
-    [self.conversationManager deleteMessage:message];
-}
-
-#pragma mark - 操作接口
-- (void)uiAddMessages:(NSArray *)messages
-{
-    [self.interactor addMessages:messages];
-}
-
-- (void)uiInsertMessages:(NSArray *)messages
-{
-    [self.interactor insertMessages:messages];
-}
-
-- (FlexibleWinterSelfPreview *)uiDeleteMessage:(NIMMessage *)message{
-    FlexibleWinterSelfPreview *model = [self.interactor deleteMessage:message];
-    if (model.shouldShowReadLabel && model.message.session.sessionType == NIMSessionTypeP2P)
+//: - (FlexibleWinterSelfPreview *)uiDeleteMessage:(NIMMessage *)message{
+- (FlexibleWinterSelfPreview *)attach:(NIMMessage *)message{
+    //: FlexibleWinterSelfPreview *model = [self.interactor deleteMessage:message];
+    FlexibleWinterSelfPreview *model = [self.numberro m:message];
+    //: if (model.shouldShowReadLabel && model.message.session.sessionType == NIMSessionTypeP2P)
+    if (model.group && model.signal.session.sessionType == NIMSessionTypeP2P)
     {
-        [self uiCheckReceipts:nil];
+        //: [self uiCheckReceipts:nil];
+        [self receiptsPrefer:nil];
     }
+    //: return model;
     return model;
 }
 
-- (void)uiUpdateMessage:(NIMMessage *)message{
-    [self.interactor updateMessage:message];
-}
-
-- (void)uiPinMessage:(NIMMessage *)message
+//: - (BOOL)onLongPressCell:(NIMMessage *)message
+- (BOOL)hide:(NIMMessage *)message
+                 //: inView:(UIView *)view
+                 sleepingPill:(UIView *)view
 {
-    [self.interactor addPinForMessage:message];
-}
-
-- (void)uiUnpinMessage:(NIMMessage *)message
-{
-    [self.interactor removePinForMessage:message];
-}
-
-- (void)uiCheckReceipts:(NSArray<NIMMessageReceipt *> *)receipts
-{
-    [self.interactor checkReceipts:receipts];
-}
-
-- (void)onTapCameraBtn:(id)sender
-{
-//    [self.interactor mediaShootPressed];
-    
-    [self.view addSubview:self.customAlbumView];
-    [self.customAlbumView.albumPickerView reloadMediaData];
-    [self.customAlbumView.albumPickerView.selectedAssets removeAllObjects];
-    [self.customAlbumView.albumPickerView.collectionView reloadData];
-    [self.customAlbumView.confirmButton setTitle:LangKey(@"user_profile_avtivity_send") forState:UIControlStateNormal];
-    [self.customAlbumView animationShow];
-   
-}
-
-- (void)onTapAlbunBtn:(id)sender
-{
-//    [self.interactor mediaPicturePressed];
-    
-//    [self.view addSubview:self.photopicview];
-//    self.photopicview.hidden = NO;
-}
-
-- (void)CustomPickerDidSelectCamera
-{
-    [self.customAlbumView animationClose];
-    [self.interactor mediaShootPressed];
-}
-
-//- (void)onTapAlbunArray:(NSArray<PHAsset *> *)assets
-- (void)CustomPickerDidSelectAssets:(NSArray<PHAsset *> *)assets
-{
- 
-    for (PHAsset *asset in assets) {
-        if (asset.mediaType == PHAssetMediaTypeVideo) {
-            
-            // 获取视频路径
-            [self getVideoPathFromPHAsset:asset completion:^(NSString *path) {
-                if (path) {
-                    // 使用路径...
-                    NIMMessage *message = [PositionSelectorUpdaterDecode msgWithVideo:path];
-                    [self sendMessage:message];
-                } else {
-                }
-            }];
-            
-        }else{
-            
-            
-
-            
-            [self getOriginalImageFromAsset:asset completion:^(UIImage *image) {
-                if (image) {
-                    NIMMessage *message = [PositionSelectorUpdaterDecode msgWithImage:image];
-                    
-                    NSMutableDictionary *dic = [[JunctionCacheLarge sharedConfig] Gdic];
-                    NSData *imageData = UIImagePNGRepresentation(image);
-                    [dic setObject:imageData forKey:message.messageId];
-                    
-                    [self sendMessage:message];
-                    
-                } else {
-                }
-            }];
-         
-        }
+    //: BOOL handle = NO;
+    BOOL handle = NO;
+    //: _messageForMenu = message;
+    _balloon = message;
+    //: [self.interactor setReferenceMessage:message];
+    [self.numberro setVehicle:message];
+    //: if (![self becomeFirstResponder]) {
+    if (![self becomeFirstResponder]) {
+        //: handle = NO;
+        handle = NO;
+        //: return handle;
+        return handle;
     }
-    
-}
-//获取图片
-- (void)getOriginalImageFromAsset:(PHAsset *)asset completion:(void (^)(UIImage *image))completion {
-    PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
-    options.version = PHImageRequestOptionsVersionOriginal;
-    options.deliveryMode = PHImageRequestOptionsDeliveryModeHighQualityFormat;
-    options.networkAccessAllowed = YES;
-    
-    [[PHImageManager defaultManager] requestImageDataForAsset:asset
-                                                     options:options
-                                               resultHandler:^(NSData * _Nullable imageData, NSString * _Nullable dataUTI, UIImageOrientation orientation, NSDictionary * _Nullable info) {
-        if (imageData) {
-            UIImage *image = [UIImage imageWithData:imageData];
-            completion(image);
-        } else {
-            completion(nil);
-        }
-    }];
-}
-
-// 获取图片路径
-- (void)getImagePathFromPHAsset:(PHAsset *)asset completion:(void (^)(NSString *path))completion {
-    if (asset.mediaType != PHAssetMediaTypeImage) {
-        if (completion) completion(nil);
-        return;
+    //: if ([self shouldShowMenuByMessage:message])
+    if ([self emberGenuine:message])
+    {
+        //: [ToMediatorShore.shareMenuView removeFromSuperview];
+        [ToMediatorShore.minuteResponse removeFromSuperview];
+        //: [self showMenuWithMessage:message withView:view];
+        [self view:message source:view];
     }
-    
-    PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
-    options.version = PHImageRequestOptionsVersionOriginal;
-    options.deliveryMode = PHImageRequestOptionsDeliveryModeHighQualityFormat;
-    options.networkAccessAllowed = YES;
-    options.synchronous = NO;
-    
-    [[PHImageManager defaultManager] requestImageDataForAsset:asset options:options resultHandler:^(NSData * _Nullable imageData, NSString * _Nullable dataUTI, UIImageOrientation orientation, NSDictionary * _Nullable info) {
-        if (imageData) {
-            NSString *filePath = [NSTemporaryDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"temp_image_%@.jpg", [NSUUID UUID].UUIDString]];
-            [imageData writeToFile:filePath atomically:YES];
-            if (completion) completion(filePath);
-        } else {
-            if (completion) completion(nil);
-        }
-    }];
+    //: handle = YES;
+    handle = YES;
+    //: return handle;
+    return handle;
 }
-// 获取视频路径
-- (void)getVideoPathFromPHAsset:(PHAsset *)asset completion:(void (^)(NSString *path))completion {
-    if (asset.mediaType != PHAssetMediaTypeVideo) {
-        if (completion) completion(nil);
-        return;
-    }
-    
-    PHVideoRequestOptions *options = [[PHVideoRequestOptions alloc] init];
-    options.version = PHVideoRequestOptionsVersionOriginal;
-    options.deliveryMode = PHVideoRequestOptionsDeliveryModeAutomatic;
-    options.networkAccessAllowed = YES;
-    
-    [[PHImageManager defaultManager] requestAVAssetForVideo:asset options:options resultHandler:^(AVAsset * _Nullable avAsset, AVAudioMix * _Nullable audioMix, NSDictionary * _Nullable info) {
-        if ([avAsset isKindOfClass:[AVURLAsset class]]) {
-            AVURLAsset *urlAsset = (AVURLAsset *)avAsset;
-            NSURL *url = urlAsset.URL;
-            if (completion) completion(url.path);
-        } else {
-            // 如果无法直接获取URL，则需要导出到临时文件
-            [self exportVideoToTempFile:avAsset completion:completion];
-        }
-    }];
-}
-
-- (void)exportVideoToTempFile:(AVAsset *)avAsset completion:(void (^)(NSString *path))completion {
-    NSArray *presets = [AVAssetExportSession exportPresetsCompatibleWithAsset:avAsset];
-    if ([presets containsObject:AVAssetExportPresetHighestQuality]) {
-        AVAssetExportSession *session = [[AVAssetExportSession alloc] initWithAsset:avAsset presetName:AVAssetExportPresetHighestQuality];
-        
-        NSString *outputPath = [NSTemporaryDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"temp_video_%@.mp4", [NSUUID UUID].UUIDString]];
-        session.outputURL = [NSURL fileURLWithPath:outputPath];
-        session.outputFileType = AVFileTypeMPEG4;
-        session.shouldOptimizeForNetworkUse = YES;
-        
-        [session exportAsynchronouslyWithCompletionHandler:^{
-            dispatch_async(dispatch_get_main_queue(), ^{
-                if (session.status == AVAssetExportSessionStatusCompleted) {
-                    if (completion) completion(outputPath);
-                } else {
-                    if (completion) completion(nil);
-                }
-            });
-        }];
-    } else {
-        if (completion) completion(nil);
-    }
-}
-
-
-#pragma mark - NIMMeidaButton
-- (void)onTapMediaItemPicture:(StylerConfigTexture *)item
+//: - (BOOL)recordFileCanBeSend:(NSString *)filepath
+- (BOOL)with:(NSString *)filepath
 {
-    [self.interactor mediaPicturePressed];
+    //: return YES;
+    return YES;
 }
 
-- (void)onTapMediaItemShoot:(StylerConfigTexture *)item
-{
-    [self.interactor mediaShootPressed];
-}
+//: #pragma mark - 录音相关接口
+#pragma mark - 录音相关接口
+//: - (void)onRecordFailed:(NSError *)error{}
+- (void)mark:(NSError *)error{}
 
-- (void)onTapMediaItemLocation:(StylerConfigTexture *)item
-{
-//    [self.interactor mediaLocationPressed];
-    [self.view addSubview:self.audioContent];
-    self.audioContent.actionDelegate = self;
-    [self.audioContent animationShow];
-    
-}
-
-- (void)onTapTableView:(id)sender
-{
-//    ToMediatorShore.shareMenuView.praiseView.hidden = YES;
-//    ToMediatorShore.shareMenuView.buttonsBgView.hidden = NO;
-    [ToMediatorShore.shareMenuView removeFromSuperview];
-    [self.sessionInputView endEditing:YES];
-    self.photopicview.hidden = YES;
-}
-
-#pragma mark - 旋转处理 (iOS8 or above)
-- (void)viewWillTransitionToSize:(CGSize)size
-       withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
-{
-    self.lastVisibleIndexPathBeforeRotation = [self.tableView indexPathsForVisibleRows].lastObject;
-    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
-    if (self.view.window) {
-        __weak typeof(self) wself = self;
-        [coordinator animateAlongsideTransition:^(id <UIViewControllerTransitionCoordinatorContext> context)
-         {
-             [[NIMSDK sharedSDK].mediaManager cancelRecord];
-             [wself.interactor cleanCache];
-             [wself.sessionInputView reset];
-             [wself.tableView reloadData];
-             [wself.tableView scrollToRowAtIndexPath:wself.lastVisibleIndexPathBeforeRotation atScrollPosition:UITableViewScrollPositionBottom animated:NO];
-         } completion:nil];
-    }
-}
-
-
-#pragma mark - 标记已读
-- (void)markRead
-{
-    [self.interactor markRead:YES];
-}
-
-
-#pragma mark - Private
-
-- (void)addListener
-{
-    [[NIMSDK sharedSDK].chatManager addDelegate:self];
-    [[NIMSDK sharedSDK].conversationManager addDelegate:self];
-    [[NIMSDK sharedSDK].chatExtendManager addDelegate:self];
-}
-
-- (void)removeListener
-{
-    [[NIMSDK sharedSDK].chatManager removeDelegate:self];
-    [[NIMSDK sharedSDK].conversationManager removeDelegate:self];
-    [[NIMSDK sharedSDK].mediaManager removeDelegate:self];
-    [[NIMSDK sharedSDK].chatExtendManager removeDelegate:self];
-
-}
-
-
-- (id<NIMConversationManager>)conversationManager{
-    switch (self.session.sessionType) {
+//: - (id<NIMConversationManager>)conversationManager{
+- (id<NIMConversationManager>)stopStorage{
+    //: switch (self.session.sessionType) {
+    switch (self.shot.sessionType) {
+        //: case NIMSessionTypeChatroom:
         case NIMSessionTypeChatroom:
+            //: return nil;
             return nil;
+            //: break;
             break;
+        //: case NIMSessionTypeP2P:
         case NIMSessionTypeP2P:
+        //: case NIMSessionTypeTeam:
         case NIMSessionTypeTeam:
+        //: case NIMSessionTypeSuperTeam:
         case NIMSessionTypeSuperTeam:
+        //: default:
         default:
+            //: return [NIMSDK sharedSDK].conversationManager;
             return [NIMSDK sharedSDK].conversationManager;
     }
 }
 
-
-- (void)setUpTitleView
+//是否需要显示输入框 : 某些场景不需要显示输入框，如使用 3D touch 的场景预览会话界面内容
+//: - (BOOL)shouldShowInputView
+- (BOOL)cool
 {
-    ConductorHideContinue *titleView = (ConductorHideContinue *)self.navigationItem.titleView;
-    if (!titleView || ![titleView isKindOfClass:[ConductorHideContinue class]])
+    //: BOOL should = YES;
+    BOOL should = YES;
+    //: if ([self.sessionConfig respondsToSelector:@selector(disableInputView)]) {
+    if ([self.load respondsToSelector:@selector(extrapolatePlan)]) {
+        //: should = ![self.sessionConfig disableInputView];
+        should = ![self.load extrapolatePlan];
+    }
+    //: return should;
+    return should;
+}
+//: - (void)onClickEmoticon:(NIMMessage *)message
+- (void)crisp:(NIMMessage *)message
+                //: comment:(NIMQuickComment *)comment
+                life:(NIMQuickComment *)comment
+               //: selected:(BOOL)isSelected
+               pin:(BOOL)isSelected
+{
+    //: __weak typeof(self) weakSelf = self;
+    __weak typeof(self) weakSelf = self;
+    //: if (isSelected)
+    if (isSelected)
     {
-        titleView = [[ConductorHideContinue alloc] initWithFrame:CGRectZero];
-        self.navigationItem.titleView = titleView;
-        
-        titleView.titleLabel.text = self.sessionTitle;
-        titleView.subtitleLabel.text = self.sessionSubTitle;
-        
-        self.titleLabel    = titleView.titleLabel;
-        self.subTitleLabel = titleView.subtitleLabel;
+        //: [self.interactor delQuickComment:comment
+        [self.numberro replacement:comment
+                           //: targetMessage:message
+                           commentOf:message
+                              //: completion:^(NSError *error)
+                              screwUp:^(NSError *error)
+         {
+//            [self.view hideToasts];
+            //: if (!error)
+            if (!error)
+            {
+                //: return;
+                return;
+            }
+            //: [weakSelf.view makeToast:[PluginTulipOptimize getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
+            [weakSelf.view device:[PluginTulipOptimize richness:StringFromCraftProfileData(k_fluentCommunicationDevice)] dimension:2 position:appShareEnabletoPage];
+        //: }];
+        }];
+    }
+    //: else
+    else
+    {
+        //: NIMQuickComment *aComment = [comment copy];
+        NIMQuickComment *aComment = [comment copy];
+        //: [self.interactor addQuickComment:aComment
+        [self.numberro versionDigital:aComment
+                               //: toMessage:message
+                               completion:message
+                              //: completion:^(NSError *error)
+                              perspective:^(NSError *error)
+         {
+//            [self.view hideToasts];
+            //: if (!error)
+            if (!error)
+            {
+                //: return;
+                return;
+            }
+            //: [weakSelf.view makeToast:[PluginTulipOptimize getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
+            [weakSelf.view device:[PluginTulipOptimize richness:StringFromCraftProfileData(k_fluentCommunicationDevice)] dimension:2 position:appShareEnabletoPage];
+        //: }];
+        }];
     }
 
-    [titleView sizeToFit];
-    self.subtitle.text = self.sessionSubTitle;
 }
 
-- (void)refreshSessionTitle:(NSString *)title
+//: #pragma mark - 消息收发接口
+#pragma mark - 消息收发接口
+//: - (void)sendMessage:(NIMMessage *)message
+- (void)circuitWritten:(NIMMessage *)message
 {
-    self.titleLabel.text = title;
-//    self.labtitle.text = self.sessionTitle;
-    [self setUpTitleView];
+    //: [self.interactor sendMessage:message toMessage:nil];
+    [self.numberro forth:message earlyPosition:nil];
+    //: dispatch_async(dispatch_get_main_queue(), ^{
+    dispatch_async(dispatch_get_main_queue(), ^{
+       //: [self cleanMenuMessage];
+       [self colorPacket];
+    //: });
+    });
 }
 
-
-- (void)refreshSessionSubTitle:(NSString *)title
+//发送结果
+//: - (void)sendMessage:(NIMMessage *)message didCompleteWithError:(NSError *)error
+- (void)sendMessage:(NIMMessage *)message didCompleteWithError:(NSError *)error
 {
-    self.subTitleLabel.text = title;
-    self.subtitle.text = title;
-    if([title isEqualToString:@"离线".user_localized]){
-        self.subtitle.textColor = RGB_COLOR_String(@"777777");
-    }else{
-        self.subtitle.textColor = RGB_COLOR_String(@"#00B01B");
+    //: if ([message.session isEqual:_session])
+    if ([message.session isEqual:_shot])
+    {
+        //: if( message.messageType == NIMMessageTypeImage){
+        if( message.messageType == NIMMessageTypeImage){
+            //缓存图片URL
+            //: NIMImageObject *imageObject = message.messageObject;
+            NIMImageObject *imageObject = message.messageObject;
+            //: NSString *urlString = imageObject.url;
+            NSString *urlString = imageObject.url;
+
+            //: NSMutableDictionary *dic = [[JunctionCacheLarge sharedConfig] Gdic];
+            NSMutableDictionary *dic = [[JunctionCacheLarge ceremony] characteristicGdic];
+            //: NSData *data = [dic objectForKey:message.messageId];
+            NSData *data = [dic objectForKey:message.messageId];
+            //: if(data && urlString){
+            if(data && urlString){
+                //: NSString *key = [[SDWebImageManager sharedManager]cacheKeyForURL:[NSURL URLWithString:urlString]];
+                NSString *key = [[SDWebImageManager sharedManager]cacheKeyForURL:[NSURL URLWithString:urlString]];
+                //: dic[message.messageId] = nil;
+                dic[message.messageId] = nil;
+                //: __weak typeof(self) weakSelf = self;
+                __weak typeof(self) weakSelf = self;
+                //: [[SDImageCache sharedImageCache] storeImageData:data forKey:key completion:^{
+                [[SDImageCache sharedImageCache] storeImageData:data forKey:key completion:^{
+                    //: [weakSelf.interactor updateMessage:message];
+                    [weakSelf.numberro draft:message];
+                //: }];
+                }];
+            }
+        //: }else{
+        }else{
+            //: [self.interactor updateMessage:message];
+            [self.numberro draft:message];
+//            [self.tableView reloadData];
+        }
+
+
+        //: if (message.session.sessionType == NIMSessionTypeTeam ||
+        if (message.session.sessionType == NIMSessionTypeTeam ||
+            //: message.session.sessionType == NIMSessionTypeSuperTeam)
+            message.session.sessionType == NIMSessionTypeSuperTeam)
+        {
+            //如果是群的话需要检查一下回执显示情况
+            //: NIMMessageReceipt *receipt = [[NIMMessageReceipt alloc] initWithMessage:message];
+            NIMMessageReceipt *receipt = [[NIMMessageReceipt alloc] initWithMessage:message];
+            //: [self.interactor checkReceipts:@[receipt]];
+            [self.numberro employReceipts:@[receipt]];
+        }
     }
-    [self setUpTitleView];
+
 }
 
-- (void)refreshMessages
+//: - (void)onTapAlbunBtn:(id)sender
+- (void)succeedNotebookBtn:(id)sender
 {
-    [self.interactor resetMessages:nil];
+//    [self.interactor mediaPicturePressed];
+
+//    [self.view addSubview:self.photopicview];
+//    self.photopicview.hidden = NO;
 }
 
-- (NSArray *)menusItems:(NIMMessage *)message {
+
+//: - (void)setupInputView
+- (void)restrictionFragment
+{
+    //: if ([self shouldShowInputView])
+    if ([self cool])
+    {
+        //: self.sessionInputView = [[LoyalOverResume alloc] initWithFrame:CGRectMake(0, 0, self.view.device_width,0) config:self.sessionConfig];
+        self.delivery = [[LoyalOverResume alloc] initWithPastForm:CGRectMake(0, 0, self.view.createer,0) approach:self.load];
+        //: self.sessionInputView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
+        self.delivery.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
+        //: [self.sessionInputView setSession:self.session];
+        [self.delivery setTrainSession:self.shot];
+        //: [self.sessionInputView setInputDelegate:self];
+        [self.delivery setCivicNear:self];
+        //: [self.sessionInputView setInputActionDelegate:self];
+        [self.delivery setVisible:self];
+        //: [self.sessionInputView refreshStatus:LayoutMerryOntoText];
+        [self.delivery developing:LayoutMerryOntoText];
+        //: [self.view addSubview:_sessionInputView];
+        [self.view addSubview:_delivery];
+        //: self.tableView.bottom = self.sessionInputView.top;
+        self.quickResponse.distinct = self.delivery.civil;
+//        self.tableView.top = self.topview.bottom;
+        //: [self.tableView sizeToFit];
+        [self.quickResponse sizeToFit];
+    }
+}
+
+//: - (void)onTapAudioBtn:(id)sender
+- (void)ignoring:(id)sender
+{
+    //: self.sessionInputView.toolBar.showsKeyboard = NO;
+    self.delivery.bar.nameTag = NO;
+
+    //: [self.view addSubview:self.audioContent];
+    [self.view addSubview:self.label];
+    //: self.audioContent.actionDelegate = self;
+    self.label.stick = self;
+    //: [self.audioContent animationShow];
+    [self.label nomadicTexture];
+}
+
+//: #pragma mark - 操作接口
+#pragma mark - 操作接口
+//: - (void)uiAddMessages:(NSArray *)messages
+- (void)addBroker:(NSArray *)messages
+{
+    //: [self.interactor addMessages:messages];
+    [self.numberro head:messages];
+}
+
+//: - (void)didUpdateRecentSession:(NIMRecentSession *)recentSession
+- (void)didUpdateRecentSession:(NIMRecentSession *)recentSession
+              //: totalUnreadCount:(NSInteger)totalUnreadCount{
+              totalUnreadCount:(NSInteger)totalUnreadCount{
+    //: self.sessionUnreadCount = totalUnreadCount;
+    self.royalConnect = totalUnreadCount;
+    //: [self refreshSessionBadge];
+    [self flush];
+//    [self changeUnreadCount:recentSession totalUnreadCount:totalUnreadCount];
+
+}
+
+//当前录音格式 : NIMSDK 支持 aac 和 amr 两种格式
+//: - (NIMAudioType)recordAudioType
+- (NIMAudioType)lease
+{
+    //: NIMAudioType type = NIMAudioTypeAAC;
+    NIMAudioType type = NIMAudioTypeAAC;
+    //: if ([self.sessionConfig respondsToSelector:@selector(recordType)]) {
+    if ([self.load respondsToSelector:@selector(reflectGraphic)]) {
+        //: type = [self.sessionConfig recordType];
+        type = [self.load reflectGraphic];
+    }
+    //: return type;
+    return type;
+}
+
+
+//: - (void)onNotifyAddMessagePin:(NIMMessagePinItem *)item
+- (void)onNotifyAddMessagePin:(NIMMessagePinItem *)item
+{
+    //: NIMMessage *message = [NIMSDK.sharedSDK.conversationManager messagesInSession:self.session messageIds:@[item.messageId]].lastObject;
+    NIMMessage *message = [NIMSDK.sharedSDK.conversationManager messagesInSession:self.shot messageIds:@[item.messageId]].lastObject;
+    //: [self uiPinMessage:message];
+    [self pinFootTelegram:message];
+}
+
+//: - (void)setupConfigurator
+- (void)relative
+{
+    //: _configurator = [[DeriveFacade alloc] init];
+    _host = [[DeriveFacade alloc] init];
+    //: [_configurator setup:self];
+    [_host enable:self];
+
+    //: BOOL needProximityMonitor = [self needProximityMonitor];
+    BOOL needProximityMonitor = [self itchMonitor];
+    //: [[NIMSDK sharedSDK].mediaManager setNeedProximityMonitor:needProximityMonitor];
+    [[NIMSDK sharedSDK].mediaManager setNeedProximityMonitor:needProximityMonitor];
+}
+
+//发送进度
+//: -(void)sendMessage:(NIMMessage *)message progress:(float)progress
+-(void)sendMessage:(NIMMessage *)message progress:(float)progress
+{
+    //: if ([message.session isEqual:_session]) {
+    if ([message.session isEqual:_shot]) {
+        //: [self.interactor updateMessage:message];
+        [self.numberro draft:message];
+    }
+}
+
+//: - (NSArray *)menusItems:(NIMMessage *)message {
+- (NSArray *)hr:(NIMMessage *)message {
+    //: return nil;
     return nil;
 }
 
-- (void)scrollToMessage:(NIMMessage *)message
+//: - (void)onRemoveQuickComment:(NIMQuickComment *)comment
+- (void)onRemoveQuickComment:(NIMQuickComment *)comment
 {
-    NSInteger row = [self.interactor findMessageIndex:message];
-    if (row != -1) {
-        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:row inSection:0];
-        [self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
+    //: [self.interactor updateMessage:comment.message];
+    [self.numberro draft:comment.message];
+}
+
+// 远端消息批量删除删除回调
+//: - (void)onRecvMessagesDeleted:(NSArray<NIMMessage *> *)messages exts:(NSDictionary<NSString *,NSString *> *)exts
+- (void)onRecvMessagesDeleted:(NSArray<NIMMessage *> *)messages exts:(NSDictionary<NSString *,NSString *> *)exts
+{
+    //: [self refreshMessages];
+    [self perform];
+}
+
+//: - (void)onStopRecording
+- (void)firstReading
+{
+    //: [[NIMSDK sharedSDK].mediaManager stopRecord];
+    [[NIMSDK sharedSDK].mediaManager stopRecord];
+//    [self.audioContent animationClose];
+}
+
+//: - (void)handleShotBtn
+- (void)juggleGunshot
+{
+    //: _photopicview.hidden = YES;
+    _multi.hidden = YES;
+    //: [self.interactor mediaShootPressed];
+    [self.numberro bootPressed];
+}
+
+
+//: - (void)allMessagesRead
+- (void)allMessagesRead
+{
+    //: self.sessionUnreadCount = 0;
+    self.royalConnect = 0;
+    //: [self refreshSessionBadge];
+    [self flush];
+}
+
+//: - (void)fetchMessageAttachment:(NIMMessage *)message didCompleteWithError:(NSError *)error
+- (void)fetchMessageAttachment:(NIMMessage *)message didCompleteWithError:(NSError *)error
+{
+    //: if ([message.session isEqual:_session])
+    if ([message.session isEqual:_shot])
+    {
+        //: FlexibleWinterSelfPreview *model = [self.interactor findMessageModel:message];
+        FlexibleWinterSelfPreview *model = [self.numberro pair:message];
+        //下完缩略图之后，因为比例有变化，重新刷下宽高。
+        //: [model cleanCache];
+        [model greatUnsullied];
+        //: [self.interactor updateMessage:message];
+        [self.numberro draft:message];
     }
 }
 
-- (void)cleanMenuMessage
+//: - (void)onBatchMarkMessagesReadInSessions:(NSArray<NIMSession *> *)sessions
+- (void)onBatchMarkMessagesReadInSessions:(NSArray<NIMSession *> *)sessions
 {
-    [self.sessionInputView.replyedContent.closeButton sendActionsForControlEvents:UIControlEventTouchUpInside];
-    self.messageForMenu = nil;
+    //: self.sessionUnreadCount = [NIMSDK sharedSDK].conversationManager.allUnreadCount;
+    self.royalConnect = [NIMSDK sharedSDK].conversationManager.allUnreadCount;
+    //: [self refreshSessionBadge];
+    [self flush];
 }
 
-- (void)hadCommentThisMessage:(NIMMessage *)message
-                         type:(int64_t)type
-                    compltion:(void(^)(NSMapTable *))completion
+//: - (instancetype)initWithSession:(NIMSession *)session{
+- (instancetype)initWithCollect:(NIMSession *)session{
+    //: self = [super initWithNibName:nil bundle:nil];
+    self = [super initWithNibName:nil bundle:nil];
+    //: if (self) {
+    if (self) {
+        //: _session = session;
+        _shot = session;
+    }
+    //: return self;
+    return self;
+}
+
+
+
+//: - (void)didPullUpMessageData {}
+- (void)upwardCur {}
+
+
+
+//: - (void)onTapTableView:(id)sender
+- (void)conveys:(id)sender
 {
-    [[NIMSDK sharedSDK].chatExtendManager quickCommentsByMessage:message completion:^(NSError * _Nullable error, NSMapTable<NSNumber *,NSArray<NIMQuickComment *> * >* _Nullable result) {
-        if (completion)
-        {
-            completion(result);
+//    ToMediatorShore.shareMenuView.praiseView.hidden = YES;
+//    ToMediatorShore.shareMenuView.buttonsBgView.hidden = NO;
+    //: [ToMediatorShore.shareMenuView removeFromSuperview];
+    [ToMediatorShore.minuteResponse removeFromSuperview];
+    //: [self.sessionInputView endEditing:YES];
+    [self.delivery endEditing:YES];
+    //: self.photopicview.hidden = YES;
+    self.multi.hidden = YES;
+}
+
+//: #pragma mark - NIMMeidaButton
+#pragma mark - NIMMeidaButton
+//: - (void)onTapMediaItemPicture:(StylerConfigTexture *)item
+- (void)spread:(StylerConfigTexture *)item
+{
+    //: [self.interactor mediaPicturePressed];
+    [self.numberro betweenPicturePressed];
+}
+
+
+//: #pragma mark - 配置项
+#pragma mark - 配置项
+//: - (id<WishDisplayWeightlessTrim>)sessionConfig
+- (id<WishDisplayWeightlessTrim>)load
+{
+    //: return nil; 
+    return nil; //使用默认配置
+}
+
+//: - (void)showRecordFileNotSendReason{}
+- (void)perspectiveCur{}
+
+
+//: #pragma mark - NIMChatManagerDelegate
+#pragma mark - NIMChatManagerDelegate
+//开始发送
+//: - (void)willSendMessage:(NIMMessage *)message
+- (void)willSendMessage:(NIMMessage *)message
+{
+    //: id<ThreadDurableSturdyBuoyant> interactor = self.interactor;
+    id<ThreadDurableSturdyBuoyant> interactor = self.numberro;
+
+    //: if ([message.session isEqual:self.session]) {
+    if ([message.session isEqual:self.shot]) {
+        //: if ([interactor findMessageModel:message]) {
+        if ([interactor pair:message]) {
+            //: [interactor updateMessage:message];
+            [interactor draft:message];
+        //: }else{
+        }else{
+            //: [interactor addMessages:@[message]];
+            [interactor head:@[message]];
         }
+    }
+}
+
+
+//: - (NSString *)sessionSubTitle{return @"";};
+- (NSString *)modify{return @"";}
+
+//: - (void)cleanMenuMessage
+- (void)colorPacket
+{
+    //: [self.sessionInputView.replyedContent.closeButton sendActionsForControlEvents:UIControlEventTouchUpInside];
+    [self.delivery.when.bounce sendActionsForControlEvents:UIControlEventTouchUpInside];
+    //: self.messageForMenu = nil;
+    self.balloon = nil;
+}
+
+//: - (void)setSessionState:(DropdownSpringEndExtract)state {
+- (void)setErrorState:(DropdownSpringEndExtract)state {
+    //: [self.interactor setSessionState:state];
+    [self.numberro setAbsolute:state];
+}
+
+//: #pragma mark - 导航按钮
+#pragma mark - 导航按钮
+//: - (void)handlerBtnBlock:(UIButton *)sender
+- (void)handlers:(UIButton *)sender
+{
+    //: sender.selected = !sender.selected;
+    sender.selected = !sender.selected;
+        //: [SpiceHandyKnack show];
+        [SpiceHandyKnack tillCharacteristic];
+        //: __weak typeof(self) wself = self;
+        __weak typeof(self) wself = self;
+    //: [[NIMSDK sharedSDK].userManager updateNotifyState:sender.selected forUser:self.session.sessionId completion:^(NSError *error) {
+    [[NIMSDK sharedSDK].userManager updateNotifyState:sender.selected forUser:self.shot.sessionId completion:^(NSError *error) {
+            //: [SpiceHandyKnack dismiss];
+            [SpiceHandyKnack constructHour];
+            //: if (error) {
+            if (error) {
+                //: [wself.view makeToast:[PluginTulipOptimize getTextWithKey:@"group_info_activity_op_failed"] duration:2.0f position:CSToastPositionCenter];
+                [wself.view device:[PluginTulipOptimize richness:StringFromCraftProfileData(k_fluentCommunicationDevice)] dimension:2.0f position:appShareEnabletoPage];
+            }
+        //: }];
+        }];
+}
+
+//: - (void)onTapMenuItemDelete:(StylerConfigTexture *)item
+- (void)data:(StylerConfigTexture *)item
+{
+    //: NIMMessage *message = [self messageForMenu];
+    NIMMessage *message = [self balloon];
+    //: [self uiDeleteMessage:message];
+    [self attach:message];
+    //: [self.conversationManager deleteMessage:message];
+    [self.stopStorage deleteMessage:message];
+}
+
+//: - (void)gotoBack:(id)sender {
+- (void)historyState:(id)sender {
+    //: [self.navigationController popViewControllerAnimated:NO];
+    [self.navigationController popViewControllerAnimated:NO];
+}
+
+//: - (void)viewWillDisappear:(BOOL)animated
+- (void)viewWillDisappear:(BOOL)animated
+{
+    //: [super viewWillDisappear:animated];
+    [super viewWillDisappear:animated];
+    //: [self.sessionInputView endEditing:YES];
+    [self.delivery endEditing:YES];
+    // 隐藏长按弹窗
+    //: [ToMediatorShore.shareMenuView removeFromSuperview];
+    [ToMediatorShore.minuteResponse removeFromSuperview];
+    //: [self.navigationController.navigationBar setHidden:NO];
+    [self.navigationController.navigationBar setHidden:NO];
+}
+
+//: - (void)didRefreshMessageData
+- (void)ridgeTarget
+{
+    //: [self refreshSessionTitle:self.sessionTitle];
+    [self tour:self.valley];
+    //: [self refreshSessionSubTitle:self.sessionSubTitle];
+    [self unit:self.modify];
+    //: [self.tableView reloadData];
+    [self.quickResponse reloadData];
+}
+
+//: - (void)onRecvMessageReceipts:(NSArray<NIMMessageReceipt *> *)receipts
+- (void)onRecvMessageReceipts:(NSArray<NIMMessageReceipt *> *)receipts
+{
+    //: if ([self shouldAddListenerForNewMsg])
+    if ([self plain])
+    {
+        //: NSMutableArray *handledReceipts = [[NSMutableArray alloc] init];
+        NSMutableArray *handledReceipts = [[NSMutableArray alloc] init];
+        //: for (NIMMessageReceipt *receipt in receipts) {
+        for (NIMMessageReceipt *receipt in receipts) {
+            //: if ([receipt.session isEqual:self.session])
+            if ([receipt.session isEqual:self.shot])
+            {
+                //: [handledReceipts addObject:receipt];
+                [handledReceipts addObject:receipt];
+            }
+        }
+        //: if (handledReceipts.count)
+        if (handledReceipts.count)
+        {
+            //: [self uiCheckReceipts:handledReceipts];
+            [self receiptsPrefer:handledReceipts];
+        }
+    }
+}
+
+//: #pragma mark - 旋转处理 (iOS8 or above)
+#pragma mark - 旋转处理 (iOS8 or above)
+//: - (void)viewWillTransitionToSize:(CGSize)size
+- (void)viewWillTransitionToSize:(CGSize)size
+       //: withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
+       withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
+{
+    //: self.lastVisibleIndexPathBeforeRotation = [self.tableView indexPathsForVisibleRows].lastObject;
+    self.stateTransitionMagnitudeeract = [self.quickResponse indexPathsForVisibleRows].lastObject;
+    //: [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+    //: if (self.view.window) {
+    if (self.view.window) {
+        //: __weak typeof(self) wself = self;
+        __weak typeof(self) wself = self;
+        //: [coordinator animateAlongsideTransition:^(id <UIViewControllerTransitionCoordinatorContext> context)
+        [coordinator animateAlongsideTransition:^(id <UIViewControllerTransitionCoordinatorContext> context)
+         {
+             //: [[NIMSDK sharedSDK].mediaManager cancelRecord];
+             [[NIMSDK sharedSDK].mediaManager cancelRecord];
+             //: [wself.interactor cleanCache];
+             [wself.numberro cacheFreshReflect];
+             //: [wself.sessionInputView reset];
+             [wself.delivery spf];
+             //: [wself.tableView reloadData];
+             [wself.quickResponse reloadData];
+             //: [wself.tableView scrollToRowAtIndexPath:wself.lastVisibleIndexPathBeforeRotation atScrollPosition:UITableViewScrollPositionBottom animated:NO];
+             [wself.quickResponse scrollToRowAtIndexPath:wself.stateTransitionMagnitudeeract atScrollPosition:UITableViewScrollPositionBottom animated:NO];
+         //: } completion:nil];
+         } completion:nil];
+    }
+}
+
+//: - (void)enterTeamCard:(id)sender {
+- (void)slided:(id)sender {
+    //: OntoTopHandlerRotate *vc = nil;
+    OntoTopHandlerRotate *vc = nil;
+    //: OntoTopHandlerRotateOption *option = [[OntoTopHandlerRotateOption alloc] init];
+    OntoTopHandlerRotateOption *option = [[OntoTopHandlerRotateOption alloc] init];
+    //: option.isTop = [NIMSDK.sharedSDK.chatExtendManager stickTopInfoForSession:self.session] != nil;
+    option.insert = [NIMSDK.sharedSDK.chatExtendManager stickTopInfoForSession:self.shot] != nil;
+
+    //: NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.session.sessionId];
+    NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.shot.sessionId];
+    //: if(team.type == NIMTeamTypeAdvanced){
+    if(team.type == NIMTeamTypeAdvanced){
+            //: vc = [[ResizeCoherentCollector alloc] initWithTeam:team
+            vc = [[ResizeCoherentCollector alloc] initWithPowerTakeoff:team
+                                                                 //: session:self.session
+                                                                 at:self.shot
+                                                                  //: option:option];
+                                                                  storm:option];
+            //: vc.delegate = self;
+            vc.manHiveTransformerses = self;
+            //: vc.canMemberInfo = self.canMemberInfo;
+            vc.necessaryInstance = self.conserve;
+    }
+
+    //: if (vc) {
+    if (vc) {
+        //: [self.navigationController pushViewController:vc animated:YES];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+}
+
+//: - (void)praiseViewdidSelectIndex:(NSInteger)index
+- (void)redIndex:(NSInteger)index
+{
+    //: __block NIMQuickComment *newComment = [AnimateGroveFertileSharp commentWithType:index content:@"" ext:@"扩展"];
+    __block NIMQuickComment *newComment = [AnimateGroveFertileSharp formation:index arrangement:@"" sendFormErase:StringFromCraftProfileData(styleOccasionalConfig)];
+
+    //: __weak typeof(self) weakSelf = self;
+    __weak typeof(self) weakSelf = self;
+    //: [self hadCommentThisMessage:self.messageForMenu type:index
+    [self magnitudeDown:self.balloon bank4t:index
+                      //: compltion:^(NSMapTable *result)
+                      chase:^(NSMapTable *result)
+     {
+        //: NIMQuickComment *oldComment = [HeaderProjector myCommentFromComments:0 keys:@[@(index)] comments:result];
+        NIMQuickComment *oldComment = [HeaderProjector duct:0 framePick:@[@(index)] theWinter:result];
+        //: BOOL contains = oldComment ? YES : NO;
+        BOOL contains = oldComment ? YES : NO;
+        //: if (!contains)
+        if (!contains)
+        {
+            //: [weakSelf.interactor addQuickComment:newComment toMessage:self.messageForMenu completion:^(NSError *error)
+            [weakSelf.numberro versionDigital:newComment completion:self.balloon perspective:^(NSError *error)
+            {
+//                [self.view hideToasts];
+                //: if (error)
+                if (error)
+                {
+                    //: [weakSelf.view makeToast:[PluginTulipOptimize getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
+                    [weakSelf.view device:[PluginTulipOptimize richness:StringFromCraftProfileData(k_fluentCommunicationDevice)] dimension:2 position:appShareEnabletoPage];
+                }
+
+                //: [weakSelf cleanMenuMessage];
+                [weakSelf colorPacket];
+            //: }];
+            }];
+        }
+        //: else
+        else
+        {
+            //: [weakSelf.interactor delQuickComment:oldComment
+            [weakSelf.numberro replacement:oldComment
+                                   //: targetMessage:weakSelf.messageForMenu
+                                   commentOf:weakSelf.balloon
+                                      //: completion:^(NSError *error)
+                                      screwUp:^(NSError *error)
+            {
+//                [self.view hideToasts];
+                //: if (error)
+                if (error)
+                {
+                    //: [weakSelf.view makeToast:[PluginTulipOptimize getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
+                    [weakSelf.view device:[PluginTulipOptimize richness:StringFromCraftProfileData(k_fluentCommunicationDevice)] dimension:2 position:appShareEnabletoPage];
+                }
+
+                //: [weakSelf cleanMenuMessage];
+                [weakSelf colorPacket];
+            //: }];
+            }];
+        }
+    //: }];
     }];
 }
 
-- (BOOL)shouldShowMenuByMessage:(NIMMessage *)message
+//: #pragma mark - ExtractPresentValidate
+#pragma mark - ExtractPresentValidate
+//: - (void)onTapPraiseItem:(NSInteger)index withMessage:(NIMMessage *)message
+- (void)sand:(NSInteger)index representation:(NIMMessage *)message
 {
+//    self.messageForMenu = message;
+//    [self praiseViewdidSelectIndex:index];
+
+    //: __block NIMQuickComment *newComment = [AnimateGroveFertileSharp commentWithType:index content:@"" ext:@"扩展"];
+    __block NIMQuickComment *newComment = [AnimateGroveFertileSharp formation:index arrangement:@"" sendFormErase:StringFromCraftProfileData(styleOccasionalConfig)];
+
+    //: __weak typeof(self) weakSelf = self;
+    __weak typeof(self) weakSelf = self;
+            //: [weakSelf.interactor addQuickComment:newComment toMessage:message completion:^(NSError *error)
+            [weakSelf.numberro versionDigital:newComment completion:message perspective:^(NSError *error)
+            {
+                //: if (error)
+                if (error)
+                {
+                    //: [weakSelf.view makeToast:[PluginTulipOptimize getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
+                    [weakSelf.view device:[PluginTulipOptimize richness:StringFromCraftProfileData(k_fluentCommunicationDevice)] dimension:2 position:appShareEnabletoPage];
+                }
+
+                //: [weakSelf cleanMenuMessage];
+                [weakSelf colorPacket];
+            //: }];
+            }];
+
+}
+
+//: - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//    [self.serviceContentTextView hideTextSelection];
+    //: [ToMediatorShore.shareMenuView removeFromSuperview];
+    [ToMediatorShore.minuteResponse removeFromSuperview];
+    //: [self.view endEditing:YES];
+    [self.view endEditing:YES];
+}
+
+//: - (void)uiUpdateMessage:(NIMMessage *)message{
+- (void)restoreTrack:(NIMMessage *)message{
+    //: [self.interactor updateMessage:message];
+    [self.numberro draft:message];
+}
+
+//: #pragma mark - TrustSpace
+#pragma mark - TrustSpace
+
+//: - (void)didChangeInputHeight:(CGFloat)inputHeight
+- (void)chromaticsed:(CGFloat)inputHeight
+{
+    //: [self.interactor changeLayout:inputHeight];
+    [self.numberro woman:inputHeight];
+
+//    self.btnAudio.bottom = self.sessionInputView.top-20;
+}
+//: - (void)dealloc
+- (void)dealloc
+{
+    //: [self removeListener];
+    [self detoxifyBrace];
+
+    //: _tableView.delegate = nil;
+    _quickResponse.delegate = nil;
+    //: _tableView.dataSource = nil;
+    _quickResponse.dataSource = nil;
+}
+
+//: #pragma mark - ConverterEnqueueTimeline
+#pragma mark - ConverterEnqueueTimeline
+//: - (BOOL)onTapCell:(GracefulMixerAmongCollectionPreload *)event{
+- (BOOL)sharping:(GracefulMixerAmongCollectionPreload *)event{
+    //: BOOL handle = NO;
+    BOOL handle = NO;
+    //: NSString *eventName = event.eventName;
+    NSString *eventName = event.nim;
+    //: if ([eventName isEqualToString:@"FFFKitEventNameTapAudio"])
+    if ([eventName isEqualToString:StringFromCraftProfileData(k_coolSelectPlatform)])
+    {
+        //: [self.interactor mediaAudioPressed:event.messageModel];
+        [self.numberro length:event.sparkMessageModel];
+        //: handle = YES;
+        handle = YES;
+    }
+    //: return handle;
+    return handle;
+}
+//: - (void)didRemoveRecentSession:(NIMRecentSession *)recentSession totalUnreadCount:(NSInteger)totalUnreadCount{
+- (void)didRemoveRecentSession:(NIMRecentSession *)recentSession totalUnreadCount:(NSInteger)totalUnreadCount{
+    //: self.sessionUnreadCount = totalUnreadCount;
+    self.royalConnect = totalUnreadCount;
+    //: [self refreshSessionBadge];
+    [self flush];
+//    [self changeUnreadCount:recentSession totalUnreadCount:totalUnreadCount];
+}
+
+//: - (ObjectToCalibrateJovial *)customAlbumView
+- (ObjectToCalibrateJovial *)candidCalibrateJovial
+{
+    //: if(!_customAlbumView){
+    if(!_candidCalibrateJovial){
+        //: _customAlbumView = [[ObjectToCalibrateJovial alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
+        _candidCalibrateJovial = [[ObjectToCalibrateJovial alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
+        //: _customAlbumView.delegate = self;
+        _candidCalibrateJovial.manHiveTransformerses = self;
+
+                //: UITapGestureRecognizer *singleTapclose = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(handleParentTap)];
+                UITapGestureRecognizer *singleTapclose = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(searchionRaw)];
+                //: singleTapclose.delegate = self;
+                singleTapclose.delegate = self;
+                //: singleTapclose.cancelsTouchesInView = NO; 
+                singleTapclose.cancelsTouchesInView = NO; // 允许触摸事件继续传递
+                //: [_customAlbumView addGestureRecognizer:singleTapclose];
+                [_candidCalibrateJovial addGestureRecognizer:singleTapclose];
+    }
+    //: return _customAlbumView;
+    return _candidCalibrateJovial;
+}
+
+
+//: #pragma mark - 状态操作
+#pragma mark - 状态操作
+//: - (DropdownSpringEndExtract)sessionState {
+- (DropdownSpringEndExtract)errorState {
+    //: return [self.interactor sessionState];
+    return [self.numberro absolute];
+}
+
+//: - (void)onNotifyRemoveMessagePin:(NIMMessagePinItem *)item
+- (void)onNotifyRemoveMessagePin:(NIMMessagePinItem *)item
+{
+    //: NIMMessage *message = [NIMSDK.sharedSDK.conversationManager messagesInSession:self.session messageIds:@[item.messageId]].lastObject;
+    NIMMessage *message = [NIMSDK.sharedSDK.conversationManager messagesInSession:self.shot messageIds:@[item.messageId]].lastObject;
+    //: [self uiUnpinMessage:message];
+    [self past:message];
+}
+
+//: - (BOOL)shouldShowMenuByMessage:(NIMMessage *)message
+- (BOOL)emberGenuine:(NIMMessage *)message
+{
+    //: if (message.session.sessionType == NIMSessionTypeChatroom ||
     if (message.session.sessionType == NIMSessionTypeChatroom ||
+        //: message.messageType == NIMMessageTypeTip ||
         message.messageType == NIMMessageTypeTip ||
+        //: message.messageType == NIMMessageTypeNotification)
         message.messageType == NIMMessageTypeNotification)
     {
+        //: return NO;
         return NO;
     }
+    //: return YES;
     return YES;
 }
 
-
-- (void)showMenuWithMessage:(NIMMessage *)message withView:(UIView *)view {
-    
-    [[ToMediatorShore shareMenuView] removeFromSuperview];
-    
-    NSArray *btns = [self genMediaButtonsWithMessage:message];
-    
-    if (btns.count > 0) {
-        
-        CGRect tempRect = [view convertRect:view.bounds toView:self.view];
-        CGRect cursorStartRectToWindow = [view convertRect:view.bounds toView:self.view];
-           
-        @weakify(self);
-        [[ToMediatorShore shareMenuView] showViewWithButtonModels:btns cursorStartRect:cursorStartRectToWindow selectionTextRectInWindow:tempRect selectBlock:^(StylerConfigTexture *item) {
-            @strongify(self);
-            [self onTapMediaItem:item];
-
-            [ToMediatorShore.shareMenuView removeFromSuperview];
-        }praiseBlock:^(NSInteger tag) {
-            [self praiseViewdidSelectIndex:tag];
-        }];
-    }
-    
+//: - (void)recordAudioInterruptionBegin {
+- (void)recordAudioInterruptionBegin {
+    //: [[NIMSDK sharedSDK].mediaManager cancelRecord];
+    [[NIMSDK sharedSDK].mediaManager cancelRecord];
 }
-- (void)praiseViewdidSelectIndex:(NSInteger)index
+
+//: - (void)onSelectEmoticon:(CardStormDocument *)emoticon
+- (void)near:(CardStormDocument *)emoticon
 {
-    __block NIMQuickComment *newComment = [AnimateGroveFertileSharp commentWithType:index content:@"" ext:@"扩展"];
-    
+    //: NSString *emoticonID = emoticon.emoticonID;
+    NSString *emoticonID = emoticon.clientTitle;
+    //: NSArray *array = [emoticonID componentsSeparatedByString:@"_"];
+    NSArray *array = [emoticonID componentsSeparatedByString:@"_"];
+    //: NSString *numberStr = [array lastObject];
+    NSString *numberStr = [array lastObject];
+    //: NSInteger number = [numberStr integerValue];
+    NSInteger number = [numberStr integerValue];
+    //: __block NIMQuickComment *newComment = [AnimateGroveFertileSharp commentWithType:number content:emoticon.tag ext:@"扩展"];
+    __block NIMQuickComment *newComment = [AnimateGroveFertileSharp formation:number arrangement:emoticon.sandSafing sendFormErase:StringFromCraftProfileData(styleOccasionalConfig)];
+
+    //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    [self hadCommentThisMessage:self.messageForMenu type:index
-                      compltion:^(NSMapTable *result)
+    //: [self hadCommentThisMessage:self.messageForMenu type:number
+    [self magnitudeDown:self.balloon bank4t:number
+                      //: compltion:^(NSMapTable *result)
+                      chase:^(NSMapTable *result)
      {
-        NIMQuickComment *oldComment = [HeaderProjector myCommentFromComments:0 keys:@[@(index)] comments:result];
+        //: NIMQuickComment *oldComment = [HeaderProjector myCommentFromComments:0 keys:@[@(number)] comments:result];
+        NIMQuickComment *oldComment = [HeaderProjector duct:0 framePick:@[@(number)] theWinter:result];
+        //: BOOL contains = oldComment ? YES : NO;
         BOOL contains = oldComment ? YES : NO;
+        //: if (!contains)
         if (!contains)
         {
-            [weakSelf.interactor addQuickComment:newComment toMessage:self.messageForMenu completion:^(NSError *error)
+            //: [weakSelf.interactor addQuickComment:newComment
+            [weakSelf.numberro preferEnable:newComment
+                                  //: completion:^(NSError *error)
+                                  balloon:^(NSError *error)
             {
 //                [self.view hideToasts];
+                //: if (error)
                 if (error)
                 {
-                    [weakSelf.view makeToast:LangKey(@"group_info_activity_op_failed") duration:2 position:CSToastPositionCenter];
+                    //: [weakSelf.view makeToast:[PluginTulipOptimize getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
+                    [weakSelf.view device:[PluginTulipOptimize richness:StringFromCraftProfileData(k_fluentCommunicationDevice)] dimension:2 position:appShareEnabletoPage];
                 }
-                
-                [weakSelf cleanMenuMessage];
+
+                //: [weakSelf cleanMenuMessage];
+                [weakSelf colorPacket];
+            //: }];
             }];
         }
+        //: else
         else
         {
-            [weakSelf.interactor delQuickComment:oldComment
-                                   targetMessage:weakSelf.messageForMenu
-                                      completion:^(NSError *error)
+            //: [weakSelf.interactor delQuickComment:oldComment
+            [weakSelf.numberro replacement:oldComment
+                                   //: targetMessage:weakSelf.messageForMenu
+                                   commentOf:weakSelf.balloon
+                                      //: completion:^(NSError *error)
+                                      screwUp:^(NSError *error)
             {
 //                [self.view hideToasts];
+                //: if (error)
                 if (error)
                 {
-                    [weakSelf.view makeToast:LangKey(@"group_info_activity_op_failed") duration:2 position:CSToastPositionCenter];
+                    //: [weakSelf.view makeToast:[PluginTulipOptimize getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
+                    [weakSelf.view device:[PluginTulipOptimize richness:StringFromCraftProfileData(k_fluentCommunicationDevice)] dimension:2 position:appShareEnabletoPage];
                 }
 
-                [weakSelf cleanMenuMessage];
+                //: [weakSelf cleanMenuMessage];
+                [weakSelf colorPacket];
+            //: }];
             }];
         }
+    //: }];
     }];
 }
-- (NSArray *)genMediaButtonsWithMessage:(NIMMessage *)message {
-    
-    NSMutableArray *selectedAllRangeButtons = [NSMutableArray array];
 
-    NSArray *items;
-    if (!self.sessionConfig)
-    {
-        items = [[TowerTinyGranularLarge sharedKit].config defaultMenuItemsWithMessage:message];
-    }
-    else if([self.sessionConfig respondsToSelector:@selector(menuItemsWithMessage:)])
-    {
-        items = [self.sessionConfig menuItemsWithMessage:message];
-    }
-    
-    [items enumerateObjectsUsingBlock:^(StylerConfigTexture *item, NSUInteger idx, BOOL *stop) {
-        
-        MarkTransformerConductorOutline *model = [[MarkTransformerConductorOutline alloc] init];
-        model.normalImage = item.normalImage;
-        model.name = item.title;
-        model.item = item;
 
-        [selectedAllRangeButtons addObject:model];
-        
-    }];
-   
-    return selectedAllRangeButtons;
-}
-
-- (void)onTapAudioBtn:(id)sender
+//- (void)onTapAlbunArray:(NSArray<PHAsset *> *)assets
+//: - (void)CustomPickerDidSelectAssets:(NSArray<PHAsset *> *)assets
+- (void)pastTotal:(NSArray<PHAsset *> *)assets
 {
-    self.sessionInputView.toolBar.showsKeyboard = NO;
-    
-    [self.view addSubview:self.audioContent];
-    self.audioContent.actionDelegate = self;
-    [self.audioContent animationShow];
-}
 
-- (void)handleAudioBtn
-{
-//    [self.sessionInputView refreshStatus:LayoutMerryOntoText];
-    self.sessionInputView.toolBar.showsKeyboard = NO;
-    
-    [self.view addSubview:self.audioContent];
-    self.audioContent.actionDelegate = self;
-    [self.audioContent animationShow];
-}
+    //: for (PHAsset *asset in assets) {
+    for (PHAsset *asset in assets) {
+        //: if (asset.mediaType == PHAssetMediaTypeVideo) {
+        if (asset.mediaType == PHAssetMediaTypeVideo) {
 
-- (UIButton *)btnAudio
-{
-    if (!_btnAudio) {
-        _btnAudio = [UIButton buttonWithType:UIButtonTypeCustom];
-        _btnAudio.frame = CGRectMake(12, SCREEN_SAFE_HEIGHT-SCREEN_BOTTOM_HEIGHT-40, 40, 40);
-        _btnAudio.backgroundColor = ThemeColor;
-        [_btnAudio setImage:[UIImage imageNamed:@"icon_toolview_voice_normal"] forState:UIControlStateNormal];
-        _btnAudio.layer.cornerRadius = 20;
-        [_btnAudio addTarget:self action:@selector(handleAudioBtn) forControlEvents:UIControlEventTouchUpInside];
-        
-    }
-    return _btnAudio;
-}
+            // 获取视频路径
+            //: [self getVideoPathFromPHAsset:asset completion:^(NSString *path) {
+            [self offe:asset tap:^(NSString *path) {
+                //: if (path) {
+                if (path) {
+                    // 使用路径...
+                    //: NIMMessage *message = [PositionSelectorUpdaterDecode msgWithVideo:path];
+                    NIMMessage *message = [PositionSelectorUpdaterDecode arcDevice:path];
+                    //: [self sendMessage:message];
+                    [self circuitWritten:message];
+                //: } else {
+                } else {
+                }
+            //: }];
+            }];
 
-- (void)handleAlbumBtn
-{
-    _photopicview.hidden = YES;
-    [self.interactor mediaPicturePressed];
-}
+        //: }else{
+        }else{
 
-- (void)handleShotBtn
-{
-    _photopicview.hidden = YES;
-    [self.interactor mediaShootPressed];
-}
 
-- (ObjectToCalibrateJovial *)customAlbumView
-{
-    if(!_customAlbumView){
-        _customAlbumView = [[ObjectToCalibrateJovial alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
-        _customAlbumView.delegate = self;
-        
-                UITapGestureRecognizer *singleTapclose = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(handleParentTap)];
-                singleTapclose.delegate = self;
-                singleTapclose.cancelsTouchesInView = NO; // 允许触摸事件继续传递
-                [_customAlbumView addGestureRecognizer:singleTapclose];
-    }
-    return _customAlbumView;
-}
-- (void)handleParentTap
-{
-    [self.customAlbumView animationClose];
-}
 
-// 实现UIGestureRecognizerDelegate方法
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
-    // 获取触摸点位置
-    CGPoint touchPoint = [touch locationInView:self.customAlbumView];
-    
-    // 检查触摸点是否在子视图上
-    for (UIView *subview in self.customAlbumView.subviews) {
-        if (CGRectContainsPoint(subview.frame, touchPoint) && subview.userInteractionEnabled) {
-            return NO; // 如果触摸点在子视图上，父视图手势不响应
+
+            //: [self getOriginalImageFromAsset:asset completion:^(UIImage *image) {
+            [self unitOfTime:asset appOf:^(UIImage *image) {
+                //: if (image) {
+                if (image) {
+                    //: NIMMessage *message = [PositionSelectorUpdaterDecode msgWithImage:image];
+                    NIMMessage *message = [PositionSelectorUpdaterDecode cover:image];
+
+                    //: NSMutableDictionary *dic = [[JunctionCacheLarge sharedConfig] Gdic];
+                    NSMutableDictionary *dic = [[JunctionCacheLarge ceremony] characteristicGdic];
+                    //: NSData *imageData = UIImagePNGRepresentation(image);
+                    NSData *imageData = UIImagePNGRepresentation(image);
+                    //: [dic setObject:imageData forKey:message.messageId];
+                    [dic setObject:imageData forKey:message.messageId];
+
+                    //: [self sendMessage:message];
+                    [self circuitWritten:message];
+
+                //: } else {
+                } else {
+                }
+            //: }];
+            }];
+
         }
     }
-    
-    return YES; // 其他区域父视图手势响应
+
 }
 
-- (UIView *)photopicview
+
+//: - (void)refreshSessionTitle:(NSString *)title
+- (void)tour:(NSString *)title
 {
-    if (!_photopicview) {
-        _photopicview = [[UIView alloc]initWithFrame:CGRectMake((SCREEN_WIDTH-240)/2, SCREEN_HEIGHT-SCREEN_BOTTOM_HEIGHT-78-60, 240, 78)];
-        _photopicview.backgroundColor = [UIColor whiteColor];
-        _photopicview.layer.cornerRadius = 12;
-        _photopicview.layer.masksToBounds = YES;
-        _photopicview.hidden = YES;
-        
-        UIButton *btnAlbum = [UIButton buttonWithType:UIButtonTypeCustom];
-        btnAlbum.frame = CGRectMake(0, 0, 120, 78);
-//        btnAlbum.backgroundColor = ThemeColor;
-        [btnAlbum setImage:[UIImage imageNamed:@"icon_toolview_album"] forState:UIControlStateNormal];
-//        btnAlbum.layer.cornerRadius = 20;
-        [btnAlbum addTarget:self action:@selector(handleAlbumBtn) forControlEvents:UIControlEventTouchUpInside];
-        btnAlbum.titleLabel.font = [UIFont systemFontOfSize:14];
-        [btnAlbum setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [btnAlbum setTitle:LangKey(@"message_send_album") forState:UIControlStateNormal];
-        [btnAlbum layoutButtonWithEdgeInsetsStyle:(PositiveEstuaryWarehouseDapperEdgeInsetsStyleTop) imageTitleSpace:10];
-        [_photopicview addSubview:btnAlbum];
-        
-        UIButton *btnShot = [UIButton buttonWithType:UIButtonTypeCustom];
-        btnShot.frame = CGRectMake(120, 0, 120, 78);
-//        btnShot.backgroundColor = ThemeColor;
-        [btnShot setImage:[UIImage imageNamed:@"icon_toolview_camera"] forState:UIControlStateNormal];
-//        btnShot.layer.cornerRadius = 20;
-        [btnShot addTarget:self action:@selector(handleShotBtn) forControlEvents:UIControlEventTouchUpInside];
-        btnShot.titleLabel.font = [UIFont systemFontOfSize:14];
-        [btnShot setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [btnShot setTitle:LangKey(@"message_send_camera") forState:UIControlStateNormal];
-        [btnShot layoutButtonWithEdgeInsetsStyle:(PositiveEstuaryWarehouseDapperEdgeInsetsStyleTop) imageTitleSpace:10];
-        [_photopicview addSubview:btnShot];
-    }
-    return _photopicview;
+    //: self.titleLabel.text = title;
+    self.remote.text = title;
+//    self.labtitle.text = self.sessionTitle;
+    //: [self setUpTitleView];
+    [self failHolder];
 }
 
-- (FaithfulHumanePortraitTupleWithin *)audioContent
+//: - (BOOL)onTapMediaItem:(StylerConfigTexture *)item{
+- (BOOL)tapItem:(StylerConfigTexture *)item{
+    //: SEL sel = item.selctor;
+    SEL sel = item.enableFrame;
+    //: BOOL handled = sel && [self respondsToSelector:sel];
+    BOOL handled = sel && [self respondsToSelector:sel];
+    //: if (handled) {
+    if (handled) {
+        //: do {
+        do {
+        //: [self performSelector:sel withObject:item];
+        [self performSelector:sel withObject:item];
+        //: } while (0);
+        } while (0);
+        //: handled = YES;
+        handled = YES;
+    }
+    //: return handled;
+    return handled;
+}
+
+
+//: - (BOOL)onLongPressCell:(NIMMessage *)message
+- (BOOL)tableDHote:(NIMMessage *)message
 {
-    if(!_audioContent){
-        _audioContent = [[FaithfulHumanePortraitTupleWithin alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
-//        _audioContent.hidden = YES;
+    //: BOOL handle = NO;
+    BOOL handle = NO;
+    //: _messageForMenu = message;
+    _balloon = message;
+    //: [self.interactor setReferenceMessage:message];
+    [self.numberro setVehicle:message];
+    //: if (![self becomeFirstResponder]) {
+    if (![self becomeFirstResponder]) {
+        //: handle = NO;
+        handle = NO;
+        //: return handle;
+        return handle;
     }
-    return _audioContent;
+    //: handle = YES;
+    handle = YES;
+    //: return handle;
+    return handle;
 }
 
+
+//: - (void)scrollToMessage:(NIMMessage *)message
+- (void)activityMessage:(NIMMessage *)message
+{
+    //: NSInteger row = [self.interactor findMessageIndex:message];
+    NSInteger row = [self.numberro removekick:message];
+    //: if (row != -1) {
+    if (row != -1) {
+        //: NSIndexPath *indexPath = [NSIndexPath indexPathForRow:row inSection:0];
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:row inSection:0];
+        //: [self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
+        [self.quickResponse scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
+    }
+}
+
+//: - (void)onTapMediaItemShoot:(StylerConfigTexture *)item
+- (void)truck:(StylerConfigTexture *)item
+{
+    //: [self.interactor mediaShootPressed];
+    [self.numberro bootPressed];
+}
+
+
+//: - (void)enterPersonInfoCard:(id)sender
+- (void)findEnable:(id)sender
+{
+    //: BreezyOnyxSpontaneousStair *vc = [[BreezyOnyxSpontaneousStair alloc] initWithUserId:self.session.sessionId];
+    BreezyOnyxSpontaneousStair *vc = [[BreezyOnyxSpontaneousStair alloc] initWithPerson:self.shot.sessionId];
+    //: [self.navigationController pushViewController:vc animated:YES];
+    [self.navigationController pushViewController:vc animated:YES];
+
+}
+
+//: - (void)handleAudioBtn
+- (void)versionBtn
+{
+//    [self.sessionInputView refreshStatus:LayoutMerryOntoText];
+    //: self.sessionInputView.toolBar.showsKeyboard = NO;
+    self.delivery.bar.nameTag = NO;
+
+    //: [self.view addSubview:self.audioContent];
+    [self.view addSubview:self.label];
+    //: self.audioContent.actionDelegate = self;
+    self.label.stick = self;
+    //: [self.audioContent animationShow];
+    [self.label nomadicTexture];
+}
+
+//: - (void)menuDidHide:(NSNotification *)notification
+- (void)circles:(NSNotification *)notification
+{
+    //: [UIMenuController sharedMenuController].menuItems = nil;
+    [UIMenuController sharedMenuController].menuItems = nil;
+}
+
+//- (void)onInvited:(NSString *)invitor
+//          userIDs:(NSArray<NSString *> *)userIDs
+//      isFromGroup:(BOOL)isFromGroup
+//          groupID:(nullable NSString *)groupID
+//             type:(NERtcCallType)type
+//       attachment:(nullable NSString *)attachment
+//{
+//    ZMONVideoCallViewController *vc = [[ZMONVideoCallViewController alloc] init];
+//    vc.isInvait = YES;
+//    vc.userId = invitor;
+//    vc.roomId = self.session.sessionId;
+//    [self.navigationController pushViewController:vc animated:YES];
+//}
+
+ //: - (void)setBanned {
+ - (void)begin {
+     //: NIMSessionType type = self.session.sessionType;
+     NIMSessionType type = self.shot.sessionType;
+     //: switch (type) {
+     switch (type) {
+         //: case NIMSessionTypeTeam:{
+         case NIMSessionTypeTeam:{
+             //: NIMTeam *team = [[[NIMSDK sharedSDK] teamManager] teamById:self.session.sessionId];
+             NIMTeam *team = [[[NIMSDK sharedSDK] teamManager] teamById:self.shot.sessionId];
+             //: if (team.inAllMuteMode) {
+             if (team.inAllMuteMode) {
+                 //: if (team.allMuteMode == NIMTeamAllMuteModeMuteNormal || team.allMuteMode == NIMTeamAllMuteModeMuteAll) {
+                 if (team.allMuteMode == NIMTeamAllMuteModeMuteNormal || team.allMuteMode == NIMTeamAllMuteModeMuteAll) {
+                     //: NSString *userID = [NIMSDK sharedSDK].loginManager.currentAccount;
+                     NSString *userID = [NIMSDK sharedSDK].loginManager.currentAccount;
+                     //: NIMTeamMember *member = [[NIMSDK sharedSDK].teamManager teamMember:userID inTeam:self.session.sessionId];
+                     NIMTeamMember *member = [[NIMSDK sharedSDK].teamManager teamMember:userID inTeam:self.shot.sessionId];
+                     //: if (member.isMuted) {
+                     if (member.isMuted) {
+                         //: [self setInputViewPlaceholder:YES];
+                         [self setBelowView:YES];
+                     }
+                 }
+             }
+         }
+             //: break;
+             break;
+
+             //: break;
+             break;
+         //: case NIMSessionTypeSuperTeam: {
+         case NIMSessionTypeSuperTeam: {
+             //: NIMTeam *team = [[[NIMSDK sharedSDK] superTeamManager] teamById:self.session.sessionId];
+             NIMTeam *team = [[[NIMSDK sharedSDK] superTeamManager] teamById:self.shot.sessionId];
+             //: if (team.inAllMuteMode) {
+             if (team.inAllMuteMode) {
+                 //: if (team.allMuteMode == NIMTeamAllMuteModeMuteNormal || team.allMuteMode == NIMTeamAllMuteModeMuteAll) {
+                 if (team.allMuteMode == NIMTeamAllMuteModeMuteNormal || team.allMuteMode == NIMTeamAllMuteModeMuteAll) {
+                     //: NSString *userID = [NIMSDK sharedSDK].loginManager.currentAccount;
+                     NSString *userID = [NIMSDK sharedSDK].loginManager.currentAccount;
+                     //: NIMTeamMember *member = [[NIMSDK sharedSDK].teamManager teamMember:userID inTeam:self.session.sessionId];
+                     NIMTeamMember *member = [[NIMSDK sharedSDK].teamManager teamMember:userID inTeam:self.shot.sessionId];
+                     //: if (member.isMuted) {
+                     if (member.isMuted) {
+                         //: [self setInputViewPlaceholder:YES];
+                         [self setBelowView:YES];
+                     }
+                 }
+             }
+         }
+         //: default:
+         default:
+             //: break;
+             break;
+     }
+ }
+
+//: - (void)onStartRecording
+- (void)seekTrack
+{
+    //: _sessionInputView.recording = YES;
+    _delivery.delay = YES;
+//    [_sessionInputView endEditing:YES];
+
+    //: NIMAudioType type = [self recordAudioType];
+    NIMAudioType type = [self lease];
+    //: NSTimeInterval duration = [TowerTinyGranularLarge sharedKit].config.recordMaxDuration;
+    NSTimeInterval duration = [TowerTinyGranularLarge basicDragKit].arcSolarStrength.assembleFile;
+
+    //: [[NIMSDK sharedSDK].mediaManager addDelegate:self];
+    [[NIMSDK sharedSDK].mediaManager addDelegate:self];
+
+    //: [[NIMSDK sharedSDK].mediaManager record:type
+    [[NIMSDK sharedSDK].mediaManager record:type
+                                   //: duration:duration];
+                                   duration:duration];
+}
+
+//上传资源文件成功
+//: - (void)uploadAttachmentSuccess:(NSString *)urlString
+- (void)uploadAttachmentSuccess:(NSString *)urlString
+                     //: forMessage:(NIMMessage *)message
+                     forMessage:(NIMMessage *)message
+{
+    //如果需要使用富文本推送，可以在这里进行 message apns payload 的设置
+//    [self.tableView reloadData];
+}
+
+//: - (void)recordAudioDidCancelled {
+- (void)recordAudioDidCancelled {
+    //: _sessionInputView.recording = NO;
+    _delivery.delay = NO;
+}
+
+
+//: #pragma mark - Private
+#pragma mark - Private
+
+//: - (void)addListener
+- (void)lapsing
+{
+    //: [[NIMSDK sharedSDK].chatManager addDelegate:self];
+    [[NIMSDK sharedSDK].chatManager addDelegate:self];
+    //: [[NIMSDK sharedSDK].conversationManager addDelegate:self];
+    [[NIMSDK sharedSDK].conversationManager addDelegate:self];
+    //: [[NIMSDK sharedSDK].chatExtendManager addDelegate:self];
+    [[NIMSDK sharedSDK].chatExtendManager addDelegate:self];
+}
+//: - (NSArray *)genMediaButtonsWithMessage:(NIMMessage *)message {
+- (NSArray *)elementBy:(NIMMessage *)message {
+
+    //: NSMutableArray *selectedAllRangeButtons = [NSMutableArray array];
+    NSMutableArray *selectedAllRangeButtons = [NSMutableArray array];
+
+    //: NSArray *items;
+    NSArray *items;
+    //: if (!self.sessionConfig)
+    if (!self.load)
+    {
+        //: items = [[TowerTinyGranularLarge sharedKit].config defaultMenuItemsWithMessage:message];
+        items = [[TowerTinyGranularLarge basicDragKit].arcSolarStrength specific:message];
+    }
+    //: else if([self.sessionConfig respondsToSelector:@selector(menuItemsWithMessage:)])
+    else if([self.load respondsToSelector:@selector(surfaced:)])
+    {
+        //: items = [self.sessionConfig menuItemsWithMessage:message];
+        items = [self.load surfaced:message];
+    }
+
+    //: [items enumerateObjectsUsingBlock:^(StylerConfigTexture *item, NSUInteger idx, BOOL *stop) {
+    [items enumerateObjectsUsingBlock:^(StylerConfigTexture *item, NSUInteger idx, BOOL *stop) {
+
+        //: MarkTransformerConductorOutline *model = [[MarkTransformerConductorOutline alloc] init];
+        MarkTransformerConductorOutline *model = [[MarkTransformerConductorOutline alloc] init];
+        //: model.normalImage = item.normalImage;
+        model.moralReflexion = item.deep;
+        //: model.name = item.title;
+        model.linkText = item.pure;
+        //: model.item = item;
+        model.mechanically = item;
+
+        //: [selectedAllRangeButtons addObject:model];
+        [selectedAllRangeButtons addObject:model];
+
+    //: }];
+    }];
+
+    //: return selectedAllRangeButtons;
+    return selectedAllRangeButtons;
+}
+//: #pragma mark - 配置项列表
+#pragma mark - 配置项列表
+//是否需要监听新消息通知 : 某些场景不需要监听新消息，如浏览服务器消息历史界面
+//: - (BOOL)shouldAddListenerForNewMsg
+- (BOOL)plain
+{
+    //: BOOL should = YES;
+    BOOL should = YES;
+    //: if ([self.sessionConfig respondsToSelector:@selector(disableReceiveNewMessages)]) {
+    if ([self.load respondsToSelector:@selector(partDisabled)]) {
+        //: should = ![self.sessionConfig disableReceiveNewMessages];
+        should = ![self.load partDisabled];
+    }
+    //: return should;
+    return should;
+}
+
+//: - (void)setUpTitleView
+- (void)failHolder
+{
+    //: ConductorHideContinue *titleView = (ConductorHideContinue *)self.navigationItem.titleView;
+    ConductorHideContinue *titleView = (ConductorHideContinue *)self.navigationItem.titleView;
+    //: if (!titleView || ![titleView isKindOfClass:[ConductorHideContinue class]])
+    if (!titleView || ![titleView isKindOfClass:[ConductorHideContinue class]])
+    {
+        //: titleView = [[ConductorHideContinue alloc] initWithFrame:CGRectZero];
+        titleView = [[ConductorHideContinue alloc] initWithFrame:CGRectZero];
+        //: self.navigationItem.titleView = titleView;
+        self.navigationItem.titleView = titleView;
+
+        //: titleView.titleLabel.text = self.sessionTitle;
+        titleView.season.text = self.valley;
+        //: titleView.subtitleLabel.text = self.sessionSubTitle;
+        titleView.labelTranslate.text = self.modify;
+
+        //: self.titleLabel = titleView.titleLabel;
+        self.remote = titleView.season;
+        //: self.subTitleLabel = titleView.subtitleLabel;
+        self.advanced = titleView.labelTranslate;
+    }
+
+    //: [titleView sizeToFit];
+    [titleView sizeToFit];
+    //: self.subtitle.text = self.sessionSubTitle;
+    self.softLabel.text = self.modify;
+}
+
+//接收消息
+//: - (void)onRecvMessages:(NSArray *)messages
+- (void)onRecvMessages:(NSArray *)messages
+{
+    //: if ([self shouldAddListenerForNewMsg])
+    if ([self plain])
+    {
+        //: NIMMessage *message = messages.firstObject;
+        NIMMessage *message = messages.firstObject;
+        //: NIMSession *session = message.session;
+        NIMSession *session = message.session;
+
+        //: UIViewController *topvc = [self getTopMostController];
+        UIViewController *topvc = [self regionAlong];
+        //: if (![topvc isKindOfClass:NSClassFromString(@"RoyalDividerPlayContinue")] && ![topvc isKindOfClass:[CoolSurfaceAttachHelper class]]) {
+        if (![topvc isKindOfClass:NSClassFromString(@"RoyalDividerPlayContinue")] && ![topvc isKindOfClass:[CoolSurfaceAttachHelper class]]) {
+            //: return;
+            return;
+        }
+
+        //: if (![session isEqual:self.session] || !messages.count)
+        if (![session isEqual:self.shot] || !messages.count)
+        {
+            //: return;
+            return;
+        }
+
+        //: [self uiInsertMessages:messages];
+        [self pick:messages];
+        //: [self.interactor markRead:NO];
+        [self.numberro construct:NO];
+
+        // 群禁言后输入框改变占位符文字
+        //: [self setBannedSpeakingWithMessage:messages];
+        [self setShore:messages];
+    }
+}
+
+//: - (void)onTapMediaItemLocation:(StylerConfigTexture *)item
+- (void)factor:(StylerConfigTexture *)item
+{
+//    [self.interactor mediaLocationPressed];
+    //: [self.view addSubview:self.audioContent];
+    [self.view addSubview:self.label];
+    //: self.audioContent.actionDelegate = self;
+    self.label.stick = self;
+    //: [self.audioContent animationShow];
+    [self.label nomadicTexture];
+
+}
+
+//: - (void)onTapCameraBtn:(id)sender
+- (void)destinationing:(id)sender
+{
+//    [self.interactor mediaShootPressed];
+
+    //: [self.view addSubview:self.customAlbumView];
+    [self.view addSubview:self.candidCalibrateJovial];
+    //: [self.customAlbumView.albumPickerView reloadMediaData];
+    [self.candidCalibrateJovial.history select];
+    //: [self.customAlbumView.albumPickerView.selectedAssets removeAllObjects];
+    [self.candidCalibrateJovial.history.eliteBoundAsset removeAllObjects];
+    //: [self.customAlbumView.albumPickerView.collectionView reloadData];
+    [self.candidCalibrateJovial.history.graph reloadData];
+    //: [self.customAlbumView.confirmButton setTitle:[PluginTulipOptimize getTextWithKey:@"user_profile_avtivity_send"] forState:UIControlStateNormal];
+    [self.candidCalibrateJovial.fastenerUp setTitle:[PluginTulipOptimize richness:StringFromCraftProfileData(appAccurateName)] forState:UIControlStateNormal];
+    //: [self.customAlbumView animationShow];
+    [self.candidCalibrateJovial oval];
+
+}
+
+//: - (void)onTextChanged:(id)sender{}
+- (void)constructChanged:(id)sender{}
+
+
+//: - (void)uiCheckReceipts:(NSArray<NIMMessageReceipt *> *)receipts
+- (void)receiptsPrefer:(NSArray<NIMMessageReceipt *> *)receipts
+{
+    //: [self.interactor checkReceipts:receipts];
+    [self.numberro employReceipts:receipts];
+}
+//: - (void)sendMessage:(NIMMessage *)message completion:(void(^)(NSError * err))completion
+- (void)odd:(NIMMessage *)message buildCompletion:(void(^)(NSError * err))completion
+{
+    //: __weak typeof(self) weakSelf = self;
+    __weak typeof(self) weakSelf = self;
+    //: [self.interactor sendMessage:message
+    [self.numberro board:message
+                        //: toMessage:nil
+                        eyeDown:nil
+                      //: completion:^(NSError *err)
+                      sendSize:^(NSError *err)
+    {
+        //: if (completion)
+        if (completion)
+        {
+            //: completion(err);
+            completion(err);
+        }
+        //: [weakSelf cleanMenuMessage];
+        [weakSelf colorPacket];
+    //: }];
+    }];
+}
+
+//: - (void)didReplyCancelled
+- (void)runRed
+{
+    //: self.messageForMenu = nil;
+    self.balloon = nil;
+    //: [self.interactor setReferenceMessage:nil];
+    [self.numberro setVehicle:nil];
+
+    //: if ([self.sessionConfig respondsToSelector:@selector(clearThreadMessageAfterSent)])
+    if ([self.load respondsToSelector:@selector(carrotCanvas)])
+    {
+        //: if ([self.sessionConfig clearThreadMessageAfterSent])
+        if ([self.load carrotCanvas])
+        {
+            //: [self.sessionConfig cleanThreadMessage];
+            [self.load heliogram];
+        }
+    }
+}
+
+//: #pragma mark NIMChatExtendManagerDelegate
+#pragma mark NIMChatExtendManagerDelegate
+
+//: - (void)onRecvQuickComment:(NIMQuickComment *)comment
+- (void)onRecvQuickComment:(NIMQuickComment *)comment
+{
+    //: [self.interactor updateMessage:comment.message];
+    [self.numberro draft:comment.message];
+}
+
+//: - (void)refreshSessionSubTitle:(NSString *)title
+- (void)unit:(NSString *)title
+{
+    //: self.subTitleLabel.text = title;
+    self.advanced.text = title;
+    //: self.subtitle.text = title;
+    self.softLabel.text = title;
+    //: if([title isEqualToString:@"离线".user_localized]){
+    if([title isEqualToString:StringFromCraftProfileData(screenBlinkDevice).underMethod]){
+        //: self.subtitle.textColor = [UIColor colorWithHexString:@"777777"];
+        self.softLabel.textColor = [UIColor tin:StringFromCraftProfileData(featureCurveId)];
+    //: }else{
+    }else{
+        //: self.subtitle.textColor = [UIColor colorWithHexString:@"#00B01B"];
+        self.softLabel.textColor = [UIColor tin:StringFromCraftProfileData(kSecretUtility)];
+    }
+    //: [self setUpTitleView];
+    [self failHolder];
+}
+
+//: @end
 @end
 
+Byte * CraftProfileDataToCache(Byte *data) {
+    int carryOn = data[0];
+    int secretRed = data[1];
+    Byte wildcat = data[2];
+    int judicialTemp = data[3];
+    if (!carryOn) return data + judicialTemp;
+    for (int i = judicialTemp; i < judicialTemp + secretRed; i++) {
+        int value = data[i] - wildcat;
+        if (value < 0) {
+            value += 256;
+        }
+        data[i] = value;
+    }
+    data[0] = 0;
+    data[judicialTemp + secretRed] = 0;
+    return data + judicialTemp;
+}
+
+NSString *StringFromCraftProfileData(Byte *data) {
+    return [NSString stringWithUTF8String:(char *)CraftProfileDataToCache(data)];
+}

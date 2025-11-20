@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ArraySurfaceEtherealDataProjector.m
 //  https://github.com/hackiftekhar/LayoutBuildOutlinedQuill
@@ -21,713 +23,1066 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-
+//: #import "ArraySurfaceEtherealDataProjector.h"
 #import "ArraySurfaceEtherealDataProjector.h"
+//: #import "LayoutBuildOutlinedQuill.h"
 #import "LayoutBuildOutlinedQuill.h"
+//: #import "UIView+PainterPlanetBeside.h"
 #import "UIView+PainterPlanetBeside.h"
+//: #import "NSArray+ProjectorPluginIn.h"
 #import "NSArray+ProjectorPluginIn.h"
 
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @interface PlaceOnDismissPalettePerform : NSObject
 @interface PlaceOnDismissPalettePerform : NSObject
 
-@property(nullable, nonatomic, weak) UIView *textFieldView;
-@property(nullable, nonatomic, weak) id<UITextFieldDelegate> textFieldDelegate;
-@property(nullable, nonatomic, weak) id<UITextViewDelegate> textViewDelegate;
-@property(nonatomic) UIReturnKeyType originalReturnKeyType;
+//: @property(nullable, nonatomic, weak) id<UITextViewDelegate> textViewDelegate;
+@property(nullable, nonatomic, weak) id<UITextViewDelegate> excess;
+//: @property(nullable, nonatomic, weak) UIView *textFieldView;
+@property(nullable, nonatomic, weak) UIView *minimumView;
+//: @property(nonatomic) UIReturnKeyType originalReturnKeyType;
+@property(nonatomic) UIReturnKeyType firstSavingVariant;
+//: @property(nullable, nonatomic, weak) id<UITextFieldDelegate> textFieldDelegate;
+@property(nullable, nonatomic, weak) id<UITextFieldDelegate> conversation;
 
+//: @end
 @end
 
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @implementation PlaceOnDismissPalettePerform
 @implementation PlaceOnDismissPalettePerform
 
--(instancetype)initWithTextFieldView:(UIView*)textFieldView textFieldDelegate:(id<UITextFieldDelegate>)textFieldDelegate textViewDelegate:(id<UITextViewDelegate>)textViewDelegate originalReturnKey:(UIReturnKeyType)returnKeyType
+//: -(instancetype)initWithTextFieldView:(UIView*)textFieldView textFieldDelegate:(id<UITextFieldDelegate>)textFieldDelegate textViewDelegate:(id<UITextViewDelegate>)textViewDelegate originalReturnKey:(UIReturnKeyType)returnKeyType
+-(instancetype)initWithStair:(UIView*)textFieldView table:(id<UITextFieldDelegate>)textFieldDelegate concentration:(id<UITextViewDelegate>)textViewDelegate key:(UIReturnKeyType)returnKeyType
 {
+    //: self = [super init];
     self = [super init];
-    
+
+    //: if (self)
     if (self)
     {
-        _textFieldView = textFieldView;
-        _textFieldDelegate = textFieldDelegate;
-        _textViewDelegate = textViewDelegate;
-        _originalReturnKeyType = returnKeyType;
+        //: _textFieldView = textFieldView;
+        _minimumView = textFieldView;
+        //: _textFieldDelegate = textFieldDelegate;
+        _conversation = textFieldDelegate;
+        //: _textViewDelegate = textViewDelegate;
+        _excess = textViewDelegate;
+        //: _originalReturnKeyType = returnKeyType;
+        _firstSavingVariant = returnKeyType;
     }
-    
+
+    //: return self;
     return self;
 }
 
+//: @end
 @end
 
 
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @interface ArraySurfaceEtherealDataProjector ()<UITextFieldDelegate,UITextViewDelegate>
 @interface ArraySurfaceEtherealDataProjector ()<UITextFieldDelegate,UITextViewDelegate>
 
--(void)updateReturnKeyTypeOnTextField:(UIView*)textField;
+//: -(void)updateReturnKeyTypeOnTextField:(UIView*)textField;
+-(void)pressed:(UIView*)textField;
 
+//: @end
 @end
 
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @implementation ArraySurfaceEtherealDataProjector
 @implementation ArraySurfaceEtherealDataProjector
 {
-    NSMutableSet<PlaceOnDismissPalettePerform*> *textFieldInfoCache;
+    //: NSMutableSet<PlaceOnDismissPalettePerform*> *textFieldInfoCache;
+    NSMutableSet<PlaceOnDismissPalettePerform*> *status;
 }
 
-@synthesize lastTextFieldReturnKeyType = _lastTextFieldReturnKeyType;
-@synthesize delegate = _delegate;
+//: @synthesize lastTextFieldReturnKeyType = _lastTextFieldReturnKeyType;
+@synthesize fullMoonKeyType = _resourceCarrier;
+//: @synthesize delegate = _delegate;
+@synthesize manHiveTransformerses = _manager;
 
-- (instancetype)init
-{
-    self = [self initWithViewController:nil];
-    return self;
-}
-
--(instancetype)initWithViewController:(nullable UIViewController*)controller
-{
-    self = [super init];
-    
-    if (self)
-    {
-        textFieldInfoCache = [[NSMutableSet alloc] init];
-        
-        if (controller.view)
-        {
-            [self addResponderFromView:controller.view];
-        }
-    }
-    
-    return self;
-}
-
--(PlaceOnDismissPalettePerform*)textFieldViewCachedInfo:(UIView*)textField
-{
-    for (PlaceOnDismissPalettePerform *model in textFieldInfoCache)
-        if (model.textFieldView == textField)  return model;
-
-    return nil;
-}
-
-#pragma mark - Add/Remove TextFields
--(void)addResponderFromView:(UIView*)view
-{
-    NSArray<UIView*> *textFields = [view deepResponderViews];
-    
-    for (UIView *textField in textFields)  [self addTextFieldView:textField];
-}
-
--(void)removeResponderFromView:(UIView*)view
-{
-    NSArray<UIView*> *textFields = [view deepResponderViews];
-    
-    for (UIView *textField in textFields)  [self removeTextFieldView:textField];
-}
-
--(void)removeTextFieldView:(UIView*)view
-{
-    PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:view];
-
-    if (model)
-    {
-        UITextField *textField = (UITextField*)view;
-
-        if ([view respondsToSelector:@selector(setReturnKeyType:)])
-        {
-            textField.returnKeyType = model.originalReturnKeyType;
-        }
-
-        if ([view respondsToSelector:@selector(setDelegate:)])
-        {
-            textField.delegate = model.textFieldDelegate;
-        }
-        
-        [textFieldInfoCache removeObject:model];
-    }
-}
-
--(void)addTextFieldView:(UIView*)view
-{
-    PlaceOnDismissPalettePerform *model = [[PlaceOnDismissPalettePerform alloc] initWithTextFieldView:view textFieldDelegate:nil textViewDelegate:nil originalReturnKey:UIReturnKeyDefault];
-    
-    UITextField *textField = (UITextField*)view;
-
-    if ([view respondsToSelector:@selector(setReturnKeyType:)])
-    {
-        model.originalReturnKeyType = textField.returnKeyType;
-    }
-
-    if ([view respondsToSelector:@selector(setDelegate:)])
-    {
-        model.textFieldDelegate = textField.delegate;
-        [textField setDelegate:self];
-    }
-
-    [textFieldInfoCache addObject:model];
-}
-
--(void)updateReturnKeyTypeOnTextField:(UIView*)textField
-{
-    UIView *superConsideredView;
-    
-    //If find any consider responderView in it's upper hierarchy then will get deepResponderView. (Bug ID: #347)
-    for (Class consideredClass in [[LayoutBuildOutlinedQuill sharedManager] toolbarPreviousNextAllowedClasses])
-    {
-        superConsideredView = [textField superviewOfClassType:consideredClass];
-        
-        if (superConsideredView)
-            break;
-    }
-
-    NSArray<UIView*> *textFields = nil;
-
-    //If there is a tableView in view's hierarchy, then fetching all it's subview that responds. No sorting for tableView, it's by subView position.
-    if (superConsideredView)  //     //   (Enhancement ID: #22)
-    {
-        textFields = [superConsideredView deepResponderViews];
-    }
-    //Otherwise fetching all the siblings
-    else
-    {
-        textFields = [textField responderSiblings];
-        
-        //Sorting textFields according to behavior
-        switch ([[LayoutBuildOutlinedQuill sharedManager] toolbarManageBehavior])
-        {
-                //If needs to sort it by tag
-            case AddPackIconPackTemplateByTag:
-                textFields = [textFields sortedArrayByTag];
-                break;
-                
-                //If needs to sort it by Position
-            case AddPackIconPackTemplateByPosition:
-                textFields = [textFields sortedArrayByPosition];
-                break;
-                
-            default:
-                break;
-        }
-    }
-    
-    //If it's the last textField in responder view, else next
-    [(UITextField*)textField setReturnKeyType:(([textFields lastObject] == textField)    ?   self.lastTextFieldReturnKeyType :   UIReturnKeyNext)];
-}
-
-#pragma mark - Goto next or Resign.
-
--(BOOL)goToNextResponderOrResign:(UIView*)textField
-{
-    UIView *superConsideredView;
-    
-    //If find any consider responderView in it's upper hierarchy then will get deepResponderView. (Bug ID: #347)
-    for (Class consideredClass in [[LayoutBuildOutlinedQuill sharedManager] toolbarPreviousNextAllowedClasses])
-    {
-        superConsideredView = [textField superviewOfClassType:consideredClass];
-        
-        if (superConsideredView)
-            break;
-    }
-    
-    NSArray<UIView*> *textFields = nil;
-    
-    //If there is a tableView in view's hierarchy, then fetching all it's subview that responds. No sorting for tableView, it's by subView position.
-    if (superConsideredView)  //     //   (Enhancement ID: #22)
-    {
-        textFields = [superConsideredView deepResponderViews];
-    }
-    //Otherwise fetching all the siblings
-    else
-    {
-        textFields = [textField responderSiblings];
-        
-        //Sorting textFields according to behavior
-        switch ([[LayoutBuildOutlinedQuill sharedManager] toolbarManageBehavior])
-        {
-                //If needs to sort it by tag
-            case AddPackIconPackTemplateByTag:
-                textFields = [textFields sortedArrayByTag];
-                break;
-                
-                //If needs to sort it by Position
-            case AddPackIconPackTemplateByPosition:
-                textFields = [textFields sortedArrayByPosition];
-                break;
-                
-            default:
-                break;
-        }
-    }
-        
-    //Getting index of current textField.
-    NSUInteger index = [textFields indexOfObject:textField];
-    
-    //If it is not last textField. then it's next object becomeFirstResponder.
-    if (index != NSNotFound && index < textFields.count-1)
-    {
-        [textFields[index+1] becomeFirstResponder];
-        return NO;
-    }
-    else
-    {
-        [textField resignFirstResponder];
-        return YES;
-    }
-}
-
+//: #pragma mark - TextField delegate
 #pragma mark - TextField delegate
+//: - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {
-    id<UITextFieldDelegate> delegate = self.delegate;
-    
+    //: id<UITextFieldDelegate> delegate = self.delegate;
+    id<UITextFieldDelegate> delegate = self.manHiveTransformerses;
+
+    //: if (delegate == nil)
     if (delegate == nil)
     {
-        PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textField];
-        delegate = model.textFieldDelegate;
+        //: PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textField];
+        PlaceOnDismissPalettePerform *model = [self beginAcross:textField];
+        //: delegate = model.textFieldDelegate;
+        delegate = model.conversation;
     }
-    
-    if ([delegate respondsToSelector:@selector(textFieldShouldBeginEditing:)])
+
+    //: if ([delegate respondsToSelector:@selector(textFieldShouldBeginEditing:)])
+    if ([delegate respondsToSelector:@selector(resuming:)])
+        //: return [delegate textFieldShouldBeginEditing:textField];
         return [delegate textFieldShouldBeginEditing:textField];
+    //: else
     else
+        //: return YES;
         return YES;
 }
 
-- (void)textFieldDidBeginEditing:(UITextField *)textField
+//: -(instancetype)initWithViewController:(nullable UIViewController*)controller
+-(instancetype)initWithAddController:(nullable UIViewController*)controller
 {
-    [self updateReturnKeyTypeOnTextField:textField];
+    //: self = [super init];
+    self = [super init];
 
-    id<UITextFieldDelegate> delegate = self.delegate;
-    
-    if (delegate == nil)
+    //: if (self)
+    if (self)
     {
-        PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textField];
-        delegate = model.textFieldDelegate;
+        //: textFieldInfoCache = [[NSMutableSet alloc] init];
+        status = [[NSMutableSet alloc] init];
+
+        //: if (controller.view)
+        if (controller.view)
+        {
+            //: [self addResponderFromView:controller.view];
+            [self fromBold:controller.view];
+        }
     }
-    
-    if ([delegate respondsToSelector:@selector(textFieldDidBeginEditing:)])
-        [delegate textFieldDidBeginEditing:textField];
+
+    //: return self;
+    return self;
 }
 
-- (BOOL)textFieldShouldEndEditing:(UITextField *)textField
+//: - (instancetype)init
+- (instancetype)init
 {
-    id<UITextFieldDelegate> delegate = self.delegate;
-    
+    //: self = [self initWithViewController:nil];
+    self = [self initWithAddController:nil];
+    //: return self;
+    return self;
+}
+
+//: - (BOOL)textView:(UITextView *)textView shouldInteractWithTextAttachment:(NSTextAttachment *)textAttachment inRange:(NSRange)characterRange interaction:(UITextItemInteraction)interaction
+- (BOOL)textView:(UITextView *)textView shouldInteractWithTextAttachment:(NSTextAttachment *)textAttachment inRange:(NSRange)characterRange interaction:(UITextItemInteraction)interaction
+{
+    //: id<UITextViewDelegate> delegate = self.delegate;
+    id<UITextViewDelegate> delegate = self.manHiveTransformerses;
+
+    //: if (delegate == nil)
     if (delegate == nil)
     {
-        PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textField];
-        delegate = model.textFieldDelegate;
+        //: PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
+        PlaceOnDismissPalettePerform *model = [self beginAcross:textView];
+        //: delegate = model.textViewDelegate;
+        delegate = model.excess;
     }
 
-    if ([delegate respondsToSelector:@selector(textFieldShouldEndEditing:)])
-        return [delegate textFieldShouldEndEditing:textField];
+    //: if ([delegate respondsToSelector:@selector(textView:shouldInteractWithTextAttachment:inRange:interaction:)])
+    if ([delegate respondsToSelector:@selector(textView:shouldInteractWithTextAttachment:inRange:interaction:)])
+        //: return [delegate textView:textView shouldInteractWithTextAttachment:textAttachment inRange:characterRange interaction:interaction];
+        return [delegate textView:textView shouldInteractWithTextAttachment:textAttachment inRange:characterRange interaction:interaction];
+
+    //: return YES;
+    return YES;
+}
+
+//: -(void)updateReturnKeyTypeOnTextField:(UIView*)textField
+-(void)pressed:(UIView*)textField
+{
+    //: UIView *superConsideredView;
+    UIView *superConsideredView;
+
+    //If find any consider responderView in it's upper hierarchy then will get deepResponderView. (Bug ID: #347)
+    //: for (Class consideredClass in [[LayoutBuildOutlinedQuill sharedManager] toolbarPreviousNextAllowedClasses])
+    for (Class consideredClass in [[LayoutBuildOutlinedQuill commonSumManagingDirector] geologicalFormation])
+    {
+        //: superConsideredView = [textField superviewOfClassType:consideredClass];
+        superConsideredView = [textField tiny:consideredClass];
+
+        //: if (superConsideredView)
+        if (superConsideredView)
+            //: break;
+            break;
+    }
+
+    //: NSArray<UIView*> *textFields = nil;
+    NSArray<UIView*> *textFields = nil;
+
+    //If there is a tableView in view's hierarchy, then fetching all it's subview that responds. No sorting for tableView, it's by subView position.
+    //: if (superConsideredView) 
+    if (superConsideredView) //     //   (Enhancement ID: #22)
+    {
+        //: textFields = [superConsideredView deepResponderViews];
+        textFields = [superConsideredView writingStack];
+    }
+    //Otherwise fetching all the siblings
+    //: else
     else
+    {
+        //: textFields = [textField responderSiblings];
+        textFields = [textField siblings];
+
+        //Sorting textFields according to behavior
+        //: switch ([[LayoutBuildOutlinedQuill sharedManager] toolbarManageBehavior])
+        switch ([[LayoutBuildOutlinedQuill commonSumManagingDirector] totalroduce])
+        {
+                //If needs to sort it by tag
+            //: case AddPackIconPackTemplateByTag:
+            case AddPackIconPackTemplateByTag:
+                //: textFields = [textFields sortedArrayByTag];
+                textFields = [textFields accept];
+                //: break;
+                break;
+
+                //If needs to sort it by Position
+            //: case AddPackIconPackTemplateByPosition:
+            case AddPackIconPackTemplateByPosition:
+                //: textFields = [textFields sortedArrayByPosition];
+                textFields = [textFields radio];
+                //: break;
+                break;
+
+            //: default:
+            default:
+                //: break;
+                break;
+        }
+    }
+
+    //If it's the last textField in responder view, else next
+    //: [(UITextField*)textField setReturnKeyType:(([textFields lastObject] == textField) ? self.lastTextFieldReturnKeyType : UIReturnKeyNext)];
+    [(UITextField*)textField setReturnKeyType:(([textFields lastObject] == textField) ? self.fullMoonKeyType : UIReturnKeyNext)];
+}
+
+//: - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    //: id<UITextFieldDelegate> delegate = self.delegate;
+    id<UITextFieldDelegate> delegate = self.manHiveTransformerses;
+
+    //: if (delegate == nil)
+    if (delegate == nil)
+    {
+        //: PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textField];
+        PlaceOnDismissPalettePerform *model = [self beginAcross:textField];
+        //: delegate = model.textFieldDelegate;
+        delegate = model.conversation;
+    }
+
+    //: if ([delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)])
+    if ([delegate respondsToSelector:@selector(stick:forgetName:noodle:)])
+        //: return [delegate textField:textField shouldChangeCharactersInRange:range replacementString:string];
+        return [delegate textField:textField shouldChangeCharactersInRange:range replacementString:string];
+    //: else
+    else
+        //: return YES;
         return YES;
 }
 
-- (void)textFieldDidEndEditing:(UITextField *)textField
-{
-    id<UITextFieldDelegate> delegate = self.delegate;
-    
-    if (delegate == nil)
-    {
-        PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textField];
-        delegate = model.textFieldDelegate;
-    }
-    
-    if ([delegate respondsToSelector:@selector(textFieldDidEndEditing:)])
-        [delegate textFieldDidEndEditing:textField];
-}
-
+//: - (void)textFieldDidEndEditing:(UITextField *)textField reason:(UITextFieldDidEndEditingReason)reason
 - (void)textFieldDidEndEditing:(UITextField *)textField reason:(UITextFieldDidEndEditingReason)reason
 {
-    id<UITextFieldDelegate> delegate = self.delegate;
-    
+    //: id<UITextFieldDelegate> delegate = self.delegate;
+    id<UITextFieldDelegate> delegate = self.manHiveTransformerses;
+
+    //: if (delegate == nil)
     if (delegate == nil)
     {
-        PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textField];
-        delegate = model.textFieldDelegate;
+        //: PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textField];
+        PlaceOnDismissPalettePerform *model = [self beginAcross:textField];
+        //: delegate = model.textFieldDelegate;
+        delegate = model.conversation;
     }
-    
+
+    //: if ([delegate respondsToSelector:@selector(textFieldDidEndEditing:reason:)])
     if ([delegate respondsToSelector:@selector(textFieldDidEndEditing:reason:)])
+        //: [delegate textFieldDidEndEditing:textField reason:reason];
         [delegate textFieldDidEndEditing:textField reason:reason];
 }
 
-- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
-{
-    id<UITextFieldDelegate> delegate = self.delegate;
-    
-    if (delegate == nil)
-    {
-        PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textField];
-        delegate = model.textFieldDelegate;
-    }
-    
-    if ([delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)])
-        return [delegate textField:textField shouldChangeCharactersInRange:range replacementString:string];
-    else
-        return YES;
-}
-
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 160000
-- (UIMenu *)textField:(UITextField *)textField editMenuForCharactersInRange:(NSRange)range suggestedActions:(NSArray<UIMenuElement *> *)suggestedActions NS_AVAILABLE_IOS(16_0);
-{
-    id<UITextFieldDelegate> delegate = self.delegate;
-
-    if (delegate == nil)
-    {
-        PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textField];
-        delegate = model.textFieldDelegate;
-    }
-
-    if ([delegate respondsToSelector:@selector(textField:editMenuForCharactersInRange:suggestedActions:)])
-        return [delegate textField:textField editMenuForCharactersInRange:range suggestedActions:suggestedActions];
-    else
-        return nil;
-}
-
-- (void)textField:(UITextField *)textField willPresentEditMenuWithAnimator:(id<UIEditMenuInteractionAnimating>)animator NS_AVAILABLE_IOS(16_0);
-{
-    id<UITextFieldDelegate> delegate = self.delegate;
-
-    if (delegate == nil)
-    {
-        PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textField];
-        delegate = model.textFieldDelegate;
-    }
-
-    if ([delegate respondsToSelector:@selector(textField:willPresentEditMenuWithAnimator:)])
-        [delegate textField:textField willPresentEditMenuWithAnimator:animator];
-}
-
-- (void)textField:(UITextField *)textField willDismissEditMenuWithAnimator:(id<UIEditMenuInteractionAnimating>)animator NS_AVAILABLE_IOS(16_0);
-{
-    id<UITextFieldDelegate> delegate = self.delegate;
-
-    if (delegate == nil)
-    {
-        PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textField];
-        delegate = model.textFieldDelegate;
-    }
-
-    if ([delegate respondsToSelector:@selector(textField:willDismissEditMenuWithAnimator:)])
-        [delegate textField:textField willDismissEditMenuWithAnimator:animator];
-}
-#endif
-
-- (BOOL)textFieldShouldClear:(UITextField *)textField
-{
-    id<UITextFieldDelegate> delegate = self.delegate;
-    
-    if (delegate == nil)
-    {
-        PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textField];
-        delegate = model.textFieldDelegate;
-    }
-    
-    if ([delegate respondsToSelector:@selector(textFieldShouldClear:)])
-        return [delegate textFieldShouldClear:textField];
-    else
-        return YES;
-}
-
--(BOOL)textFieldShouldReturn:(UITextField *)textField
-{
-    id<UITextFieldDelegate> delegate = self.delegate;
-    
-    if (delegate == nil)
-    {
-        PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textField];
-        delegate = model.textFieldDelegate;
-    }
-    
-    if ([delegate respondsToSelector:@selector(textFieldShouldReturn:)])
-    {
-        BOOL shouldReturn = [delegate textFieldShouldReturn:textField];
-
-        if (shouldReturn)
-        {
-            shouldReturn = [self goToNextResponderOrResign:textField];
-        }
-        
-        return shouldReturn;
-    }
-    else
-    {
-        return [self goToNextResponderOrResign:textField];
-    }
-}
-
-
-#pragma mark - TextView delegate
-- (BOOL)textViewShouldBeginEditing:(UITextView *)textView
-{
-    id<UITextViewDelegate> delegate = self.delegate;
-    
-    if (delegate == nil)
-    {
-        PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
-        delegate = model.textViewDelegate;
-    }
-    
-    if ([delegate respondsToSelector:@selector(textViewShouldBeginEditing:)])
-        return [delegate textViewShouldBeginEditing:textView];
-    else
-        return YES;
-}
-
-- (BOOL)textViewShouldEndEditing:(UITextView *)textView
-{
-    id<UITextViewDelegate> delegate = self.delegate;
-    
-    if (delegate == nil)
-    {
-        PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
-        delegate = model.textViewDelegate;
-    }
-    
-    if ([delegate respondsToSelector:@selector(textViewShouldEndEditing:)])
-        return [delegate textViewShouldEndEditing:textView];
-    else
-        return YES;
-}
-
-- (void)textViewDidBeginEditing:(UITextView *)textView
-{
-    [self updateReturnKeyTypeOnTextField:textView];
-
-    id<UITextViewDelegate> delegate = self.delegate;
-    
-    if (delegate == nil)
-    {
-        PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
-        delegate = model.textViewDelegate;
-    }
-    
-    if ([delegate respondsToSelector:@selector(textViewDidBeginEditing:)])
-        [delegate textViewDidBeginEditing:textView];
-}
-
-- (void)textViewDidEndEditing:(UITextView *)textView
-{
-    id<UITextViewDelegate> delegate = self.delegate;
-    
-    if (delegate == nil)
-    {
-        PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
-        delegate = model.textViewDelegate;
-    }
-    
-    if ([delegate respondsToSelector:@selector(textViewDidEndEditing:)])
-        [delegate textViewDidEndEditing:textView];
-}
-
-- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
-{
-    id<UITextViewDelegate> delegate = self.delegate;
-    
-    if (delegate == nil)
-    {
-        PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
-        delegate = model.textViewDelegate;
-    }
-    
-    BOOL shouldReturn = YES;
-    
-    if ([delegate respondsToSelector:@selector(textView:shouldChangeTextInRange:replacementText:)])
-        shouldReturn = [delegate textView:textView shouldChangeTextInRange:range replacementText:text];
-    
-    if (shouldReturn && [text isEqualToString:@"\n"])
-    {
-        shouldReturn = [self goToNextResponderOrResign:textView];
-    }
-    
-    return shouldReturn;
-}
-
-- (void)textViewDidChange:(UITextView *)textView
-{
-    id<UITextViewDelegate> delegate = self.delegate;
-    
-    if (delegate == nil)
-    {
-        PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
-        delegate = model.textViewDelegate;
-    }
-    
-    if ([delegate respondsToSelector:@selector(textViewDidChange:)])
-        [delegate textViewDidChange:textView];
-}
-
-- (void)textViewDidChangeSelection:(UITextView *)textView
-{
-    id<UITextViewDelegate> delegate = self.delegate;
-    
-    if (delegate == nil)
-    {
-        PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
-        delegate = model.textViewDelegate;
-    }
-    
-    if ([delegate respondsToSelector:@selector(textViewDidChangeSelection:)])
-        [delegate textViewDidChangeSelection:textView];
-}
-
+//: - (BOOL)textView:(UITextView *)textView shouldInteractWithURL:(NSURL *)URL inRange:(NSRange)characterRange interaction:(UITextItemInteraction)interaction
 - (BOOL)textView:(UITextView *)textView shouldInteractWithURL:(NSURL *)URL inRange:(NSRange)characterRange interaction:(UITextItemInteraction)interaction
 {
-    id<UITextViewDelegate> delegate = self.delegate;
-    
+    //: id<UITextViewDelegate> delegate = self.delegate;
+    id<UITextViewDelegate> delegate = self.manHiveTransformerses;
+
+    //: if (delegate == nil)
     if (delegate == nil)
     {
-        PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
-        delegate = model.textViewDelegate;
+        //: PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
+        PlaceOnDismissPalettePerform *model = [self beginAcross:textView];
+        //: delegate = model.textViewDelegate;
+        delegate = model.excess;
     }
-    
+
+    //: if ([delegate respondsToSelector:@selector(textView:shouldInteractWithURL:inRange:interaction:)])
     if ([delegate respondsToSelector:@selector(textView:shouldInteractWithURL:inRange:interaction:)])
+        //: return [delegate textView:textView shouldInteractWithURL:URL inRange:characterRange interaction:interaction];
         return [delegate textView:textView shouldInteractWithURL:URL inRange:characterRange interaction:interaction];
 
+    //: return YES;
     return YES;
 }
 
-- (BOOL)textView:(UITextView *)textView shouldInteractWithTextAttachment:(NSTextAttachment *)textAttachment inRange:(NSRange)characterRange interaction:(UITextItemInteraction)interaction
+//: -(void)addTextFieldView:(UIView*)view
+-(void)clip:(UIView*)view
 {
-    id<UITextViewDelegate> delegate = self.delegate;
-    
-    if (delegate == nil)
-    {
-        PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
-        delegate = model.textViewDelegate;
-    }
-    
-    if ([delegate respondsToSelector:@selector(textView:shouldInteractWithTextAttachment:inRange:interaction:)])
-        return [delegate textView:textView shouldInteractWithTextAttachment:textAttachment inRange:characterRange interaction:interaction];
+    //: PlaceOnDismissPalettePerform *model = [[PlaceOnDismissPalettePerform alloc] initWithTextFieldView:view textFieldDelegate:nil textViewDelegate:nil originalReturnKey:UIReturnKeyDefault];
+    PlaceOnDismissPalettePerform *model = [[PlaceOnDismissPalettePerform alloc] initWithStair:view table:nil concentration:nil key:UIReturnKeyDefault];
 
-    return YES;
+    //: UITextField *textField = (UITextField*)view;
+    UITextField *textField = (UITextField*)view;
+
+    //: if ([view respondsToSelector:@selector(setReturnKeyType:)])
+    if ([view respondsToSelector:@selector(setMenuLoadsed:)])
+    {
+        //: model.originalReturnKeyType = textField.returnKeyType;
+        model.firstSavingVariant = textField.returnKeyType;
+    }
+
+    //: if ([view respondsToSelector:@selector(setDelegate:)])
+    if ([view respondsToSelector:@selector(setManHiveTransformerses:)])
+    {
+        //: model.textFieldDelegate = textField.delegate;
+        model.conversation = textField.delegate;
+        //: [textField setDelegate:self];
+        [textField setDelegate:self];
+    }
+
+    //: [textFieldInfoCache addObject:model];
+    [status addObject:model];
 }
 
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 160000
--(UIMenu *)textView:(UITextView *)textView editMenuForTextInRange:(NSRange)range suggestedActions:(NSArray<UIMenuElement *> *)suggestedActions  NS_AVAILABLE_IOS(16_0);
+//: - (void)textView:(UITextView *)textView willDismissEditMenuWithAnimator:(id<UIEditMenuInteractionAnimating>)animator NS_AVAILABLE_IOS(16_0);
+- (void)textView:(UITextView *)textView willDismissEditMenuWithAnimator:(id<UIEditMenuInteractionAnimating>)animator NS_AVAILABLE_IOS(16_0);
 {
-    id<UITextViewDelegate> delegate = self.delegate;
+    //: id<UITextViewDelegate> delegate = self.delegate;
+    id<UITextViewDelegate> delegate = self.manHiveTransformerses;
 
+    //: if (delegate == nil)
     if (delegate == nil)
     {
-        PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
-        delegate = model.textViewDelegate;
+        //: PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
+        PlaceOnDismissPalettePerform *model = [self beginAcross:textView];
+        //: delegate = model.textViewDelegate;
+        delegate = model.excess;
     }
 
-    if ([delegate respondsToSelector:@selector(textView:editMenuForTextInRange:suggestedActions:)])
-        return [delegate textView:textView editMenuForTextInRange:range suggestedActions:suggestedActions];
-    else
-        return nil;
-}
-
-- (void)textView:(UITextView *)textView willPresentEditMenuWithAnimator:(id<UIEditMenuInteractionAnimating>)animator  NS_AVAILABLE_IOS(16_0);
-{
-    id<UITextViewDelegate> delegate = self.delegate;
-
-    if (delegate == nil)
-    {
-        PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
-        delegate = model.textViewDelegate;
-    }
-
-    if ([delegate respondsToSelector:@selector(textView:willPresentEditMenuWithAnimator:)])
-        [delegate textView:textView willPresentEditMenuWithAnimator:animator];
-}
-
-- (void)textView:(UITextView *)textView willDismissEditMenuWithAnimator:(id<UIEditMenuInteractionAnimating>)animator  NS_AVAILABLE_IOS(16_0);
-{
-    id<UITextViewDelegate> delegate = self.delegate;
-
-    if (delegate == nil)
-    {
-        PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
-        delegate = model.textViewDelegate;
-    }
-
+    //: if ([delegate respondsToSelector:@selector(textView:willDismissEditMenuWithAnimator:)])
     if ([delegate respondsToSelector:@selector(textView:willDismissEditMenuWithAnimator:)])
+        //: [delegate textView:textView willDismissEditMenuWithAnimator:animator];
         [delegate textView:textView willDismissEditMenuWithAnimator:animator];
 }
-#endif
 
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 170000
-
-- (nullable UIAction *)textView:(UITextView *)textView primaryActionForTextItem:(UITextItem *)textItem defaultAction:(UIAction *)defaultAction NS_AVAILABLE_IOS(17_0);
+//: -(PlaceOnDismissPalettePerform*)textFieldViewCachedInfo:(UIView*)textField
+-(PlaceOnDismissPalettePerform*)beginAcross:(UIView*)textField
 {
-    id<UITextViewDelegate> delegate = self.delegate;
+    //: for (PlaceOnDismissPalettePerform *model in textFieldInfoCache)
+    for (PlaceOnDismissPalettePerform *model in status)
+        //: if (model.textFieldView == textField) return model;
+        if (model.minimumView == textField) return model;
 
+    //: return nil;
+    return nil;
+}
+
+//: - (UIMenu *)textField:(UITextField *)textField editMenuForCharactersInRange:(NSRange)range suggestedActions:(NSArray<UIMenuElement *> *)suggestedActions NS_AVAILABLE_IOS(16_0);
+- (UIMenu *)textField:(UITextField *)textField editMenuForCharactersInRange:(NSRange)range suggestedActions:(NSArray<UIMenuElement *> *)suggestedActions NS_AVAILABLE_IOS(16_0);
+{
+    //: id<UITextFieldDelegate> delegate = self.delegate;
+    id<UITextFieldDelegate> delegate = self.manHiveTransformerses;
+
+    //: if (delegate == nil)
     if (delegate == nil)
     {
-        PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
-        delegate = model.textViewDelegate;
+        //: PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textField];
+        PlaceOnDismissPalettePerform *model = [self beginAcross:textField];
+        //: delegate = model.textFieldDelegate;
+        delegate = model.conversation;
     }
 
-    if ([delegate respondsToSelector:@selector(textView:primaryActionForTextItem:defaultAction:)])
-        return [delegate textView:textView primaryActionForTextItem:textItem defaultAction:defaultAction];
+    //: if ([delegate respondsToSelector:@selector(textField:editMenuForCharactersInRange:suggestedActions:)])
+    if ([delegate respondsToSelector:@selector(textField:editMenuForCharactersInRange:suggestedActions:)])
+        //: return [delegate textField:textField editMenuForCharactersInRange:range suggestedActions:suggestedActions];
+        return [delegate textField:textField editMenuForCharactersInRange:range suggestedActions:suggestedActions];
+    //: else
     else
+        //: return nil;
         return nil;
 }
 
-- (nullable UITextItemMenuConfiguration *)textView:(UITextView *)textView menuConfigurationForTextItem:(UITextItem *)textItem defaultMenu:(UIMenu *)defaultMenu NS_AVAILABLE_IOS(17_0);
+//: - (void)textFieldDidBeginEditing:(UITextField *)textField
+- (void)textFieldDidBeginEditing:(UITextField *)textField
 {
-    id<UITextViewDelegate> delegate = self.delegate;
+    //: [self updateReturnKeyTypeOnTextField:textField];
+    [self pressed:textField];
 
+    //: id<UITextFieldDelegate> delegate = self.delegate;
+    id<UITextFieldDelegate> delegate = self.manHiveTransformerses;
+
+    //: if (delegate == nil)
     if (delegate == nil)
     {
-        PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
-        delegate = model.textViewDelegate;
+        //: PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textField];
+        PlaceOnDismissPalettePerform *model = [self beginAcross:textField];
+        //: delegate = model.textFieldDelegate;
+        delegate = model.conversation;
     }
 
-    if ([delegate respondsToSelector:@selector(textView:menuConfigurationForTextItem:defaultMenu:)])
-        return [delegate textView:textView menuConfigurationForTextItem:textItem defaultMenu:defaultMenu];
-    else
-        return nil;
+    //: if ([delegate respondsToSelector:@selector(textFieldDidBeginEditing:)])
+    if ([delegate respondsToSelector:@selector(textFieldDidBeginEditing:)])
+        //: [delegate textFieldDidBeginEditing:textField];
+        [delegate textFieldDidBeginEditing:textField];
 }
 
+//: - (void)textField:(UITextField *)textField willDismissEditMenuWithAnimator:(id<UIEditMenuInteractionAnimating>)animator NS_AVAILABLE_IOS(16_0);
+- (void)textField:(UITextField *)textField willDismissEditMenuWithAnimator:(id<UIEditMenuInteractionAnimating>)animator NS_AVAILABLE_IOS(16_0);
+{
+    //: id<UITextFieldDelegate> delegate = self.delegate;
+    id<UITextFieldDelegate> delegate = self.manHiveTransformerses;
+
+    //: if (delegate == nil)
+    if (delegate == nil)
+    {
+        //: PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textField];
+        PlaceOnDismissPalettePerform *model = [self beginAcross:textField];
+        //: delegate = model.textFieldDelegate;
+        delegate = model.conversation;
+    }
+
+    //: if ([delegate respondsToSelector:@selector(textField:willDismissEditMenuWithAnimator:)])
+    if ([delegate respondsToSelector:@selector(textField:willDismissEditMenuWithAnimator:)])
+        //: [delegate textField:textField willDismissEditMenuWithAnimator:animator];
+        [delegate textField:textField willDismissEditMenuWithAnimator:animator];
+}
+
+//: - (BOOL)textViewShouldEndEditing:(UITextView *)textView
+- (BOOL)textViewShouldEndEditing:(UITextView *)textView
+{
+    //: id<UITextViewDelegate> delegate = self.delegate;
+    id<UITextViewDelegate> delegate = self.manHiveTransformerses;
+
+    //: if (delegate == nil)
+    if (delegate == nil)
+    {
+        //: PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
+        PlaceOnDismissPalettePerform *model = [self beginAcross:textView];
+        //: delegate = model.textViewDelegate;
+        delegate = model.excess;
+    }
+
+    //: if ([delegate respondsToSelector:@selector(textViewShouldEndEditing:)])
+    if ([delegate respondsToSelector:@selector(rowed:)])
+        //: return [delegate textViewShouldEndEditing:textView];
+        return [delegate textViewShouldEndEditing:textView];
+    //: else
+    else
+        //: return YES;
+        return YES;
+}
+
+
+//: - (BOOL)textFieldShouldEndEditing:(UITextField *)textField
+- (BOOL)textFieldShouldEndEditing:(UITextField *)textField
+{
+    //: id<UITextFieldDelegate> delegate = self.delegate;
+    id<UITextFieldDelegate> delegate = self.manHiveTransformerses;
+
+    //: if (delegate == nil)
+    if (delegate == nil)
+    {
+        //: PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textField];
+        PlaceOnDismissPalettePerform *model = [self beginAcross:textField];
+        //: delegate = model.textFieldDelegate;
+        delegate = model.conversation;
+    }
+
+    //: if ([delegate respondsToSelector:@selector(textFieldShouldEndEditing:)])
+    if ([delegate respondsToSelector:@selector(textFieldShouldEndEditing:)])
+        //: return [delegate textFieldShouldEndEditing:textField];
+        return [delegate textFieldShouldEndEditing:textField];
+    //: else
+    else
+        //: return YES;
+        return YES;
+}
+
+//: - (void)textView:(UITextView *)textView textItemMenuWillDisplayForTextItem:(UITextItem *)textItem animator:(id<UIContextMenuInteractionAnimating>)animator NS_AVAILABLE_IOS(17_0);
 - (void)textView:(UITextView *)textView textItemMenuWillDisplayForTextItem:(UITextItem *)textItem animator:(id<UIContextMenuInteractionAnimating>)animator NS_AVAILABLE_IOS(17_0);
 {
-    id<UITextViewDelegate> delegate = self.delegate;
+    //: id<UITextViewDelegate> delegate = self.delegate;
+    id<UITextViewDelegate> delegate = self.manHiveTransformerses;
 
+    //: if (delegate == nil)
     if (delegate == nil)
     {
-        PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
-        delegate = model.textViewDelegate;
+        //: PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
+        PlaceOnDismissPalettePerform *model = [self beginAcross:textView];
+        //: delegate = model.textViewDelegate;
+        delegate = model.excess;
     }
 
+    //: if ([delegate respondsToSelector:@selector(textView:textItemMenuWillDisplayForTextItem:animator:)])
     if ([delegate respondsToSelector:@selector(textView:textItemMenuWillDisplayForTextItem:animator:)])
+        //: [delegate textView:textView textItemMenuWillDisplayForTextItem:textItem animator:animator];
         [delegate textView:textView textItemMenuWillDisplayForTextItem:textItem animator:animator];
 }
 
-- (void)textView:(UITextView *)textView textItemMenuWillEndForTextItem:(UITextItem *)textItem animator:(id<UIContextMenuInteractionAnimating>)animator NS_AVAILABLE_IOS(17_0);
+//: - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
 {
-    id<UITextViewDelegate> delegate = self.delegate;
+    //: id<UITextViewDelegate> delegate = self.delegate;
+    id<UITextViewDelegate> delegate = self.manHiveTransformerses;
 
+    //: if (delegate == nil)
     if (delegate == nil)
     {
-        PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
-        delegate = model.textViewDelegate;
+        //: PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
+        PlaceOnDismissPalettePerform *model = [self beginAcross:textView];
+        //: delegate = model.textViewDelegate;
+        delegate = model.excess;
     }
 
+    //: BOOL shouldReturn = YES;
+    BOOL shouldReturn = YES;
+
+    //: if ([delegate respondsToSelector:@selector(textView:shouldChangeTextInRange:replacementText:)])
+    if ([delegate respondsToSelector:@selector(textView:shouldChangeTextInRange:replacementText:)])
+        //: shouldReturn = [delegate textView:textView shouldChangeTextInRange:range replacementText:text];
+        shouldReturn = [delegate textView:textView shouldChangeTextInRange:range replacementText:text];
+
+    //: if (shouldReturn && [text isEqualToString:@"\n"])
+    if (shouldReturn && [text isEqualToString:@"\n"])
+    {
+        //: shouldReturn = [self goToNextResponderOrResign:textView];
+        shouldReturn = [self typical:textView];
+    }
+
+    //: return shouldReturn;
+    return shouldReturn;
+}
+
+
+//: - (nullable UIAction *)textView:(UITextView *)textView primaryActionForTextItem:(UITextItem *)textItem defaultAction:(UIAction *)defaultAction NS_AVAILABLE_IOS(17_0);
+- (nullable UIAction *)textView:(UITextView *)textView primaryActionForTextItem:(UITextItem *)textItem defaultAction:(UIAction *)defaultAction NS_AVAILABLE_IOS(17_0);
+{
+    //: id<UITextViewDelegate> delegate = self.delegate;
+    id<UITextViewDelegate> delegate = self.manHiveTransformerses;
+
+    //: if (delegate == nil)
+    if (delegate == nil)
+    {
+        //: PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
+        PlaceOnDismissPalettePerform *model = [self beginAcross:textView];
+        //: delegate = model.textViewDelegate;
+        delegate = model.excess;
+    }
+
+    //: if ([delegate respondsToSelector:@selector(textView:primaryActionForTextItem:defaultAction:)])
+    if ([delegate respondsToSelector:@selector(textView:primaryActionForTextItem:defaultAction:)])
+        //: return [delegate textView:textView primaryActionForTextItem:textItem defaultAction:defaultAction];
+        return [delegate textView:textView primaryActionForTextItem:textItem defaultAction:defaultAction];
+    //: else
+    else
+        //: return nil;
+        return nil;
+}
+
+//: - (void)textView:(UITextView *)textView textItemMenuWillEndForTextItem:(UITextItem *)textItem animator:(id<UIContextMenuInteractionAnimating>)animator NS_AVAILABLE_IOS(17_0);
+- (void)textView:(UITextView *)textView textItemMenuWillEndForTextItem:(UITextItem *)textItem animator:(id<UIContextMenuInteractionAnimating>)animator NS_AVAILABLE_IOS(17_0);
+{
+    //: id<UITextViewDelegate> delegate = self.delegate;
+    id<UITextViewDelegate> delegate = self.manHiveTransformerses;
+
+    //: if (delegate == nil)
+    if (delegate == nil)
+    {
+        //: PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
+        PlaceOnDismissPalettePerform *model = [self beginAcross:textView];
+        //: delegate = model.textViewDelegate;
+        delegate = model.excess;
+    }
+
+    //: if ([delegate respondsToSelector:@selector(textView:textItemMenuWillEndForTextItem:animator:)])
     if ([delegate respondsToSelector:@selector(textView:textItemMenuWillEndForTextItem:animator:)])
+        //: [delegate textView:textView textItemMenuWillEndForTextItem:textItem animator:animator];
         [delegate textView:textView textItemMenuWillEndForTextItem:textItem animator:animator];
 }
 
-#endif
 
--(void)dealloc
+//: - (nullable UITextItemMenuConfiguration *)textView:(UITextView *)textView menuConfigurationForTextItem:(UITextItem *)textItem defaultMenu:(UIMenu *)defaultMenu NS_AVAILABLE_IOS(17_0);
+- (nullable UITextItemMenuConfiguration *)textView:(UITextView *)textView menuConfigurationForTextItem:(UITextItem *)textItem defaultMenu:(UIMenu *)defaultMenu NS_AVAILABLE_IOS(17_0);
 {
-    for (PlaceOnDismissPalettePerform *model in textFieldInfoCache)
-    {
-        UITextField *textField = (UITextField*)model.textFieldView;
+    //: id<UITextViewDelegate> delegate = self.delegate;
+    id<UITextViewDelegate> delegate = self.manHiveTransformerses;
 
-        if ([textField respondsToSelector:@selector(setReturnKeyType:)])
+    //: if (delegate == nil)
+    if (delegate == nil)
+    {
+        //: PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
+        PlaceOnDismissPalettePerform *model = [self beginAcross:textView];
+        //: delegate = model.textViewDelegate;
+        delegate = model.excess;
+    }
+
+    //: if ([delegate respondsToSelector:@selector(textView:menuConfigurationForTextItem:defaultMenu:)])
+    if ([delegate respondsToSelector:@selector(textView:menuConfigurationForTextItem:defaultMenu:)])
+        //: return [delegate textView:textView menuConfigurationForTextItem:textItem defaultMenu:defaultMenu];
+        return [delegate textView:textView menuConfigurationForTextItem:textItem defaultMenu:defaultMenu];
+    //: else
+    else
+        //: return nil;
+        return nil;
+}
+
+//: -(void)removeTextFieldView:(UIView*)view
+-(void)finishCharacter:(UIView*)view
+{
+    //: PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:view];
+    PlaceOnDismissPalettePerform *model = [self beginAcross:view];
+
+    //: if (model)
+    if (model)
+    {
+        //: UITextField *textField = (UITextField*)view;
+        UITextField *textField = (UITextField*)view;
+
+        //: if ([view respondsToSelector:@selector(setReturnKeyType:)])
+        if ([view respondsToSelector:@selector(setMenuLoadsed:)])
         {
-            textField.returnKeyType = model.originalReturnKeyType;
+            //: textField.returnKeyType = model.originalReturnKeyType;
+            textField.returnKeyType = model.firstSavingVariant;
         }
 
-        if ([textField respondsToSelector:@selector(setDelegate:)])
+        //: if ([view respondsToSelector:@selector(setDelegate:)])
+        if ([view respondsToSelector:@selector(setManHiveTransformerses:)])
         {
-            textField.delegate = model.textFieldDelegate;
+            //: textField.delegate = model.textFieldDelegate;
+            textField.delegate = model.conversation;
+        }
+
+        //: [textFieldInfoCache removeObject:model];
+        [status removeObject:model];
+    }
+}
+
+//: -(BOOL)textFieldShouldReturn:(UITextField *)textField
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    //: id<UITextFieldDelegate> delegate = self.delegate;
+    id<UITextFieldDelegate> delegate = self.manHiveTransformerses;
+
+    //: if (delegate == nil)
+    if (delegate == nil)
+    {
+        //: PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textField];
+        PlaceOnDismissPalettePerform *model = [self beginAcross:textField];
+        //: delegate = model.textFieldDelegate;
+        delegate = model.conversation;
+    }
+
+    //: if ([delegate respondsToSelector:@selector(textFieldShouldReturn:)])
+    if ([delegate respondsToSelector:@selector(landmarks:)])
+    {
+        //: BOOL shouldReturn = [delegate textFieldShouldReturn:textField];
+        BOOL shouldReturn = [delegate textFieldShouldReturn:textField];
+
+        //: if (shouldReturn)
+        if (shouldReturn)
+        {
+            //: shouldReturn = [self goToNextResponderOrResign:textField];
+            shouldReturn = [self typical:textField];
+        }
+
+        //: return shouldReturn;
+        return shouldReturn;
+    }
+    //: else
+    else
+    {
+        //: return [self goToNextResponderOrResign:textField];
+        return [self typical:textField];
+    }
+}
+
+//: #pragma mark - Add/Remove TextFields
+#pragma mark - Add/Remove TextFields
+//: -(void)addResponderFromView:(UIView*)view
+-(void)fromBold:(UIView*)view
+{
+    //: NSArray<UIView*> *textFields = [view deepResponderViews];
+    NSArray<UIView*> *textFields = [view writingStack];
+
+    //: for (UIView *textField in textFields) [self addTextFieldView:textField];
+    for (UIView *textField in textFields) [self clip:textField];
+}
+
+//: - (void)textViewDidBeginEditing:(UITextView *)textView
+- (void)textViewDidBeginEditing:(UITextView *)textView
+{
+    //: [self updateReturnKeyTypeOnTextField:textView];
+    [self pressed:textView];
+
+    //: id<UITextViewDelegate> delegate = self.delegate;
+    id<UITextViewDelegate> delegate = self.manHiveTransformerses;
+
+    //: if (delegate == nil)
+    if (delegate == nil)
+    {
+        //: PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
+        PlaceOnDismissPalettePerform *model = [self beginAcross:textView];
+        //: delegate = model.textViewDelegate;
+        delegate = model.excess;
+    }
+
+    //: if ([delegate respondsToSelector:@selector(textViewDidBeginEditing:)])
+    if ([delegate respondsToSelector:@selector(beneathMark:)])
+        //: [delegate textViewDidBeginEditing:textView];
+        [delegate textViewDidBeginEditing:textView];
+}
+
+//: -(void)removeResponderFromView:(UIView*)view
+-(void)fabric:(UIView*)view
+{
+    //: NSArray<UIView*> *textFields = [view deepResponderViews];
+    NSArray<UIView*> *textFields = [view writingStack];
+
+    //: for (UIView *textField in textFields) [self removeTextFieldView:textField];
+    for (UIView *textField in textFields) [self finishCharacter:textField];
+}
+
+//: - (void)textFieldDidEndEditing:(UITextField *)textField
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    //: id<UITextFieldDelegate> delegate = self.delegate;
+    id<UITextFieldDelegate> delegate = self.manHiveTransformerses;
+
+    //: if (delegate == nil)
+    if (delegate == nil)
+    {
+        //: PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textField];
+        PlaceOnDismissPalettePerform *model = [self beginAcross:textField];
+        //: delegate = model.textFieldDelegate;
+        delegate = model.conversation;
+    }
+
+    //: if ([delegate respondsToSelector:@selector(textFieldDidEndEditing:)])
+    if ([delegate respondsToSelector:@selector(additionaling:)])
+        //: [delegate textFieldDidEndEditing:textField];
+        [delegate textFieldDidEndEditing:textField];
+}
+
+//: - (void)textView:(UITextView *)textView willPresentEditMenuWithAnimator:(id<UIEditMenuInteractionAnimating>)animator NS_AVAILABLE_IOS(16_0);
+- (void)textView:(UITextView *)textView willPresentEditMenuWithAnimator:(id<UIEditMenuInteractionAnimating>)animator NS_AVAILABLE_IOS(16_0);
+{
+    //: id<UITextViewDelegate> delegate = self.delegate;
+    id<UITextViewDelegate> delegate = self.manHiveTransformerses;
+
+    //: if (delegate == nil)
+    if (delegate == nil)
+    {
+        //: PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
+        PlaceOnDismissPalettePerform *model = [self beginAcross:textView];
+        //: delegate = model.textViewDelegate;
+        delegate = model.excess;
+    }
+
+    //: if ([delegate respondsToSelector:@selector(textView:willPresentEditMenuWithAnimator:)])
+    if ([delegate respondsToSelector:@selector(textView:willPresentEditMenuWithAnimator:)])
+        //: [delegate textView:textView willPresentEditMenuWithAnimator:animator];
+        [delegate textView:textView willPresentEditMenuWithAnimator:animator];
+}
+
+//: #pragma mark - TextView delegate
+#pragma mark - TextView delegate
+//: - (BOOL)textViewShouldBeginEditing:(UITextView *)textView
+- (BOOL)textViewShouldBeginEditing:(UITextView *)textView
+{
+    //: id<UITextViewDelegate> delegate = self.delegate;
+    id<UITextViewDelegate> delegate = self.manHiveTransformerses;
+
+    //: if (delegate == nil)
+    if (delegate == nil)
+    {
+        //: PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
+        PlaceOnDismissPalettePerform *model = [self beginAcross:textView];
+        //: delegate = model.textViewDelegate;
+        delegate = model.excess;
+    }
+
+    //: if ([delegate respondsToSelector:@selector(textViewShouldBeginEditing:)])
+    if ([delegate respondsToSelector:@selector(originalled:)])
+        //: return [delegate textViewShouldBeginEditing:textView];
+        return [delegate textViewShouldBeginEditing:textView];
+    //: else
+    else
+        //: return YES;
+        return YES;
+}
+
+
+//: - (void)textViewDidChangeSelection:(UITextView *)textView
+- (void)textViewDidChangeSelection:(UITextView *)textView
+{
+    //: id<UITextViewDelegate> delegate = self.delegate;
+    id<UITextViewDelegate> delegate = self.manHiveTransformerses;
+
+    //: if (delegate == nil)
+    if (delegate == nil)
+    {
+        //: PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
+        PlaceOnDismissPalettePerform *model = [self beginAcross:textView];
+        //: delegate = model.textViewDelegate;
+        delegate = model.excess;
+    }
+
+    //: if ([delegate respondsToSelector:@selector(textViewDidChangeSelection:)])
+    if ([delegate respondsToSelector:@selector(blinking:)])
+        //: [delegate textViewDidChangeSelection:textView];
+        [delegate textViewDidChangeSelection:textView];
+}
+
+//: -(UIMenu *)textView:(UITextView *)textView editMenuForTextInRange:(NSRange)range suggestedActions:(NSArray<UIMenuElement *> *)suggestedActions NS_AVAILABLE_IOS(16_0);
+-(UIMenu *)textView:(UITextView *)textView editMenuForTextInRange:(NSRange)range suggestedActions:(NSArray<UIMenuElement *> *)suggestedActions NS_AVAILABLE_IOS(16_0);
+{
+    //: id<UITextViewDelegate> delegate = self.delegate;
+    id<UITextViewDelegate> delegate = self.manHiveTransformerses;
+
+    //: if (delegate == nil)
+    if (delegate == nil)
+    {
+        //: PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
+        PlaceOnDismissPalettePerform *model = [self beginAcross:textView];
+        //: delegate = model.textViewDelegate;
+        delegate = model.excess;
+    }
+
+    //: if ([delegate respondsToSelector:@selector(textView:editMenuForTextInRange:suggestedActions:)])
+    if ([delegate respondsToSelector:@selector(textView:editMenuForTextInRange:suggestedActions:)])
+        //: return [delegate textView:textView editMenuForTextInRange:range suggestedActions:suggestedActions];
+        return [delegate textView:textView editMenuForTextInRange:range suggestedActions:suggestedActions];
+    //: else
+    else
+        //: return nil;
+        return nil;
+}
+
+//: -(void)dealloc
+-(void)dealloc
+{
+    //: for (PlaceOnDismissPalettePerform *model in textFieldInfoCache)
+    for (PlaceOnDismissPalettePerform *model in status)
+    {
+        //: UITextField *textField = (UITextField*)model.textFieldView;
+        UITextField *textField = (UITextField*)model.minimumView;
+
+        //: if ([textField respondsToSelector:@selector(setReturnKeyType:)])
+        if ([textField respondsToSelector:@selector(setMenuLoadsed:)])
+        {
+            //: textField.returnKeyType = model.originalReturnKeyType;
+            textField.returnKeyType = model.firstSavingVariant;
+        }
+
+        //: if ([textField respondsToSelector:@selector(setDelegate:)])
+        if ([textField respondsToSelector:@selector(setManHiveTransformerses:)])
+        {
+            //: textField.delegate = model.textFieldDelegate;
+            textField.delegate = model.conversation;
         }
     }
 
-    [textFieldInfoCache removeAllObjects];
+    //: [textFieldInfoCache removeAllObjects];
+    [status removeAllObjects];
 }
 
+
+
+
+//: - (void)textField:(UITextField *)textField willPresentEditMenuWithAnimator:(id<UIEditMenuInteractionAnimating>)animator NS_AVAILABLE_IOS(16_0);
+- (void)textField:(UITextField *)textField willPresentEditMenuWithAnimator:(id<UIEditMenuInteractionAnimating>)animator NS_AVAILABLE_IOS(16_0);
+{
+    //: id<UITextFieldDelegate> delegate = self.delegate;
+    id<UITextFieldDelegate> delegate = self.manHiveTransformerses;
+
+    //: if (delegate == nil)
+    if (delegate == nil)
+    {
+        //: PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textField];
+        PlaceOnDismissPalettePerform *model = [self beginAcross:textField];
+        //: delegate = model.textFieldDelegate;
+        delegate = model.conversation;
+    }
+
+    //: if ([delegate respondsToSelector:@selector(textField:willPresentEditMenuWithAnimator:)])
+    if ([delegate respondsToSelector:@selector(textField:willPresentEditMenuWithAnimator:)])
+        //: [delegate textField:textField willPresentEditMenuWithAnimator:animator];
+        [delegate textField:textField willPresentEditMenuWithAnimator:animator];
+}
+
+//: - (BOOL)textFieldShouldClear:(UITextField *)textField
+- (BOOL)textFieldShouldClear:(UITextField *)textField
+{
+    //: id<UITextFieldDelegate> delegate = self.delegate;
+    id<UITextFieldDelegate> delegate = self.manHiveTransformerses;
+
+    //: if (delegate == nil)
+    if (delegate == nil)
+    {
+        //: PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textField];
+        PlaceOnDismissPalettePerform *model = [self beginAcross:textField];
+        //: delegate = model.textFieldDelegate;
+        delegate = model.conversation;
+    }
+
+    //: if ([delegate respondsToSelector:@selector(textFieldShouldClear:)])
+    if ([delegate respondsToSelector:@selector(excesses:)])
+        //: return [delegate textFieldShouldClear:textField];
+        return [delegate textFieldShouldClear:textField];
+    //: else
+    else
+        //: return YES;
+        return YES;
+}
+
+//: - (void)textViewDidEndEditing:(UITextView *)textView
+- (void)textViewDidEndEditing:(UITextView *)textView
+{
+    //: id<UITextViewDelegate> delegate = self.delegate;
+    id<UITextViewDelegate> delegate = self.manHiveTransformerses;
+
+    //: if (delegate == nil)
+    if (delegate == nil)
+    {
+        //: PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
+        PlaceOnDismissPalettePerform *model = [self beginAcross:textView];
+        //: delegate = model.textViewDelegate;
+        delegate = model.excess;
+    }
+
+    //: if ([delegate respondsToSelector:@selector(textViewDidEndEditing:)])
+    if ([delegate respondsToSelector:@selector(directed:)])
+        //: [delegate textViewDidEndEditing:textView];
+        [delegate textViewDidEndEditing:textView];
+}
+
+//: #pragma mark - Goto next or Resign.
+#pragma mark - Goto next or Resign.
+
+//: -(BOOL)goToNextResponderOrResign:(UIView*)textField
+-(BOOL)typical:(UIView*)textField
+{
+    //: UIView *superConsideredView;
+    UIView *superConsideredView;
+
+    //If find any consider responderView in it's upper hierarchy then will get deepResponderView. (Bug ID: #347)
+    //: for (Class consideredClass in [[LayoutBuildOutlinedQuill sharedManager] toolbarPreviousNextAllowedClasses])
+    for (Class consideredClass in [[LayoutBuildOutlinedQuill commonSumManagingDirector] geologicalFormation])
+    {
+        //: superConsideredView = [textField superviewOfClassType:consideredClass];
+        superConsideredView = [textField tiny:consideredClass];
+
+        //: if (superConsideredView)
+        if (superConsideredView)
+            //: break;
+            break;
+    }
+
+    //: NSArray<UIView*> *textFields = nil;
+    NSArray<UIView*> *textFields = nil;
+
+    //If there is a tableView in view's hierarchy, then fetching all it's subview that responds. No sorting for tableView, it's by subView position.
+    //: if (superConsideredView) 
+    if (superConsideredView) //     //   (Enhancement ID: #22)
+    {
+        //: textFields = [superConsideredView deepResponderViews];
+        textFields = [superConsideredView writingStack];
+    }
+    //Otherwise fetching all the siblings
+    //: else
+    else
+    {
+        //: textFields = [textField responderSiblings];
+        textFields = [textField siblings];
+
+        //Sorting textFields according to behavior
+        //: switch ([[LayoutBuildOutlinedQuill sharedManager] toolbarManageBehavior])
+        switch ([[LayoutBuildOutlinedQuill commonSumManagingDirector] totalroduce])
+        {
+                //If needs to sort it by tag
+            //: case AddPackIconPackTemplateByTag:
+            case AddPackIconPackTemplateByTag:
+                //: textFields = [textFields sortedArrayByTag];
+                textFields = [textFields accept];
+                //: break;
+                break;
+
+                //If needs to sort it by Position
+            //: case AddPackIconPackTemplateByPosition:
+            case AddPackIconPackTemplateByPosition:
+                //: textFields = [textFields sortedArrayByPosition];
+                textFields = [textFields radio];
+                //: break;
+                break;
+
+            //: default:
+            default:
+                //: break;
+                break;
+        }
+    }
+
+    //Getting index of current textField.
+    //: NSUInteger index = [textFields indexOfObject:textField];
+    NSUInteger index = [textFields indexOfObject:textField];
+
+    //If it is not last textField. then it's next object becomeFirstResponder.
+    //: if (index != NSNotFound && index < textFields.count-1)
+    if (index != NSNotFound && index < textFields.count-1)
+    {
+        //: [textFields[index+1] becomeFirstResponder];
+        [textFields[index+1] becomeFirstResponder];
+        //: return NO;
+        return NO;
+    }
+    //: else
+    else
+    {
+        //: [textField resignFirstResponder];
+        [textField resignFirstResponder];
+        //: return YES;
+        return YES;
+    }
+}
+
+
+
+//: - (void)textViewDidChange:(UITextView *)textView
+- (void)textViewDidChange:(UITextView *)textView
+{
+    //: id<UITextViewDelegate> delegate = self.delegate;
+    id<UITextViewDelegate> delegate = self.manHiveTransformerses;
+
+    //: if (delegate == nil)
+    if (delegate == nil)
+    {
+        //: PlaceOnDismissPalettePerform *model = [self textFieldViewCachedInfo:textView];
+        PlaceOnDismissPalettePerform *model = [self beginAcross:textView];
+        //: delegate = model.textViewDelegate;
+        delegate = model.excess;
+    }
+
+    //: if ([delegate respondsToSelector:@selector(textViewDidChange:)])
+    if ([delegate respondsToSelector:@selector(drawing:)])
+        //: [delegate textViewDidChange:textView];
+        [delegate textViewDidChange:textView];
+}
+
+//: @end
 @end

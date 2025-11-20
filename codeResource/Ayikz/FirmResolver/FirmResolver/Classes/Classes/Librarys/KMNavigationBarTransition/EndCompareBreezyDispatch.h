@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  EndCompareBreezyDispatch.h
 //
@@ -21,8 +23,11 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-extern void km_objc_setAssociatedWeakObject(id container, void *key, id value);
-extern id km_objc_getAssociatedWeakObject(id container, void *key);
-
+//: extern void km_objc_setAssociatedWeakObject(id container, void *key, id value);
+extern void extentCounterrelateBroadcast(id container, void *key, id value);
+//: extern id km_objc_getAssociatedWeakObject(id container, void *key);
+extern id fileContact(id container, void *key);

@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ImplementInto.h
 //  NIM
@@ -6,10 +8,16 @@
 //  Copyright (c) 2013 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @interface ImplementInto : NSObject
 @interface ImplementInto : NSObject
-+ (ImplementInto *)sharedInstance;
+//: - (NSString *)toPinyin: (NSString *)source;
+- (NSString *)dawdle: (NSString *)source;
 
-- (NSString *)toPinyin: (NSString *)source;
+//: + (ImplementInto *)sharedInstance;
++ (ImplementInto *)sharedDecideInstance;
+//: @end
 @end

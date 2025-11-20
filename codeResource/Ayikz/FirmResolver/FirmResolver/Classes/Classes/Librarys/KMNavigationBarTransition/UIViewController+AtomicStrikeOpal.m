@@ -1,3 +1,80 @@
+
+#import <Foundation/Foundation.h>
+
+@interface PermissionData : NSObject
+
++ (instancetype)sharedInstance;
+
+//: _backgroundView
+@property (nonatomic, copy) NSString *kEscapeError;
+
+@end
+
+@implementation PermissionData
+
+- (Byte *)PermissionDataToCache:(Byte *)data {
+    int creativeTemp = data[0];
+    Byte largeSumerval = data[1];
+    int whip = data[2];
+    for (int i = whip; i < whip + creativeTemp; i++) {
+        int value = data[i] + largeSumerval;
+        if (value > 255) {
+            value -= 256;
+        }
+        data[i] = value;
+    }
+    data[whip + creativeTemp] = 0;
+    return data + whip;
+}
+
+- (NSString *)StringFromPermissionData:(Byte *)data {
+    return [NSString stringWithUTF8String:(char *)[self PermissionDataToCache:data]];
+}
+
++ (instancetype)sharedInstance {
+    static PermissionData *instance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [[self alloc] init];
+    });
+    return instance;
+}
+
+//: _backgroundView
+- (NSString *)kEscapeError {
+    if (!_kEscapeError) {
+		NSString *origin = @"0f5004ee0f1211131b17221f251e140619152729";
+		NSData *data = [PermissionData PermissionDataToData:origin];
+        Byte *value = (Byte *)data.bytes;
+        _kEscapeError = [self StringFromPermissionData:value];
+    }
+    return _kEscapeError;
+}
+
++ (NSData *)PermissionDataToData:(NSString *)value {
+    NSMutableArray<NSNumber *> *array = [NSMutableArray array];
+    for (NSUInteger i = 0; i < value.length; i += 2) {
+        NSString *hex = [value substringWithRange:NSMakeRange(i, 2)];
+        NSScanner *scanner = [NSScanner scannerWithString:hex];
+        unsigned int num;
+        if ([scanner scanHexInt:&num]) {
+            [array addObject:@(num)];
+        }
+    }
+
+    NSInteger length = array.count;
+    Byte *buffer = (Byte *)malloc(length + 1);
+    for (int i = 0; i < length; i++) {
+        buffer[i] = [array[i] intValue];
+    }
+    buffer[length] = 0;
+    return [NSData dataWithBytesNoCopy:buffer length:length freeWhenDone:YES];
+}
+
+@end
+
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UIViewController+AtomicStrikeOpal.m
 //
@@ -21,224 +98,373 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import "UIViewController+AtomicStrikeOpal.h"
 #import "UIViewController+AtomicStrikeOpal.h"
+//: #import "UINavigationController+AtomicStrikeOpal.h"
 #import "UINavigationController+AtomicStrikeOpal.h"
+//: #import "UINavigationController+AtomicStrikeOpal_internal.h"
 #import "UINavigationController+AtomicStrikeOpal_internal.h"
+//: #import "UINavigationBar+AtomicStrikeOpal_internal.h"
 #import "UINavigationBar+AtomicStrikeOpal_internal.h"
+//: #import "UIScrollView+AtomicStrikeOpal_internal.h"
 #import "UIScrollView+AtomicStrikeOpal_internal.h"
+//: #import "EndCompareBreezyDispatch.h"
 #import "EndCompareBreezyDispatch.h"
+//: #import <objc/runtime.h>
 #import <objc/runtime.h>
+//: #import "RadarDriveCircuit.h"
 #import "RadarDriveCircuit.h"
 
+//: @implementation UIViewController (AtomicStrikeOpal)
 @implementation UIViewController (AtomicStrikeOpal)
 
-+ (void)load {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        RadarDriveCircuitMethod([self class],
-                        @selector(viewWillLayoutSubviews),
-                        [self class],
-                        @selector(km_viewWillLayoutSubviews));
-        
-        RadarDriveCircuitMethod([self class],
-                        @selector(viewWillAppear:),
-                        [self class],
-                        @selector(km_viewWillAppear:));
-        
-        RadarDriveCircuitMethod([self class],
-                        @selector(viewDidAppear:),
-                        [self class],
-                        @selector(km_viewDidAppear:));
-    });
-}
-
-- (void)km_viewWillAppear:(BOOL)animated {
-    [self km_viewWillAppear:animated];
-    id<UIViewControllerTransitionCoordinator> tc = self.transitionCoordinator;
-    UIViewController *toViewController = [tc viewControllerForKey:UITransitionContextToViewControllerKey];
-    
-    if ([self isEqual:self.navigationController.viewControllers.lastObject] && [toViewController isEqual:self]  && tc.presentationStyle == UIModalPresentationNone) {
-        [self km_adjustScrollViewContentInsetAdjustmentBehavior];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            if (self.navigationController.navigationBarHidden) {
-                [self km_restoreScrollViewContentInsetAdjustmentBehaviorIfNeeded];
-            }
-        });
-    }
-}
-
-- (void)km_viewDidAppear:(BOOL)animated {
-    [self km_restoreScrollViewContentInsetAdjustmentBehaviorIfNeeded];
-    UIViewController *transitionViewController = self.navigationController.km_transitionContextToViewController;
-    if (self.km_transitionNavigationBar) {
-        if (@available(iOS 15, *)) {
-            self.navigationController.navigationBar.standardAppearance = self.km_transitionNavigationBar.standardAppearance;
-            self.navigationController.navigationBar.scrollEdgeAppearance = self.km_transitionNavigationBar.scrollEdgeAppearance;
-        } else {
-            self.navigationController.navigationBar.barTintColor = self.km_transitionNavigationBar.barTintColor;
-            [self.navigationController.navigationBar setBackgroundImage:[self.km_transitionNavigationBar backgroundImageForBarMetrics:UIBarMetricsDefault] forBarMetrics:UIBarMetricsDefault];
-            [self.navigationController.navigationBar setShadowImage:self.km_transitionNavigationBar.shadowImage];
-        }
-        if (!transitionViewController || [transitionViewController isEqual:self]) {
-            [self.km_transitionNavigationBar removeFromSuperview];
-            self.km_transitionNavigationBar = nil;
-        }
-    }
-    if ([transitionViewController isEqual:self]) {
-        self.navigationController.km_transitionContextToViewController = nil;
-    }
-    self.navigationController.km_backgroundViewHidden = NO;
-    [self km_viewDidAppear:animated];
-}
-
-- (void)km_viewWillLayoutSubviews {
-    id<UIViewControllerTransitionCoordinator> tc = self.transitionCoordinator;
-    UIViewController *fromViewController = [tc viewControllerForKey:UITransitionContextFromViewControllerKey];
-    UIViewController *toViewController = [tc viewControllerForKey:UITransitionContextToViewControllerKey];
-    
-    if ([self isEqual:self.navigationController.viewControllers.lastObject] && [toViewController isEqual:self] && tc.presentationStyle == UIModalPresentationNone) {
-        if (self.navigationController.navigationBar.translucent) {
-            [tc containerView].backgroundColor = [self.navigationController km_containerViewBackgroundColor];
-        }
-        fromViewController.view.clipsToBounds = NO;
-        toViewController.view.clipsToBounds = NO;
-        if (!self.km_transitionNavigationBar) {
-            [self km_addTransitionNavigationBarIfNeeded];
-            self.navigationController.km_backgroundViewHidden = YES;
-        }
-        [self km_resizeTransitionNavigationBarFrame];
-    }
-    if (self.km_transitionNavigationBar) {
-        [self.view bringSubviewToFront:self.km_transitionNavigationBar];
-    }
-    [self km_viewWillLayoutSubviews];
-}
-
-- (void)km_resizeTransitionNavigationBarFrame {
-    if (!self.view.window) {
-        return;
-    }
-    UIView *backgroundView = [self.navigationController.navigationBar valueForKey:@"_backgroundView"];
-    CGRect rect = [self.navigationController.navigationBar convertRect:backgroundView.frame toView:self.view];
-    self.km_transitionNavigationBar.frame = rect;
-}
-
-- (void)km_addTransitionNavigationBarIfNeeded {
+//: - (void)km_addTransitionNavigationBarIfNeeded {
+- (void)eastWestDirection {
+    //: if (!self.isViewLoaded || !self.view.window) {
     if (!self.isViewLoaded || !self.view.window) {
+        //: return;
         return;
     }
+    //: if (!self.navigationController.navigationBar) {
     if (!self.navigationController.navigationBar) {
+        //: return;
         return;
     }
-    [self km_adjustScrollViewContentOffsetIfNeeded];
+    //: [self km_adjustScrollViewContentOffsetIfNeeded];
+    [self emotion];
+    //: UINavigationBar *bar = [[UINavigationBar alloc] init];
     UINavigationBar *bar = [[UINavigationBar alloc] init];
-    bar.km_isFakeBar = YES;
+    //: bar.km_isFakeBar = YES;
+    bar.evenClosing = YES;
+    //: if (@available(iOS 14, *)) {
     if (@available(iOS 14, *)) {
+        //: bar.items = @[[UINavigationItem new]]; 
         bar.items = @[[UINavigationItem new]]; // fix Apple's bug in iOS 14
     }
+    //: bar.barStyle = self.navigationController.navigationBar.barStyle;
     bar.barStyle = self.navigationController.navigationBar.barStyle;
+    //: if (bar.translucent != self.navigationController.navigationBar.translucent) {
     if (bar.translucent != self.navigationController.navigationBar.translucent) {
+        //: bar.translucent = self.navigationController.navigationBar.translucent;
         bar.translucent = self.navigationController.navigationBar.translucent;
     }
+    //: if (@available(iOS 15, *)) {
     if (@available(iOS 15, *)) {
+        //: bar.standardAppearance = self.navigationController.navigationBar.standardAppearance;
         bar.standardAppearance = self.navigationController.navigationBar.standardAppearance;
+        //: bar.scrollEdgeAppearance = self.navigationController.navigationBar.scrollEdgeAppearance;
         bar.scrollEdgeAppearance = self.navigationController.navigationBar.scrollEdgeAppearance;
+    //: } else {
     } else {
+        //: bar.barTintColor = self.navigationController.navigationBar.barTintColor;
         bar.barTintColor = self.navigationController.navigationBar.barTintColor;
+        //: [bar setBackgroundImage:[self.navigationController.navigationBar backgroundImageForBarMetrics:UIBarMetricsDefault] forBarMetrics:UIBarMetricsDefault];
         [bar setBackgroundImage:[self.navigationController.navigationBar backgroundImageForBarMetrics:UIBarMetricsDefault] forBarMetrics:UIBarMetricsDefault];
+        //: bar.shadowImage = self.navigationController.navigationBar.shadowImage;
         bar.shadowImage = self.navigationController.navigationBar.shadowImage;
     }
-    [self.km_transitionNavigationBar removeFromSuperview];
-    self.km_transitionNavigationBar = bar;
-    [self km_resizeTransitionNavigationBarFrame];
+    //: [self.km_transitionNavigationBar removeFromSuperview];
+    [self.sinceNavigations removeFromSuperview];
+    //: self.km_transitionNavigationBar = bar;
+    self.km_transitionNavigationBarsetSinceNavigations = bar;
+    //: [self km_resizeTransitionNavigationBarFrame];
+    [self tingWritten];
+    //: if (!self.navigationController.navigationBarHidden && !self.navigationController.navigationBar.hidden) {
     if (!self.navigationController.navigationBarHidden && !self.navigationController.navigationBar.hidden) {
-        [self.view addSubview:self.km_transitionNavigationBar];
+        //: [self.view addSubview:self.km_transitionNavigationBar];
+        [self.view addSubview:self.sinceNavigations];
     }
 }
 
-- (void)km_adjustScrollViewContentOffsetIfNeeded {
-    UIScrollView *scrollView = self.km_visibleScrollView;
+//: - (UIScrollView *)km_scrollView {
+- (UIScrollView *)activeControl {
+    //: return km_objc_getAssociatedWeakObject(self, _cmd);
+    return fileContact(self, _cmd);
+}
+
+//: - (void)km_adjustScrollViewContentOffsetIfNeeded {
+- (void)emotion {
+    //: UIScrollView *scrollView = self.km_visibleScrollView;
+    UIScrollView *scrollView = self.apparentView;
+    //: if (scrollView) {
     if (scrollView) {
+        //: UIEdgeInsets contentInset;
         UIEdgeInsets contentInset;
-#ifdef __IPHONE_11_0
+
+        //: if (@available(iOS 11.0, *)) {
         if (@available(iOS 11.0, *)) {
+            //: contentInset = scrollView.adjustedContentInset;
             contentInset = scrollView.adjustedContentInset;
+        //: } else {
         } else {
+            //: contentInset = scrollView.contentInset;
             contentInset = scrollView.contentInset;
         }
-#else
-        contentInset = scrollView.contentInset;
-#endif
+
+
+
+        //: const CGFloat topContentOffsetY = -contentInset.top;
         const CGFloat topContentOffsetY = -contentInset.top;
+        //: const CGFloat bottomContentOffsetY = scrollView.contentSize.height - (CGRectGetHeight(scrollView.bounds) - contentInset.bottom);
         const CGFloat bottomContentOffsetY = scrollView.contentSize.height - (CGRectGetHeight(scrollView.bounds) - contentInset.bottom);
-        
+
+        //: CGPoint adjustedContentOffset = scrollView.contentOffset;
         CGPoint adjustedContentOffset = scrollView.contentOffset;
+        //: if (adjustedContentOffset.y > bottomContentOffsetY) {
         if (adjustedContentOffset.y > bottomContentOffsetY) {
+            //: adjustedContentOffset.y = bottomContentOffsetY;
             adjustedContentOffset.y = bottomContentOffsetY;
         }
+        //: if (adjustedContentOffset.y < topContentOffsetY) {
         if (adjustedContentOffset.y < topContentOffsetY) {
+            //: adjustedContentOffset.y = topContentOffsetY;
             adjustedContentOffset.y = topContentOffsetY;
         }
+        //: [scrollView setContentOffset:adjustedContentOffset animated:NO];
         [scrollView setContentOffset:adjustedContentOffset animated:NO];
     }
 }
 
-- (void)km_adjustScrollViewContentInsetAdjustmentBehavior {
-#ifdef __IPHONE_11_0
-    if (self.navigationController.navigationBar.translucent) {
+//: - (void)km_resizeTransitionNavigationBarFrame {
+- (void)tingWritten {
+    //: if (!self.view.window) {
+    if (!self.view.window) {
+        //: return;
         return;
     }
-    if (@available(iOS 11.0, *)) {
-        UIScrollView *scrollView = self.km_visibleScrollView;
-        if (scrollView) {
-            UIScrollViewContentInsetAdjustmentBehavior contentInsetAdjustmentBehavior = scrollView.contentInsetAdjustmentBehavior;
-            if (contentInsetAdjustmentBehavior != UIScrollViewContentInsetAdjustmentNever) {
-                scrollView.km_originalContentInsetAdjustmentBehavior = contentInsetAdjustmentBehavior;
-                scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-                scrollView.km_shouldRestoreContentInsetAdjustmentBehavior = YES;
-            }
-        }
-    }
-#endif
+    //: UIView *backgroundView = [self.navigationController.navigationBar valueForKey:@"_backgroundView"];
+    UIView *backgroundView = [self.navigationController.navigationBar valueForKey:[PermissionData sharedInstance].kEscapeError];
+    //: CGRect rect = [self.navigationController.navigationBar convertRect:backgroundView.frame toView:self.view];
+    CGRect rect = [self.navigationController.navigationBar convertRect:backgroundView.frame toView:self.view];
+    //: self.km_transitionNavigationBar.frame = rect;
+    self.sinceNavigations.frame = rect;
 }
 
-- (void)km_restoreScrollViewContentInsetAdjustmentBehaviorIfNeeded {
-#ifdef __IPHONE_11_0
+//: - (void)km_restoreScrollViewContentInsetAdjustmentBehaviorIfNeeded {
+- (void)aggregationQuantityry {
+
+    //: if (@available(iOS 11.0, *)) {
     if (@available(iOS 11.0, *)) {
-        UIScrollView *scrollView = self.km_visibleScrollView;
+        //: UIScrollView *scrollView = self.km_visibleScrollView;
+        UIScrollView *scrollView = self.apparentView;
+        //: if (scrollView) {
         if (scrollView) {
+            //: if (scrollView.km_shouldRestoreContentInsetAdjustmentBehavior) {
             if (scrollView.km_shouldRestoreContentInsetAdjustmentBehavior) {
+                //: scrollView.contentInsetAdjustmentBehavior = scrollView.km_originalContentInsetAdjustmentBehavior;
                 scrollView.contentInsetAdjustmentBehavior = scrollView.km_originalContentInsetAdjustmentBehavior;
+                //: scrollView.km_shouldRestoreContentInsetAdjustmentBehavior = NO;
                 scrollView.km_shouldRestoreContentInsetAdjustmentBehavior = NO;
             }
         }
     }
-#endif
+
 }
 
-
-- (UINavigationBar *)km_transitionNavigationBar {
-    return objc_getAssociatedObject(self, _cmd);
-}
-
-- (void)setKm_transitionNavigationBar:(UINavigationBar *)navigationBar {
-    objc_setAssociatedObject(self, @selector(km_transitionNavigationBar), navigationBar, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-- (UIScrollView *)km_scrollView {
-    return km_objc_getAssociatedWeakObject(self, _cmd);
-}
-
-- (void)setKm_scrollView:(UIScrollView *)scrollView {
-    km_objc_setAssociatedWeakObject(self, @selector(km_scrollView), scrollView);
-}
-
-- (UIScrollView *)km_visibleScrollView {
-    UIScrollView *scrollView = self.km_scrollView;
+//: - (UIScrollView *)km_visibleScrollView {
+- (UIScrollView *)apparentView {
+    //: UIScrollView *scrollView = self.km_scrollView;
+    UIScrollView *scrollView = self.activeControl;
+    //: if (!scrollView && [self.view isKindOfClass:[UIScrollView class]]) {
     if (!scrollView && [self.view isKindOfClass:[UIScrollView class]]) {
+        //: scrollView = (UIScrollView *)self.view;
         scrollView = (UIScrollView *)self.view;
     }
+    //: return scrollView;
     return scrollView;
 }
 
+//: - (void)km_viewDidAppear:(BOOL)animated {
+- (void)thumbed:(BOOL)animated {
+    //: [self km_restoreScrollViewContentInsetAdjustmentBehaviorIfNeeded];
+    [self aggregationQuantityry];
+    //: UIViewController *transitionViewController = self.navigationController.km_transitionContextToViewController;
+    UIViewController *transitionViewController = self.navigationController.presentDayHandling;
+    //: if (self.km_transitionNavigationBar) {
+    if (self.sinceNavigations) {
+        //: if (@available(iOS 15, *)) {
+        if (@available(iOS 15, *)) {
+            //: self.navigationController.navigationBar.standardAppearance = self.km_transitionNavigationBar.standardAppearance;
+            self.navigationController.navigationBar.standardAppearance = self.sinceNavigations.standardAppearance;
+            //: self.navigationController.navigationBar.scrollEdgeAppearance = self.km_transitionNavigationBar.scrollEdgeAppearance;
+            self.navigationController.navigationBar.scrollEdgeAppearance = self.sinceNavigations.scrollEdgeAppearance;
+        //: } else {
+        } else {
+            //: self.navigationController.navigationBar.barTintColor = self.km_transitionNavigationBar.barTintColor;
+            self.navigationController.navigationBar.barTintColor = self.sinceNavigations.barTintColor;
+            //: [self.navigationController.navigationBar setBackgroundImage:[self.km_transitionNavigationBar backgroundImageForBarMetrics:UIBarMetricsDefault] forBarMetrics:UIBarMetricsDefault];
+            [self.navigationController.navigationBar setBackgroundImage:[self.sinceNavigations backgroundImageForBarMetrics:UIBarMetricsDefault] forBarMetrics:UIBarMetricsDefault];
+            //: [self.navigationController.navigationBar setShadowImage:self.km_transitionNavigationBar.shadowImage];
+            [self.navigationController.navigationBar setShadowImage:self.sinceNavigations.shadowImage];
+        }
+        //: if (!transitionViewController || [transitionViewController isEqual:self]) {
+        if (!transitionViewController || [transitionViewController isEqual:self]) {
+            //: [self.km_transitionNavigationBar removeFromSuperview];
+            [self.sinceNavigations removeFromSuperview];
+            //: self.km_transitionNavigationBar = nil;
+            self.km_transitionNavigationBarsetSinceNavigations = nil;
+        }
+    }
+    //: if ([transitionViewController isEqual:self]) {
+    if ([transitionViewController isEqual:self]) {
+        //: self.navigationController.km_transitionContextToViewController = nil;
+        self.navigationController.presentDayHandling = nil;
+    }
+    //: self.navigationController.km_backgroundViewHidden = NO;
+    self.navigationController.umbraDoing = NO;
+    //: [self km_viewDidAppear:animated];
+    [self thumbed:animated];
+}
+
+//: - (void)km_viewWillLayoutSubviews {
+- (void)humanityAllow {
+    //: id<UIViewControllerTransitionCoordinator> tc = self.transitionCoordinator;
+    id<UIViewControllerTransitionCoordinator> tc = self.transitionCoordinator;
+    //: UIViewController *fromViewController = [tc viewControllerForKey:UITransitionContextFromViewControllerKey];
+    UIViewController *fromViewController = [tc viewControllerForKey:UITransitionContextFromViewControllerKey];
+    //: UIViewController *toViewController = [tc viewControllerForKey:UITransitionContextToViewControllerKey];
+    UIViewController *toViewController = [tc viewControllerForKey:UITransitionContextToViewControllerKey];
+
+    //: if ([self isEqual:self.navigationController.viewControllers.lastObject] && [toViewController isEqual:self] && tc.presentationStyle == UIModalPresentationNone) {
+    if ([self isEqual:self.navigationController.viewControllers.lastObject] && [toViewController isEqual:self] && tc.presentationStyle == UIModalPresentationNone) {
+        //: if (self.navigationController.navigationBar.translucent) {
+        if (self.navigationController.navigationBar.translucent) {
+            //: [tc containerView].backgroundColor = [self.navigationController km_containerViewBackgroundColor];
+            [tc containerView].backgroundColor = [self.navigationController treat];
+        }
+        //: fromViewController.view.clipsToBounds = NO;
+        fromViewController.view.clipsToBounds = NO;
+        //: toViewController.view.clipsToBounds = NO;
+        toViewController.view.clipsToBounds = NO;
+        //: if (!self.km_transitionNavigationBar) {
+        if (!self.sinceNavigations) {
+            //: [self km_addTransitionNavigationBarIfNeeded];
+            [self eastWestDirection];
+            //: self.navigationController.km_backgroundViewHidden = YES;
+            self.navigationController.umbraDoing = YES;
+        }
+        //: [self km_resizeTransitionNavigationBarFrame];
+        [self tingWritten];
+    }
+    //: if (self.km_transitionNavigationBar) {
+    if (self.sinceNavigations) {
+        //: [self.view bringSubviewToFront:self.km_transitionNavigationBar];
+        [self.view bringSubviewToFront:self.sinceNavigations];
+    }
+    //: [self km_viewWillLayoutSubviews];
+    [self humanityAllow];
+}
+
+//: - (void)setKm_transitionNavigationBar:(UINavigationBar *)navigationBar {
+- (void)setSinceNavigations:(UINavigationBar *)navigationBar {
+    //: objc_setAssociatedObject(self, @selector(km_transitionNavigationBar), navigationBar, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(sinceNavigations), navigationBar, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+
+//: + (void)load {
++ (void)load {
+    //: static dispatch_once_t onceToken;
+    static dispatch_once_t onceToken;
+    //: _dispatch_once(&onceToken, ^{
+    _dispatch_once(&onceToken, ^{
+        //: RadarDriveCircuitMethod([self class],
+        measureMethod([self class],
+                        //: @selector(viewWillLayoutSubviews),
+                        @selector(viewWillLayoutSubviews),
+                        //: [self class],
+                        [self class],
+                        //: @selector(km_viewWillLayoutSubviews));
+                        @selector(humanityAllow));
+
+        //: RadarDriveCircuitMethod([self class],
+        measureMethod([self class],
+                        //: @selector(viewWillAppear:),
+                        @selector(viewWillAppear:),
+                        //: [self class],
+                        [self class],
+                        //: @selector(km_viewWillAppear:));
+                        @selector(alonged:));
+
+        //: RadarDriveCircuitMethod([self class],
+        measureMethod([self class],
+                        //: @selector(viewDidAppear:),
+                        @selector(viewDidAppear:),
+                        //: [self class],
+                        [self class],
+                        //: @selector(km_viewDidAppear:));
+                        @selector(thumbed:));
+    //: });
+    });
+}
+
+//: - (void)setKm_scrollView:(UIScrollView *)scrollView {
+- (void)setActiveControl:(UIScrollView *)scrollView {
+    //: km_objc_setAssociatedWeakObject(self, @selector(km_scrollView), scrollView);
+    extentCounterrelateBroadcast(self, @selector(activeControl), scrollView);
+}
+
+//: - (UINavigationBar *)km_transitionNavigationBar {
+- (UINavigationBar *)sinceNavigations {
+    //: return objc_getAssociatedObject(self, _cmd);
+    return objc_getAssociatedObject(self, _cmd);
+}
+
+//: - (void)km_adjustScrollViewContentInsetAdjustmentBehavior {
+- (void)past {
+
+    //: if (self.navigationController.navigationBar.translucent) {
+    if (self.navigationController.navigationBar.translucent) {
+        //: return;
+        return;
+    }
+    //: if (@available(iOS 11.0, *)) {
+    if (@available(iOS 11.0, *)) {
+        //: UIScrollView *scrollView = self.km_visibleScrollView;
+        UIScrollView *scrollView = self.apparentView;
+        //: if (scrollView) {
+        if (scrollView) {
+            //: UIScrollViewContentInsetAdjustmentBehavior contentInsetAdjustmentBehavior = scrollView.contentInsetAdjustmentBehavior;
+            UIScrollViewContentInsetAdjustmentBehavior contentInsetAdjustmentBehavior = scrollView.contentInsetAdjustmentBehavior;
+            //: if (contentInsetAdjustmentBehavior != UIScrollViewContentInsetAdjustmentNever) {
+            if (contentInsetAdjustmentBehavior != UIScrollViewContentInsetAdjustmentNever) {
+                //: scrollView.km_originalContentInsetAdjustmentBehavior = contentInsetAdjustmentBehavior;
+                scrollView.km_originalContentInsetAdjustmentBehavior = contentInsetAdjustmentBehavior;
+                //: scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+                scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+                //: scrollView.km_shouldRestoreContentInsetAdjustmentBehavior = YES;
+                scrollView.km_shouldRestoreContentInsetAdjustmentBehavior = YES;
+            }
+        }
+    }
+
+}
+
+//: - (void)km_viewWillAppear:(BOOL)animated {
+- (void)alonged:(BOOL)animated {
+    //: [self km_viewWillAppear:animated];
+    [self alonged:animated];
+    //: id<UIViewControllerTransitionCoordinator> tc = self.transitionCoordinator;
+    id<UIViewControllerTransitionCoordinator> tc = self.transitionCoordinator;
+    //: UIViewController *toViewController = [tc viewControllerForKey:UITransitionContextToViewControllerKey];
+    UIViewController *toViewController = [tc viewControllerForKey:UITransitionContextToViewControllerKey];
+
+    //: if ([self isEqual:self.navigationController.viewControllers.lastObject] && [toViewController isEqual:self] && tc.presentationStyle == UIModalPresentationNone) {
+    if ([self isEqual:self.navigationController.viewControllers.lastObject] && [toViewController isEqual:self] && tc.presentationStyle == UIModalPresentationNone) {
+        //: [self km_adjustScrollViewContentInsetAdjustmentBehavior];
+        [self past];
+        //: dispatch_async(dispatch_get_main_queue(), ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //: if (self.navigationController.navigationBarHidden) {
+            if (self.navigationController.navigationBarHidden) {
+                //: [self km_restoreScrollViewContentInsetAdjustmentBehaviorIfNeeded];
+                [self aggregationQuantityry];
+            }
+        //: });
+        });
+    }
+}
+
+//: @end
 @end

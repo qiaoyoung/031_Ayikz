@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ConsumeBeyondLoader.h
 //  HuaxiajiaboApp
@@ -6,43 +8,63 @@
 //  Copyright (c) 2015年 HuaMo. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @protocol ConsumeBeyondLoaderDelegate;
 @protocol ConsumeBeyondLoaderDelegate;
 
+//: @interface ConsumeBeyondLoader : UIViewController <UIGestureRecognizerDelegate> {
 @interface ConsumeBeyondLoader : UIViewController <UIGestureRecognizerDelegate> {
+    //: __weak id<ConsumeBeyondLoaderDelegate> _viewControllerDelegate;
     __weak id<ConsumeBeyondLoaderDelegate> _viewControllerDelegate;
 }
-@property (nonatomic,weak) id<ConsumeBeyondLoaderDelegate> viewControllerDelegate;
+//: @property (nonatomic,weak) id<ConsumeBeyondLoaderDelegate> viewControllerDelegate;
+@property (nonatomic,weak) id<ConsumeBeyondLoaderDelegate> album;
 
 
 //系统返回手势改装
-- (void)enableFullScreenPopGesture:(BOOL)enable;
+//: - (void)enableFullScreenPopGesture:(BOOL)enable;
+- (void)stealGesture:(BOOL)enable;
 
+//: @end
 @end
 
 
 
 
+//: @protocol ConsumeBeyondLoaderDelegate <NSObject>
 @protocol ConsumeBeyondLoaderDelegate <NSObject>
 
+//: @optional
 @optional
-- (void)viewController:(ConsumeBeyondLoader *)viewController key:(NSString *)key infomation:(id)infomation;
+//: - (void)viewController:(ConsumeBeyondLoader *)viewController key:(NSString *)key infomation:(id)infomation;
+- (void)character:(ConsumeBeyondLoader *)viewController sumerrupt:(NSString *)key app:(id)infomation;
 
+//: @end
 @end
 
 
 
 
+//: @interface UIViewController (DelegateCrownReactivePersist)
 @interface UIViewController (DelegateCrownReactivePersist)
 
-- (void)showEmptyView;
-- (void)showEmptyViewWithMessage:(NSString *)message;
-- (void)showEmptyViewWithImageName:(NSString *)imageName inView:(UIView *)inView;
-- (void)showEmptyViewWithMessage:(NSString *)message inView:(UIView *)inView;
-- (void)showEmptyViewWithMessage:(NSString *)message inView:(UIView *)inView imageName:(NSString *)imageName;
-- (void)hideEmptyViewInView:(UIView *)view;
-- (void)hideEmptyView;
+//: - (void)refrushWithNotNet;
+- (void)vehicle;
+//: - (void)hideEmptyView;
+- (void)sweepUnderTheRugTourSight;
+//: - (void)showEmptyViewWithImageName:(NSString *)imageName inView:(UIView *)inView;
+- (void)of:(NSString *)imageName rear_strong:(UIView *)inView;
+//: - (void)hideEmptyViewInView:(UIView *)view;
+- (void)view:(UIView *)view;
+//: - (void)showEmptyView;
+- (void)res;
+//: - (void)showEmptyViewWithMessage:(NSString *)message inView:(UIView *)inView;
+- (void)unfinished:(NSString *)message beyondView:(UIView *)inView;
+//: - (void)showEmptyViewWithMessage:(NSString *)message inView:(UIView *)inView imageName:(NSString *)imageName;
+- (void)disk:(NSString *)message broker:(UIView *)inView technology:(NSString *)imageName;
 
 
 /**
@@ -50,9 +72,12 @@
  重写这个方法：无网络时，弹出无网络页面，点击刷新数据
  不重写：不会弹出无网络页面
  */
-- (BOOL)canShowNotNetView;
-- (void)refrushWithNotNet;
+//: - (BOOL)canShowNotNetView;
+- (BOOL)natural;
+//: - (void)showEmptyViewWithMessage:(NSString *)message;
+- (void)awakeDown:(NSString *)message;
 
 
 
+//: @end
 @end

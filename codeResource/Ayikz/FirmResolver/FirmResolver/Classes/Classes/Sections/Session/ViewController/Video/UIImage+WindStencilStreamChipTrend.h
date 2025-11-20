@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UIImage+WindStencilStreamChipTrend.h
 //  LYPlayerDemo
@@ -6,17 +8,23 @@
 //  Copyright © 2016年 com.liyang.player. All rights reserved.
 //
 
-
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @interface UIImage (WindStencilStreamChipTrend)
 @interface UIImage (WindStencilStreamChipTrend)
 
 /** 缩放到指定大小 */
-- (UIImage *)imageCompressWithSimple:(UIImage*)image scaledToSize:(CGSize)size;
-
 /** 根据颜色和圆的半径来创建一个 Image */
-+ (UIImage *)createImageWithColor:(UIColor *)color radius:(CGFloat)radius;
+//: + (UIImage *)createImageWithColor:(UIColor *)color radius:(CGFloat)radius;
++ (UIImage *)secure:(UIColor *)color takeLess:(CGFloat)radius;
+
+//: - (UIImage *)imageCompressWithSimple:(UIImage*)image scaledToSize:(CGSize)size;
+- (UIImage *)broadcast:(UIImage*)image maximum:(CGSize)size;
 
 /** 根据一个view来创建一个 Image */
-+ (UIImage *)creatImageWithView:(UIView *)theView;
+//: + (UIImage *)creatImageWithView:(UIView *)theView;
++ (UIImage *)lead:(UIView *)theView;
+//: @end
 @end

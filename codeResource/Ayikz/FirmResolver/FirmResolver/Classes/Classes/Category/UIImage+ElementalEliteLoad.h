@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UIImage+Color.h
 //  yixin_iphone
@@ -6,12 +8,18 @@
 //  Copyright (c) 2014年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @interface UIImage (ElementalEliteLoad)
 @interface UIImage (ElementalEliteLoad)
 
-+ (UIImage *)clearColorImage;
+//: + (UIImage *)imageWithColor:(UIColor *)color;
++ (UIImage *)auditoryImage:(UIColor *)color;
 
-+ (UIImage *)imageWithColor:(UIColor *)color;
+//: + (UIImage *)clearColorImage;
++ (UIImage *)visualisationAmong;
 
+//: @end
 @end

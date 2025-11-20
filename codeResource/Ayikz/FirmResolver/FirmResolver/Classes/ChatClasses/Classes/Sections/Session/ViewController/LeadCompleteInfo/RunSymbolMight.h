@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  RunSymbolMight.h
 //  sohunews
@@ -6,22 +8,34 @@
 //  Copyright © 2020 Sohu.com. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface RunSymbolMight : NSObject
 @interface RunSymbolMight : NSObject
 
-dSINGLETON_FOR_CLASS_HEADER(RunSymbolMight);
+//: - (void)dismissLeadView;
+- (void)alter;
+;
 
 /// 引导用户完善资料，显示提示框
-- (void)showLeadViewForCompletingUserInfoWithSuperView:(UIView *)superView
-                                           withMessage:(NSString *)msg
-                                           cancleBlock:(void (^)(void))callback;
+//: - (void)showLeadViewForCompletingUserInfoWithSuperView:(UIView *)superView
+- (void)guiltWinter:(UIView *)superView
+                                           //: withMessage:(NSString *)msg
+                                           full:(NSString *)msg
+                                           //: cancleBlock:(void (^)(void))callback;
+                                           whenWill:(void (^)(void))callback;
 
-- (void)dismissLeadView;
-
+//: + (instancetype)sharedInstance;;
++ (instancetype)nearOn;
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

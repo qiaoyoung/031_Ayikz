@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  AmongVisualizeVentureSegment.h
 //  NIM
@@ -6,10 +8,15 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "PackFlowVerify.h"
 #import "PackFlowVerify.h"
 
+//: @interface AmongVisualizeVentureSegment : PackFlowVerify
 @interface AmongVisualizeVentureSegment : PackFlowVerify
 
-@property (nonatomic,strong,readonly) UIImageView *imageView;
+//: @property (nonatomic,strong,readonly) UIImageView *imageView;
+@property (nonatomic,strong,readonly) UIImageView *point;
 
+//: @end
 @end

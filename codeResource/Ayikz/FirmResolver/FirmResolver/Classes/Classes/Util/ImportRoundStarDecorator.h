@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ImportRoundStarDecorator.h
 //  NIM
@@ -6,25 +8,33 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-#define ImageExt   (@"jpg")
-
-
+//: @interface ImportRoundStarDecorator : NSObject
 @interface ImportRoundStarDecorator : NSObject
 
-+ (NSString *)getAppDocumentPath;
+//: + (NSString *)filepathForImage:(NSString *)filename;
++ (NSString *)consume:(NSString *)filename;
 
-+ (NSString *)getAppTempPath;
+//: + (NSString *)filepathForVideo:(NSString *)filename;
++ (NSString *)softVideo:(NSString *)filename;
 
-+ (NSString *)userDirectory;
+//: + (NSString *)userDirectory;
++ (NSString *)forwardPass;
 
-+ (NSString *)genFilenameWithExt:(NSString *)ext;
+//: + (NSString *)getAppDocumentPath;
++ (NSString *)openEntityPath;
 
-+ (NSString *)filepathForVideo:(NSString *)filename;
+//: + (NSString *)getAppTempPath;
++ (NSString *)temp;
 
-+ (NSString *)filepathForImage:(NSString *)filename;
+//: + (NSString *)genFilenameWithExt:(NSString *)ext;
++ (NSString *)viaExt:(NSString *)ext;
 
-+ (NSString *)filepathForMergeForwardFile:(NSString *)filename;
+//: + (NSString *)filepathForMergeForwardFile:(NSString *)filename;
++ (NSString *)stuffFile:(NSString *)filename;
 
+//: @end
 @end

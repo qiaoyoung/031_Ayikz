@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UINavigationBar+InteractiveVerseVectorScale.m
 //  NIM
@@ -6,51 +8,83 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "UINavigationBar+InteractiveVerseVectorScale.h"
 #import "UINavigationBar+InteractiveVerseVectorScale.h"
+//: #import "UIView+Layout.h"
 #import "UIView+Layout.h"
+//: #import "DisplayCommandLanguageWellEnqueue.h"
 #import "DisplayCommandLanguageWellEnqueue.h"
+
+//: @implementation UINavigationBar (InteractiveVerseVectorScale)
 @implementation UINavigationBar (InteractiveVerseVectorScale)
 
-+ (void)load{
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        swizzling_exchangeMethod([UINavigationBar class] ,@selector(layoutSubviews), @selector(swizzling_layoutSubviews));
-    });
-}
-
-#pragma mark - LayoutSubviews
-#define TitleMargin 43
-
-- (void)swizzling_layoutSubviews{
-    [self swizzling_layoutSubviews];
-    UINavigationItem *navigationItem = [self topItem];
-    UIView *subview  = [[navigationItem leftBarButtonItem] customView];
-    CGFloat navigationBtnMargin = IOS11? -10 : 28;
-    subview.left = navigationBtnMargin;
-    
-    //解决标题过长时，设置navigationItem.title导致标题偏移的问题
-    UILabel *label = (UILabel *)navigationItem.titleView;
-    if ([label isKindOfClass:[UILabel class]])
-    {
-        label.lineBreakMode = NSLineBreakByTruncatingMiddle;
-    }
-    [label sizeToFit];
-    [self layoutLabel];
-}
-
+//: #pragma mark - Private
 #pragma mark - Private
-- (void)layoutLabel{
+//: - (void)layoutLabel{
+- (void)pressedLabel{
+    //: UINavigationItem *navigationItem = [self topItem];
     UINavigationItem *navigationItem = [self topItem];
-    
+
+    //: UIView *view = navigationItem.titleView;
     UIView *view = navigationItem.titleView;
-    
-    
-    CGPoint centerPonit = CGPointMake(self.width * .5f, self.height *.5f);
+
+
+    //: CGPoint centerPonit = CGPointMake(self.width * .5f, self.height *.5f);
+    CGPoint centerPonit = CGPointMake(self.triggerWidth * .5f, self.renderTower *.5f);
+    //: UIView *superView = view.superview;
     UIView *superView = view.superview;
+    //: centerPonit = [superView convertPoint:centerPonit fromView:self];
     centerPonit = [superView convertPoint:centerPonit fromView:self];
-    
+
+    //: view.center = centerPonit;
     view.center = centerPonit;
 }
 
+//: #pragma mark - LayoutSubviews
+#pragma mark - LayoutSubviews
 
+
+//: - (void)swizzling_layoutSubviews{
+- (void)arrowVisible{
+    //: [self swizzling_layoutSubviews];
+    [self arrowVisible];
+    //: UINavigationItem *navigationItem = [self topItem];
+    UINavigationItem *navigationItem = [self topItem];
+    //: UIView *subview = [[navigationItem leftBarButtonItem] customView];
+    UIView *subview = [[navigationItem leftBarButtonItem] customView];
+    //: CGFloat navigationBtnMargin = ([[[UIDevice currentDevice] systemVersion] doubleValue] >= 11.0)? -10 : 28;
+    CGFloat navigationBtnMargin = ([[[UIDevice currentDevice] systemVersion] doubleValue] >= 11.0)? -10 : 28;
+    //: subview.left = navigationBtnMargin;
+    subview.empty = navigationBtnMargin;
+
+    //解决标题过长时，设置navigationItem.title导致标题偏移的问题
+    //: UILabel *label = (UILabel *)navigationItem.titleView;
+    UILabel *label = (UILabel *)navigationItem.titleView;
+    //: if ([label isKindOfClass:[UILabel class]])
+    if ([label isKindOfClass:[UILabel class]])
+    {
+        //: label.lineBreakMode = NSLineBreakByTruncatingMiddle;
+        label.lineBreakMode = NSLineBreakByTruncatingMiddle;
+    }
+    //: [label sizeToFit];
+    [label sizeToFit];
+    //: [self layoutLabel];
+    [self pressedLabel];
+}
+
+//: + (void)load{
++ (void)load{
+    //: static dispatch_once_t onceToken;
+    static dispatch_once_t onceToken;
+    //: _dispatch_once(&onceToken, ^{
+    _dispatch_once(&onceToken, ^{
+        //: swizzling_exchangeMethod([UINavigationBar class] ,@selector(layoutSubviews), @selector(swizzling_layoutSubviews));
+        swizzling_exchangeMethod([UINavigationBar class] ,@selector(layoutSubviews), @selector(arrowVisible));
+    //: });
+    });
+}
+
+
+//: @end
 @end

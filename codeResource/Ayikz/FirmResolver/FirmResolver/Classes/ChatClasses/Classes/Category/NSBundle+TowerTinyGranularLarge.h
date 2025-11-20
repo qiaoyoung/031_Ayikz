@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NSBundle+TowerTinyGranularLarge.h
 // TowerTinyGranularLarge
@@ -6,22 +8,33 @@
 //  Copyright © 2019 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface NSBundle (TowerTinyGranularLarge)
 @interface NSBundle (TowerTinyGranularLarge)
 
-+ (NSBundle *)nim_defaultEmojiBundle;
+//: + (NSString *)nim_EmojiGifPlistFile;
++ (NSString *)brandRefuseRegister;
 
-+ (nullable NSBundle *)nim_defaultLanguageBundle;
+//: + (NSString *)nim_EmojiPlistFile;
++ (NSString *)yieldFile;
 
-+ (NSString *)nim_EmojiPlistFile;
+//: + (nullable NSBundle *)nim_defaultLanguageBundle;
++ (nullable NSBundle *)finish;
 
-+ (NSString *)nim_EmojiGifPlistFile;
+//: + (NSString *)nim_EmojiImage:(NSString *)imageName;
++ (NSString *)berm:(NSString *)imageName;
 
-+ (NSString *)nim_EmojiImage:(NSString *)imageName;
+//: + (NSBundle *)nim_defaultEmojiBundle;
++ (NSBundle *)cartCool;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

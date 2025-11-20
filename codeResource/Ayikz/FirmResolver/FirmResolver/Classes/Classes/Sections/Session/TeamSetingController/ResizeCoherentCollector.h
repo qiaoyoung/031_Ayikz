@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ResizeCoherentCollector.h
 //  NIM
@@ -6,20 +8,33 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "PauseHeightCalculate.h"
 #import "PauseHeightCalculate.h"
 
+//: @interface ResizeCoherentCollector : PauseHeightCalculate
 @interface ResizeCoherentCollector : PauseHeightCalculate
 
 
 
-- (void)enterMemberCard;//查看群成员
-- (void)didSelectAddOpeartor;//添加新成员
+//: - (void)enterMuteList;
+- (void)sharedForbid;//禁言列表
+//: - (void)updateTeamName;
+- (void)challengeRed;
 
-- (void)updateTeamName;
-- (void)updateTeamNick;
-- (void)updateTeamIntro;
-- (void)updateTeamAnnouncement;
-- (void)enterMuteList;//禁言列表
-- (void)quitTeam;
-- (void)dismissTeam;
+//: - (void)updateTeamNick;
+- (void)appDeliver;
+//: - (void)quitTeam;
+- (void)toolPin;
+//: - (void)didSelectAddOpeartor;
+- (void)satelliteBy;//添加新成员
+//: - (void)enterMemberCard;
+- (void)shouldKibbutznik;//查看群成员
+//: - (void)dismissTeam;
+- (void)keepDot;
+//: - (void)updateTeamIntro;
+- (void)noIndependent;
+//: - (void)updateTeamAnnouncement;
+- (void)contentCap;
+//: @end
 @end

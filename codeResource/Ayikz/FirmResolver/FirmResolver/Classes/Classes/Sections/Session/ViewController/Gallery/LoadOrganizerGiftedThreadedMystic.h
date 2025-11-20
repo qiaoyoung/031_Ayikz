@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  LoadOrganizerGiftedThreadedMystic.h
 //  NIM
@@ -6,25 +8,42 @@
 //  Copyright © 2024 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface SystemReactiveAsset : NSString
 @interface SystemReactiveAsset : NSString
-@property (nonatomic,copy)  NSString    *itemId;
-@property (nonatomic,copy)  NSString    *thumbPath;
-@property (nonatomic,copy)  NSString    *imageURL;
-@property (nonatomic,copy)  NSString    *imagePath;
-@property (nonatomic,copy)  NSString    *name;
-@property (nonatomic,assign) CGSize     size;
+//: @property (nonatomic,copy) NSString *imagePath;
+@property (nonatomic,copy) NSString *path;
+//: @property (nonatomic,assign) CGSize size;
+@property (nonatomic,assign) CGSize markSize;
+//: @property (nonatomic,copy) NSString *itemId;
+@property (nonatomic,copy) NSString *convert;
+//: @property (nonatomic,copy) NSString *thumbPath;
+@property (nonatomic,copy) NSString *magnitude;
+//: @property (nonatomic,copy) NSString *name;
+@property (nonatomic,copy) NSString *antiDatabase;
+//: @property (nonatomic,copy) NSString *imageURL;
+@property (nonatomic,copy) NSString *snapTreasure;
+//: @end
 @end
 
+//: @interface LoadOrganizerGiftedThreadedMystic : UIViewController
 @interface LoadOrganizerGiftedThreadedMystic : UIViewController
 
-@property (nonatomic,strong)  NSString *imageURL;
-@property (nonatomic,strong)  NSString *imagePath;
-@property (nonatomic,strong)  NIMMessage *message;
+//: @property (nonatomic,strong) NSString *imageURL;
+@property (nonatomic,strong) NSString *calendar;
+//: @property (nonatomic,strong) NSString *imagePath;
+@property (nonatomic,strong) NSString *remnant;
+//: @property (nonatomic,strong) NIMMessage *message;
+@property (nonatomic,strong) NIMMessage *must;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

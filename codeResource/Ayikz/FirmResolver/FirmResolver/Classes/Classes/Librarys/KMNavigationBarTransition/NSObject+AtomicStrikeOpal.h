@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NSObject+AtomicStrikeOpal.h
 //
@@ -21,8 +23,12 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @interface NSObject (AtomicStrikeOpal)
 @interface NSObject (AtomicStrikeOpal)
 
+//: @end
 @end

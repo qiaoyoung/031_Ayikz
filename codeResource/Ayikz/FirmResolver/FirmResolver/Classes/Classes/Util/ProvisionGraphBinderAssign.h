@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ProvisionGraphBinderAssign.h
 //  NIM
@@ -5,154 +7,230 @@
 //  Created by chris on 15/7/1.
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
-
-#import <Foundation/Foundation.h>
 //部分API提供了额外的选项，如删除消息会有是否删除会话的选项,为了测试方便提供配置参数
 //上层开发只需要按照策划需求选择一种适合自己项目的选项即可，这个设置只是为了方便测试不同的case下API的正确性
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
+#import <Foundation/Foundation.h>
+
+//: @interface ProvisionGraphBinderAssign : NSObject
 @interface ProvisionGraphBinderAssign : NSObject
 
-+ (instancetype)sharedConfig;
+//: - (NIMLinkAddressType)LbsLinkAddressType; 
+- (NIMLinkAddressType)forceTranslation; //lbs返回的link地址类型
 
-- (BOOL)removeSessionWhenDeleteMessages;             //删除消息时是否同时删除会话项
+//: - (BOOL)isDeleteMsgFromDB;
+- (BOOL)little;
 
-- (BOOL)dropTableWhenDeleteMessages;                //删除消息的同时是否删除消息表
+//: - (BOOL)useRTSSocks; 
+- (BOOL)socksDawn; //白板是否使用socks5代理
 
-- (BOOL)localSearchOrderByTimeDesc;                 //本地搜索消息顺序 YES表示按时间戳逆序搜索,NO表示按照时间戳顺序搜索
+//: - (BOOL)dropTableWhenDeleteMessages; 
+- (BOOL)patentPop; //删除消息的同时是否删除消息表
 
-- (BOOL)autoRemoveRemoteSession;                    //删除会话时是不是也同时删除服务器会话 (防止漫游)
-- (BOOL)autoRemoveAlias;                            //删除好友的同时删除备注
+//: - (NSInteger)maximumLogDays; 
+- (NSInteger)headAcross; //日志最大存在天数
+//: - (BOOL)isDeleteMsgFromServer;
+- (BOOL)resWith;
 
-- (BOOL)autoRemoveSnapMessage;                      //阅后即焚消息在看完后是否删除
+//: - (BOOL)voiceDetect; 
+- (BOOL)cover; //语音检测开关
 
-- (BOOL)needVerifyForFriend;                        //添加好友是否需要验证
+//: - (BOOL)enableSyncStickTopSessionInfos;
+- (BOOL)plat;
 
-- (BOOL)showFps;                                    //是否显示Fps
+//: - (BOOL)videochatAutoRotateRemoteVideo; 
+- (BOOL)alongMore; //自动旋转视频聊天远端画面
 
-- (BOOL)disableProximityMonitor;                    //贴耳的时候是否需要自动切换成听筒模式
+//: - (NIMSymEncryptionType)SymEncryptionType; 
+- (NIMSymEncryptionType)soleApply; //非对称加密类型
 
-- (BOOL)enableRotate;                               //支持旋转(仅组件部分，其他部分可能会显示不正常，谨慎开启)
+//: - (NSString *)ipv4DefaultLink; 
+- (NSString *)tenseMaterial; // IPv4默认Link地址
 
-- (BOOL)usingAmr;                                   //使用amr作为录音
+//: - (BOOL)enableRevokeMsgPostscript;
+- (BOOL)tossEnable;
 
-- (BOOL)fileQuickTransferEnabled;                   //文件快传开关
+//: - (BOOL)serverRecordWhiteboardData; 
+- (BOOL)schedule; //服务器录制白板数据
 
-- (BOOL)enableAPNsPrefix;                           //推送允许带昵称
+//: - (BOOL)serverRecordVideo; 
+- (BOOL)recognize; //服务器录制视频
 
-- (BOOL)enableTeamAPNsForce;                        //群消息强制推送
+//: - (BOOL)enablePullSubMessagesFromServer;
+- (BOOL)gift;
 
-- (BOOL)enableAudioSessionReset;                    //允许MediaManager内部重置
+//: - (BOOL)localSearchOrderByTimeDesc; 
+- (BOOL)wealth; //本地搜索消息顺序 YES表示按时间戳逆序搜索,NO表示按照时间戳顺序搜索
 
-- (BOOL)exceptionLogUploadEnabled;                  //允许异常错误码下日志上吧
+//: + (instancetype)sharedConfig;
++ (instancetype)map;
 
-- (BOOL)enableLocalAnti;                            //本地反垃圾开关
+//: - (BOOL)showFps; 
+- (BOOL)convert; //是否显示Fps
 
-- (BOOL)enableSdkRemoteRender;                      //内部渲染开关
+//: - (BOOL)useSocks; 
+- (BOOL)calculateBlankSocks; //是否使用socks5代理
 
-- (NSArray *)ignoreTeamNotificationTypes;           //需要忽略的群通知类型
+//: - (UIViewContentMode)videochatRemoteVideoContentMode; 
+- (UIViewContentMode)discreditMode; //对端画面的填充模式
 
-- (BOOL)enableSyncWhenFetchRemoteMessages;          //拉取云消息时是否需要存储到本地
+//: - (BOOL)countTeamNotification; 
+- (BOOL)compare; //是否将群通知计入未读
 
-- (BOOL)enableCreateRecentSessionsWhenSyncRemoteMessages; //同步云消息到本地时是否创建最近会话
+//: - (NSUInteger )socks5Type; 
+- (NSUInteger )angle; //socks5类型
 
-- (BOOL)countTeamNotification;                      //是否将群通知计入未读
+//: - (NSInteger)ignoreMessageType;
+- (NSInteger)kitSiteType;
 
-- (NSInteger)maximumLogDays;                        //日志最大存在天数
+//: - (NSString *)socks5Addr; 
+- (NSString *)suggest; //socks5地址
 
-- (BOOL)animatedImageThumbnailEnabled;              //支持动图缩略图
+//: - (BOOL)enableCreateRecentSessionsWhenSyncRemoteMessages; 
+- (BOOL)big; //同步云消息到本地时是否创建最近会话
 
-#pragma mark - 网络通话和白板
-- (BOOL)serverRecordAudio;                          //服务器录制语音
+//: - (NSString *)socksRTSPassword; 
+- (NSString *)commit; //白板密码
 
-- (BOOL)serverRecordVideo;                          //服务器录制视频
+//: - (BOOL)enableSyncWhenFetchRemoteMessages; 
+- (BOOL)messages; //拉取云消息时是否需要存储到本地
 
-- (BOOL)serverRecordWhiteboardData;                 //服务器录制白板数据
+//: - (NSUInteger)localRecordVideoQuality; 
+- (NSUInteger)menu; //本地录制视频分辨率
 
-- (BOOL)serverRecordHost;                           //服务端录制主讲人
+//: - (NSString *)socksPassword; 
+- (NSString *)database; //密码
 
-- (int)serverRecordMode;                           //服务端录制模式
+//: - (BOOL)removeSessionWhenDeleteMessages; 
+- (BOOL)pointMessages; //删除消息时是否同时删除会话项
 
-- (BOOL)useSocks;                                  //是否使用socks5代理
+//: - (NSUInteger)videoMaxEncodeKbps; 
+- (NSUInteger)vertical; //最大发送视频编码码率
 
-- (NSString *)customAPNsType;                       // 自定义推送类型
+//: - (BOOL)serverRecordHost; 
+- (BOOL)opinion; //服务端录制主讲人
 
-- (NSUInteger )socks5Type;                          //socks5类型
+//: - (BOOL)fileQuickTransferEnabled; 
+- (BOOL)dominate; //文件快传开关
 
-- (NSString *)socks5Addr;                           //socks5地址
+//: - (NSString *)messageEnv; 
+- (NSString *)daylight; //环境变量，用于指向不同的抄送、第三方回调等配置
 
-- (NSString *)socksUsername;                       //用户名
+//: - (BOOL)enableAPNsPrefix; 
+- (BOOL)expressionPrefix; //推送允许带昵称
 
-- (NSString *)socksPassword;                       //密码
+//: - (BOOL)fileDownloadTokenEnabled; 
+- (BOOL)dialTelephone; //文件下载权限控制
 
-- (BOOL)useRTSSocks;                                  //白板是否使用socks5代理
+//: - (BOOL)animatedImageThumbnailEnabled; 
+- (BOOL)quantityThumbnail; //支持动图缩略图
 
-- (NSUInteger)socks5RTSType;                          //白板socks5类型
+//: - (BOOL)isIgnoreRevokeMessageCount;
+- (BOOL)upstart;
 
-- (NSString *)socks5RTSAddr;                           //白板socks5地址
+//: - (int)serverRecordMode; 
+- (int)totalerman; //服务端录制模式
 
-- (NSString *)socksRTSUsername;                       //白板用户名
+//: - (NSString *)ipv6DefaultLink; 
+- (NSString *)program; // IPv6默认Link地址
 
-- (NSString *)socksRTSPassword;                       //白板密码
+//: - (BOOL)startWithBackCamera; 
+- (BOOL)particular; //使用后置摄像头开始视频通话
 
-- (BOOL)videochatAutoRotateRemoteVideo;             //自动旋转视频聊天远端画面
+//: - (NSUInteger)socks5RTSType; 
+- (NSUInteger)roving; //白板socks5类型
 
-- (UIViewContentMode)videochatRemoteVideoContentMode; //对端画面的填充模式
+//: - (BOOL)enableAudioSessionReset; 
+- (BOOL)acherontic; //允许MediaManager内部重置
 
-- (BOOL)startWithBackCamera;                        //使用后置摄像头开始视频通话
+//: - (BOOL)autoRemoveRemoteSession; 
+- (BOOL)skinGiveSky; //删除会话时是不是也同时删除服务器会话 (防止漫游)
 
-- (NSUInteger)videoMaxEncodeKbps;                   //最大发送视频编码码率
+//: - (BOOL)enableTeamAPNsForce; 
+- (BOOL)view; //群消息强制推送
 
-- (NSUInteger)localRecordVideoKbps;                 //本地录制视频码率
-
-- (NSUInteger)localRecordVideoQuality;              //本地录制视频分辨率
-
-- (BOOL)autoDeactivateAudioSession;                 //自动结束AudioSession
-
-- (BOOL)audioDenoise;                               //降噪开关
-
-- (BOOL)voiceDetect;                                //语音检测开关
-
-- (BOOL)preferHDAudio;                              //期望高清语音
-
-- (NSInteger)chatroomRetryCount;                    //进聊天室重试次数
-
-- (BOOL)fileDownloadTokenEnabled;                   //文件下载权限控制
-
-- (BOOL)autoFetchAttachment;                        //自动下载附件。（接收消息，刷新消息，自动拿历史消息时）
-
-- (NIMAsymEncryptionType)AsymEncryptionType;     //非对称加密类型
-
-- (NIMRSAPaddingMode)rsaPaddingMode;         // RSA Padding算法
-
-- (NIMSymEncryptionType)SymEncryptionType;     //非对称加密类型
-
-- (NIMLinkAddressType)LbsLinkAddressType; //lbs返回的link地址类型
-
-- (NSString *)ipv4DefaultLink; // IPv4默认Link地址
-
-- (NSString *)ipv6DefaultLink;  // IPv6默认Link地址
-
-- (BOOL)asyncLoadRecentSessionEnabled; //是否开启异步读取最近会话
-
-- (NSInteger)ignoreMessageType;
-
-- (BOOL)isDeleteMsgFromServer;
-
-- (BOOL)isIgnoreRevokeMessageCount;
-
-- (BOOL)enablePullSubMessagesFromServer;
-
-- (BOOL)enableSyncStickTopSessionInfos;
-
-- (NSInteger)customClientType;
-
-- (BOOL)isDeleteMsgFromDB;
-
-- (BOOL)enableRevokeMsgPostscript;
-
-- (NSString *)messageEnv;  //环境变量，用于指向不同的抄送、第三方回调等配置
+//: - (NSString *)socksRTSUsername; 
+- (NSString *)title; //白板用户名
 
 /// 禁用 traceroute
-- (BOOL)disableTraceroute;
+//: - (BOOL)disableTraceroute;
+- (BOOL)sectionVolume;
 
+//: - (BOOL)needVerifyForFriend; 
+- (BOOL)rule; //添加好友是否需要验证
+
+//: - (BOOL)exceptionLogUploadEnabled; 
+- (BOOL)more; //允许异常错误码下日志上吧
+
+//: - (BOOL)autoFetchAttachment; 
+- (BOOL)dryLand; //自动下载附件。（接收消息，刷新消息，自动拿历史消息时）
+
+//: - (BOOL)preferHDAudio; 
+- (BOOL)likeSodiumCompute; //期望高清语音
+
+//: - (NIMRSAPaddingMode)rsaPaddingMode; 
+- (NIMRSAPaddingMode)jumpSession; // RSA Padding算法
+
+//: - (NSUInteger)localRecordVideoKbps; 
+- (NSUInteger)single; //本地录制视频码率
+
+//: - (BOOL)autoRemoveSnapMessage; 
+- (BOOL)message; //阅后即焚消息在看完后是否删除
+
+//: - (BOOL)enableSdkRemoteRender; 
+- (BOOL)matterToRender; //内部渲染开关
+
+//: - (NSInteger)customClientType;
+- (NSInteger)recurrentEvent;
+
+//: - (NSInteger)chatroomRetryCount; 
+- (NSInteger)typical; //进聊天室重试次数
+
+//: - (NSString *)socks5RTSAddr; 
+- (NSString *)commission; //白板socks5地址
+
+//: - (BOOL)autoRemoveAlias; 
+- (BOOL)adjust; //删除好友的同时删除备注
+
+//: - (BOOL)autoDeactivateAudioSession; 
+- (BOOL)enableto; //自动结束AudioSession
+
+//: - (BOOL)usingAmr; 
+- (BOOL)moral; //使用amr作为录音
+
+//: - (NSString *)socksUsername; 
+- (NSString *)merchant; //用户名
+
+//: - (BOOL)audioDenoise; 
+- (BOOL)via; //降噪开关
+
+//: - (NSString *)customAPNsType; 
+- (NSString *)slipAcross; // 自定义推送类型
+
+//: - (BOOL)enableLocalAnti; 
+- (BOOL)qualityMerchant; //本地反垃圾开关
+
+//: - (BOOL)disableProximityMonitor; 
+- (BOOL)infoLarge; //贴耳的时候是否需要自动切换成听筒模式
+
+//: - (BOOL)enableRotate; 
+- (BOOL)scaleOf; //支持旋转(仅组件部分，其他部分可能会显示不正常，谨慎开启)
+
+//: - (BOOL)asyncLoadRecentSessionEnabled; 
+- (BOOL)television; //是否开启异步读取最近会话
+
+//: - (NIMAsymEncryptionType)AsymEncryptionType; 
+- (NIMAsymEncryptionType)ductPlace; //非对称加密类型
+
+//: #pragma mark - 网络通话和白板
+#pragma mark - 网络通话和白板
+//: - (BOOL)serverRecordAudio; 
+- (BOOL)dirty; //服务器录制语音
+
+//: - (NSArray *)ignoreTeamNotificationTypes; 
+- (NSArray *)ignore; //需要忽略的群通知类型
+
+//: @end
 @end

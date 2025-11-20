@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  DataSourceCivicThrottleHarmonic.h
 //  NIM
@@ -6,15 +8,23 @@
 //  Copyright © 2020 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "RoyalDividerPlayContinue.h"
 #import "RoyalDividerPlayContinue.h"
 
+//: @class NIMMessage;
 @class NIMMessage;
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface DataSourceCivicThrottleHarmonic : RoyalDividerPlayContinue
 @interface DataSourceCivicThrottleHarmonic : RoyalDividerPlayContinue
 
-- (instancetype)initWithThreadMessage:(NIMMessage *)message;
+//: - (instancetype)initWithThreadMessage:(NIMMessage *)message;
+- (instancetype)initWithNap:(NIMMessage *)message;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

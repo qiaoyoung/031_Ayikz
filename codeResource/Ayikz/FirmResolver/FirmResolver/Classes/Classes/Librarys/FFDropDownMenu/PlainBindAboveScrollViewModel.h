@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  PlainBindAboveScrollViewModel.h
 //  PlainBindAboveScrollViewDemo
@@ -6,19 +8,24 @@
 //  Copyright © 2016年 chenfanfang. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "PlainBindAboveScrollViewBasedModel.h"
 #import "PlainBindAboveScrollViewBasedModel.h"
 
 /**
  *  下拉菜单模型
  */
+//: @interface PlainBindAboveScrollViewModel : PlainBindAboveScrollViewBasedModel
 @interface PlainBindAboveScrollViewModel : PlainBindAboveScrollViewBasedModel
 
 
 /** 菜单选项标题 */
-@property (nonatomic, copy) NSString *menuItemTitle;
-
 /** 菜单选项图标名称 */
-@property (nonatomic, copy) NSString *menuItemIconName;
+//: @property (nonatomic, copy) NSString *menuItemIconName;
+@property (nonatomic, copy) NSString *provider;
+
+//: @property (nonatomic, copy) NSString *menuItemTitle;
+@property (nonatomic, copy) NSString *pointArgument;
 
 
 /**
@@ -30,6 +37,8 @@
  *
  *  @return 实例化的菜单模型
  */
-+ (instancetype)ff_DropDownMenuModelWithMenuItemTitle:(NSString *)menuItemTitle menuItemIconName:(NSString *)menuItemIconName menuBlock:(FFMenuBlock)menuBlock;
+//: + (instancetype)ff_DropDownMenuModelWithMenuItemTitle:(NSString *)menuItemTitle menuItemIconName:(NSString *)menuItemIconName menuBlock:(FFMenuBlock)menuBlock;
++ (instancetype)soul:(NSString *)menuItemTitle tagBlock:(NSString *)menuItemIconName power:(FFMenuBlock)menuBlock;
 
+//: @end
 @end

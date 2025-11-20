@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 // AFImageDownloader.h
 // Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
 //
@@ -19,79 +21,70 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <TargetConditionals.h>
 #import <TargetConditionals.h>
-
-#if TARGET_OS_IOS || TARGET_OS_TV 
-
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
+//: #import "AFAutoPurgingImageCache.h"
 #import "AFAutoPurgingImageCache.h"
+//: #import "AFHTTPSessionManager.h"
 #import "AFHTTPSessionManager.h"
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: typedef NS_ENUM(NSInteger, AFImageDownloadPrioritization) {
 typedef NS_ENUM(NSInteger, AFImageDownloadPrioritization) {
+    //: AFImageDownloadPrioritizationFIFO,
     AFImageDownloadPrioritizationFIFO,
+    //: AFImageDownloadPrioritizationLIFO
     AFImageDownloadPrioritizationLIFO
+//: };
 };
 
 /**
  The `AFImageDownloadReceipt` is an object vended by the `AFImageDownloader` when starting a data task. It can be used to cancel active tasks running on the `AFImageDownloader` session. As a general rule, image data tasks should be cancelled using the `AFImageDownloadReceipt` instead of calling `cancel` directly on the `task` itself. The `AFImageDownloader` is optimized to handle duplicate task scenarios as well as pending versus active downloads.
  */
+//: @interface AFImageDownloadReceipt : NSObject
 @interface AFImageDownloadReceipt : NSObject
 
 /**
  The data task created by the `AFImageDownloader`.
 */
-@property (nonatomic, strong) NSURLSessionDataTask *task;
+//: @property (nonatomic, strong) NSURLSessionDataTask *task;
+@property (nonatomic, strong) NSURLSessionDataTask *multipleDataTask;
 
 /**
  The unique identifier for the success and failure blocks when duplicate requests are made.
  */
-@property (nonatomic, strong) NSUUID *receiptID;
+//: @property (nonatomic, strong) NSUUID *receiptID;
+@property (nonatomic, strong) NSUUID *rear;
+//: @end
 @end
 
 /** The `AFImageDownloader` class is responsible for downloading images in parallel on a prioritized queue. Incoming downloads are added to the front or back of the queue depending on the download prioritization. Each downloaded image is cached in the underlying `NSURLCache` as well as the in-memory image cache. By default, any download request with a cached image equivalent in the image cache will automatically be served the cached image representation.
  */
+//: @interface AFImageDownloader : NSObject
 @interface AFImageDownloader : NSObject
 
 /**
  The image cache used to store all downloaded images in. `AFAutoPurgingImageCache` by default.
  */
-@property (nonatomic, strong, nullable) id <AFImageRequestCache> imageCache;
+//: @property (nonatomic, strong, nullable) id <AFImageRequestCache> imageCache;
+@property (nonatomic, strong, nullable) id <AFImageRequestCache> adjust;
 
 /**
  The `AFHTTPSessionManager` used to download images. By default, this is configured with an `AFImageResponseSerializer`, and a shared `NSURLCache` for all image downloads.
  */
-@property (nonatomic, strong) AFHTTPSessionManager *sessionManager;
+//: @property (nonatomic, strong) AFHTTPSessionManager *sessionManager;
+@property (nonatomic, strong) AFHTTPSessionManager *treeViaed;
 
 /**
  Defines the order prioritization of incoming download requests being inserted into the queue. `AFImageDownloadPrioritizationFIFO` by default.
  */
-@property (nonatomic, assign) AFImageDownloadPrioritization downloadPrioritization;
-
-/**
- The shared default instance of `AFImageDownloader` initialized with default values.
- */
-+ (instancetype)defaultInstance;
-
-/**
- Creates a default `NSURLCache` with common usage parameter values.
-
- @returns The default `NSURLCache` instance.
- */
-+ (NSURLCache *)defaultURLCache;
-
-/**
- The default `NSURLSessionConfiguration` with common usage parameter values.
- */
-+ (NSURLSessionConfiguration *)defaultURLSessionConfiguration;
-
-/**
- Default initializer
-
- @return An instance of `AFImageDownloader` initialized with default values.
- */
-- (instancetype)init;
+//: @property (nonatomic, assign) AFImageDownloadPrioritization downloadPrioritization;
+@property (nonatomic, assign) AFImageDownloadPrioritization detectCreation;
 
 /**
  Initializer with specific `URLSessionConfiguration`
@@ -100,22 +93,8 @@ typedef NS_ENUM(NSInteger, AFImageDownloadPrioritization) {
  
  @return An instance of `AFImageDownloader` initialized with default values and custom `NSURLSessionConfiguration`
  */
-- (instancetype)initWithSessionConfiguration:(NSURLSessionConfiguration *)configuration;
-
-/**
- Initializes the `AFImageDownloader` instance with the given session manager, download prioritization, maximum active download count and image cache.
-
- @param sessionManager The session manager to use to download images.
- @param downloadPrioritization The download prioritization of the download queue.
- @param maximumActiveDownloads  The maximum number of active downloads allowed at any given time. Recommend `4`.
- @param imageCache The image cache used to store all downloaded images in.
-
- @return The new `AFImageDownloader` instance.
- */
-- (instancetype)initWithSessionManager:(AFHTTPSessionManager *)sessionManager
-                downloadPrioritization:(AFImageDownloadPrioritization)downloadPrioritization
-                maximumActiveDownloads:(NSInteger)maximumActiveDownloads
-                            imageCache:(nullable id <AFImageRequestCache>)imageCache;
+//: - (instancetype)initWithSessionConfiguration:(NSURLSessionConfiguration *)configuration;
+- (instancetype)initWithTime:(NSURLSessionConfiguration *)configuration;
 
 /**
  Creates a data task using the `sessionManager` instance for the specified URL request.
@@ -131,9 +110,59 @@ typedef NS_ENUM(NSInteger, AFImageDownloadPrioritization) {
  @return The image download receipt for the data task if available. `nil` if the image is stored in the cache.
  cache and the URL request cache policy allows the cache to be used.
  */
-- (nullable AFImageDownloadReceipt *)downloadImageForURLRequest:(NSURLRequest *)request
-                                                        success:(nullable void (^)(NSURLRequest *request, NSHTTPURLResponse  * _Nullable response, UIImage *responseObject))success
-                                                        failure:(nullable void (^)(NSURLRequest *request, NSHTTPURLResponse * _Nullable response, NSError *error))failure;
+//: - (nullable AFImageDownloadReceipt *)downloadImageForURLRequest:(NSURLRequest *)request
+- (nullable AFImageDownloadReceipt *)collector:(NSURLRequest *)request
+                                                        //: success:(nullable void (^)(NSURLRequest *request, NSHTTPURLResponse * _Nullable response, UIImage *responseObject))success
+                                                        ovalConsume:(nullable void (^)(NSURLRequest *request, NSHTTPURLResponse * _Nullable response, UIImage *responseObject))success
+                                                        //: failure:(nullable void (^)(NSURLRequest *request, NSHTTPURLResponse * _Nullable response, NSError *error))failure;
+                                                        define:(nullable void (^)(NSURLRequest *request, NSHTTPURLResponse * _Nullable response, NSError *error))failure;
+/**
+ The shared default instance of `AFImageDownloader` initialized with default values.
+ */
+//: + (instancetype)defaultInstance;
++ (instancetype)anEach;
+
+/**
+ Creates a default `NSURLCache` with common usage parameter values.
+
+ @returns The default `NSURLCache` instance.
+ */
+//: + (NSURLCache *)defaultURLCache;
++ (NSURLCache *)automatic;
+
+/**
+ Default initializer
+
+ @return An instance of `AFImageDownloader` initialized with default values.
+ */
+//: - (instancetype)init;
+- (instancetype)init;
+
+/**
+ The default `NSURLSessionConfiguration` with common usage parameter values.
+ */
+//: + (NSURLSessionConfiguration *)defaultURLSessionConfiguration;
++ (NSURLSessionConfiguration *)can;
+
+
+/**
+ Initializes the `AFImageDownloader` instance with the given session manager, download prioritization, maximum active download count and image cache.
+
+ @param sessionManager The session manager to use to download images.
+ @param downloadPrioritization The download prioritization of the download queue.
+ @param maximumActiveDownloads  The maximum number of active downloads allowed at any given time. Recommend `4`.
+ @param imageCache The image cache used to store all downloaded images in.
+
+ @return The new `AFImageDownloader` instance.
+ */
+//: - (instancetype)initWithSessionManager:(AFHTTPSessionManager *)sessionManager
+- (instancetype)initWithLegacy:(AFHTTPSessionManager *)sessionManager
+                //: downloadPrioritization:(AFImageDownloadPrioritization)downloadPrioritization
+                need:(AFImageDownloadPrioritization)downloadPrioritization
+                //: maximumActiveDownloads:(NSInteger)maximumActiveDownloads
+                aspect:(NSInteger)maximumActiveDownloads
+                            //: imageCache:(nullable id <AFImageRequestCache>)imageCache;
+                            forbid:(nullable id <AFImageRequestCache>)imageCache;
 
 /**
  Creates a data task using the `sessionManager` instance for the specified URL request.
@@ -150,10 +179,14 @@ typedef NS_ENUM(NSInteger, AFImageDownloadPrioritization) {
  @return The image download receipt for the data task if available. `nil` if the image is stored in the cache.
  cache and the URL request cache policy allows the cache to be used.
  */
-- (nullable AFImageDownloadReceipt *)downloadImageForURLRequest:(NSURLRequest *)request
-                                                 withReceiptID:(NSUUID *)receiptID
-                                                        success:(nullable void (^)(NSURLRequest *request, NSHTTPURLResponse  * _Nullable response, UIImage *responseObject))success
-                                                        failure:(nullable void (^)(NSURLRequest *request, NSHTTPURLResponse * _Nullable response, NSError *error))failure;
+//: - (nullable AFImageDownloadReceipt *)downloadImageForURLRequest:(NSURLRequest *)request
+- (nullable AFImageDownloadReceipt *)user:(NSURLRequest *)request
+                                                 //: withReceiptID:(NSUUID *)receiptID
+                                                 unity:(NSUUID *)receiptID
+                                                        //: success:(nullable void (^)(NSURLRequest *request, NSHTTPURLResponse * _Nullable response, UIImage *responseObject))success
+                                                        misapplyFailure:(nullable void (^)(NSURLRequest *request, NSHTTPURLResponse * _Nullable response, UIImage *responseObject))success
+                                                        //: failure:(nullable void (^)(NSURLRequest *request, NSHTTPURLResponse * _Nullable response, NSError *error))failure;
+                                                        resignStatus:(nullable void (^)(NSURLRequest *request, NSHTTPURLResponse * _Nullable response, NSError *error))failure;
 
 /**
  Cancels the data task in the receipt by removing the corresponding success and failure blocks and cancelling the data task if necessary.
@@ -162,10 +195,13 @@ typedef NS_ENUM(NSInteger, AFImageDownloadPrioritization) {
 
  @param imageDownloadReceipt The image download receipt to cancel.
  */
-- (void)cancelTaskForImageDownloadReceipt:(AFImageDownloadReceipt *)imageDownloadReceipt;
+//: - (void)cancelTaskForImageDownloadReceipt:(AFImageDownloadReceipt *)imageDownloadReceipt;
+- (void)pending:(AFImageDownloadReceipt *)imageDownloadReceipt;
 
+//: @end
 @end
 
-#endif
 
+
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

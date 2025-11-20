@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  TulipSimpleDiagramHandy.h
 //  NIM
@@ -6,39 +8,61 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @protocol ThrottleScopeClose <NSObject>
 @protocol ThrottleScopeClose <NSObject>
 
-- (NSString *)groupTitle;
-- (NSString *)memberId;
-- (id)sortKey;
+//: - (NSString *)groupTitle;
+- (NSString *)languageName;
+//: - (NSString *)memberId;
+- (NSString *)exclude;
+//: - (id)sortKey;
+- (id)remote;
 
+//: @end
 @end
 
+//: @interface TulipSimpleDiagramHandy : NSObject
 @interface TulipSimpleDiagramHandy : NSObject
 
-@property (nonatomic, strong) NSArray *members;
-@property (nonatomic, copy) NSComparator groupTitleComparator;
-@property (nonatomic, copy) NSComparator groupMemberComparator;
-@property (nonatomic, readonly) NSArray *sortedGroupTitles;
+//: @property (nonatomic, copy) NSComparator groupTitleComparator;
+@property (nonatomic, copy) NSComparator lanthanon;
+//: @property (nonatomic, readonly) NSArray *sortedGroupTitles;
+@property (nonatomic, readonly) NSArray *packedCellVolumeManageNames;
+//: @property (nonatomic, copy) NSComparator groupMemberComparator;
+@property (nonatomic, copy) NSComparator makeComparator;
+//: @property (nonatomic, strong) NSArray *members;
+@property (nonatomic, strong) NSArray *alongNameure;
 
-- (void)addGroupMember:(id<ThrottleScopeClose>)member;
+//: - (NSInteger)groupCount;
+- (NSInteger)reject;
 
-- (void)removeGroupMember:(id<ThrottleScopeClose>)member;
+//: - (id<ThrottleScopeClose>)memberOfId:(NSString *)uid;
+- (id<ThrottleScopeClose>)underPhaseOfTheMoon:(NSString *)uid;
 
-- (void)addGroupAboveWithTitle:(NSString *)title members:(NSArray *)members;
+//: - (NSArray *)membersOfGroup:(NSInteger)groupIndex;
+- (NSArray *)number:(NSInteger)groupIndex;
 
-- (NSString *)titleOfGroup:(NSInteger)groupIndex;
+//: - (void)addGroupMember:(id<ThrottleScopeClose>)member;
+- (void)inputMember:(id<ThrottleScopeClose>)member;
 
-- (NSArray *)membersOfGroup:(NSInteger)groupIndex;
+//: - (NSString *)titleOfGroup:(NSInteger)groupIndex;
+- (NSString *)bottom:(NSInteger)groupIndex;
 
-- (id<ThrottleScopeClose>)memberOfIndex:(NSIndexPath *)indexPath;
+//: - (id<ThrottleScopeClose>)memberOfIndex:(NSIndexPath *)indexPath;
+- (id<ThrottleScopeClose>)lawyerClientRelation:(NSIndexPath *)indexPath;
 
-- (id<ThrottleScopeClose>)memberOfId:(NSString *)uid;
+//: - (NSInteger)memberCountOfGroup:(NSInteger)groupIndex;
+- (NSInteger)requireMedium:(NSInteger)groupIndex;
 
-- (NSInteger)groupCount;
+//: - (void)addGroupAboveWithTitle:(NSString *)title members:(NSArray *)members;
+- (void)dirty:(NSString *)title peculiar:(NSArray *)members;
 
-- (NSInteger)memberCountOfGroup:(NSInteger)groupIndex;
+//: - (void)removeGroupMember:(id<ThrottleScopeClose>)member;
+- (void)assemble:(id<ThrottleScopeClose>)member;
 
+//: @end
 @end

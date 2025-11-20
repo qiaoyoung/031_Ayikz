@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  FocalUnderConfigureDisplay.h
 //  NIM
@@ -5,86 +7,73 @@
 //  Created by amao on 7/2/15.
 //  Copyright (c) 2015 Netease. All rights reserved.
 //
-
-#ifndef NIM_USERCustomAttachmentTypes_h
-#define NIM_USERCustomAttachmentTypes_h
-
 //@class NIMKitBubbleStyleObject;
 
+// __M_A_C_R_O__
+
+//: typedef NS_ENUM(NSInteger,FocalUnderConfigureDisplayType){
 typedef NS_ENUM(NSInteger,FocalUnderConfigureDisplayType){
-    FocalUnderConfigureDisplayTypeJanKenPon  = 1, //剪子石头布
-    FocalUnderConfigureDisplayTypeSnapchat   = 2, //阅后即焚
-    FocalUnderConfigureDisplayTypeChartlet   = 3, //贴图表情
+    //: FocalUnderConfigureDisplayTypeJanKenPon = 1, 
+    FocalUnderConfigureDisplayTypeJanKenPon = 1, //剪子石头布
+    //: FocalUnderConfigureDisplayTypeSnapchat = 2, 
+    FocalUnderConfigureDisplayTypeSnapchat = 2, //阅后即焚
+    //: FocalUnderConfigureDisplayTypeChartlet = 3, 
+    FocalUnderConfigureDisplayTypeChartlet = 3, //贴图表情
+    //: FocalUnderConfigureDisplayTypeWhiteboard = 4, 
     FocalUnderConfigureDisplayTypeWhiteboard = 4, //白板会话
-    FocalUnderConfigureDisplayTypeRedPacket  = 5, //红包消息
+    //: FocalUnderConfigureDisplayTypeRedPacket = 5, 
+    FocalUnderConfigureDisplayTypeRedPacket = 5, //红包消息
+    //: FocalUnderConfigureDisplayTypeRedPacketTip = 6, 
     FocalUnderConfigureDisplayTypeRedPacketTip = 6, //红包提示消息
+    //: FocalUnderConfigureDisplayTypeMultiRetweet = 15,
     FocalUnderConfigureDisplayTypeMultiRetweet = 15,//多条消息合并转发
-    
+
+    //: FocalUnderConfigureDisplayTypeCard = 105,
     FocalUnderConfigureDisplayTypeCard = 105,
+//: };
 };
-
-
-#define CMType             @"type"
-#define CMData             @"data"
-#define CMValue            @"value"
-#define CMFlag             @"flag"
-#define CMURL              @"url"
-#define CMMD5              @"md5"
-#define CMFileName         @"fileName"
-#define CMFIRE             @"fired"        //阅后即焚消息是否被焚毁
-#define CMCatalog          @"catalog"      //贴图类别
-#define CMChartlet         @"chartlet"     //贴图表情ID
 //红包
-#define CMRedPacketTitle   @"title"
-#define CMRedPacketContent @"content"
-#define CMPersonCardId     @"personCardId"
-#define CMPersonCardtype   @"type"
-
-
-
-#define CMRedPacketId      @"redPacketId"  //红包ID
-#define CMRedPacketSendID  @"redPacketSendID" //发送者
-
 //红包详情
-#define CMRedPacketSendId     @"sendPacketId"
-#define CMRedPacketOpenId     @"openPacketId"
-#define CMRedPacketDone       @"isGetDone"
+
+
+
 
 //合并转发
-#define CMCompressed       @"compressed" //合并转发文件是否压缩
-#define CMEncrypted        @"encrypted"  //合并转发文件是否加密
-#define CMPassword         @"password"   //合并转发文件解密密钥
-#define CMMessageAbstract  @"messageAbstract" //合并转发消息
-#define CMMessageAbstractSender   @"sender" //合并转发消息-发送者
-#define CMMessageAbstractContent  @"message" //合并转发消息-信息
-#define CMSessionName   @"sessionName" //会话名称
-#define CMSessionId   @"sessionId" //会话名称
-
-#endif
-
-
+//: @protocol FocalUnderConfigureDisplay <NSObject>
 @protocol FocalUnderConfigureDisplay <NSObject>
 
+//: @optional
 @optional
 
-- (NSString *)cellContent:(NIMMessage *)message;
+//: - (NSString *)cellContent:(NIMMessage *)message;
+- (NSString *)jungle:(NIMMessage *)message;
 
-- (CGSize)contentSize:(NIMMessage *)message cellWidth:(CGFloat)width;
+//: - (CGSize)contentSize:(NIMMessage *)message cellWidth:(CGFloat)width;
+- (CGSize)minLiberal:(NIMMessage *)message mediumBy:(CGFloat)width;
 
-- (UIEdgeInsets)contentViewInsets:(NIMMessage *)message;
+//: - (UIEdgeInsets)contentViewInsets:(NIMMessage *)message;
+- (UIEdgeInsets)bold:(NIMMessage *)message;
 
-- (NSString *)formatedMessage;
+//: - (NSString *)formatedMessage;
+- (NSString *)barMessage;
 
-- (UIImage *)showCoverImage;
+//: - (UIImage *)showCoverImage;
+- (UIImage *)tap;
 
-- (BOOL)shouldShowAvatar;
+//: - (BOOL)shouldShowAvatar;
+- (BOOL)all;
 
-- (void)setShowCoverImage:(UIImage *)image;
+//: - (void)setShowCoverImage:(UIImage *)image;
+- (void)setTap:(UIImage *)image;
 
-- (BOOL)canBeRevoked;
+//: - (BOOL)canBeRevoked;
+- (BOOL)jungle;
 
-- (BOOL)canBeForwarded;
+//: - (BOOL)canBeForwarded;
+- (BOOL)be;
 
-- (BOOL)canDisplayBubbleBackground:(NIMMessage *)message;
+//: - (BOOL)canDisplayBubbleBackground:(NIMMessage *)message;
+- (BOOL)solidGround:(NIMMessage *)message;
 
+//: @end
 @end

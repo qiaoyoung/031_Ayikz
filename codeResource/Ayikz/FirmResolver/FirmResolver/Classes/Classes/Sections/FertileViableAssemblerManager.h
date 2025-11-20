@@ -1,24 +1,42 @@
-#import <Foundation/Foundation.h>
-#import <SSZipArchive/SSZipArchive.h>
-NS_ASSUME_NONNULL_BEGIN
-#define kFirmResolver @"FirmResolver"
+// __DEBUG__
+// __CLOSE_PRINT__
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
+#import <Foundation/Foundation.h>
+//: #import <SSZipArchive/SSZipArchive.h>
+#import <SSZipArchive/SSZipArchive.h>
+
+//: NS_ASSUME_NONNULL_BEGIN
+NS_ASSUME_NONNULL_BEGIN
+
+
+//: @interface FertileViableAssemblerManager : NSObject
 @interface FertileViableAssemblerManager : NSObject
 
-+ (instancetype)sharedManager;
+//: - (NSString *)getLprojPath;
+- (NSString *)remarkWorld;
 
-- (NSString *)getHtml_filePath;
+//: - (UIImage *)zip_imageNamed:(NSString *)name;
+- (UIImage *)legalImage:(NSString *)name;
 
-- (NSString *)getXML_filePath;
+//: - (NSString *)getHtml_filePath;
+- (NSString *)delay;
 
-- (NSString *)getEmojiPath;
+//: - (NSString *)getVoicePath;
+- (NSString *)pathInside;
 
-- (NSString *)getLprojPath;
+//: + (instancetype)sharedManager;
++ (instancetype)commonSumManagingDirector;
 
-- (NSString *)getVoicePath;
+//: - (NSString *)getEmojiPath;
+- (NSString *)takePathEmoji;
 
-- (UIImage *)zip_imageNamed:(NSString *)name;
+//: - (NSString *)getXML_filePath;
+- (NSString *)access;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

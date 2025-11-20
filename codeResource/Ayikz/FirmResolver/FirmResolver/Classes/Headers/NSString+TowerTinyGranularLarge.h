@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NSString+NIM.h
 // TowerTinyGranularLarge
@@ -6,28 +8,42 @@
 //  Copyright (c) 2015年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @interface NSString (TowerTinyGranularLarge)
 @interface NSString (TowerTinyGranularLarge)
 
-- (CGSize)nim_stringSizeWithFont:(UIFont *)font;
+//: - (NSString *)nim_stringByDeletingPictureResolution;
+- (NSString *)previousAdjustment;
 
-- (NSString *)nim_MD5String;
+//: - (BOOL)nim_containsEmoji;
+- (BOOL)plain;
 
-- (NSUInteger)nim_getBytesLength;
+//: - (CGSize)nim_stringSizeWithFont:(UIFont *)font;
+- (CGSize)whole:(UIFont *)font;
 
-- (NSString *)nim_stringByDeletingPictureResolution;
+//: - (NSString *)nim_MD5String;
+- (NSString *)pastPercentage;
 
-- (UIColor *)nim_hexToColor;
+//: - (NSString *)nim_localized;
+- (NSString *)totalroStructure;
 
-- (BOOL)nim_fileIsExist;
+//: - (BOOL)nim_fileIsExist;
+- (BOOL)appearance;
 
 
-- (NSString *)nim_localized;
+//: - (NSString *)nim_localizedWithTable:(NSString *)table;
+- (NSString *)veritableTable:(NSString *)table;
 
-- (NSString *)nim_localizedWithTable:(NSString *)table;
+//: - (UIColor *)nim_hexToColor;
+- (UIColor *)statusColorful;
 
-- (BOOL)nim_containsEmoji;
+//: - (NSRange)nim_rangeOfLastUnicode;
+- (NSRange)suite;
 
-- (NSRange)nim_rangeOfLastUnicode;
+//: - (NSUInteger)nim_getBytesLength;
+- (NSUInteger)orientation;
+//: @end
 @end

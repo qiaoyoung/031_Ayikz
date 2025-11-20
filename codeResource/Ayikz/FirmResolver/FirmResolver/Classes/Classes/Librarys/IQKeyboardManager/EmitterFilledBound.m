@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  EmitterFilledBound.m
 //  https://github.com/hackiftekhar/LayoutBuildOutlinedQuill
@@ -21,138 +23,203 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-
+//: #import "EmitterFilledBound.h"
 #import "EmitterFilledBound.h"
+//: #import "LayoutBuildOutlinedQuillConstantsInternal.h"
 #import "LayoutBuildOutlinedQuillConstantsInternal.h"
+//: #import "UIView+PainterPlanetBeside.h"
 #import "UIView+PainterPlanetBeside.h"
 
-
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @implementation EmitterFilledBound
 @implementation EmitterFilledBound
-@synthesize previousBarButton = _previousBarButton;
-@synthesize nextBarButton = _nextBarButton;
-@synthesize titleBarButton = _titleBarButton;
-@synthesize doneBarButton = _doneBarButton;
-@synthesize fixedSpaceBarButton = _fixedSpaceBarButton;
+//: @synthesize previousBarButton = _previousBarButton;
+@synthesize level = _shirtButton;
+//: @synthesize nextBarButton = _nextBarButton;
+@synthesize create = _translate;
+//: @synthesize titleBarButton = _titleBarButton;
+@synthesize fixing = _guardianship;
+//: @synthesize doneBarButton = _doneBarButton;
+@synthesize fastBinaryRefresh = _local;
+//: @synthesize fixedSpaceBarButton = _fixedSpaceBarButton;
+@synthesize engineVolume = _compartment;
 
--(void)initialize
-{
-    [self sizeToFit];
-    self.autoresizingMask = UIViewAutoresizingFlexibleWidth;// | UIViewAutoresizingFlexibleHeight;
-    self.translucent = YES;
-    self.barTintColor = nil;
-
-    NSArray <NSNumber*> *positions = @[@(UIBarPositionAny),@(UIBarPositionBottom),@(UIBarPositionTop),@(UIBarPositionTopAttached)];
-
-    for (NSNumber *position in positions)
-    {
-        UIToolbarPosition toolbarPosition = [position unsignedIntegerValue];
-
-        [self setBackgroundImage:nil forToolbarPosition:toolbarPosition barMetrics:UIBarMetricsDefault];
-        [self setShadowImage:nil forToolbarPosition:toolbarPosition];
-    }
-}
-
-- (instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self)
-    {
-        [self initialize];
-    }
-    return self;
-}
-
+//: - (instancetype)initWithCoder:(NSCoder *)coder
 - (instancetype)initWithCoder:(NSCoder *)coder
 {
+    //: self = [super initWithCoder:coder];
     self = [super initWithCoder:coder];
+    //: if (self)
     if (self)
     {
-        [self initialize];
+        //: [self initialize];
+        [self scriptTing];
     }
+    //: return self;
     return self;
 }
 
+//: -(WarehouseSelectorBinaryRefresh *)previousBarButton
+-(WarehouseSelectorBinaryRefresh *)level
+{
+    //: if (_previousBarButton == nil)
+    if (_shirtButton == nil)
+    {
+        //: _previousBarButton = [[WarehouseSelectorBinaryRefresh alloc] initWithImage:nil style:UIBarButtonItemStylePlain target:nil action:nil];
+        _shirtButton = [[WarehouseSelectorBinaryRefresh alloc] initWithImage:nil style:UIBarButtonItemStylePlain target:nil action:nil];
+    }
+
+    //: return _previousBarButton;
+    return _shirtButton;
+}
+
+//: -(WarehouseSelectorBinaryRefresh *)fixedSpaceBarButton
+-(WarehouseSelectorBinaryRefresh *)engineVolume
+{
+    //: if (_fixedSpaceBarButton == nil)
+    if (_compartment == nil)
+    {
+        //: _fixedSpaceBarButton = [[WarehouseSelectorBinaryRefresh alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+        _compartment = [[WarehouseSelectorBinaryRefresh alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+        //: [_fixedSpaceBarButton setWidth:6];
+        [_compartment setWidth:6];
+    }
+
+    //: return _fixedSpaceBarButton;
+    return _compartment;
+}
+
+//: -(void)dealloc
 -(void)dealloc
 {
+    //: self.items = nil;
     self.items = nil;
 }
 
--(WarehouseSelectorBinaryRefresh *)previousBarButton
+//: -(WarehouseSelectorBinaryRefresh *)nextBarButton
+-(WarehouseSelectorBinaryRefresh *)create
 {
-    if (_previousBarButton == nil)
+    //: if (_nextBarButton == nil)
+    if (_translate == nil)
     {
-        _previousBarButton = [[WarehouseSelectorBinaryRefresh alloc] initWithImage:nil style:UIBarButtonItemStylePlain target:nil action:nil];
+        //: _nextBarButton = [[WarehouseSelectorBinaryRefresh alloc] initWithImage:nil style:UIBarButtonItemStylePlain target:nil action:nil];
+        _translate = [[WarehouseSelectorBinaryRefresh alloc] initWithImage:nil style:UIBarButtonItemStylePlain target:nil action:nil];
     }
-    
-    return _previousBarButton;
+
+    //: return _nextBarButton;
+    return _translate;
 }
 
--(WarehouseSelectorBinaryRefresh *)nextBarButton
+//: -(ClipOrchestratorHighlight *)titleBarButton
+-(ClipOrchestratorHighlight *)fixing
 {
-    if (_nextBarButton == nil)
+    //: if (_titleBarButton == nil)
+    if (_guardianship == nil)
     {
-        _nextBarButton = [[WarehouseSelectorBinaryRefresh alloc] initWithImage:nil style:UIBarButtonItemStylePlain target:nil action:nil];
+        //: _titleBarButton = [[ClipOrchestratorHighlight alloc] initWithTitle:nil];
+        _guardianship = [[ClipOrchestratorHighlight alloc] initWithTinyOn:nil];
     }
-    
-    return _nextBarButton;
+
+    //: return _titleBarButton;
+    return _guardianship;
 }
 
--(ClipOrchestratorHighlight *)titleBarButton
-{
-    if (_titleBarButton == nil)
-    {
-        _titleBarButton = [[ClipOrchestratorHighlight alloc] initWithTitle:nil];
-    }
-    
-    return _titleBarButton;
-}
-
--(WarehouseSelectorBinaryRefresh *)doneBarButton
-{
-    if (_doneBarButton == nil)
-    {
-        _doneBarButton = [[WarehouseSelectorBinaryRefresh alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:nil action:nil];
-    }
-    
-    return _doneBarButton;
-}
-
--(WarehouseSelectorBinaryRefresh *)fixedSpaceBarButton
-{
-    if (_fixedSpaceBarButton == nil)
-    {
-        _fixedSpaceBarButton = [[WarehouseSelectorBinaryRefresh alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-        [_fixedSpaceBarButton setWidth:6];
-    }
-    
-    return _fixedSpaceBarButton;
-}
-
--(CGSize)sizeThatFits:(CGSize)size
-{
-    CGSize sizeThatFit = [super sizeThatFits:size];
-
-    sizeThatFit.height = 44;
-    
-    return sizeThatFit;
-}
-
+//: -(void)setTintColor:(UIColor *)tintColor
 -(void)setTintColor:(UIColor *)tintColor
 {
+    //: [super setTintColor:tintColor];
     [super setTintColor:tintColor];
 
+    //: for (UIBarButtonItem *item in self.items)
     for (UIBarButtonItem *item in self.items)
     {
+        //: [item setTintColor:tintColor];
         [item setTintColor:tintColor];
     }
 }
 
-#pragma mark - UIInputViewAudioFeedback delegate
-- (BOOL) enableInputClicksWhenVisible
+//: - (instancetype)initWithFrame:(CGRect)frame
+- (instancetype)initWithFrame:(CGRect)frame
 {
-	return YES;
+    //: self = [super initWithFrame:frame];
+    self = [super initWithFrame:frame];
+    //: if (self)
+    if (self)
+    {
+        //: [self initialize];
+        [self scriptTing];
+    }
+    //: return self;
+    return self;
 }
 
+//: #pragma mark - UIInputViewAudioFeedback delegate
+#pragma mark - UIInputViewAudioFeedback delegate
+//: - (BOOL) enableInputClicksWhenVisible
+- (BOOL) enableInputClicksWhenVisible
+{
+ //: return YES;
+ return YES;
+}
+
+//: -(CGSize)sizeThatFits:(CGSize)size
+-(CGSize)sizeThatFits:(CGSize)size
+{
+    //: CGSize sizeThatFit = [super sizeThatFits:size];
+    CGSize sizeThatFit = [super sizeThatFits:size];
+
+    //: sizeThatFit.height = 44;
+    sizeThatFit.height = 44;
+
+    //: return sizeThatFit;
+    return sizeThatFit;
+}
+
+//: -(void)initialize
+-(void)scriptTing
+{
+    //: [self sizeToFit];
+    [self sizeToFit];
+    //: self.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+    self.autoresizingMask = UIViewAutoresizingFlexibleWidth;// | UIViewAutoresizingFlexibleHeight;
+    //: self.translucent = YES;
+    self.translucent = YES;
+    //: self.barTintColor = nil;
+    self.barTintColor = nil;
+
+    //: NSArray <NSNumber*> *positions = @[@(UIBarPositionAny),@(UIBarPositionBottom),@(UIBarPositionTop),@(UIBarPositionTopAttached)];
+    NSArray <NSNumber*> *positions = @[@(UIBarPositionAny),@(UIBarPositionBottom),@(UIBarPositionTop),@(UIBarPositionTopAttached)];
+
+    //: for (NSNumber *position in positions)
+    for (NSNumber *position in positions)
+    {
+        //: UIBarPosition toolbarPosition = [position unsignedIntegerValue];
+        UIBarPosition toolbarPosition = [position unsignedIntegerValue];
+
+        //: [self setBackgroundImage:nil forToolbarPosition:toolbarPosition barMetrics:UIBarMetricsDefault];
+        [self setBackgroundImage:nil forToolbarPosition:toolbarPosition barMetrics:UIBarMetricsDefault];
+        //: [self setShadowImage:nil forToolbarPosition:toolbarPosition];
+        [self setShadowImage:nil forToolbarPosition:toolbarPosition];
+    }
+}
+
+//: -(WarehouseSelectorBinaryRefresh *)doneBarButton
+-(WarehouseSelectorBinaryRefresh *)fastBinaryRefresh
+{
+    //: if (_doneBarButton == nil)
+    if (_local == nil)
+    {
+        //: _doneBarButton = [[WarehouseSelectorBinaryRefresh alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:nil action:nil];
+        _local = [[WarehouseSelectorBinaryRefresh alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:nil action:nil];
+    }
+
+    //: return _doneBarButton;
+    return _local;
+}
+
+//: @end
 @end

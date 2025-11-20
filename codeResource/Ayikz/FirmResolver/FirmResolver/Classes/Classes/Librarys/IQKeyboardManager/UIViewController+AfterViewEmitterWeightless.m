@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UIViewController+AfterViewEmitterWeightless.m
 //  https://github.com/hackiftekhar/LayoutBuildOutlinedQuill
@@ -21,18 +23,25 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
+//: #import <objc/runtime.h>
 #import <objc/runtime.h>
-
+//: #import "UIViewController+AfterViewEmitterWeightless.h"
 #import "UIViewController+AfterViewEmitterWeightless.h"
 
-
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @implementation UIViewController (AfterViewEmitterWeightless)
 @implementation UIViewController (AfterViewEmitterWeightless)
 
--(nullable UIViewController*)parentIQContainerViewController
+//: -(nullable UIViewController*)parentIQContainerViewController
+-(nullable UIViewController*)attachReply
 {
+    //: return self;
     return self;
 }
 
+//: @end
 @end

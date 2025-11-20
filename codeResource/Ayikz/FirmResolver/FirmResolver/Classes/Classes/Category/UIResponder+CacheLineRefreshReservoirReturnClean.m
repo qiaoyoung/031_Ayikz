@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UIResponder+CacheLineRefreshReservoirReturnClean.m
 //  NIM
@@ -6,34 +8,56 @@
 //  Copyright © 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "UIResponder+CacheLineRefreshReservoirReturnClean.h"
 #import "UIResponder+CacheLineRefreshReservoirReturnClean.h"
-static __weak id currentFirstResponder;
-static __weak id currentSecodResponder;
 
+//: static __weak id currentFirstResponder;
+static __weak id colorPackLogger;
+//: static __weak id currentSecodResponder;
+static __weak id commonAssertTimer;
+
+//: @implementation UIResponder (CacheLineRefreshReservoirReturnClean)
 @implementation UIResponder (CacheLineRefreshReservoirReturnClean)
 
-+ (instancetype)currentFirstResponder {
-    currentFirstResponder = nil;
-    currentSecodResponder = nil;
-    [[UIApplication sharedApplication] sendAction:@selector(findFirstResponder:) to:nil from:nil forEvent:nil];
-    return currentFirstResponder;
+//: + (instancetype)currentFirstResponder {
++ (instancetype)fixedResponder {
+    //: currentFirstResponder = nil;
+    colorPackLogger = nil;
+    //: currentSecodResponder = nil;
+    commonAssertTimer = nil;
+    //: [[UIApplication sharedApplication] sendAction:@selector(findFirstResponder:) to:nil from:nil forEvent:nil];
+    [[UIApplication sharedApplication] sendAction:@selector(placeSafety:) to:nil from:nil forEvent:nil];
+    //: return currentFirstResponder;
+    return colorPackLogger;
 }
 
-+ (instancetype)currentSecondResponder{
-    currentFirstResponder = nil;
-    currentSecodResponder = nil;
-    [[UIApplication sharedApplication] sendAction:@selector(findFirstResponder:) to:nil from:nil forEvent:nil];
-    return currentSecodResponder;
+//: - (void)findFirstResponder:(id)sender {
+- (void)placeSafety:(id)sender {
+    //: currentFirstResponder = self;
+    colorPackLogger = self;
+    //: [self.nextResponder findSecondResponder:sender];
+    [self.nextResponder abstract:sender];
 }
 
-- (void)findFirstResponder:(id)sender {
-    currentFirstResponder = self;
-    [self.nextResponder findSecondResponder:sender];
+//: - (void)findSecondResponder:(id)sender{
+- (void)abstract:(id)sender{
+    //: currentSecodResponder = self;
+    commonAssertTimer = self;
 }
 
 
-- (void)findSecondResponder:(id)sender{
-    currentSecodResponder = self;
+//: + (instancetype)currentSecondResponder{
++ (instancetype)stem{
+    //: currentFirstResponder = nil;
+    colorPackLogger = nil;
+    //: currentSecodResponder = nil;
+    commonAssertTimer = nil;
+    //: [[UIApplication sharedApplication] sendAction:@selector(findFirstResponder:) to:nil from:nil forEvent:nil];
+    [[UIApplication sharedApplication] sendAction:@selector(placeSafety:) to:nil from:nil forEvent:nil];
+    //: return currentSecodResponder;
+    return commonAssertTimer;
 }
 
+//: @end
 @end

@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  UIAlertView+ByFirmWallFluent.m
 //  eim_iphone
@@ -6,53 +8,82 @@
 //  Copyright (c) 2012年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "UIAlertView+ByFirmWallFluent.h"
 #import "UIAlertView+ByFirmWallFluent.h"
+//: #import <objc/runtime.h>
 #import <objc/runtime.h>
 
-static char kUIAlertViewBlockAddress;
+//: static char kUIAlertViewBlockAddress;
+static char featureUnderAlert;
 
+//: @implementation UIAlertView (ByFirmWallFluent)
 @implementation UIAlertView (ByFirmWallFluent)
-- (void)showAlertWithCompletionHandler: (void (^)(NSInteger))block
+//: - (void)showAlertWithCompletionHandler: (void (^)(NSInteger))block
+- (void)watch: (void (^)(NSInteger))block
 {
+    //: self.delegate = self;
     self.delegate = self;
-    objc_setAssociatedObject(self,&kUIAlertViewBlockAddress,block,OBJC_ASSOCIATION_COPY);
+    //: objc_setAssociatedObject(self,&kUIAlertViewBlockAddress,block,OBJC_ASSOCIATION_COPY);
+    objc_setAssociatedObject(self,&featureUnderAlert,block,OBJC_ASSOCIATION_COPY);
+    //: [self show];
     [self show];
 }
 
 
-- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
+//: - (void)clearActionBlock
+- (void)cutLocation
 {
-    AlertBlock block = objc_getAssociatedObject(self, &kUIAlertViewBlockAddress);
+    //: self.delegate = nil;
+    self.delegate = nil;
+    //: objc_setAssociatedObject(self, &kUIAlertViewBlockAddress, nil, OBJC_ASSOCIATION_COPY);
+    objc_setAssociatedObject(self, &featureUnderAlert, nil, OBJC_ASSOCIATION_COPY);
+}
+
+//: - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
+- (void)that:(UIAlertView *)alertView scoff:(NSInteger)buttonIndex
+{
+    //: AlertBlock block = objc_getAssociatedObject(self, &kUIAlertViewBlockAddress);
+    AlertBlock block = objc_getAssociatedObject(self, &featureUnderAlert);
+    //: if (block)
     if (block)
     {
+        //: block(buttonIndex);
         block(buttonIndex);
-        objc_setAssociatedObject(self, &kUIAlertViewBlockAddress, nil, OBJC_ASSOCIATION_COPY);
+        //: objc_setAssociatedObject(self, &kUIAlertViewBlockAddress, nil, OBJC_ASSOCIATION_COPY);
+        objc_setAssociatedObject(self, &featureUnderAlert, nil, OBJC_ASSOCIATION_COPY);
     }
 }
 
-- (void)clearActionBlock
-{
-    self.delegate = nil;
-    objc_setAssociatedObject(self, &kUIAlertViewBlockAddress, nil, OBJC_ASSOCIATION_COPY);
-}
-
+//: @end
 @end
 
 
 
+//: @implementation UIAlertController (ByFirmWallFluent)
 @implementation UIAlertController (ByFirmWallFluent)
-- (UIAlertController *)addAction:(NSString *)title
-                           style:(UIAlertActionStyle)style
-                         handler:(void (^ __nullable)(UIAlertAction *action))handler
+//: - (UIAlertController *)addAction:(NSString *)title
+- (UIAlertController *)counto:(NSString *)title
+                           //: style:(UIAlertActionStyle)style
+                           row:(UIAlertActionStyle)style
+                         //: handler:(void (^ __nullable)(UIAlertAction *action))handler
+                         vertical:(void (^ __nullable)(UIAlertAction *action))handler
 {
+    //: UIAlertAction *action = [UIAlertAction actionWithTitle:title style:style handler:handler];
     UIAlertAction *action = [UIAlertAction actionWithTitle:title style:style handler:handler];
+    //: [self addAction:action];
     [self addAction:action];
+    //: return self;
     return self;
 }
 
-- (void)show
+//: - (void)show
+- (void)indicator
 {
+    //: UIViewController *vc = [UIApplication sharedApplication].windows.firstObject.rootViewController;
     UIViewController *vc = [UIApplication sharedApplication].windows.firstObject.rootViewController;
+    //: [vc presentViewController:self animated:YES completion:nil];
     [vc presentViewController:self animated:YES completion:nil];
 }
+//: @end
 @end

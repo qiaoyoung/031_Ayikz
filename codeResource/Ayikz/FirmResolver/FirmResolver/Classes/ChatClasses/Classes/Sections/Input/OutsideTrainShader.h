@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NIMInputAtManager.h
 // TowerTinyGranularLarge
@@ -6,31 +8,42 @@
 //  Copyright © 2016年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-#define NIMInputAtStartChar  @"@"
-#define NIMInputAtEndChar    @"\u2004"
-
+//: @interface FetchClearSpeckled : NSObject
 @interface FetchClearSpeckled : NSObject
 
-@property (nonatomic,copy) NSString *name;
+//: @property (nonatomic,assign) NSRange range;
+@property (nonatomic,assign) NSRange target;
 
-@property (nonatomic,copy) NSString *uid;
+//: @property (nonatomic,copy) NSString *uid;
+@property (nonatomic,copy) NSString *woman;
 
-@property (nonatomic,assign) NSRange range;
+//: @property (nonatomic,copy) NSString *name;
+@property (nonatomic,copy) NSString *central;
 
+//: @end
 @end
 
+//: @interface OutsideTrainShader : NSObject
 @interface OutsideTrainShader : NSObject
 
-- (NSArray *)allAtUid:(NSString *)sendText;
+//: - (void)addAtItem:(FetchClearSpeckled *)item;
+- (void)addWithout:(FetchClearSpeckled *)item;
 
-- (void)clean;
+//: - (void)clean;
+- (void)always;
 
-- (void)addAtItem:(FetchClearSpeckled *)item;
+//: - (FetchClearSpeckled *)item:(NSString *)name;
+- (FetchClearSpeckled *)scan:(NSString *)name;
 
-- (FetchClearSpeckled *)item:(NSString *)name;
+//: - (FetchClearSpeckled *)removeName:(NSString *)name;
+- (FetchClearSpeckled *)countPicText:(NSString *)name;
 
-- (FetchClearSpeckled *)removeName:(NSString *)name;
+//: - (NSArray *)allAtUid:(NSString *)sendText;
+- (NSArray *)beyond:(NSString *)sendText;
 
+//: @end
 @end

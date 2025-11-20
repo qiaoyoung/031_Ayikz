@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  ForMaskLatticeNavigate.h
 // TowerTinyGranularLarge
@@ -6,20 +8,30 @@
 //  Copyright © 2016年 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
+//: @interface ForMaskLatticeNavigate : NSObject
 @interface ForMaskLatticeNavigate : NSObject
 
-+ (NSString *)getAppDocumentPath;
+//: + (NSString *)filepathForVideo:(NSString *)filename;
++ (NSString *)onEffect:(NSString *)filename;
 
-+ (NSString *)getAppTempPath;
+//: + (NSString *)userDirectory;
++ (NSString *)transition;
 
-+ (NSString *)userDirectory;
+//: + (NSString *)getAppTempPath;
++ (NSString *)detect;
 
-+ (NSString *)genFilenameWithExt:(NSString *)ext;
+//: + (NSString *)filepathForImage:(NSString *)filename;
++ (NSString *)near:(NSString *)filename;
 
-+ (NSString *)filepathForVideo:(NSString *)filename;
+//: + (NSString *)getAppDocumentPath;
++ (NSString *)presentation;
 
-+ (NSString *)filepathForImage:(NSString *)filename;
+//: + (NSString *)genFilenameWithExt:(NSString *)ext;
++ (NSString *)undercoverOperationExt:(NSString *)ext;
 
+//: @end
 @end

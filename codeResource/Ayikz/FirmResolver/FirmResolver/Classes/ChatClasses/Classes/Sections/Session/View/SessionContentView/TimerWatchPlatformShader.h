@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  TimerWatchPlatformShader.h
 // TowerTinyGranularLarge
@@ -6,8 +8,12 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "PackFlowVerify.h"
 #import "PackFlowVerify.h"
 
+//: @interface TimerWatchPlatformShader : PackFlowVerify
 @interface TimerWatchPlatformShader : PackFlowVerify
 
+//: @end
 @end

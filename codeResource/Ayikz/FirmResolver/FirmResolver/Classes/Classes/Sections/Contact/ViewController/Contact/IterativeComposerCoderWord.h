@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  IterativeComposerCoderWord.h
 //  NIM
@@ -6,16 +8,25 @@
 //  Copyright © 2021 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "ConsumeBeyondLoader.h"
 #import "ConsumeBeyondLoader.h"
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface IterativeComposerCoderWord : ConsumeBeyondLoader
 @interface IterativeComposerCoderWord : ConsumeBeyondLoader
 
-@property(nonatomic, strong) NSString *userID;
-@property(nonatomic, assign) BOOL isTeam;
-@property (nonatomic, strong) NIMTeam *team;
+//: @property (nonatomic, strong) NIMTeam *team;
+@property (nonatomic, strong) NIMTeam *reason;
+//: @property(nonatomic, assign) BOOL isTeam;
+@property(nonatomic, assign) BOOL sharedDisable;
+//: @property(nonatomic, strong) NSString *userID;
+@property(nonatomic, strong) NSString *at;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

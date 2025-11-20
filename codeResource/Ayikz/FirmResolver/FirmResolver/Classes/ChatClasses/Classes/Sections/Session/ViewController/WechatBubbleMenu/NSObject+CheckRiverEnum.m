@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NSObject+CheckRiverEnum.m
 //  NIM
@@ -6,17 +8,26 @@
 //  Copyright © 2023 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "NSObject+CheckRiverEnum.h"
 #import "NSObject+CheckRiverEnum.h"
+//: #import <objc/runtime.h>
 #import <objc/runtime.h>
 
+//: @implementation NSObject (CheckRiverEnum)
 @implementation NSObject (CheckRiverEnum)
 
-- (void)setCheckRiverEnum:(NSString *)CheckRiverEnum{
-    objc_setAssociatedObject(self, @selector(CheckRiverEnum), CheckRiverEnum, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-- (NSString *)CheckRiverEnum{
+//: - (NSString *)CheckRiverEnum{
+- (NSString *)amidField{
+    //: return objc_getAssociatedObject(self, _cmd);
     return objc_getAssociatedObject(self, _cmd);
 }
 
+//: - (void)setCheckRiverEnum:(NSString *)CheckRiverEnum{
+- (void)setAmidField:(NSString *)CheckRiverEnum{
+    //: objc_setAssociatedObject(self, @selector(CheckRiverEnum), CheckRiverEnum, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(amidField), CheckRiverEnum, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+//: @end
 @end

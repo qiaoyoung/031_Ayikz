@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  LoadEnvelopeConstructConductor.m
 // TowerTinyGranularLarge
@@ -6,8 +8,12 @@
 //  Copyright © 2022 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "LoadEnvelopeConstructConductor.h"
 #import "LoadEnvelopeConstructConductor.h"
 
+//: @implementation LoadEnvelopeConstructConductor
 @implementation LoadEnvelopeConstructConductor
 
+//: @end
 @end

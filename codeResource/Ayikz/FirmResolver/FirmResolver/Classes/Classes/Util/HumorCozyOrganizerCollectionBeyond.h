@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  HumorCozyOrganizerCollectionBeyond.h
 //  NIM
@@ -6,40 +8,64 @@
 //  Copyright © 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: typedef NS_ENUM(NSUInteger,HumorCozyOrganizerCollectionBeyondNetworkType) {
 typedef NS_ENUM(NSUInteger,HumorCozyOrganizerCollectionBeyondNetworkType) {
+    //: HumorCozyOrganizerCollectionBeyondNetworkTypeUnknown,
     HumorCozyOrganizerCollectionBeyondNetworkTypeUnknown,
+    //: HumorCozyOrganizerCollectionBeyondNetworkTypeWifi,
     HumorCozyOrganizerCollectionBeyondNetworkTypeWifi,
+    //: HumorCozyOrganizerCollectionBeyondNetworkTypeWwan,
     HumorCozyOrganizerCollectionBeyondNetworkTypeWwan,
+    //: HumorCozyOrganizerCollectionBeyondNetworkType2G,
     HumorCozyOrganizerCollectionBeyondNetworkType2G,
+    //: HumorCozyOrganizerCollectionBeyondNetworkType3G,
     HumorCozyOrganizerCollectionBeyondNetworkType3G,
+    //: HumorCozyOrganizerCollectionBeyondNetworkType4G,
     HumorCozyOrganizerCollectionBeyondNetworkType4G,
+//: };
 };
 
+//: @interface HumorCozyOrganizerCollectionBeyond : NSObject
 @interface HumorCozyOrganizerCollectionBeyond : NSObject
 
-+ (HumorCozyOrganizerCollectionBeyond *)currentDevice;
+//App状态
+//: - (BOOL)isUsingWifi;
+- (BOOL)process;
+
+//: - (CGFloat)statusBarHeight;
+- (CGFloat)behindTiny;
+
+//: - (BOOL)isIphone;
+- (BOOL)putInTrack;
+
+//: - (CGFloat)compressQuality;
+- (CGFloat)concept;
+//: + (HumorCozyOrganizerCollectionBeyond *)currentDevice;
++ (HumorCozyOrganizerCollectionBeyond *)kickBackDevice;
 
 //图片/音频推荐参数
-- (CGFloat)suggestImagePixels;
+//: - (CGFloat)suggestImagePixels;
+- (CGFloat)takeTheFifthPixels;
+//: - (NSString *)machineName;
+- (NSString *)cookingAgainst;
 
-- (CGFloat)compressQuality;
+//: - (BOOL)isInBackground;
+- (BOOL)tourMustBackground;
 
-//App状态
-- (BOOL)isUsingWifi;
-- (BOOL)isInBackground;
-
-- (HumorCozyOrganizerCollectionBeyondNetworkType)currentNetworkType;
-- (NSString *)networkStatus:(HumorCozyOrganizerCollectionBeyondNetworkType)networkType;
-
-- (NSInteger)cpuCount;
-
-- (BOOL)isLowDevice;
-- (BOOL)isIphone;
-- (NSString *)machineName;
+//: - (NSString *)networkStatus:(HumorCozyOrganizerCollectionBeyondNetworkType)networkType;
+- (NSString *)passage:(HumorCozyOrganizerCollectionBeyondNetworkType)networkType;
+//: - (BOOL)isLowDevice;
+- (BOOL)rejectNail;
+//: - (HumorCozyOrganizerCollectionBeyondNetworkType)currentNetworkType;
+- (HumorCozyOrganizerCollectionBeyondNetworkType)tower;
 
 
-- (CGFloat)statusBarHeight;
+//: - (NSInteger)cpuCount;
+- (NSInteger)reachReceive;
 
+//: @end
 @end

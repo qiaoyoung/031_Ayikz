@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  EmitterFilledBound.h
 //  https://github.com/hackiftekhar/LayoutBuildOutlinedQuill
@@ -21,41 +23,49 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-
+//: #import "ClipOrchestratorHighlight.h"
 #import "ClipOrchestratorHighlight.h"
-
 
 /**
  EmitterFilledBound for LayoutBuildOutlinedQuill.
  */
+//: NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
+//: @interface EmitterFilledBound : UIToolbar <UIInputViewAudioFeedback>
 @interface EmitterFilledBound : UIToolbar <UIInputViewAudioFeedback>
 
 /**
  Previous bar button of toolbar.
  */
-@property(nonnull, nonatomic, strong) WarehouseSelectorBinaryRefresh *previousBarButton;
+/**
+ Fixed space bar button of toolbar.
+ */
+//: @property(nonnull, nonatomic, strong) WarehouseSelectorBinaryRefresh *fixedSpaceBarButton;
+@property(nonnull, nonatomic, strong) WarehouseSelectorBinaryRefresh *engineVolume;
 
 /**
  Next bar button of toolbar.
  */
-@property(nonnull, nonatomic, strong) WarehouseSelectorBinaryRefresh *nextBarButton;
+//: @property(nonnull, nonatomic, strong) WarehouseSelectorBinaryRefresh *nextBarButton;
+@property(nonnull, nonatomic, strong) WarehouseSelectorBinaryRefresh *create;
 
 /**
  Title bar button of toolbar.
  */
-@property(nonnull, nonatomic, strong, readonly) ClipOrchestratorHighlight *titleBarButton;
+//: @property(nonnull, nonatomic, strong, readonly) ClipOrchestratorHighlight *titleBarButton;
+@property(nonnull, nonatomic, strong, readonly) ClipOrchestratorHighlight *fixing;
+
+//: @property(nonnull, nonatomic, strong) WarehouseSelectorBinaryRefresh *previousBarButton;
+@property(nonnull, nonatomic, strong) WarehouseSelectorBinaryRefresh *level;
 
 /**
  Done bar button of toolbar.
  */
-@property(nonnull, nonatomic, strong) WarehouseSelectorBinaryRefresh *doneBarButton;
+//: @property(nonnull, nonatomic, strong) WarehouseSelectorBinaryRefresh *doneBarButton;
+@property(nonnull, nonatomic, strong) WarehouseSelectorBinaryRefresh *fastBinaryRefresh;
 
-/**
- Fixed space bar button of toolbar.
- */
-@property(nonnull, nonatomic, strong) WarehouseSelectorBinaryRefresh *fixedSpaceBarButton;
-
+//: @end
 @end
-

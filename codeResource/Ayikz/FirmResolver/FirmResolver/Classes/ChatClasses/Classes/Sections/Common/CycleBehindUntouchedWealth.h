@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  CycleBehindUntouchedWealth.h
 // TowerTinyGranularLarge
@@ -6,18 +8,30 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
+//: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
+//: #import "TuneFormatterDistinct.h"
 #import "TuneFormatterDistinct.h"
 
+//: @interface CycleBehindUntouchedWealth : UIControl
 @interface CycleBehindUntouchedWealth : UIControl
-@property (nonatomic,strong)    UIImage *image;
-@property (nonatomic,assign)    CGFloat cornerRadius;
+//: @property (nonatomic,assign) CGFloat cornerRadius;
+@property (nonatomic,assign) CGFloat corner;
+//: @property (nonatomic,strong) UIImage *image;
+@property (nonatomic,strong) UIImage *access;
 
-- (void)setAvatarBySession:(NIMSession *)session;
-- (void)setAvatarByMessage:(NIMMessage *)message;
+//: - (void)nim_setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder;
+- (void)stuffImage:(NSURL *)url write:(UIImage *)placeholder;
+//: - (void)nim_setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options;
+- (void)someWith:(NSURL *)url impressionElite:(UIImage *)placeholder abstract:(SDWebImageOptions)options;
 
-- (void)nim_setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder;
-- (void)nim_setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options;
+//: - (void)setAvatarByMessage:(NIMMessage *)message;
+- (void)setCircle:(NIMMessage *)message;
+//: - (void)setAvatarBySession:(NIMSession *)session;
+- (void)setItem:(NIMSession *)session;
 
+//: @end
 @end

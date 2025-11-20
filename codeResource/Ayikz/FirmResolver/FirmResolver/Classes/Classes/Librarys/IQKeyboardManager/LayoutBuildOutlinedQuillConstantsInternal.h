@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  LayoutBuildOutlinedQuillConstantsInternal.h
 //  https://github.com/hackiftekhar/LayoutBuildOutlinedQuill
@@ -21,8 +23,4 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#ifndef LayoutBuildOutlinedQuillConstantsInternal_h
-#define LayoutBuildOutlinedQuillConstantsInternal_h
-
-
-#endif
+// __M_A_C_R_O__

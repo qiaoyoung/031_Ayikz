@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  LayoutBuildOutlinedQuillConstants.h
 //  https://github.com/hackiftekhar/LayoutBuildOutlinedQuill
@@ -20,15 +22,13 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
-
-#ifndef LayoutBuildOutlinedQuillConstants_h
-#define LayoutBuildOutlinedQuillConstants_h
-
+//: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-
 ///-----------------------------------
 /// @name AddPackIconPackTemplateManageBehavior
 ///-----------------------------------
+
+// __M_A_C_R_O__
 
 /**
  `AddPackIconPackTemplateBySubviews`
@@ -40,10 +40,15 @@
  `AddPackIconPackTemplateByPosition`
  Creates Toolbar according to the y,x position of textField in it's superview coordinate.
  */
+//: typedef NS_ENUM(NSInteger, AddPackIconPackTemplateManageBehavior) {
 typedef NS_ENUM(NSInteger, AddPackIconPackTemplateManageBehavior) {
+    //: AddPackIconPackTemplateBySubviews,
     AddPackIconPackTemplateBySubviews,
+    //: AddPackIconPackTemplateByTag,
     AddPackIconPackTemplateByTag,
+    //: AddPackIconPackTemplateByPosition,
     AddPackIconPackTemplateByPosition,
+//: };
 };
 
 /**
@@ -56,10 +61,15 @@ typedef NS_ENUM(NSInteger, AddPackIconPackTemplateManageBehavior) {
  `OutputIntoStylerAlwaysShow`
  Always show nextPrevious buttons, if there are more than 1 textField then both buttons will be visible but will be shown as disabled.
  */
+//: typedef NS_ENUM(NSUInteger, OutputIntoStyler) {
 typedef NS_ENUM(NSUInteger, OutputIntoStyler) {
+    //: OutputIntoStylerDefault,
     OutputIntoStylerDefault,
+    //: OutputIntoStylerAlwaysHide,
     OutputIntoStylerAlwaysHide,
+    //: OutputIntoStylerAlwaysShow,
     OutputIntoStylerAlwaysShow,
+//: };
 };
 
 /**
@@ -72,13 +82,18 @@ typedef NS_ENUM(NSUInteger, OutputIntoStyler) {
  `FormatterHighlightDisabled`
  setting is disabled.
  */
+//: typedef NS_ENUM(NSUInteger, FormatterHighlight) {
 typedef NS_ENUM(NSUInteger, FormatterHighlight) {
+    //: FormatterHighlightDefault,
     FormatterHighlightDefault,
+    //: FormatterHighlightEnabled,
     FormatterHighlightEnabled,
+    //: FormatterHighlightDisabled,
     FormatterHighlightDisabled,
+//: };
 };
 
-#endif
+
 
 /*
  

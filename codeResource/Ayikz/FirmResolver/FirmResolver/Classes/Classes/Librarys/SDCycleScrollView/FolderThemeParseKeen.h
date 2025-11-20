@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  FolderThemeParseKeen.h
 //  EnumMeasureOasisDefined
@@ -5,6 +7,10 @@
 //  Created by aier on 15-3-22.
 //  Copyright (c) 2015年 GSD. All rights reserved.
 //
+
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
+#import <UIKit/UIKit.h>
 
 /*
  
@@ -30,21 +36,31 @@
 
 
 
-#import <UIKit/UIKit.h>
 
+
+//: @interface FolderThemeParseKeen : UICollectionViewCell
 @interface FolderThemeParseKeen : UICollectionViewCell
 
-@property (weak, nonatomic) UIImageView *imageView;
-@property (copy, nonatomic) NSString *title;
+//: @property (weak, nonatomic) UIImageView *imageView;
+@property (weak, nonatomic) UIImageView *saving;
+//: @property (nonatomic, assign) CGFloat titleLabelHeight;
+@property (nonatomic, assign) CGFloat slide;
 
-@property (nonatomic, strong) UIColor *titleLabelTextColor;
-@property (nonatomic, strong) UIFont *titleLabelTextFont;
-@property (nonatomic, strong) UIColor *titleLabelBackgroundColor;
-@property (nonatomic, assign) CGFloat titleLabelHeight;
+//: @property (nonatomic, strong) UIColor *titleLabelTextColor;
+@property (nonatomic, strong) UIColor *colorfulOutline;
+//: @property (nonatomic, assign) BOOL hasConfigured;
+@property (nonatomic, assign) BOOL bar;
+//: @property (nonatomic, strong) UIColor *titleLabelBackgroundColor;
+@property (nonatomic, strong) UIColor *master;
+//: @property (nonatomic, assign) BOOL showGradient;
+@property (nonatomic, assign) BOOL deep;
 
-@property (nonatomic, assign) BOOL hasConfigured;
+//: @property (nonatomic, strong) UIFont *titleLabelTextFont;
+@property (nonatomic, strong) UIFont *previousWriting;
 
-@property (nonatomic, assign) BOOL showGradient;
+//: @property (copy, nonatomic) NSString *title;
+@property (copy, nonatomic) NSString *sharp;
 
 
+//: @end
 @end

@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  PushRegisterCircuitWithoutDapper.h
 //  NIM
@@ -6,18 +8,27 @@
 //  Copyright © 2021 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface PushRegisterCircuitWithoutDapper : UIViewController<UITableViewDataSource,UITableViewDelegate>
 @interface PushRegisterCircuitWithoutDapper : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
-@property (nonatomic,assign) BOOL disableSearchTeam;
+//: @property (nonatomic,assign) BOOL disableSearchTeam;
+@property (nonatomic,assign) BOOL beingRange;
 
-@property (nonatomic,assign) BOOL searchIgoreCase;
+//: @property (nonatomic,assign) BOOL searchIgoreCase;
+@property (nonatomic,assign) BOOL computer;
 
-@property(nonatomic, strong) UITableView *tableView;
+//: @property(nonatomic, strong) UITableView *tableView;
+@property(nonatomic, strong) UITableView *forthResApp;
 
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END

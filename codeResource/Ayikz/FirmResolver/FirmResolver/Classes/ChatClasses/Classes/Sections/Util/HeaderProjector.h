@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 // TowerTinyGranularLargeCommentUtil.h
 // TowerTinyGranularLarge
@@ -6,33 +8,52 @@
 //  Copyright © 2020 NetEase. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
+//: @class NIMQuickComment;
 @class NIMQuickComment;
+//: @class SupremeStrongToLayer;
 @class SupremeStrongToLayer;
+//: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
+//: @interface HeaderProjector : NSObject
 @interface HeaderProjector : NSObject
 
-+ (UIFont *)commentFont;
+//: + (CGSize)containerSizeWithComments:(NSMapTable *)comments;
++ (CGSize)laboratory:(NSMapTable *)comments;
 
-+ (NSString *)commentContent:(NIMQuickComment *)comment;
+//: + (CGSize)itemSizeWithComments:(NSArray<NIMQuickComment *> *)comments;
++ (CGSize)known:(NSArray<NIMQuickComment *> *)comments;
 
-+ (NSString *)commentsContent:(NSArray<NIMQuickComment *> *)comments;
+//: + (SupremeStrongToLayer *)newCommentLabel;
++ (SupremeStrongToLayer *)throughout;
 
-+ (CGSize)itemSizeWithComment:(NIMQuickComment *)comment;
+//: + (NSArray *)sortedKeys:(NSMapTable<NSNumber *, NIMQuickComment *> *)map;
++ (NSArray *)thread:(NSMapTable<NSNumber *, NIMQuickComment *> *)map;
 
-+ (CGSize)itemSizeWithComments:(NSArray<NIMQuickComment *> *)comments;
+//: + (NSString *)commentContent:(NIMQuickComment *)comment;
++ (NSString *)matter:(NIMQuickComment *)comment;
 
-+ (CGSize)containerSizeWithComments:(NSMapTable *)comments;
+//: + (NIMQuickComment * _Nullable)myCommentFromComments:(NSInteger )keyIndex
++ (NIMQuickComment * _Nullable)duct:(NSInteger )keyIndex
+                                      //: keys:(NSArray *)keys
+                                      framePick:(NSArray *)keys
+                                  //: comments:(NSMapTable *)map;
+                                  theWinter:(NSMapTable *)map;
+//: + (CGSize)itemSizeWithComment:(NIMQuickComment *)comment;
++ (CGSize)enableto:(NIMQuickComment *)comment;
 
-+ (NIMQuickComment * _Nullable)myCommentFromComments:(NSInteger )keyIndex
-                                      keys:(NSArray *)keys
-                                  comments:(NSMapTable *)map;
 
-+ (SupremeStrongToLayer *)newCommentLabel;
+//: + (UIFont *)commentFont;
++ (UIFont *)known;
 
-+ (NSArray *)sortedKeys:(NSMapTable<NSNumber *, NIMQuickComment *> *)map;
+//: + (NSString *)commentsContent:(NSArray<NIMQuickComment *> *)comments;
++ (NSString *)peaceful:(NSArray<NIMQuickComment *> *)comments;
+//: @end
 @end
 
+//: NS_ASSUME_NONNULL_END
 NS_ASSUME_NONNULL_END
