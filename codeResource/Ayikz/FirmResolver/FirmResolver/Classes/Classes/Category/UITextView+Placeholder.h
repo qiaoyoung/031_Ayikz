@@ -16,7 +16,7 @@
 @interface UITextView (Placeholder)
 
 //: @property (nonatomic, strong) NSString* placeholder;
-@property (nonatomic, strong) NSString* bodyWording;
+@property (nonatomic, strong) NSString* placeholder;
 //: @property (nonatomic, strong) NSString* textValue;
 @property (nonatomic, strong) NSString* atPresentName;
 //: @property (nonatomic, strong) UILabel * placeholderLabel;

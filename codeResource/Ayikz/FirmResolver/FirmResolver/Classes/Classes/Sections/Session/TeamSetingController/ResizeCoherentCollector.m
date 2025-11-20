@@ -711,101 +711,101 @@ GetSchedulerFinishCollector,ThoroughSlideCoreDelegate,UINavigationControllerDele
     //: ChatArchiveWatchCreate *teamShareCart = [[ChatArchiveWatchCreate alloc] init];
     ChatArchiveWatchCreate *teamShareCart = [[ChatArchiveWatchCreate alloc] init];
     //: teamShareCart.title = [PluginTulipOptimize getTextWithKey:@"send_group_card"];
-    teamShareCart.body = [PluginTulipOptimize richness:StringFromPastData(&styleAlbumTitle)];
+    teamShareCart.calculate = [PluginTulipOptimize richness:StringFromPastData(&styleAlbumTitle)];
     //: teamShareCart.subTitle = self.teamListManager.team.teamName;
     teamShareCart.custom = self.juniorVarsity.pick.teamName;
     //: teamShareCart.action = @selector(sendGroupCart);
-    teamShareCart.personPured = @selector(followVery);
+    teamShareCart.action = @selector(followVery);
     //: teamShareCart.rowHeight = 50.f;
     teamShareCart.spreadHead = 50.f;
     //: teamShareCart.type = TriumphUpdateShadowedQuotaCommon;
     teamShareCart.whenAttachOver = TriumphUpdateShadowedQuotaCommon;
 //    teamShareCart.actionDisabled = !canEdit;
     //: teamShareCart.img = [UIImage imageNamed:@"ic_card_share"];
-    teamShareCart.convert = [UIImage imageNamed:StringFromPastData(&layoutTrainBadError)];
+    teamShareCart.bodyDown = [UIImage imageNamed:StringFromPastData(&layoutTrainBadError)];
 
     //: ChatArchiveWatchCreate *teamMembers = [[ChatArchiveWatchCreate alloc] init];
     ChatArchiveWatchCreate *teamMembers = [[ChatArchiveWatchCreate alloc] init];
     //: teamMembers.title = [PluginTulipOptimize getTextWithKey:@"group_info_activity_team_member"];
-    teamMembers.body = [PluginTulipOptimize richness:StringFromPastData(&styleMatterScreenData)];
+    teamMembers.calculate = [PluginTulipOptimize richness:StringFromPastData(&styleMatterScreenData)];
     //: teamMembers.subTitle = self.teamListManager.team.teamName;
     teamMembers.custom = self.juniorVarsity.pick.teamName;
     //: teamMembers.action = @selector(enterMemberCard);
-    teamMembers.personPured = @selector(shouldKibbutznik);
+    teamMembers.action = @selector(shouldKibbutznik);
     //: teamMembers.rowHeight = 50.f;
     teamMembers.spreadHead = 50.f;
     //: teamMembers.type = TriumphUpdateShadowedQuotaCommon;
     teamMembers.whenAttachOver = TriumphUpdateShadowedQuotaCommon;
     //: teamMembers.actionDisabled = !self.canMemberInfo;
-    teamMembers.remainApplies = !self.necessaryInstance;
+    teamMembers.actionDisabled = !self.necessaryInstance;
     //: teamMembers.img = [UIImage imageNamed:@"ic_group_members"];
-    teamMembers.convert = [UIImage imageNamed:StringFromPastData(&commonCoolTimer)];
+    teamMembers.bodyDown = [UIImage imageNamed:StringFromPastData(&commonCoolTimer)];
 
     //: ChatArchiveWatchCreate *teamAnnoucement = [[ChatArchiveWatchCreate alloc] init];
     ChatArchiveWatchCreate *teamAnnoucement = [[ChatArchiveWatchCreate alloc] init];
     //: teamAnnoucement.title = [PluginTulipOptimize getTextWithKey:@"activity_group_info_group_toast"];
-    teamAnnoucement.body = [PluginTulipOptimize richness:StringFromPastData(&moduleRadarAlert)];
+    teamAnnoucement.calculate = [PluginTulipOptimize richness:StringFromPastData(&moduleRadarAlert)];
     //: teamAnnoucement.subTitle = self.teamListManager.team.teamName;
     teamAnnoucement.custom = self.juniorVarsity.pick.teamName;
     //: teamAnnoucement.action = @selector(updateTeamAnnouncement);
-    teamAnnoucement.personPured = @selector(contentCap);
+    teamAnnoucement.action = @selector(contentCap);
     //: teamAnnoucement.rowHeight = 50.f;
     teamAnnoucement.spreadHead = 50.f;
     //: teamAnnoucement.type = TriumphUpdateShadowedQuotaCommon;
     teamAnnoucement.whenAttachOver = TriumphUpdateShadowedQuotaCommon;
 //    teamAnnoucement.actionDisabled = !canEdit;
     //: teamAnnoucement.img = [UIImage imageNamed:@"ic_announcement"];
-    teamAnnoucement.convert = [UIImage imageNamed:StringFromPastData(&kWholeTotaloValue)];
+    teamAnnoucement.bodyDown = [UIImage imageNamed:StringFromPastData(&kWholeTotaloValue)];
 
     //: ChatArchiveWatchCreate *teamName = [[ChatArchiveWatchCreate alloc] init];
     ChatArchiveWatchCreate *teamName = [[ChatArchiveWatchCreate alloc] init];
     //: teamName.title = [PluginTulipOptimize getTextWithKey:@"Group_name"];
-    teamName.body = [PluginTulipOptimize richness:StringFromPastData(&stylePackageFormat)];
+    teamName.calculate = [PluginTulipOptimize richness:StringFromPastData(&stylePackageFormat)];
     //: teamName.subTitle = self.teamListManager.team.teamName;
     teamName.custom = self.juniorVarsity.pick.teamName;
     //: teamName.action = @selector(updateTeamName);
-    teamName.personPured = @selector(challengeRed);
+    teamName.action = @selector(challengeRed);
     //: teamName.rowHeight = 50.f;
     teamName.spreadHead = 50.f;
     //: teamName.type = TriumphUpdateShadowedQuotaCommon;
     teamName.whenAttachOver = TriumphUpdateShadowedQuotaCommon;
     //: teamName.actionDisabled = !canEdit;
-    teamName.remainApplies = !canEdit;
+    teamName.actionDisabled = !canEdit;
     //: teamName.img = [UIImage imageNamed:@"ic_group_edit"];
-    teamName.convert = [UIImage imageNamed:StringFromPastData(&appAnonKey)];
+    teamName.bodyDown = [UIImage imageNamed:StringFromPastData(&appAnonKey)];
 
 
     //: ChatArchiveWatchCreate *teamNick = [[ChatArchiveWatchCreate alloc] init];
     ChatArchiveWatchCreate *teamNick = [[ChatArchiveWatchCreate alloc] init];
     //: teamNick.title = [PluginTulipOptimize getTextWithKey:@"activity_group_info_group_nick"];
-    teamNick.body = [PluginTulipOptimize richness:StringFromPastData(&coreFluentFormat)];
+    teamNick.calculate = [PluginTulipOptimize richness:StringFromPastData(&coreFluentFormat)];
     //: teamNick.subTitle = self.teamListManager.myTeamInfo.nickname;
     teamNick.custom = self.juniorVarsity.actionTeamMember.nickname;
     //: teamNick.action = @selector(updateTeamNick);
-    teamNick.personPured = @selector(appDeliver);
+    teamNick.action = @selector(appDeliver);
     //: teamNick.rowHeight = 50.f;
     teamNick.spreadHead = 50.f;
     //: teamNick.type = TriumphUpdateShadowedQuotaCommon;
     teamNick.whenAttachOver = TriumphUpdateShadowedQuotaCommon;
     //: teamNick.img = [UIImage imageNamed:@"ic_group_nick"];
-    teamNick.convert = [UIImage imageNamed:StringFromPastData(&commonAlbumValue)];
+    teamNick.bodyDown = [UIImage imageNamed:StringFromPastData(&commonAlbumValue)];
 
     //: ChatArchiveWatchCreate *teamIntro = [[ChatArchiveWatchCreate alloc] init];
     ChatArchiveWatchCreate *teamIntro = [[ChatArchiveWatchCreate alloc] init];
     //: teamIntro.title = [PluginTulipOptimize getTextWithKey:@"team_info_set_activity_group_tip"];
-    teamIntro.body = [PluginTulipOptimize richness:StringFromPastData(&k_packageDisturbSettings)];
+    teamIntro.calculate = [PluginTulipOptimize richness:StringFromPastData(&k_packageDisturbSettings)];
     //: teamIntro.subTitle = self.teamListManager.team.intro.length ? self.teamListManager.team.intro : (canEdit ? [PluginTulipOptimize getTextWithKey:@"team_info_set_activity_default_group_tip"] : @"");
     teamIntro.custom = self.juniorVarsity.pick.intro.length ? self.juniorVarsity.pick.intro : (canEdit ? [PluginTulipOptimize richness:StringFromPastData(&k_arrowUtility)] : @"");
     //: teamIntro.action = @selector(updateTeamIntro);
-    teamIntro.personPured = @selector(noIndependent);
+    teamIntro.action = @selector(noIndependent);
     //: teamIntro.rowHeight = 50.f;
     teamIntro.spreadHead = 50.f;
     //: teamIntro.type = TriumphUpdateShadowedQuotaCommon;
     teamIntro.whenAttachOver = TriumphUpdateShadowedQuotaCommon;
     //: teamIntro.actionDisabled = !canEdit;
-    teamIntro.remainApplies = !canEdit;
+    teamIntro.actionDisabled = !canEdit;
     //: teamIntro.img = [UIImage imageNamed:@"ic_group_introduction"];
-    teamIntro.convert = [UIImage imageNamed:StringFromPastData(&screenSmoothConfig)];
+    teamIntro.bodyDown = [UIImage imageNamed:StringFromPastData(&screenSmoothConfig)];
 
 //    ChatArchiveWatchCreate *teamAnnouncement = [[ChatArchiveWatchCreate alloc] init];
 //    teamAnnouncement.title = @"群公告".nim_localized;
@@ -820,7 +820,7 @@ GetSchedulerFinishCollector,ThoroughSlideCoreDelegate,UINavigationControllerDele
     //: ChatArchiveWatchCreate *teamMute = [[ChatArchiveWatchCreate alloc] init];
     ChatArchiveWatchCreate *teamMute = [[ChatArchiveWatchCreate alloc] init];
     //: teamMute.title = [PluginTulipOptimize getTextWithKey:@"activity_group_info_group_mute"];
-    teamMute.body = [PluginTulipOptimize richness:StringFromPastData(&componentActivityMessage)];
+    teamMute.calculate = [PluginTulipOptimize richness:StringFromPastData(&componentActivityMessage)];
     //: teamMute.switchOn = inAllMuteMode;
     teamMute.corduroy = inAllMuteMode;
 //    teamMute.subTitle = [CentralNobleQuirkConstruct teamMuteText:inAllMuteMode];
@@ -831,35 +831,35 @@ GetSchedulerFinishCollector,ThoroughSlideCoreDelegate,UINavigationControllerDele
     //: teamMute.optionItems = [CentralNobleQuirkConstruct teamMuteItemsWithSeleced:inAllMuteMode];
     teamMute.generate = [CentralNobleQuirkConstruct albumExtra:inAllMuteMode];
     //: teamMute.actionDisabled = !canEdit;
-    teamMute.remainApplies = !canEdit;
+    teamMute.actionDisabled = !canEdit;
     //: teamMute.selectedBlock = ^(id<NeuralAcceptGrand> item) {
-    teamMute.strength = ^(id<NeuralAcceptGrand> item) {
+    teamMute.goFor = ^(id<NeuralAcceptGrand> item) {
         //: [weakSelf didUpdateTeamMute:[item.value integerValue]];
-        [weakSelf team:[item.handsome integerValue]];
+        [weakSelf team:[item.offServer integerValue]];
     //: };
     };
     //: teamMute.identify = StoreOfThroughArrayMute;
-    teamMute.forbid = StoreOfThroughArrayMute;
+    teamMute.year = StoreOfThroughArrayMute;
     //: teamMute.img = [UIImage imageNamed:@"ic_group_all"];
-    teamMute.convert = [UIImage imageNamed:StringFromPastData(&spacingTurnPage)];
+    teamMute.bodyDown = [UIImage imageNamed:StringFromPastData(&spacingTurnPage)];
 
     //: ChatArchiveWatchCreate *teamMuteList = [[ChatArchiveWatchCreate alloc] init];
     ChatArchiveWatchCreate *teamMuteList = [[ChatArchiveWatchCreate alloc] init];
     //: teamMuteList.title = [PluginTulipOptimize getTextWithKey:@"group_mute_member_list_activity_title"];
-    teamMuteList.body = [PluginTulipOptimize richness:StringFromPastData(&layoutSaveerEvent)];
+    teamMuteList.calculate = [PluginTulipOptimize richness:StringFromPastData(&layoutSaveerEvent)];
     //: teamMuteList.rowHeight = 50.f;
     teamMuteList.spreadHead = 50.f;
     //: teamMuteList.type = TriumphUpdateShadowedQuotaCommon;
     teamMuteList.whenAttachOver = TriumphUpdateShadowedQuotaCommon;
     //: teamMuteList.action = @selector(enterMuteList);
-    teamMuteList.personPured = @selector(sharedForbid);
+    teamMuteList.action = @selector(sharedForbid);
     //: teamMuteList.img = [UIImage imageNamed:@"ic_card_black"];
-    teamMuteList.convert = [UIImage imageNamed:StringFromPastData(&appMeEvent)];
+    teamMuteList.bodyDown = [UIImage imageNamed:StringFromPastData(&appMeEvent)];
 
     //: ChatArchiveWatchCreate *teamNotify = [[ChatArchiveWatchCreate alloc] init];
     ChatArchiveWatchCreate *teamNotify = [[ChatArchiveWatchCreate alloc] init];
     //: teamNotify.title = [PluginTulipOptimize getTextWithKey:@"message_info_activity_msg_notice"];
-    teamNotify.body = [PluginTulipOptimize richness:StringFromPastData(&styleBorderData)];//@"消息提醒".nim_localized;
+    teamNotify.calculate = [PluginTulipOptimize richness:StringFromPastData(&styleBorderData)];//@"消息提醒".nim_localized;
     //: teamNotify.subTitle = [CentralNobleQuirkConstruct notifyStateText:self.teamListManager.team.notifyStateForNewMsg];
     teamNotify.custom = [CentralNobleQuirkConstruct linkSystem:self.juniorVarsity.pick.notifyStateForNewMsg];
     //: teamNotify.rowHeight = 50.f;
@@ -869,23 +869,23 @@ GetSchedulerFinishCollector,ThoroughSlideCoreDelegate,UINavigationControllerDele
     //: teamNotify.optionItems = [CentralNobleQuirkConstruct notifyStateItemsWithSeleced:self.teamListManager.team.notifyStateForNewMsg];
     teamNotify.generate = [CentralNobleQuirkConstruct tailgate:self.juniorVarsity.pick.notifyStateForNewMsg];
     //: teamNotify.selectedBlock = ^(id<NeuralAcceptGrand> item) {
-    teamNotify.strength = ^(id<NeuralAcceptGrand> item) {
+    teamNotify.goFor = ^(id<NeuralAcceptGrand> item) {
         //: [weakSelf didUpdateNotifiyState:[item.value integerValue]];
-        [weakSelf state:[item.handsome integerValue]];
+        [weakSelf state:[item.offServer integerValue]];
     //: };
     };
     //: teamNotify.img = [UIImage imageNamed:@"ic_group_notice"];
-    teamNotify.convert = [UIImage imageNamed:StringFromPastData(&componentFastFormat)];
+    teamNotify.bodyDown = [UIImage imageNamed:StringFromPastData(&componentFastFormat)];
 
 
     //: ChatArchiveWatchCreate *itemAuth = [[ChatArchiveWatchCreate alloc] init];
     ChatArchiveWatchCreate *itemAuth = [[ChatArchiveWatchCreate alloc] init];
     //: itemAuth.title = [PluginTulipOptimize getTextWithKey:@"authentication"];
-    itemAuth.body = [PluginTulipOptimize richness:StringFromPastData(&screenMoreLogger)];
+    itemAuth.calculate = [PluginTulipOptimize richness:StringFromPastData(&screenMoreLogger)];
     //: itemAuth.subTitle = [CentralNobleQuirkConstruct jonModeText:self.teamListManager.team.joinMode];
     itemAuth.custom = [CentralNobleQuirkConstruct mode:self.juniorVarsity.pick.joinMode];
     //: itemAuth.actionDisabled = !canEdit;
-    itemAuth.remainApplies = !canEdit;
+    itemAuth.actionDisabled = !canEdit;
     //: itemAuth.rowHeight = 50.f;
     itemAuth.spreadHead = 50.f;
     //: itemAuth.type = TriumphUpdateShadowedQuotaSelected;
@@ -893,22 +893,22 @@ GetSchedulerFinishCollector,ThoroughSlideCoreDelegate,UINavigationControllerDele
     //: itemAuth.optionItems = [CentralNobleQuirkConstruct joinModeItemsWithSeleced:self.teamListManager.team.joinMode];
     itemAuth.generate = [CentralNobleQuirkConstruct over:self.juniorVarsity.pick.joinMode];
     //: itemAuth.selectedBlock = ^(id<NeuralAcceptGrand> item) {
-    itemAuth.strength = ^(id<NeuralAcceptGrand> item) {
+    itemAuth.goFor = ^(id<NeuralAcceptGrand> item) {
         //: [weakSelf didupdateTeamJoinMode:[item.value integerValue]];
-        [weakSelf delayMode:[item.handsome integerValue]];
+        [weakSelf delayMode:[item.offServer integerValue]];
     //: };
     };
     //: itemAuth.img = [UIImage imageNamed:@"ic_identity_authentication"];
-    itemAuth.convert = [UIImage imageNamed:StringFromPastData(&themePlayerPage)];
+    itemAuth.bodyDown = [UIImage imageNamed:StringFromPastData(&themePlayerPage)];
 
     //: ChatArchiveWatchCreate *itemInvite = [[ChatArchiveWatchCreate alloc] init];
     ChatArchiveWatchCreate *itemInvite = [[ChatArchiveWatchCreate alloc] init];
     //: itemInvite.title = [PluginTulipOptimize getTextWithKey:@"activity_group_info_invite_permission"];
-    itemInvite.body = [PluginTulipOptimize richness:StringFromPastData(&componentResponsePage)];
+    itemInvite.calculate = [PluginTulipOptimize richness:StringFromPastData(&componentResponsePage)];
     //: itemInvite.subTitle = [CentralNobleQuirkConstruct InviteModeText:self.teamListManager.team.inviteMode];
     itemInvite.custom = [CentralNobleQuirkConstruct assemble:self.juniorVarsity.pick.inviteMode];
     //: itemInvite.actionDisabled = !canEdit;
-    itemInvite.remainApplies = !canEdit;
+    itemInvite.actionDisabled = !canEdit;
     //: itemInvite.rowHeight = 50.f;
     itemInvite.spreadHead = 50.f;
     //: itemInvite.type = TriumphUpdateShadowedQuotaSelected;
@@ -916,22 +916,22 @@ GetSchedulerFinishCollector,ThoroughSlideCoreDelegate,UINavigationControllerDele
     //: itemInvite.optionItems = [CentralNobleQuirkConstruct InviteModeItemsWithSeleced:self.teamListManager.team.inviteMode];
     itemInvite.generate = [CentralNobleQuirkConstruct message:self.juniorVarsity.pick.inviteMode];
     //: itemInvite.selectedBlock = ^(id<NeuralAcceptGrand> item) {
-    itemInvite.strength = ^(id<NeuralAcceptGrand> item) {
+    itemInvite.goFor = ^(id<NeuralAcceptGrand> item) {
         //: [weakSelf didUpdateTeamInviteMode:[item.value integerValue]];
-        [weakSelf report:[item.handsome integerValue]];
+        [weakSelf report:[item.offServer integerValue]];
     //: };
     };
     //: itemInvite.img = [UIImage imageNamed:@"ic_invite"];
-    itemInvite.convert = [UIImage imageNamed:StringFromPastData(&themeCountoMatterJunglePage)];
+    itemInvite.bodyDown = [UIImage imageNamed:StringFromPastData(&themeCountoMatterJunglePage)];
 
     //: ChatArchiveWatchCreate *itemUpdateInfo = [[ChatArchiveWatchCreate alloc] init];
     ChatArchiveWatchCreate *itemUpdateInfo = [[ChatArchiveWatchCreate alloc] init];
     //: itemUpdateInfo.title = [PluginTulipOptimize getTextWithKey:@"activity_group_info_group_modify_permission"];
-    itemUpdateInfo.body = [PluginTulipOptimize richness:StringFromPastData(&moduleSupportCoolTailText)];
+    itemUpdateInfo.calculate = [PluginTulipOptimize richness:StringFromPastData(&moduleSupportCoolTailText)];
     //: itemUpdateInfo.subTitle = [CentralNobleQuirkConstruct updateInfoModeText:self.teamListManager.team.updateInfoMode];
     itemUpdateInfo.custom = [CentralNobleQuirkConstruct moon:self.juniorVarsity.pick.updateInfoMode];
     //: itemUpdateInfo.actionDisabled = !canEdit;
-    itemUpdateInfo.remainApplies = !canEdit;
+    itemUpdateInfo.actionDisabled = !canEdit;
     //: itemUpdateInfo.rowHeight = 50.f;
     itemUpdateInfo.spreadHead = 50.f;
     //: itemUpdateInfo.type = TriumphUpdateShadowedQuotaSelected;
@@ -939,22 +939,22 @@ GetSchedulerFinishCollector,ThoroughSlideCoreDelegate,UINavigationControllerDele
     //: itemUpdateInfo.optionItems = [CentralNobleQuirkConstruct updateInfoModeItemsWithSeleced:self.teamListManager.team.updateInfoMode];
     itemUpdateInfo.generate = [CentralNobleQuirkConstruct decide:self.juniorVarsity.pick.updateInfoMode];
     //: itemUpdateInfo.selectedBlock = ^(id<NeuralAcceptGrand> item) {
-    itemUpdateInfo.strength = ^(id<NeuralAcceptGrand> item) {
+    itemUpdateInfo.goFor = ^(id<NeuralAcceptGrand> item) {
         //: [weakSelf didUpdateTeamInfoMode:[item.value integerValue]];
-        [weakSelf pictureMode:[item.handsome integerValue]];
+        [weakSelf pictureMode:[item.offServer integerValue]];
     //: };
     };
     //: itemUpdateInfo.img = [UIImage imageNamed:@"ic_modify"];
-    itemUpdateInfo.convert = [UIImage imageNamed:StringFromPastData(&k_constantError)];
+    itemUpdateInfo.bodyDown = [UIImage imageNamed:StringFromPastData(&k_constantError)];
 
     //: ChatArchiveWatchCreate *itemBeInvite = [[ChatArchiveWatchCreate alloc] init];
     ChatArchiveWatchCreate *itemBeInvite = [[ChatArchiveWatchCreate alloc] init];
     //: itemBeInvite.title = [PluginTulipOptimize getTextWithKey:@"activity_group_info_invite_verify"];
-    itemBeInvite.body = [PluginTulipOptimize richness:StringFromPastData(&componentResHelper)];
+    itemBeInvite.calculate = [PluginTulipOptimize richness:StringFromPastData(&componentResHelper)];
     //: itemBeInvite.subTitle = [CentralNobleQuirkConstruct beInviteModeText:self.teamListManager.team.beInviteMode];
     itemBeInvite.custom = [CentralNobleQuirkConstruct parent:self.juniorVarsity.pick.beInviteMode];
     //: itemBeInvite.actionDisabled = !canEdit;
-    itemBeInvite.remainApplies = !canEdit;
+    itemBeInvite.actionDisabled = !canEdit;
     //: itemBeInvite.rowHeight = 50.f;
     itemBeInvite.spreadHead = 50.f;
     //: itemBeInvite.type = TriumphUpdateShadowedQuotaSelected;
@@ -962,18 +962,18 @@ GetSchedulerFinishCollector,ThoroughSlideCoreDelegate,UINavigationControllerDele
     //: itemBeInvite.optionItems = [CentralNobleQuirkConstruct beInviteModeItemsWithSeleced:self.teamListManager.team.beInviteMode];
     itemBeInvite.generate = [CentralNobleQuirkConstruct steel:self.juniorVarsity.pick.beInviteMode];
     //: itemBeInvite.selectedBlock = ^(id<NeuralAcceptGrand> item) {
-    itemBeInvite.strength = ^(id<NeuralAcceptGrand> item) {
+    itemBeInvite.goFor = ^(id<NeuralAcceptGrand> item) {
         //: [weakSelf didUpdateTeamBeInviteMode:[item.value integerValue]];
-        [weakSelf verbalMode:[item.handsome integerValue]];
+        [weakSelf verbalMode:[item.offServer integerValue]];
     //: };
     };
     //: itemBeInvite.img = [UIImage imageNamed:@"ic_invitee_verification"];
-    itemBeInvite.convert = [UIImage imageNamed:StringFromPastData(&k_immediateData)];
+    itemBeInvite.bodyDown = [UIImage imageNamed:StringFromPastData(&k_immediateData)];
 
     //: ChatArchiveWatchCreate *itemTop = [[ChatArchiveWatchCreate alloc] init];
     ChatArchiveWatchCreate *itemTop = [[ChatArchiveWatchCreate alloc] init];
     //: itemTop.title = [PluginTulipOptimize getTextWithKey:@"Chat_settop"];
-    itemTop.body = [PluginTulipOptimize richness:StringFromPastData(&featureMatterMessage)];
+    itemTop.calculate = [PluginTulipOptimize richness:StringFromPastData(&featureMatterMessage)];
     //: itemTop.switchOn = self.option.isTop;
     itemTop.corduroy = self.radar.insert;
     //: itemTop.rowHeight = 50.f;
@@ -981,9 +981,9 @@ GetSchedulerFinishCollector,ThoroughSlideCoreDelegate,UINavigationControllerDele
     //: itemTop.type = TriumphUpdateShadowedQuotaSwitch;
     itemTop.whenAttachOver = TriumphUpdateShadowedQuotaSwitch;
     //: itemTop.identify = StoreOfThroughArrayTop;
-    itemTop.forbid = StoreOfThroughArrayTop;
+    itemTop.year = StoreOfThroughArrayTop;
     //: itemTop.img = [UIImage imageNamed:@"ic_group_top"];
-    itemTop.convert = [UIImage imageNamed:StringFromPastData(&screenLikelyTitle)];
+    itemTop.bodyDown = [UIImage imageNamed:StringFromPastData(&screenLikelyTitle)];
 
 //        ChatArchiveWatchCreate *itemQuit = [[ChatArchiveWatchCreate alloc] init];
 //        itemQuit.title = @"退出高级群".nim_localized;
@@ -995,28 +995,28 @@ GetSchedulerFinishCollector,ThoroughSlideCoreDelegate,UINavigationControllerDele
         //: ChatArchiveWatchCreate *itemDismiss = [[ChatArchiveWatchCreate alloc] init];
         ChatArchiveWatchCreate *itemDismiss = [[ChatArchiveWatchCreate alloc] init];
         //: itemDismiss.title = [PluginTulipOptimize getTextWithKey:@"group_info_activity_jiesan"];
-        itemDismiss.body = [PluginTulipOptimize richness:StringFromPastData(&moduleRecordPlayerConfig)];
+        itemDismiss.calculate = [PluginTulipOptimize richness:StringFromPastData(&moduleRecordPlayerConfig)];
         //: itemDismiss.action = @selector(dismissTeam);
-        itemDismiss.personPured = @selector(keepDot);
+        itemDismiss.action = @selector(keepDot);
         //: itemDismiss.rowHeight = 50.f;
         itemDismiss.spreadHead = 50.f;
         //: itemDismiss.type = TriumphUpdateShadowedQuotaRedButton;
         itemDismiss.whenAttachOver = TriumphUpdateShadowedQuotaRedButton;
     //: itemDismiss.img = [UIImage imageNamed:@"ic_announcement"];
-    itemDismiss.convert = [UIImage imageNamed:StringFromPastData(&kWholeTotaloValue)];
+    itemDismiss.bodyDown = [UIImage imageNamed:StringFromPastData(&kWholeTotaloValue)];
 
     //: ChatArchiveWatchCreate *teamChange = [[ChatArchiveWatchCreate alloc] init];
     ChatArchiveWatchCreate *teamChange = [[ChatArchiveWatchCreate alloc] init];
     //: teamChange.title = [PluginTulipOptimize getTextWithKey:@"Transfer_group_ownership"];
-    teamChange.body = [PluginTulipOptimize richness:StringFromPastData(&kPerspectiveAlert)];
+    teamChange.calculate = [PluginTulipOptimize richness:StringFromPastData(&kPerspectiveAlert)];
     //: teamChange.rowHeight = 50.f;
     teamChange.spreadHead = 50.f;
     //: teamChange.type = TriumphUpdateShadowedQuotaCommon;
     teamChange.whenAttachOver = TriumphUpdateShadowedQuotaCommon;
     //: teamChange.action = @selector(onMore);
-    teamChange.personPured = @selector(startingUnderlying);
+    teamChange.action = @selector(startingUnderlying);
     //: teamChange.img = [UIImage imageNamed:@"ic_group_transfer"];
-    teamChange.convert = [UIImage imageNamed:StringFromPastData(&viewCentralPage)];
+    teamChange.bodyDown = [UIImage imageNamed:StringFromPastData(&viewCentralPage)];
 
 
     //: if (isOwner) {
@@ -1212,7 +1212,7 @@ GetSchedulerFinishCollector,ThoroughSlideCoreDelegate,UINavigationControllerDele
             //: [self didDismissTeam];
             [self structure];
             //: [DelegateViewportCatalog getWithUrl:[NSString stringWithFormat:@"/team/destory"] params:@{@"id":self.teamListManager.team.teamId} isShow:NO success:^(id responseObject) {
-            [DelegateViewportCatalog loose:[NSString stringWithFormat:StringFromPastData(&featureForwardSessionMessage)] pick:@{StringFromPastData(&kSceneData):self.juniorVarsity.pick.teamId} move:NO promise:^(id responseObject) {
+            [DelegateViewportCatalog loose:[NSString stringWithFormat:@"%@", StringFromPastData(&featureForwardSessionMessage)] pick:@{StringFromPastData(&kSceneData):self.juniorVarsity.pick.teamId} move:NO promise:^(id responseObject) {
 
             //: } failed:^(id responseObject, NSError *error) {
             } phone:^(id responseObject, NSError *error) {
@@ -1391,7 +1391,7 @@ GetSchedulerFinishCollector,ThoroughSlideCoreDelegate,UINavigationControllerDele
         //: dict[@"new_owner_id"] = newOwnerId;
         dict[StringFromPastData(&moduleSternStickAlert)] = newOwnerId;
         //: [DelegateViewportCatalog getWithUrl:[NSString stringWithFormat:@"/team/modifyowner"] params:dict isShow:NO success:^(id responseObject) {
-        [DelegateViewportCatalog loose:[NSString stringWithFormat:StringFromPastData(&colorWorkerDisturbValue)] pick:dict move:NO promise:^(id responseObject) {
+        [DelegateViewportCatalog loose:[NSString stringWithFormat:@"%@", StringFromPastData(&colorWorkerDisturbValue)] pick:dict move:NO promise:^(id responseObject) {
             //: [wself reloadData];
             [wself verseOffTip];
         //: } failed:^(id responseObject, NSError *error) {
@@ -1478,7 +1478,7 @@ GetSchedulerFinishCollector,ThoroughSlideCoreDelegate,UINavigationControllerDele
             //: dict[@"name"] = emptyString(groupName);
             dict[StringFromPastData(&screenAbsoluteSettings)] = fromEachOffe(groupName);
             //: [DelegateViewportCatalog getWithUrl:[NSString stringWithFormat:@"/team/modifyname"] params:dict isShow:NO success:^(id responseObject) {
-            [DelegateViewportCatalog loose:[NSString stringWithFormat:StringFromPastData(&layoutMediumLogger)] pick:dict move:NO promise:^(id responseObject) {
+            [DelegateViewportCatalog loose:[NSString stringWithFormat:@"%@", StringFromPastData(&layoutMediumLogger)] pick:dict move:NO promise:^(id responseObject) {
                 //: [self reloadData];
                 [self verseOffTip];
                 //: self.accountNickname.text = groupName;

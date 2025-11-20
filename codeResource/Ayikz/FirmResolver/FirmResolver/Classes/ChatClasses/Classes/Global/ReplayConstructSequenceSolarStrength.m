@@ -571,7 +571,7 @@
     //: _recordMaxDuration = 60.f;
     _assembleFile = 60.f;
     //: _placeholder = [PluginTulipOptimize getTextWithKey:@"message_please_enter_content"];
-    _bodyWording = [PluginTulipOptimize richness:[[CountEntryData sharedInstance] viewTendedData]];//@"请输入消息".;
+    _placeholder = [PluginTulipOptimize richness:[[CountEntryData sharedInstance] viewTendedData]];//@"请输入消息".;
     //: _inputMaxLength = 1000;
     _kit = 1000;
     //: _nickFont = [UIFont boldSystemFontOfSize:15];

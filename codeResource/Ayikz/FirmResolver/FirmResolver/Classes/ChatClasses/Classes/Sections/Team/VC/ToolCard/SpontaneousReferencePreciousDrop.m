@@ -248,7 +248,7 @@ typedef struct {
     //: self.contentTextView.delegate = self;
     self.attachEvenTitleView.delegate = self;
     //: self.contentTextView.placeholder = [PluginTulipOptimize getTextWithKey:@"Please_enter_content"];
-    self.attachEvenTitleView.bodyWording = [PluginTulipOptimize richness:[FragmentData coreMediumContent]];
+    self.attachEvenTitleView.placeholder = [PluginTulipOptimize richness:[FragmentData coreMediumContent]];
     //: self.contentTextView.text = self.defaultContent;
     self.attachEvenTitleView.text = self.greatDepth;
     //: [contentView addSubview:self.contentTextView];

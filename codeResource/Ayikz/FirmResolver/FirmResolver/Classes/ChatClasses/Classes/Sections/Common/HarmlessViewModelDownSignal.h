@@ -27,7 +27,7 @@
 }
 
 //: @property (nonatomic, strong) ClassControllerLandscape *progressView;
-@property (nonatomic, strong) ClassControllerLandscape *reading;
+@property (nonatomic, strong) ClassControllerLandscape *progressView;
 //: @property (nonatomic, assign)CGFloat maxProgress;
 @property (nonatomic, assign)CGFloat most;
 

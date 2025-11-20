@@ -262,7 +262,7 @@ Byte moduleLowingPage[] = {85, 7, 60, 14, 112, 129, 41, 176, 79, 213, 219, 116, 
     //: self.contentTextView.delegate = self;
     self.detail.delegate = self;
     //: self.contentTextView.placeholder = [PluginTulipOptimize getTextWithKey:@"Please_enter_content"];
-    self.detail.bodyWording = [PluginTulipOptimize richness:StringFromTeleportData(layoutTurnData)];
+    self.detail.placeholder = [PluginTulipOptimize richness:StringFromTeleportData(layoutTurnData)];
     //: self.contentTextView.text = self.defaultContent;
     self.detail.text = self.watch;
     //: [contentView addSubview:self.contentTextView];

@@ -668,7 +668,7 @@
     cell.imageView.image = bodyData.bodyDown;
 
     //: cell.switcher.on = bodyData.switchOn;
-    cell.gender.on = bodyData.enable;
+    cell.gender.on = bodyData.corduroy;
     //: cell.identify = bodyData.identify;
     cell.validMenu = bodyData.year;
 
@@ -695,7 +695,7 @@
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //: cell.textLabel.text = [NSString stringWithFormat:@"%@(%@)",bodyData.title,bodyData.subTitle];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@(%@)",bodyData.calculate,bodyData.sweep];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@(%@)",bodyData.calculate,bodyData.custom];
     //: cell.textLabel.font = [UIFont systemFontOfSize:14];
     cell.textLabel.font = [UIFont systemFontOfSize:14];
     //: cell.textLabel.textColor = [UIColor blackColor];
@@ -704,7 +704,7 @@
 //    cell.imageView.image = bodyData.img;
 
     //: if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
-    if ([bodyData respondsToSelector:@selector(counterrupt)] && bodyData.counterrupt) {
+    if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
         //: cell.accessoryType = UITableViewCellAccessoryNone;
         cell.accessoryType = UITableViewCellAccessoryNone;
     //: }else{
@@ -764,7 +764,7 @@
     //: id<PreloadHelperGreenEpisode> bodyData = [self bodyDataAtIndexPath:indexPath];
     id<PreloadHelperGreenEpisode> bodyData = [self refuse:indexPath];
     //: return bodyData.rowHeight;
-    return bodyData.greenMode;
+    return bodyData.spreadHead;
 }
 
 //: - (UIAlertAction *)makeCancelAction {
@@ -919,7 +919,7 @@
     //: UITableViewCell * cell;
     UITableViewCell * cell;
     //: TriumphUpdateShadowedQuota type = bodyData.type;
-    TriumphUpdateShadowedQuota type = bodyData.dark;
+    TriumphUpdateShadowedQuota type = bodyData.whenAttachOver;
     //: switch (type) {
     switch (type) {
         //: case TriumphUpdateShadowedQuotaCommon:
@@ -971,16 +971,16 @@
     //: id<PreloadHelperGreenEpisode> bodyData = [self bodyDataAtIndexPath:indexPath];
     id<PreloadHelperGreenEpisode> bodyData = [self refuse:indexPath];
     //: if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
-    if ([bodyData respondsToSelector:@selector(counterrupt)] && bodyData.counterrupt) {
+    if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
         //: return;
         return;
     }
     //: if (bodyData.type == TriumphUpdateShadowedQuotaSelected) {
-    if (bodyData.dark == TriumphUpdateShadowedQuotaSelected) {
+    if (bodyData.whenAttachOver == TriumphUpdateShadowedQuotaSelected) {
         //: MoveAroundPure *vc = [MoveAroundPure instanceWithTitle:bodyData.title
         MoveAroundPure *vc = [MoveAroundPure quality:bodyData.calculate
                                                                                //: items:bodyData.optionItems
-                                                                               liberal:bodyData.magnetOpera
+                                                                               liberal:bodyData.generate
                                                                               //: result:^(id<NeuralAcceptGrand> _Nonnull item) {
                                                                               automatically:^(id<NeuralAcceptGrand> _Nonnull item) {
               //: if (bodyData.selectedBlock) {
@@ -995,13 +995,13 @@
     //: } else {
     } else {
         //: if ([bodyData respondsToSelector:@selector(action)]) {
-        if ([bodyData respondsToSelector:@selector(share)]) {
+        if ([bodyData respondsToSelector:@selector(action)]) {
             //: if (bodyData.action) {
-            if (bodyData.share) {
+            if (bodyData.action) {
                 //: do {
                 do {
                 //: [self performSelector:bodyData.action];
-                [self performSelector:bodyData.share];
+                [self performSelector:bodyData.action];
                 //: } while (0);
                 } while (0);
             }

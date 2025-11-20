@@ -874,9 +874,9 @@ typedef struct {
         //: item.value = dic[[CentralNobleQuirkConstruct getTeamHelperValue]];
         item.offServer = dic[[CentralNobleQuirkConstruct verseGet]];
         //: item.title = dic[[CentralNobleQuirkConstruct getTeamHelperText]];
-        item.body = dic[[CentralNobleQuirkConstruct nearSmooth]];
+        item.calculate = dic[[CentralNobleQuirkConstruct nearSmooth]];
         //: item.img = dic[[CentralNobleQuirkConstruct getTeamHelperImg]];
-        item.convert = dic[[CentralNobleQuirkConstruct on]];
+        item.bodyDown = dic[[CentralNobleQuirkConstruct on]];
         //: item.selected = (selectValue == [dic[[CentralNobleQuirkConstruct getTeamHelperValue]] integerValue]);
         item.submit = (selectValue == [dic[[CentralNobleQuirkConstruct verseGet]] integerValue]);
         //: [items addObject:item];

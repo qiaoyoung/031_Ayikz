@@ -26,7 +26,7 @@ typedef void(^textViewHeightDidChangedBlock)(CGFloat currentTextViewHeight);
 //: @property (nonatomic, strong) UIColor *placeholderColor;
 @property (nonatomic, strong) UIColor *forget;
 //: @property (nonatomic, copy) NSString *placeholder;
-@property (nonatomic, copy) NSString *bodyWording;
+@property (nonatomic, copy) NSString *placeholder;
 //: @property (nonatomic, copy) textViewHeightDidChangedBlock textViewHeightDidChanged;
 @property (nonatomic, copy) textViewHeightDidChangedBlock loop;
 /* 最大高度，如果需要随文字改变高度的时候使用 */

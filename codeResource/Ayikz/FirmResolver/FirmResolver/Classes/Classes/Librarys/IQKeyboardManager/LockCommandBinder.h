@@ -53,7 +53,7 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 @property(nullable, nonatomic,copy) IBInspectable NSAttributedString *container;
 
 //: @property(nullable, nonatomic,copy) IBInspectable NSString *placeholder;
-@property(nullable, nonatomic,copy) IBInspectable NSString *bodyWording;
+@property(nullable, nonatomic,copy) IBInspectable NSString *placeholder;
 
 //: @end
 @end

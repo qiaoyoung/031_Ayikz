@@ -46,7 +46,7 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
 @implementation LockCommandBinder
 
 //: @synthesize placeholder = _placeholder;
-@synthesize bodyWording = _playRefuse;
+@synthesize placeholder = _playRefuse;
 //: @synthesize placeholderLabel = _placeholderLabel;
 @synthesize stableEffect = _event;
 //: @synthesize placeholderTextColor = _placeholderTextColor;
@@ -305,8 +305,7 @@ NS_EXTENSION_UNAVAILABLE_IOS("Unavailable in extension")
     return [super delegate];
 }
 
-//: -(void)setPlaceholder:(NSString *)placeholder
--(void)setBodyWording:(NSString *)placeholder
+-(void)setPlaceholder:(NSString *)placeholder
 {
     //: _placeholder = placeholder;
     _playRefuse = placeholder;

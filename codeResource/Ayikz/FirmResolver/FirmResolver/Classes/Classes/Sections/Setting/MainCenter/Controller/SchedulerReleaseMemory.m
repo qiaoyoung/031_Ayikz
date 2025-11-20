@@ -492,7 +492,7 @@ typedef struct {
     //: _textView = [[UITextView alloc] initWithFrame:CGRectMake(15, 15, [[UIScreen mainScreen] bounds].size.width-60, 230)];
     _maximumNameView = [[UITextView alloc] initWithFrame:CGRectMake(15, 15, [[UIScreen mainScreen] bounds].size.width-60, 230)];
     //: _textView.placeholder = [PluginTulipOptimize getTextWithKey:@"report_info"];
-    _maximumNameView.bodyWording = [PluginTulipOptimize richness:[[SumerfoilData sharedInstance] featureSceneSinceDevice]];//@"请输入您的举报信息";
+    _maximumNameView.placeholder = [PluginTulipOptimize richness:[[SumerfoilData sharedInstance] featureSceneSinceDevice]];//@"请输入您的举报信息";
     //: _textView.backgroundColor = [UIColor whiteColor];
     _maximumNameView.backgroundColor = [UIColor whiteColor];
     //: _textView.delegate = self;

@@ -118,23 +118,23 @@
 //        [self addSubview:_activity];
 
         //: self.progressView = [[ClassControllerLandscape alloc] initWithFrame:self.bounds];
-        self.reading = [[ClassControllerLandscape alloc] initWithFrame:self.bounds];
+        self.progressView = [[ClassControllerLandscape alloc] initWithFrame:self.bounds];
         //: self.progressView.backgroundColor = [UIColor clearColor];
-        self.reading.backgroundColor = [UIColor clearColor];
+        self.progressView.backgroundColor = [UIColor clearColor];
         //: self.progressView.translatesAutoresizingMaskIntoConstraints = NO;
-        self.reading.translatesAutoresizingMaskIntoConstraints = NO;
+        self.progressView.translatesAutoresizingMaskIntoConstraints = NO;
         //: self.progressView.showsText = YES;
-        self.reading.channelResolve = YES;
+        self.progressView.channelResolve = YES;
         //: self.progressView.tintColor = [UIColor colorWithHexString:@"#A148FF"];
-        self.reading.tintColor = [UIColor tin:[FeasibleData sharedInstance].coreResCrystalDevice];
+        self.progressView.tintColor = [UIColor tin:[FeasibleData sharedInstance].coreResCrystalDevice];
 //        self.progressView.tintColor = RGB_COLOR_String(kCommonBGColor_All);
 //        self.progressView.tintColor = [UIColor colorWithPatternImage:[RendererThroughMomentSignerRing getLinearGradientImage:RGB_COLOR_String(kCommonBGColor_begin) and:RGB_COLOR_String(kCommonBGColor_end) directionType:RendererThroughMomentSignerRingDirectionLevel]];
 
         //: [self addSubview:self.progressView];
-        [self addSubview:self.reading];
+        [self addSubview:self.progressView];
 
         //: NSDictionary *views = NSDictionaryOfVariableBindings(_progressView);
-        NSDictionary *views = NSDictionaryOfVariableBindings(_reading);
+        NSDictionary *views = NSDictionaryOfVariableBindings(_progressView);
         //: [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[_progressView]-0-|" options:0 metrics:nil views:views]];
         [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:[FeasibleData sharedInstance].k_coveFormat options:0 metrics:nil views:views]];
         //: [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[_progressView]-0-|" options:0 metrics:nil views:views]];
@@ -179,7 +179,7 @@
 //        _progressLabel.text = [NSString stringWithFormat:@"%d%%", (int)(progress*100)];
 //        [_activity startAnimating];
         //: self.progressView.progress = progress;
-        self.reading.listen = progress;
+        self.progressView.listen = progress;
     }
 
     //: [self setNeedsLayout];

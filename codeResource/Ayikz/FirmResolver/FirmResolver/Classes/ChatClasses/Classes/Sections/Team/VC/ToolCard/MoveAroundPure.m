@@ -187,7 +187,7 @@
         //: BOOL selected = (idx == indexPath.section);
         BOOL selected = (idx == indexPath.section);
         //: [obj setSelected:selected];
-        [obj setGravityHistoryQueryed:selected];
+        [obj setSubmit:selected];
     //: }];
     }];
     //: [self.tableView reloadData];
@@ -207,7 +207,7 @@
         //: [items enumerateObjectsUsingBlock:^(id<NeuralAcceptGrand> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [items enumerateObjectsUsingBlock:^(id<NeuralAcceptGrand> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             //: if (obj.selected) {
-            if (obj.gravityHistoryQueryed) {
+            if (obj.submit) {
                 //: weakSelf.selectedIndex = idx;
                 weakSelf.hardTo = idx;
             }
@@ -477,11 +477,11 @@
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //: cell.iconImageView.image = [UIImage imageNamed:bodyData.img];
-    cell.extra.image = [UIImage imageNamed:bodyData.writing];
+    cell.extra.image = [UIImage imageNamed:bodyData.bodyDown];
     //: cell.titleLabel.text = bodyData.title;
-    cell.subdataBase.text = bodyData.winter;
+    cell.subdataBase.text = bodyData.calculate;
     //: cell.arrowsImageView.hidden = ![bodyData selected];
-    cell.exclusive.hidden = ![bodyData gravityHistoryQueryed];
+    cell.exclusive.hidden = ![bodyData submit];
 
     //: return cell;
     return cell;

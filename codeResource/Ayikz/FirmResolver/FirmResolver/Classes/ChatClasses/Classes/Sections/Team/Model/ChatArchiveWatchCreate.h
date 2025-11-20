@@ -21,13 +21,13 @@ typedef void(^NIMTeamCardRowSelectedBlock)(id <NeuralAcceptGrand> item);
 @interface ChatArchiveWatchCreate : NSObject
 
 //: @property(nonatomic,assign) NSInteger identify;
-@property(nonatomic,assign) NSInteger forbid;
+@property(nonatomic,assign) NSInteger year;
 
 //: @property(nonatomic,assign) SEL action;
-@property(nonatomic,assign) SEL personPured;
+@property(nonatomic,assign) SEL action;
 
 //: @property(nonatomic,copy) UIImage *img;
-@property(nonatomic,copy) UIImage *convert;
+@property(nonatomic,copy) UIImage *bodyDown;
 
 //: @property(nonatomic,assign) BOOL selected;
 @property(nonatomic,assign) BOOL submit;
@@ -45,7 +45,7 @@ typedef void(^NIMTeamCardRowSelectedBlock)(id <NeuralAcceptGrand> item);
 @property(nonatomic,strong) NSMutableArray <id <NeuralAcceptGrand>> *generate;
 
 //: @property(nonatomic,assign) BOOL actionDisabled;
-@property(nonatomic,assign) BOOL remainApplies;
+@property(nonatomic,assign) BOOL actionDisabled;
 
 //: @property(nonatomic,assign) CGFloat rowHeight;
 @property(nonatomic,assign) CGFloat spreadHead;
@@ -54,13 +54,13 @@ typedef void(^NIMTeamCardRowSelectedBlock)(id <NeuralAcceptGrand> item);
 @property(nonatomic,strong) id offServer;
 
 //: @property(nonatomic,strong) NIMTeamCardRowSelectedBlock selectedBlock;
-@property(nonatomic,strong) NIMTeamCardRowSelectedBlock strength;
+@property(nonatomic,strong) NIMTeamCardRowSelectedBlock goFor;
 
 //: @property(nonatomic,copy) NSString *subTitle;
 @property(nonatomic,copy) NSString *custom;
 
 //: @property(nonatomic,copy) NSString *title;
-@property(nonatomic,copy) NSString *body;
+@property(nonatomic,copy) NSString *calculate;
 
 //: @end
 @end

@@ -249,7 +249,7 @@
         //: _textView.textColor = [UIColor colorWithHexString:@"#333333"];
         _underlying.textColor = [UIColor tin:[JungleData sharedInstance].componentExcessConfig];
         //: _textView.placeholder = [PluginTulipOptimize getTextWithKey:@"activity_set_bio_title"];
-        _underlying.bodyWording = [PluginTulipOptimize richness:[JungleData sharedInstance].appActivityData];
+        _underlying.placeholder = [PluginTulipOptimize richness:[JungleData sharedInstance].appActivityData];
         //: _textView.delegate = self;
         _underlying.delegate = self;
 //        _textView.textContainerInset = UIEdgeInsetsMake(20, 20, 20, 20);

@@ -238,7 +238,7 @@
 @property (nonatomic, strong) TidePackDashboardBroker *protection;
 
 //: @property (nonatomic, strong) NIMSession *session;
-@property (nonatomic, strong) NIMSession *policyStandard;
+@property (nonatomic, strong) NIMSession *agreementHunting;
 
 //: @property (nonatomic, strong) NIMTeam *team;
 @property (nonatomic, strong) NIMTeam *pick;
@@ -2006,7 +2006,7 @@
         //: _team = team;
         _pick = team;
         //: _session = session;
-        _policyStandard = session;
+        _agreementHunting = session;
         //: if (team.type == NIMTeamTypeSuper) {
         if (team.type == NIMTeamTypeSuper) {
             //: [[NIMSDK sharedSDK].superTeamManager addDelegate:self];

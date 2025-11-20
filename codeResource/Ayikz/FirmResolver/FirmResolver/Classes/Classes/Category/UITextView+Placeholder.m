@@ -20,7 +20,7 @@
 
 
 //: @dynamic placeholder;
-@dynamic bodyWording;
+@dynamic placeholder;
 //: @dynamic placeholderLabel;
 @dynamic stableEffect;
 //: @dynamic textValue;
@@ -65,7 +65,7 @@ NSString const *componentScanPlatform = @"kKeyLabel";
 }
 
 //: -(NSString*)placeholder
--(NSString*)bodyWording
+-(NSString*)placeholder
 {
     //  Returns our "placeholder" text string
     //: return objc_getAssociatedObject(self, &kKeyPlaceHolder);
@@ -90,7 +90,7 @@ NSString const *componentScanPlatform = @"kKeyLabel";
 //: NSString const *kKeyPlaceHolder = @"kKeyPlaceHolder";
 NSString const *k_handlePreference = @"kKeyPlaceHolder";
 //: -(void)setPlaceholder:(NSString *)_placeholder
--(void)setBodyWording:(NSString *)_placeholder
+-(void)setPlaceholder:(NSString *)_placeholder
 {
     //  Sets our "placeholder" text string, creates a new UILabel to contain it, and modifies our UITextView to cope with
     //  showing/hiding the UILabel when needed.

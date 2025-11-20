@@ -68,7 +68,7 @@ typedef NS_ENUM(NSInteger,ElevateDapperFallbackTypeMatrixType) {
  *  输入框的占位符
  */
 //: @property (nonatomic, copy) NSString *placeholder;
-@property (nonatomic, copy) NSString *bodyWording;
+@property (nonatomic, copy) NSString *placeholder;
 
 
 /**

@@ -264,7 +264,7 @@
     self.bar.moment.hintPriority = nil;
 
     //: NSString *placeholder = [TowerTinyGranularLarge sharedKit].config.placeholder;
-    NSString *placeholder = [TowerTinyGranularLarge basicDragKit].arcSolarStrength.bodyWording;
+    NSString *placeholder = [TowerTinyGranularLarge basicDragKit].arcSolarStrength.placeholder;
     //: [_toolBar setPlaceHolder:placeholder];
     [_bar setBeyondSuspend:placeholder];
 
