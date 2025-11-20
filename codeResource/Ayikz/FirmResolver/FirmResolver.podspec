@@ -1,20 +1,20 @@
 # data - 2019-7-30 16:22
 
 Pod::Spec.new do |s|
-  s.name         = "HolisticSaver"
+  s.name         = "FirmResolver"
   s.version      = "1.0.0"
-  s.summary      = "iOS HolisticSaver Module."
-  s.author       = { "HolisticSaver" => "HolisticSaver.me" }
-  s.homepage     = "HolisticSaver"
-  s.source       = { :git => "http://HolisticSaver.git", :tag => "#{s.version}" }
+  s.summary      = "iOS FirmResolver Module."
+  s.author       = { "FirmResolver" => "FirmResolver.me" }
+  s.homepage     = "FirmResolver"
+  s.source       = { :git => "http://FirmResolver.git", :tag => "#{s.version}" }
   s.platform     = :ios, '12.0'
   s.static_framework = true
   s.requires_arc = true
-  s.source_files = 'HolisticSaver/Classes/**/*'
-  s.resources = "HolisticSaver/**/*.bundle"
-  s.prefix_header_file = 'HolisticSaver/Classes/HolisticSaver.pch'
+  s.source_files = 'FirmResolver/Classes/**/*'
+  s.resources = "FirmResolver/**/*.bundle"
+  s.prefix_header_file = 'FirmResolver/Classes/FirmResolver.pch'
   s.pod_target_xcconfig = {
-    'HEADER_SEARCH_PATHS' => '$(inherited) "${PODS_TARGET_SRCROOT}" "${PODS_TARGET_SRCROOT}/HolisticSaver/Classes"'
+    'HEADER_SEARCH_PATHS' => '$(inherited) "${PODS_TARGET_SRCROOT}" "${PODS_TARGET_SRCROOT}/FirmResolver/Classes"'
   }
   
   # 依赖库

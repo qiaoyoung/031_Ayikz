@@ -457,6 +457,6 @@
 #import "UIView+Layout.h"
 #import "UIViewController+AAAA_KIAdditions_BBBB.h"
 
-FOUNDATION_EXPORT double HolisticSaverVersionNumber;
-FOUNDATION_EXPORT const unsigned char HolisticSaverVersionString[];
+FOUNDATION_EXPORT double FirmResolverVersionNumber;
+FOUNDATION_EXPORT const unsigned char FirmResolverVersionString[];
 

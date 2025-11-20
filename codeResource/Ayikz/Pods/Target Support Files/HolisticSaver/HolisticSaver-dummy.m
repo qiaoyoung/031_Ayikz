@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface PodsDummy_HolisticSaver : NSObject
+@interface PodsDummy_FirmResolver : NSObject
 @end
-@implementation PodsDummy_HolisticSaver
+@implementation PodsDummy_FirmResolver
 @end

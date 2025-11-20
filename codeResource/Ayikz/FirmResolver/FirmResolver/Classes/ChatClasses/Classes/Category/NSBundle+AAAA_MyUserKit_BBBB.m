@@ -15,7 +15,7 @@
 
 + (NSBundle *)nim_defaultEmojiBundle {
     NSBundle *bundle = [NSBundle bundleForClass:[AAAA_MyUserKit_BBBB class]];
-    NSURL *url = [bundle URLForResource:kHolisticSaver withExtension:@"bundle"];
+    NSURL *url = [bundle URLForResource:kFirmResolver withExtension:@"bundle"];
     NSBundle *emojiBundle = [NSBundle bundleWithURL:url];
     return emojiBundle;
 }
