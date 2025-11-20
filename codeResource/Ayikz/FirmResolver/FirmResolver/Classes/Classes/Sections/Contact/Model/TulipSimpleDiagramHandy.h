@@ -16,11 +16,11 @@
 @protocol ThrottleScopeClose <NSObject>
 
 //: - (NSString *)groupTitle;
-- (NSString *)languageName;
+- (NSString *)earlyish;
 //: - (NSString *)memberId;
-- (NSString *)exclude;
+- (NSString *)existId;
 //: - (id)sortKey;
-- (id)remote;
+- (id)daisyChain;
 
 //: @end
 @end

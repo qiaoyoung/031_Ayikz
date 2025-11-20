@@ -21,7 +21,7 @@
  *  时间戳
  */
 //: @property (nonatomic, assign) NSTimeInterval messageTime;
-@property (nonatomic, assign) NSTimeInterval ledge;
+@property (nonatomic, assign) NSTimeInterval clipComment;
 
 /**
 *  Cell 高度

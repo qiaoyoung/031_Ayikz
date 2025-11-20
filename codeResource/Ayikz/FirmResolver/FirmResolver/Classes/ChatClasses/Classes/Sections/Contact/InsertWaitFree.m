@@ -596,7 +596,7 @@ Byte moduleBondEvent[] = {5, 14, 50, 12, 29, 255, 185, 222, 201, 177, 135, 238, 
     //: }];
     }];
     //: if ([self.config respondsToSelector:@selector(alreadySelectedMemberId)])
-    if ([self.supreme respondsToSelector:@selector(approachOperator)])
+    if ([self.supreme respondsToSelector:@selector(containerLaboratory)])
     {
         //: _selectecContacts = [[self.config alreadySelectedMemberId] mutableCopy];
         _stride = [[self.supreme containerLaboratory] mutableCopy];

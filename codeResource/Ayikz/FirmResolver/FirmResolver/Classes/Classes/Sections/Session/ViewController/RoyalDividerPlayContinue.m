@@ -1980,7 +1980,7 @@ QualityViewModelConstructGraciousNextDelegate>
     if ([self.original respondsToSelector:@selector(setSinceSoundses:)])
     {
         //: [self.sessionConfig setThreadMessage:menuMessage];
-        [self.original setPhoneMessage:menuMessage];
+        [self.original setSinceSoundses:menuMessage];
     }
 
     //: [self.sessionInputView refreshStatus:LayoutMerryOntoText];

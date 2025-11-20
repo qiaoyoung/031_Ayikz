@@ -59,7 +59,7 @@ Byte appFactoryText[] = {51, 20, 55, 4, 160, 154, 166, 165, 150, 170, 156, 170, 
         //: UpdaterRobustSerene *model = (UpdaterRobustSerene *)data;
         UpdaterRobustSerene *model = (UpdaterRobustSerene *)data;
         //: [_timeLabel setText:[LoadHoldLoosePeaceful showTime:model.messageTime showDetail:YES]];
-        [_heavenExtendInspector setText:[LoadHoldLoosePeaceful flavor:model.ledge timeSumry:YES]];
+        [_heavenExtendInspector setText:[LoadHoldLoosePeaceful flavor:model.clipComment timeSumry:YES]];
     }
 }
 

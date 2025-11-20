@@ -783,7 +783,7 @@ JovialTerminalRemoveClipEnqueueDelegate> {
     //: config.needMutiSelected = YES;
     config.standard = YES;
     //: config.showSelectHeaderview = YES;
-    config.bringHome = YES;
+    config.nextHeaderview = YES;
     //初始化联系人选择器
     //: InsertWaitFree *vc = [[InsertWaitFree alloc] initWithConfig:config];
     InsertWaitFree *vc = [[InsertWaitFree alloc] initWithQuick:config];

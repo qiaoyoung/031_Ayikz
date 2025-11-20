@@ -314,7 +314,7 @@
         //: UpdaterRobustSerene *timeModel = [[UpdaterRobustSerene alloc] init];
         UpdaterRobustSerene *timeModel = [[UpdaterRobustSerene alloc] init];
         //: timeModel.messageTime = model.messageTime;
-        timeModel.ledge = model.clipComment;
+        timeModel.clipComment = model.clipComment;
         //: [self.items insertObject:timeModel atIndex:0];
         [self.all insertObject:timeModel atIndex:0];
     }
@@ -663,7 +663,7 @@
             //: UpdaterRobustSerene *timeModel = [[UpdaterRobustSerene alloc] init];
             UpdaterRobustSerene *timeModel = [[UpdaterRobustSerene alloc] init];
             //: timeModel.messageTime = model.messageTime;
-            timeModel.ledge = model.clipComment;
+            timeModel.clipComment = model.clipComment;
             //: [self.items insertObject:timeModel atIndex:index];
             [self.all insertObject:timeModel atIndex:index];
             //: [inserts addObject:@(index)];

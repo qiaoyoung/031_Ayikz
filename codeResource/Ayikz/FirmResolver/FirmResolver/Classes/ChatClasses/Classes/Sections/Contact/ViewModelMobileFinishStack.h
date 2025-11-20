@@ -107,13 +107,13 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 @property (nonatomic,copy) NSArray *processBecomes;
 
 //: @property (nonatomic,copy) NSArray *alreadySelectedMemberId;
-@property (nonatomic,copy) NSArray *approachOperator;
+@property (nonatomic,copy) NSArray *containerLaboratory;
 
 //: @property (nonatomic,assign) BOOL needMutiSelected;
 @property (nonatomic,assign) BOOL standard;
 
 //: @property (nonatomic,assign) BOOL showSelectHeaderview;
-@property (nonatomic,assign) BOOL bringHome;
+@property (nonatomic,assign) BOOL nextHeaderview;
 
 //: @end
 @end
@@ -125,7 +125,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 @interface ShuffleMobileProudPaginate : NSObject<ViewModelMobileFinishStack>
 
 //: @property (nonatomic,assign) BOOL showSelectHeaderview;
-@property (nonatomic,assign) BOOL crisp;
+@property (nonatomic,assign) BOOL nextHeaderview;
 
 //: @property (nonatomic,strong) NIMSession *session;
 @property (nonatomic,strong) NIMSession *tempThatTransport;
@@ -143,7 +143,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 @property (nonatomic,assign) BOOL startingMode;
 
 //: @property (nonatomic,copy) NSArray *alreadySelectedMemberId;
-@property (nonatomic,copy) NSArray *approachOperator;
+@property (nonatomic,copy) NSArray *containerLaboratory;
 
 //: @property (nonatomic,copy) NSString *teamId;
 @property (nonatomic,copy) NSString *poloShirt;
@@ -162,7 +162,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 @interface UpdaterInitializeKnownWork : NSObject<ViewModelMobileFinishStack>
 
 //: @property (nonatomic,assign) BOOL showSelectHeaderview;
-@property (nonatomic,assign) BOOL red;
+@property (nonatomic,assign) BOOL nextHeaderview;
 
 //: @property (nonatomic,assign) BOOL needMutiSelected;
 @property (nonatomic,assign) BOOL needTapElite;
@@ -180,7 +180,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 @property (nonatomic,assign) ParserModalEnum with;
 
 //: @property (nonatomic,copy) NSArray *alreadySelectedMemberId;
-@property (nonatomic,copy) NSArray *approachOperator;
+@property (nonatomic,copy) NSArray *containerLaboratory;
 
 //: @end
 @end

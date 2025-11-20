@@ -190,13 +190,13 @@
  *  @return 返回thread 父消息
  */
 //: - (NIMMessage *)threadMessage;
-- (NIMMessage *)phoneMessage;
+- (NIMMessage *)sinceSoundses;
 
 /**
  *  设置 thread消息
  */
 //: - (void)setThreadMessage:(NIMMessage *)message;
-- (void)setPhoneMessage:(NIMMessage *)message;
+- (void)setSinceSoundses:(NIMMessage *)message;
 /**
  *  清空 thread消息
  */

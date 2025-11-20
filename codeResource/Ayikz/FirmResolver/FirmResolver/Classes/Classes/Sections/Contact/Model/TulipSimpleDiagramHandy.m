@@ -126,7 +126,7 @@
         //: [groupedMembers sortUsingComparator:^NSComparisonResult(id<ThrottleScopeClose> member1, id<ThrottleScopeClose> member2) {
         [groupedMembers sortUsingComparator:^NSComparisonResult(id<ThrottleScopeClose> member1, id<ThrottleScopeClose> member2) {
             //: return _groupMemberComparator([member1 sortKey], [member2 sortKey]);
-            return _makeComparator([member1 remote], [member2 remote]);
+            return _makeComparator([member1 daisyChain], [member2 daisyChain]);
         //: }];
         }];
     //: }];
@@ -183,7 +183,7 @@
         //: for (id<ThrottleScopeClose> member in members) {
         for (id<ThrottleScopeClose> member in members) {
             //: if ([[member memberId] isEqualToString:uid]) {
-            if ([[member exclude] isEqualToString:uid]) {
+            if ([[member existId] isEqualToString:uid]) {
                 //: return member;
                 return member;
             }
@@ -292,12 +292,12 @@
     //: for (id<ThrottleScopeClose>member in members) {
     for (id<ThrottleScopeClose>member in members) {
         //: if ([[member memberId] isEqualToString:me]) {
-        if ([[member exclude] isEqualToString:me]) {
+        if ([[member existId] isEqualToString:me]) {
             //: continue;
             continue;
         }
         //: NSString *groupTitle = [member groupTitle];
-        NSString *groupTitle = [member languageName];
+        NSString *groupTitle = [member earlyish];
         //: NSMutableArray *groupedMembers = [tmp objectForKey:groupTitle];
         NSMutableArray *groupedMembers = [tmp objectForKey:groupTitle];
         //: if(!groupedMembers) {
@@ -342,7 +342,7 @@
 //: - (void)removeGroupMember:(id<ThrottleScopeClose>)member{
 - (void)assemble:(id<ThrottleScopeClose>)member{
     //: NSString *groupTitle = [member groupTitle];
-    NSString *groupTitle = [member languageName];
+    NSString *groupTitle = [member earlyish];
     //: NSInteger groupIndex = [_groupTtiles indexOfObject:groupTitle];
     NSInteger groupIndex = [_version indexOfObject:groupTitle];
     //: PassagePortInsideSlip *pair = [_groups objectAtIndex:groupIndex];
@@ -362,7 +362,7 @@
 - (void)inputMember:(id<ThrottleScopeClose>)member
 {
     //: NSString *groupTitle = [member groupTitle];
-    NSString *groupTitle = [member languageName];
+    NSString *groupTitle = [member earlyish];
     //: NSInteger groupIndex = [_groupTtiles indexOfObject:groupTitle];
     NSInteger groupIndex = [_version indexOfObject:groupTitle];
     //: PassagePortInsideSlip *pair = [_groups objectAtIndex:groupIndex];

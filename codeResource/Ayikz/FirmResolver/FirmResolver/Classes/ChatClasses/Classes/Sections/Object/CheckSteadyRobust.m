@@ -219,7 +219,7 @@ dispatch_queue_t depthQueue()
 @property (nonatomic,strong) NIMSession *edit;
 
 //: @property (nonatomic,strong) NIMMessage *referenceMessage;
-@property (nonatomic,strong) NIMMessage *failMessage;
+@property (nonatomic,strong) NIMMessage *vehicle;
 
 //: @property (nonatomic,assign) DropdownSpringEndExtract sessionState;
 @property (nonatomic,assign) DropdownSpringEndExtract general;
@@ -275,7 +275,7 @@ dispatch_queue_t depthQueue()
              balloon:(void(^)(NSError *error))completion
 {
     //: NIMMessage *message = self.referenceMessage;
-    NIMMessage *message = self.failMessage;
+    NIMMessage *message = self.vehicle;
     //: if (message)
     if (message)
     {
@@ -295,7 +295,7 @@ dispatch_queue_t depthQueue()
         //: }];
         }];
         //: self.referenceMessage = nil;
-        self.failMessage = nil;
+        self.vehicle = nil;
     }
 }
 
@@ -375,10 +375,10 @@ dispatch_queue_t depthQueue()
         }];
     }
     //: else if ([self.sessionConfig respondsToSelector:@selector(threadMessage)] && [self.sessionConfig threadMessage])
-    else if ([self.reiterate respondsToSelector:@selector(sinceSoundses)] && [self.reiterate phoneMessage])
+    else if ([self.reiterate respondsToSelector:@selector(sinceSoundses)] && [self.reiterate sinceSoundses])
     {
         //: NIMMessage *threadMessage = [self.sessionConfig threadMessage];
-        NIMMessage *threadMessage = [self.reiterate phoneMessage];
+        NIMMessage *threadMessage = [self.reiterate sinceSoundses];
         //: [[[NIMSDK sharedSDK] chatExtendManager] reply:message
         [[[NIMSDK sharedSDK] chatExtendManager] reply:message
                                                    //: to:threadMessage
@@ -1276,7 +1276,7 @@ dispatch_queue_t depthQueue()
                                                   completion:^(NSError * _Nullable error)
     {
         //: weakSelf.referenceMessage = nil;
-        weakSelf.failMessage = nil;
+        weakSelf.vehicle = nil;
         //: [weakSelf refreshQuickComments:message completion:nil];
         [weakSelf fail:message way:nil];
         //: if (completion)
@@ -1436,10 +1436,10 @@ dispatch_queue_t depthQueue()
                                                 error:nil];
     }
     //: else if ([self.sessionConfig respondsToSelector:@selector(threadMessage)] && [self.sessionConfig threadMessage])
-    else if ([self.reiterate respondsToSelector:@selector(sinceSoundses)] && [self.reiterate phoneMessage])
+    else if ([self.reiterate respondsToSelector:@selector(sinceSoundses)] && [self.reiterate sinceSoundses])
     {
         //: NIMMessage *threadMessage = [self.sessionConfig threadMessage];
-        NIMMessage *threadMessage = [self.reiterate phoneMessage];
+        NIMMessage *threadMessage = [self.reiterate sinceSoundses];
         //: [[[NIMSDK sharedSDK] chatExtendManager] reply:message
         [[[NIMSDK sharedSDK] chatExtendManager] reply:message
                                                    //: to:threadMessage

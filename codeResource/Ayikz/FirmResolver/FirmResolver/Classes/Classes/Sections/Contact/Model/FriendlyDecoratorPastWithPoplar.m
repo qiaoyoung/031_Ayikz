@@ -131,13 +131,13 @@ typedef struct {
 }
 
 //: - (NSString *)memberId{
-- (NSString *)handsome{
+- (NSString *)existId{
     //: return self.info.infoId;
     return self.white.be;
 }
 
 //: - (NSString *)groupTitle {
-- (NSString *)outside {
+- (NSString *)earlyish {
     //: NSString *title = [[EliteJunctionNavigationBar sharedCenter] firstLetter:self.info.showName].capitalizedString;
     NSString *title = [[EliteJunctionNavigationBar distance] primeModeRoundRobin:self.white.showNumberro].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
@@ -172,13 +172,13 @@ typedef struct {
 }
 
 //: - (id)sortKey {
-- (id)suiteToRound {
+- (id)daisyChain {
     //: return [[EliteJunctionNavigationBar sharedCenter] spellingForString:self.info.showName].shortSpelling;
     return [[EliteJunctionNavigationBar distance] block:self.white.showNumberro].domePassing;
 }
 
 //: - (NSString *)showName{
-- (NSString *)plageName{
+- (NSString *)channel{
     //: return self.info.showName;
     return self.white.showNumberro;
 }
