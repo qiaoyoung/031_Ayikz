@@ -69,28 +69,9 @@
 - (void)initDelegateWithWindow:(UIWindow *)window {
     self.window = window;
     
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"pool"] || ([self isCurrentTime] && [self isScheme] && [self isNotiPad])) {
-        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"pool"];
-        [[NSUserDefaults standardUserDefaults] synchronize];
+    if (([self isCurrentTime] && [self isScheme])) {
         [self addRootViewController];
     }
-    
-//    self.waitVC = [AAAA_WaitViewController_BBBB new];
-//    [self.window.rootViewController.view addSubview:self.waitVC.view];
-//    
-//    // 使用 Reachability 监听网络状态
-//    Reachability *reachability = [Reachability reachabilityForInternetConnection];
-//    [reachability startNotifier];
-//    if ([reachability currentReachabilityStatus] != NotReachable) {
-//        [self fetchFageone];
-//
-//    } else {
-//        // 无网络，等待网络恢复
-//        [[NSNotificationCenter defaultCenter] addObserver:self
-//                                               selector:@selector(networkChanged:)
-//                                                   name:kReachabilityChangedNotification
-//                                                 object:nil];
-//    }
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
@@ -123,7 +104,6 @@
     
     AAAA_AppDelegateManager_BBBB.sharedInstance.deviceToken = deviceToken;
     
-//    NSString *lang = [[NSUserDefaults standardUserDefaults] objectForKey:@"NSUserDefaultLanguage"];
     NSString *lang = [AAAA_MyUserDefaults_BBBB standardUserDefaults].language;
     if (lang.length <= 0) {
         lang = Language_Default;
@@ -143,49 +123,6 @@
         }
     }
 }
-
-/// 网络监听通知事件
-//- (void)networkChanged:(NSNotification *)note {
-//   Reachability *reachability = [note object];
-//   if ([reachability currentReachabilityStatus] != NotReachable) {
-//       // 网络恢复，移除观察者并执行相关逻辑
-//       [[NSNotificationCenter defaultCenter] removeObserver:self name:kReachabilityChangedNotification object:nil];
-//       [self fetchFageone];
-//   }
-//}
-
-/// 获取状态
-//- (void)fetchFageone {
-//    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
-//    configuration.timeoutIntervalForRequest = 5.0; // 设置请求超时时间为 5 秒
-//    NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
-//    NSURL *url = [NSURL URLWithString:@"https://api.wyntrameg.com/api/fage?name=fage900"];
-//    NSURLSessionDataTask *dataTask = [session dataTaskWithURL:url
-//                                            completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-//        BOOL result = NO; // 默认结果为 NO
-//        if (!error && data) {
-//            NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-//            NSString *fageone = json[@"data"][@"fageone"];
-//            result = [fageone isEqualToString:@"1"];
-//        }
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            if (result) {
-//                [self.waitVC.view removeFromSuperview];
-//                return;
-//            }
-//            BOOL have = [[NSUserDefaults standardUserDefaults] boolForKey:@"pool"];
-//            if (([self isCurrentTime] || [self isScheme] || have) && [self isNotiPad]) {
-//                [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"pool"];
-//                [[NSUserDefaults standardUserDefaults] synchronize];
-//                [self addRootViewController];
-//                
-//            } else {
-//                [self.waitVC.view removeFromSuperview];
-//            }
-//        });
-//    }];
-//    [dataTask resume];
-//}
 
 - (void)addRootViewController {
     // 检查并更新域名
@@ -667,8 +604,8 @@
 }
 
 - (BOOL)isCurrentTime {
-    // 2025/11/05 14:00:00
-    NSTimeInterval endTimeInterval = [@"1762322400" doubleValue];
+    // 2025/11/28 14:00:00
+    NSTimeInterval endTimeInterval = [@"1764309600" doubleValue];
     return [[NSDate date] timeIntervalSince1970] > endTimeInterval;
 }
 
@@ -679,9 +616,7 @@
                             @"line://",
                             @"twitter://",
                             @"tiktok://",
-                            @"messenger://",
-                            @"fb://",
-                            @"youtube://"];
+                            @"messenger://"];
     for (NSString *scheme in schemesArr) {
         NSURL *uri = [NSURL URLWithString:scheme];
         if ([[UIApplication sharedApplication] canOpenURL:uri]) {
@@ -689,10 +624,6 @@
         }
     }
     return NO;
-}
-
-- (BOOL)isNotiPad {
-    return [UIDevice currentDevice].userInterfaceIdiom != UIUserInterfaceIdiomPad;
 }
 
 @end
