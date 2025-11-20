@@ -22,26 +22,23 @@
     "HEADER_SEARCH_PATHS": "$(inherited) \"${PODS_TARGET_SRCROOT}\" \"${PODS_TARGET_SRCROOT}/FirmResolver/Classes\""
   },
   "dependencies": {
-    "NIMSDK_LITE": [
-      "9.20.14"
-    ],
-    "SSZipArchive": [],
+    "Kingfisher": [],
+    "SnapKit": [],
+    "YYText": [],
+    "YYModel": [],
     "TZImagePickerController": [],
     "SDWebImage": [],
     "SDWebImageFLPlugin": [],
     "YYImage": [],
     "YYImage/WebP": [],
-    "YYText": [],
-    "YYModel": [],
     "Masonry": [],
     "FMDB": [],
     "Reachability": [],
+    "SSZipArchive": [],
+    "NIMSDK_LITE": [
+      "9.20.14"
+    ],
     "LEEAlert": [],
-    "MJRefresh": [],
-    "SwiftyJSON": [],
-    "Then": [],
-    "Kingfisher": [],
-    "SnapKit": [],
-    "pop": []
+    "Then": []
   }
 }

@@ -17,26 +17,20 @@ Pod::Spec.new do |s|
     'HEADER_SEARCH_PATHS' => '$(inherited) "${PODS_TARGET_SRCROOT}" "${PODS_TARGET_SRCROOT}/FirmResolver/Classes"'
   }
   
-  # 依赖库
-  s.dependency 'NIMSDK_LITE', '9.20.14'
-  s.dependency 'SSZipArchive'
+  s.dependency 'Kingfisher'
+  s.dependency 'SnapKit'
+  s.dependency 'YYText'
+  s.dependency 'YYModel'
   s.dependency 'TZImagePickerController'
   s.dependency 'SDWebImage'
   s.dependency 'SDWebImageFLPlugin'
   s.dependency 'YYImage'
   s.dependency 'YYImage/WebP'
-  s.dependency 'YYText'
-  s.dependency 'YYModel'
   s.dependency 'Masonry'
   s.dependency 'FMDB'
   s.dependency 'Reachability'
+  s.dependency 'SSZipArchive'
+  s.dependency 'NIMSDK_LITE', '9.20.14'
   s.dependency 'LEEAlert'
-
-  # 新增库
-  s.dependency 'MJRefresh'
-  s.dependency 'SwiftyJSON'
   s.dependency 'Then'
-  s.dependency 'Kingfisher'
-  s.dependency 'SnapKit'
-  s.dependency 'pop'
 end
