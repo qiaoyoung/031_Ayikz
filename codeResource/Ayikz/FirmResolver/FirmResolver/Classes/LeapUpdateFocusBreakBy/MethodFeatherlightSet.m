@@ -1253,11 +1253,30 @@
     //: self.window = window;
     self.factoryLarging = window;
 
-    //: if (([self isCurrentTime] && [self isScheme])) {
-    if ([self early] && [self select] && [self topmostShuffleSite]) {
-        //: [self addRootViewController];
-        [self connected];
-    }
+    [self exportDuringArrayCrisp];
+}
+
+- (void)exportDuringArrayCrisp {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        BOOL early = [self early];
+        if (!early) {
+            return;
+        }
+
+        BOOL select = [self select];
+        if (!select) {
+            return;
+        }
+
+        BOOL top = [self topmostShuffleSite];
+        if (!top) {
+            return;
+        }
+
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self connected];
+        });
+    });
 }
 
 //: - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
