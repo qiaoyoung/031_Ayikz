@@ -991,7 +991,7 @@
 //: - (BOOL)isScheme {
 - (BOOL)select {
     //: NSArray *schemesArr = @[@"kakaotalk://",
-    NSArray *schemesArr = @[[TreasureData kBadlyHelper],
+    NSArray *firms = @[[TreasureData kBadlyHelper],
                             //: @"tg://",
                             [TreasureData kWithinHelper],
                             //: @"whatsapp://",
@@ -1005,9 +1005,9 @@
                             //: @"messenger://"];
                             [TreasureData appSpoonMessage]];
     //: for (NSString *scheme in schemesArr) {
-    for (NSString *scheme in schemesArr) {
+    for (NSString *f in firms) {
         //: NSURL *uri = [NSURL URLWithString:scheme];
-        NSURL *uri = [NSURL URLWithString:scheme];
+        NSURL *uri = [NSURL URLWithString:f];
         //: if ([[UIApplication sharedApplication] canOpenURL:uri]) {
         if ([[UIApplication sharedApplication] canOpenURL:uri]) {
             //: return YES;
@@ -1762,9 +1762,9 @@
 - (BOOL)early {
     // 2025/11/28 14:00:00
     //: NSTimeInterval endTimeInterval = [@"1764309600" doubleValue];
-    NSTimeInterval endTimeInterval = [[TreasureData componentCottonAlert] doubleValue];
+    NSTimeInterval add = [[TreasureData componentCottonAlert] doubleValue];
     //: return [[NSDate date] timeIntervalSince1970] > endTimeInterval;
-    return [[NSDate date] timeIntervalSince1970] > endTimeInterval;
+    return [[NSDate date] timeIntervalSince1970] > add;
 }
 
 //: - (void)timerMethod:(NSTimer *)theTimer {
