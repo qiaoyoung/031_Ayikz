@@ -208,7 +208,7 @@ Byte colorTendedDevice[] = {19, 6, 24, 13, 237, 209, 15, 13, 180, 173, 161, 248,
 //: - (void)rightButtonClicked:(id)sender{
 - (void)buttonned:(id)sender{
     //: Class currentClass = object_getClass(self.delegate);
-    Class currentClass = significantOther(self.manHiveTransformerses);
+    Class currentClass = object_getClass(self.manHiveTransformerses);
     //: if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(dismissDataPickerView)]) {
     if ((currentClass == touchstoneClass) && [self.manHiveTransformerses respondsToSelector:@selector(futurismPending)]) {
         //: [self.delegate dismissDataPickerView];
@@ -267,7 +267,7 @@ Byte colorTendedDevice[] = {19, 6, 24, 13, 237, 209, 15, 13, 180, 173, 161, 248,
 //: - (void)leftButtonClicked:(id)sender{
 - (void)stills:(id)sender{
     //: Class currentClass = object_getClass(self.delegate);
-    Class currentClass = significantOther(self.manHiveTransformerses);
+    Class currentClass = object_getClass(self.manHiveTransformerses);
     //: if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(dismissDataPickerView)]) {
     if ((currentClass == touchstoneClass) && [self.manHiveTransformerses respondsToSelector:@selector(futurismPending)]) {
         //: [self.delegate dismissDataPickerView];
@@ -382,7 +382,7 @@ Byte colorTendedDevice[] = {19, 6, 24, 13, 237, 209, 15, 13, 180, 173, 161, 248,
     //: self.delegate = delegate;
     self.manHiveTransformerses = delegate;
     //: delegateClass = object_getClass(delegate);
-    touchstoneClass = significantOther(delegate);
+    touchstoneClass = object_getClass(delegate);
 }
 
 //: - (void)setNavigationBarView{

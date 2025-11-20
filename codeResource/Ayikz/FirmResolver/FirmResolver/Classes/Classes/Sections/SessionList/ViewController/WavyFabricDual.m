@@ -732,7 +732,7 @@
 //: @property (nonatomic,strong) NascentBalancerSnackbarWrite *header;
 @property (nonatomic,strong) NascentBalancerSnackbarWrite *minimumTaskHeader;
 
-@property (nonatomic, strong) PlainBindAboveScrollViewView *pool//: @property (nonatomic, strong) LabelGreatUprightWingHardy *policyView;
+@property (nonatomic, strong) PlainBindAboveScrollViewView *pool;//: @property (nonatomic, strong) LabelGreatUprightWingHardy *policyView;
 @property (nonatomic, strong) LabelGreatUprightWingHardy *stint;
 
 /** 下拉菜单 */

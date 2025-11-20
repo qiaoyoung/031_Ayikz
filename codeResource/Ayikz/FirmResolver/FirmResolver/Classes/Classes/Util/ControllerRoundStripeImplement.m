@@ -109,8 +109,8 @@ static void vibrateMac(SystemSoundID soundID, void *data)
     {
         //: SEL selector = NSSelectorFromString(@"vibrate");
         SEL selector = NSSelectorFromString([RedConstantData featureSelectionPath]);
-        //: SuppressPerformSelectorLeakWarning([(ControllerRoundStripeImplement *)notifier performSelector:selector withObject:nil afterDelay:1.0]);
-        SuppressPerformSelectorLeakWarning([(ControllerRoundStripeImplement *)notifier performSelector:selector withObject:nil afterDelay:1.0]);
+        //:  ([(ControllerRoundStripeImplement *)notifier performSelector:selector withObject:nil afterDelay:1.0]);
+         ([(ControllerRoundStripeImplement *)notifier performSelector:selector withObject:nil afterDelay:1.0]);
     }
 }
 

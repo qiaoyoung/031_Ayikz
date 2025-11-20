@@ -40,7 +40,7 @@ NS_AVAILABLE_IOS(8_0);// UI_APPEARANCE_SELECTOR;
 //: @property (nonatomic) IBInspectable BOOL showsText; 
 @property (nonatomic) IBInspectable BOOL channelResolve;// UI_APPEARANCE_SELECTOR;
 //: @property (nonatomic) UIBlurEffect *blurEffect NS_AVAILABLE_IOS(8_0); 
-@property (nonatomic) UIBlurEffect *toAGreaterExtent
+@property (nonatomic) UIBlurEffect *toAGreaterExtent;
 //: @property (nonatomic, readonly) UILabel *textLabel; 
 @property (nonatomic, readonly) UILabel *labelLikely;// UI_APPEARANCE_SELECTOR;
  //: @property (nonatomic) UIView *backgroundView; 

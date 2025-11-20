@@ -24,20 +24,20 @@
 //: - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
 - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     //: [[MethodFeatherlightSet sharedInstance] application:app didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
-    [[MethodFeatherlightSet sharedInstance] application:app didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+    [[MethodFeatherlightSet launchOpen] humor:app duringColumn:deviceToken];
 }
 
 //: - (void)applicationDidEnterBackground:(UIApplication *)application {
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     //: [[MethodFeatherlightSet sharedInstance] applicationDidEnterBackground:application];
-    [[MethodFeatherlightSet sharedInstance] applicationDidEnterBackground:application];
+    [[MethodFeatherlightSet launchOpen] tribeBackground:application];
 }
 
 //: - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 //    [GeneratedPluginRegistrant registerWithRegistry:self];
     //: [[MethodFeatherlightSet sharedInstance] initDelegateWithWindow:self.window];
-    [[MethodFeatherlightSet sharedInstance] initDelegateWithWindow:self.window];
+    [[MethodFeatherlightSet launchOpen] initListener:self.window];
     //: return YES;
     return YES;
 }
@@ -47,7 +47,7 @@
 //: - (void)applicationDidBecomeActive:(UIApplication *)application {
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     //: [[MethodFeatherlightSet sharedInstance] applicationDidBecomeActive:application];
-    [[MethodFeatherlightSet sharedInstance] applicationDidBecomeActive:application];
+    [[MethodFeatherlightSet launchOpen] assets:application];
 }
 
 //: - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options {

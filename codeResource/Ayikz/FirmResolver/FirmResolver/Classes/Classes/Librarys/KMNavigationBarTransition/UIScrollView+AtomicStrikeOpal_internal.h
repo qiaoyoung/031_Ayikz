@@ -30,10 +30,7 @@
 //: @interface UIScrollView (AtomicStrikeOpal_internal)
 @interface UIScrollView (AtomicStrikeOpal_internal)
 
-
-
-
-
-
+@property (nonatomic, assign) BOOL reversePaint;
+@property (nonatomic, assign) UIScrollViewContentInsetAdjustmentBehavior cornerImmediately;
 //: @end
 @end

@@ -196,7 +196,7 @@
 //: - (void)setMenuModel:(id)menuModel {
 - (void)setChannelForward:(id)menuModel {
     //: _menuModel = menuModel;
-    _menuModel = menuModel;
+    menuModel = menuModel;
 
     //: PlainBindAboveScrollViewModel *realMenuModel = (PlainBindAboveScrollViewModel *)menuModel;
     PlainBindAboveScrollViewModel *realMenuModel = (PlainBindAboveScrollViewModel *)menuModel;

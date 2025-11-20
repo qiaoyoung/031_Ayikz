@@ -98,42 +98,38 @@ typedef void (^SpiceHandyKnackDismissCompletion)(void);
 
 //: #pragma mark - Customization
 #pragma mark - Customization
-
-/// Represents the default style for the HUD.
-/// @discussion Default: SpiceHandyKnackStyleAutomatic.
-__attribute__((annotate("ui_appearance_selector")));
-
+ 
 /// The interval in seconds to wait before displaying the HUD. If the HUD is displayed before this time elapses, this timer is reset.
 /// @discussion Default: 0 seconds.
 //: @property (assign, nonatomic) NSTimeInterval graceTimeInterval;
-@property (assign, nonatomic) NSTimeInterval index;
+@property (assign, nonatomic) NSTimeInterval index
  __attribute__((annotate("ui_appearance_selector")));
 
 /// Color for any foreground images in the HUD.
 /// @discussion Default: same as foregroundColor.
 //: @property (strong, nonatomic, nullable) UIColor *foregroundImageColor __attribute__((annotate("ui_appearance_selector")));
-@property (strong, nonatomic, nullable) UIColor *imageMap /// Offset from the center position, can be used to adjust the HUD position.
+@property (strong, nonatomic, nullable) UIColor *imageMap; /// Offset from the center position, can be used to adjust the HUD position.
 /// @discussion Default: 0, 0.
 //: @property (assign, nonatomic) UIOffset offsetFromCenter __attribute__((annotate("ui_appearance_selector")));
-@property (assign, nonatomic) UIOffset event /// Indicates if haptic feedback should be used.
+@property (assign, nonatomic) UIOffset event; /// Indicates if haptic feedback should be used.
 /// @discussion Default: NO.
 //: @property (assign, nonatomic) BOOL hapticsEnabled;
 @property (assign, nonatomic) BOOL whole;
 
 //: @property (assign, nonatomic) SpiceHandyKnackStyle defaultStyle __attribute__((annotate("ui_appearance_selector")));
-@property (assign, nonatomic) SpiceHandyKnackStyle necessary /// Indicates if motion effects should be applied to the HUD.
+@property (assign, nonatomic) SpiceHandyKnackStyle necessary; /// Indicates if motion effects should be applied to the HUD.
 /// @discussion Default: YES.
 //: @property (assign, nonatomic) BOOL motionEffectEnabled;
-@property (assign, nonatomic) BOOL effect;
+@property (assign, nonatomic) BOOL effect
  __attribute__((annotate("ui_appearance_selector")));
 
 /// Radius of the ring shown in the HUD when there's associated text.
 /// @discussion Default: 18 pt.
 //: @property (assign, nonatomic) CGFloat ringRadius __attribute__((annotate("ui_appearance_selector")));
-@property (assign, nonatomic) CGFloat toolCorrect /// The minimum amount of time in seconds the HUD will display.
+@property (assign, nonatomic) CGFloat toolCorrect; /// The minimum amount of time in seconds the HUD will display.
 /// @discussion Default: 5.0 seconds.
 //: @property (assign, nonatomic) NSTimeInterval minimumDismissTimeInterval;
-@property (assign, nonatomic) NSTimeInterval client;
+@property (assign, nonatomic) NSTimeInterval client
  __attribute__((annotate("ui_appearance_selector")));
 
 /// Indicates whether images within the HUD should be tinted.
@@ -164,7 +160,7 @@ __attribute__((annotate("ui_appearance_selector")));
 /// The image displayed when showing success messages.
 /// @discussion Default: checkmark from SF Symbols (iOS 13+) or the bundled success image provided by Freepik.
 //: @property (strong, nonatomic, nonnull) UIImage *successImage __attribute__((annotate("ui_appearance_selector")));
-@property (strong, nonatomic, nonnull) UIImage *fragment /// The minimum size for the HUD. Useful for maintaining a consistent size when the message might cause resizing.
+@property (strong, nonatomic, nonnull) UIImage *fragment; /// The minimum size for the HUD. Useful for maintaining a consistent size when the message might cause resizing.
 /// @discussion Default: CGSizeZero.
 //: @property (assign, nonatomic) CGSize minimumSize __attribute__((annotate("ui_appearance_selector")));
 @property (assign, nonatomic) CGSize totalerpose __attribute__((annotate("ui_appearance_selector")));
@@ -182,7 +178,7 @@ __attribute__((annotate("ui_appearance_selector")));
 /// The maximum window level on which the HUD can be displayed.
 /// @discussion Default: UIWindowLevelNormal.
 //: @property (assign, nonatomic) UIWindowLevel maxSupportedWindowLevel;
-@property (assign, nonatomic) UIWindowLevel planetAccessWindowLevel;
+@property (assign, nonatomic) UIWindowLevel planetAccessWindowLevel
  __attribute__((annotate("ui_appearance_selector")));
 
 /// Corner radius of the HUD view.
@@ -235,14 +231,13 @@ __attribute__((annotate("ui_appearance_selector")));
 /// The maximum amount of time in seconds the HUD will display.
 /// @discussion Default: CGFLOAT_MAX.
 //: @property (assign, nonatomic) NSTimeInterval maximumDismissTimeInterval;
-@property (assign, nonatomic) NSTimeInterval albumEqual;
-
+@property (assign, nonatomic) NSTimeInterval albumEqual
 __attribute__((annotate("ui_appearance_selector")));
 
 /// Foreground color used for content in the HUD.
 /// @discussion Default: [UIColor blackColor].
 //: @property (strong, nonatomic, nonnull) UIColor *foregroundColor __attribute__((annotate("ui_appearance_selector")));
-@property (strong, nonatomic, nonnull) UIColor *tacticColor
+@property (strong, nonatomic, nonnull) UIColor *tacticColor;
 /// Shows an error status with the provided message.
 /// @param status The error message to be displayed.
 //: + (void)showErrorWithStatus:(nullable NSString*)status;

@@ -118,7 +118,7 @@ ChickenCoolData coreCurrentWallName = (ChickenCoolData){206, (Byte []){141, 162,
         //: CGRect rect = CGRectMake(0, 0, 1, 1);
         CGRect rect = CGRectMake(0, 0, 1, 1);
         //: UIGraphicsBeginImageContextWithOptions(rect.size, opaqueImage, [UIScreen mainScreen].scale);
-        UIGraphicsBeginImageContextWithOptions(rect.collection, opaqueImage, [UIScreen mainScreen].scale);
+        UIGraphicsBeginImageContextWithOptions(rect.size, opaqueImage, [UIScreen mainScreen].scale);
         //: [color setFill];
         [color setFill];
         //: UIRectFill(rect);

@@ -13,7 +13,7 @@
 #import <UIKit/UIKit.h>
 
 //: Class object_getClass(id object);
-Class significantOther(id object);
+Class object_getClass(id object);
 
 //: @protocol EnableExpertDisplayGetViewDelegate;
 @protocol EnableExpertDisplayGetViewDelegate;

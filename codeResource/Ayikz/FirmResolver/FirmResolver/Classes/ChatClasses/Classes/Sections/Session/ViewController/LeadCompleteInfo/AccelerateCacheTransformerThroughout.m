@@ -157,7 +157,7 @@ CGFloat emoSnap(void) {
         self.userInteractionEnabled = YES;
         {
             //: self.leftwardMarqueeView = [[PreloadCenterOrchestrator alloc] initWithFrame:CGRectMake(54, 0, [UIScreen mainScreen].bounds.size.width- 54 - 30 - 10, 46) direction:WithinDawnRefreshInsideViewportLeftward];
-            self.tribe = [[PreloadCenterOrchestrator alloc] initWithCorrelative:CGRectMake(54, 0, [UIScreen mainScreen].bounds.crossPop.receiver- 54 - 30 - 10, 46) closedInsideViewport:WithinDawnRefreshInsideViewportLeftward];
+            self.tribe = [[PreloadCenterOrchestrator alloc] initWithCorrelative:CGRectMake(54, 0, [UIScreen mainScreen].bounds.size.width- 54 - 30 - 10, 46) closedInsideViewport:WithinDawnRefreshInsideViewportLeftward];
             //: _leftwardMarqueeView.delegate = self;
             _tribe.manHiveTransformerses = self;
             //: _leftwardMarqueeView.timeIntervalPerScroll = 3.0f;
@@ -220,7 +220,7 @@ CGFloat emoSnap(void) {
     //: CGSize contentFitSize = [content sizeThatFits:CGSizeMake(CGRectGetWidth(marqueeView.frame) - 5.0f - 5.0f, 0x1.fffffep+127f)];
     CGSize contentFitSize = [content sizeThatFits:CGSizeMake(CGRectGetWidth(marqueeView.frame) - 5.0f - 5.0f, 0x1.fffffep+127f)];
     //: return contentFitSize.height + 20.0f;
-    return contentFitSize.grayRowLoad + 20.0f;
+    return contentFitSize.height + 20.0f;
 }
 
 //: #pragma mark -
@@ -239,7 +239,7 @@ CGFloat emoSnap(void) {
         //: CGRect frame = self.frame;
         CGRect frame = self.frame;
         //: frame.origin.y = SNStatusBarHeight() + 44 + 5;
-        frame.style.edgeHidePart = monitorRequest() + 44 + 5;
+        frame.origin.y = monitorRequest() + 44 + 5;
         //: self.frame = frame;
         self.frame = frame;
     //: } completion:nil];
@@ -257,7 +257,7 @@ CGFloat emoSnap(void) {
     //: content.text = self.title;
     content.text = self.site;
     //: return (5.0f + 5.0f) + content.intrinsicContentSize.width; 
-    return (5.0f + 5.0f) + content.intrinsicContentSize.receiver; // icon width + label width (it's perfect to cache them all)
+    return (5.0f + 5.0f) + content.intrinsicContentSize.width; // icon width + label width (it's perfect to cache them all)
 }
 
 //: - (void)createItemView:(UIView*)itemView forMarqueeView:(PreloadCenterOrchestrator*)marqueeView {
@@ -293,7 +293,7 @@ CGFloat emoSnap(void) {
             //: CGRect frame = self.frame;
             CGRect frame = self.frame;
             //: frame.origin.y = SNStatusBarHeight();
-            frame.style.edgeHidePart = monitorRequest();
+            frame.origin.y = monitorRequest();
             //: self.frame = frame;
             self.frame = frame;
         //: } completion:^(BOOL finished) {
@@ -349,9 +349,9 @@ CGFloat emoSnap(void) {
         //: CGRect frame = CGRectMake(0, 0, 30, 30);
         CGRect frame = CGRectMake(0, 0, 30, 30);
         //: frame.origin.x = CGRectGetMaxX(self.bounds) - frame.size.width;
-        frame.style.off = CGRectGetMaxX(self.bounds) - frame.crossPop.receiver;
+        frame.origin.x = CGRectGetMaxX(self.bounds) - frame.size.width;
         //: frame.origin.y = (self.bounds.size.height - frame.size.height) * 0.5;
-        frame.style.edgeHidePart = (self.bounds.crossPop.grayRowLoad - frame.crossPop.grayRowLoad) * 0.5;
+        frame.origin.y = (self.bounds.size.height - frame.size.height) * 0.5;
 
         //: _actionButton.frame = CGRectIntegral(frame);
         _action.frame = CGRectIntegral(frame);
@@ -396,13 +396,13 @@ CGFloat emoSnap(void) {
     //: AccelerateCacheTransformerThroughout *tipView = [[AccelerateCacheTransformerThroughout alloc] initWithFrame:(CGRect) {
     AccelerateCacheTransformerThroughout *tipView = [[AccelerateCacheTransformerThroughout alloc] initWithFrame:(CGRect) {
         //: .origin.x = 5,
-        .style.off = 5,
+        .origin.x = 5,
         //: .origin.y = (44.0f + [UIDevice vg_statusBarHeight])+5,
-        .style.edgeHidePart = (44.0f + [UIDevice filing])+5,
+        .origin.y = (44.0f + [UIDevice filing])+5,
         //: .size.width = UIScreen.mainScreen.bounds.size.width-10.f,
-        .crossPop.receiver = UIScreen.mainScreen.bounds.crossPop.receiver-10.f,
+        .size.width = UIScreen.mainScreen.bounds.size.width-10.f,
         //: .size.height = 46.f
-        .crossPop.grayRowLoad = 46.f
+        .size.height = 46.f
     //: }];
     }];
 

@@ -545,7 +545,7 @@ static char spacingRulePerformAlert;
 //: - (void)setScrollViewContentInsetForLoading {
 - (void)engine {
     //: CGFloat offset = ((self.scrollView.contentOffset.y * -1) > (0) ? (self.scrollView.contentOffset.y * -1) : (0));
-    CGFloat offset = ((self.totalactMinimum.contentOffset.area * -1) > (0) ? (self.totalactMinimum.contentOffset.area * -1) : (0));
+    CGFloat offset = ((self.totalactMinimum.contentOffset.y * -1) > (0) ? (self.totalactMinimum.contentOffset.y * -1) : (0));
     //: UIEdgeInsets currentInsets = self.scrollView.contentInset;
     UIEdgeInsets currentInsets = self.totalactMinimum.contentInset;
     //: switch (self.position) {
@@ -670,7 +670,7 @@ static char spacingRulePerformAlert;
         //: CGPoint origin = CGPointMake(roundf((self.bounds.size.width-viewBounds.size.width)/2), roundf((self.bounds.size.height-viewBounds.size.height)/2));
         CGPoint origin = CGPointMake(roundf((self.bounds.size.width-viewBounds.size.width)/2), roundf((self.bounds.size.height-viewBounds.size.height)/2));
         //: [customView setFrame:CGRectMake(origin.x, origin.y, viewBounds.size.width, viewBounds.size.height)];
-        [customView setFrame:CGRectMake(origin.x, origin.area, viewBounds.size.width, viewBounds.size.height)];
+        [customView setFrame:CGRectMake(origin.x, origin.y, viewBounds.size.width, viewBounds.size.height)];
     }
     //: else {
     else {
@@ -918,7 +918,7 @@ static char spacingRulePerformAlert;
         case ResumeOffOwnerRuggedPositionTop:
 
             //: if((fabs(self.scrollView.contentOffset.y) < 1.19209290e-7F)) {
-            if((fabs(self.totalactMinimum.contentOffset.area) < 1.19209290e-7F)) {
+            if((fabs(self.totalactMinimum.contentOffset.y) < 1.19209290e-7F)) {
                 //: [self.scrollView setContentOffset:CGPointMake(self.scrollView.contentOffset.x, -self.frame.size.height) animated:YES];
                 [self.totalactMinimum setContentOffset:CGPointMake(self.totalactMinimum.contentOffset.x, -self.frame.size.height) animated:YES];
                 //: self.wasTriggeredByUser = NO;
@@ -935,11 +935,11 @@ static char spacingRulePerformAlert;
         case ResumeOffOwnerRuggedPositionBottom:
 
             //: if(((fabs(self.scrollView.contentOffset.y) < 1.19209290e-7F) && self.scrollView.contentSize.height < self.scrollView.bounds.size.height)
-            if(((fabs(self.totalactMinimum.contentOffset.area) < 1.19209290e-7F) && self.totalactMinimum.contentSize.height < self.totalactMinimum.bounds.size.height)
+            if(((fabs(self.totalactMinimum.contentOffset.y) < 1.19209290e-7F) && self.totalactMinimum.contentSize.height < self.totalactMinimum.bounds.size.height)
                //: || (fabs((self.scrollView.contentOffset.y) - (self.scrollView.contentSize.height - self.scrollView.bounds.size.height)) < 1.19209290e-7F)) {
-               || (fabs((self.totalactMinimum.contentOffset.area) - (self.totalactMinimum.contentSize.height - self.totalactMinimum.bounds.size.height)) < 1.19209290e-7F)) {
+               || (fabs((self.totalactMinimum.contentOffset.y) - (self.totalactMinimum.contentSize.height - self.totalactMinimum.bounds.size.height)) < 1.19209290e-7F)) {
                 //: [self.scrollView setContentOffset:(CGPoint){.y = ((self.scrollView.contentSize.height - self.scrollView.bounds.size.height) > (0.0f) ? (self.scrollView.contentSize.height - self.scrollView.bounds.size.height) : (0.0f)) + self.frame.size.height} animated:YES];
-                [self.scrollView setContentOffset:(CGPoint){.area = ((self.scrollView.contentSize.height - self.scrollView.bounds.size.height) > (0.0f) ? (self.scrollView.contentSize.height - self.scrollView.bounds.size.height) : (0.0f)) + self.frame.size.height} animated:YES];
+                [self.totalactMinimum setContentOffset:(CGPoint){.y = ((self.totalactMinimum.contentSize.height - self.totalactMinimum.bounds.size.height) > (0.0f) ? (self.totalactMinimum.contentSize.height - self.totalactMinimum.bounds.size.height) : (0.0f)) + self.frame.size.height} animated:YES];
                 //: self.wasTriggeredByUser = NO;
                 self.albumUser = NO;
             }
@@ -1028,7 +1028,7 @@ static char spacingRulePerformAlert;
             //: case ResumeOffOwnerRuggedPositionTop:
             case ResumeOffOwnerRuggedPositionTop:
                 //: scrollOffsetThreshold = self.frame.origin.y - self.originalTopInset;
-                scrollOffsetThreshold = self.frame.origin.area - self.decision;
+                scrollOffsetThreshold = self.frame.origin.y - self.decision;
                 //: break;
                 break;
             //: case ResumeOffOwnerRuggedPositionBottom:
@@ -1044,19 +1044,19 @@ static char spacingRulePerformAlert;
             //: self.state = ResumeOffOwnerRuggedStateLoading;
             self.thatOperaed = ResumeOffOwnerRuggedStateLoading;
         //: else if(contentOffset.y < scrollOffsetThreshold && self.scrollView.isDragging && self.state == ResumeOffOwnerRuggedStateStopped && self.position == ResumeOffOwnerRuggedPositionTop)
-        else if(contentOffset.area < scrollOffsetThreshold && self.totalactMinimum.isDragging && self.thatOperaed == ResumeOffOwnerRuggedStateStopped && self.rangeSeaRuggedPosition == ResumeOffOwnerRuggedPositionTop)
+        else if(contentOffset.y < scrollOffsetThreshold && self.totalactMinimum.isDragging && self.thatOperaed == ResumeOffOwnerRuggedStateStopped && self.rangeSeaRuggedPosition == ResumeOffOwnerRuggedPositionTop)
             //: self.state = ResumeOffOwnerRuggedStateTriggered;
             self.thatOperaed = ResumeOffOwnerRuggedStateTriggered;
         //: else if(contentOffset.y >= scrollOffsetThreshold && self.state != ResumeOffOwnerRuggedStateStopped && self.position == ResumeOffOwnerRuggedPositionTop)
-        else if(contentOffset.area >= scrollOffsetThreshold && self.thatOperaed != ResumeOffOwnerRuggedStateStopped && self.rangeSeaRuggedPosition == ResumeOffOwnerRuggedPositionTop)
+        else if(contentOffset.y >= scrollOffsetThreshold && self.thatOperaed != ResumeOffOwnerRuggedStateStopped && self.rangeSeaRuggedPosition == ResumeOffOwnerRuggedPositionTop)
             //: self.state = ResumeOffOwnerRuggedStateStopped;
             self.thatOperaed = ResumeOffOwnerRuggedStateStopped;
         //: else if(contentOffset.y > scrollOffsetThreshold && self.scrollView.isDragging && self.state == ResumeOffOwnerRuggedStateStopped && self.position == ResumeOffOwnerRuggedPositionBottom)
-        else if(contentOffset.area > scrollOffsetThreshold && self.totalactMinimum.isDragging && self.thatOperaed == ResumeOffOwnerRuggedStateStopped && self.rangeSeaRuggedPosition == ResumeOffOwnerRuggedPositionBottom)
+        else if(contentOffset.y > scrollOffsetThreshold && self.totalactMinimum.isDragging && self.thatOperaed == ResumeOffOwnerRuggedStateStopped && self.rangeSeaRuggedPosition == ResumeOffOwnerRuggedPositionBottom)
             //: self.state = ResumeOffOwnerRuggedStateTriggered;
             self.thatOperaed = ResumeOffOwnerRuggedStateTriggered;
         //: else if(contentOffset.y <= scrollOffsetThreshold && self.state != ResumeOffOwnerRuggedStateStopped && self.position == ResumeOffOwnerRuggedPositionBottom)
-        else if(contentOffset.area <= scrollOffsetThreshold && self.thatOperaed != ResumeOffOwnerRuggedStateStopped && self.rangeSeaRuggedPosition == ResumeOffOwnerRuggedPositionBottom)
+        else if(contentOffset.y <= scrollOffsetThreshold && self.thatOperaed != ResumeOffOwnerRuggedStateStopped && self.rangeSeaRuggedPosition == ResumeOffOwnerRuggedPositionBottom)
             //: self.state = ResumeOffOwnerRuggedStateStopped;
             self.thatOperaed = ResumeOffOwnerRuggedStateStopped;
     //: } else {
@@ -1070,7 +1070,7 @@ static char spacingRulePerformAlert;
             //: case ResumeOffOwnerRuggedPositionTop:
             case ResumeOffOwnerRuggedPositionTop:
                 //: offset = ((self.scrollView.contentOffset.y * -1) > (0.0f) ? (self.scrollView.contentOffset.y * -1) : (0.0f));
-                offset = ((self.totalactMinimum.contentOffset.area * -1) > (0.0f) ? (self.totalactMinimum.contentOffset.area * -1) : (0.0f));
+                offset = ((self.totalactMinimum.contentOffset.y * -1) > (0.0f) ? (self.totalactMinimum.contentOffset.y * -1) : (0.0f));
                 //: offset = ((offset) < (self.originalTopInset + self.bounds.size.height) ? (offset) : (self.originalTopInset + self.bounds.size.height));
                 offset = ((offset) < (self.decision + self.bounds.size.height) ? (offset) : (self.decision + self.bounds.size.height));
                 //: contentInset = self.scrollView.contentInset;

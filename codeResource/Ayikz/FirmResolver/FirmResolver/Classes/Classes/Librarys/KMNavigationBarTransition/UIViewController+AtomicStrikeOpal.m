@@ -167,7 +167,7 @@
     //: [self.km_transitionNavigationBar removeFromSuperview];
     [self.sinceNavigations removeFromSuperview];
     //: self.km_transitionNavigationBar = bar;
-    self.km_transitionNavigationBarsetSinceNavigations = bar;
+    self.sinceNavigations = bar;
     //: [self km_resizeTransitionNavigationBarFrame];
     [self tingWritten];
     //: if (!self.navigationController.navigationBarHidden && !self.navigationController.navigationBar.hidden) {
@@ -251,11 +251,11 @@
         //: if (scrollView) {
         if (scrollView) {
             //: if (scrollView.km_shouldRestoreContentInsetAdjustmentBehavior) {
-            if (scrollView.km_shouldRestoreContentInsetAdjustmentBehavior) {
+            if (scrollView.reversePaint) {
                 //: scrollView.contentInsetAdjustmentBehavior = scrollView.km_originalContentInsetAdjustmentBehavior;
-                scrollView.contentInsetAdjustmentBehavior = scrollView.km_originalContentInsetAdjustmentBehavior;
+                scrollView.contentInsetAdjustmentBehavior = scrollView.cornerImmediately;
                 //: scrollView.km_shouldRestoreContentInsetAdjustmentBehavior = NO;
-                scrollView.km_shouldRestoreContentInsetAdjustmentBehavior = NO;
+                scrollView.reversePaint = NO;
             }
         }
     }
@@ -303,7 +303,7 @@
             //: [self.km_transitionNavigationBar removeFromSuperview];
             [self.sinceNavigations removeFromSuperview];
             //: self.km_transitionNavigationBar = nil;
-            self.km_transitionNavigationBarsetSinceNavigations = nil;
+            self.sinceNavigations = nil;
         }
     }
     //: if ([transitionViewController isEqual:self]) {
@@ -430,11 +430,11 @@
             //: if (contentInsetAdjustmentBehavior != UIScrollViewContentInsetAdjustmentNever) {
             if (contentInsetAdjustmentBehavior != UIScrollViewContentInsetAdjustmentNever) {
                 //: scrollView.km_originalContentInsetAdjustmentBehavior = contentInsetAdjustmentBehavior;
-                scrollView.km_originalContentInsetAdjustmentBehavior = contentInsetAdjustmentBehavior;
+                scrollView.cornerImmediately = contentInsetAdjustmentBehavior;
                 //: scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
                 scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
                 //: scrollView.km_shouldRestoreContentInsetAdjustmentBehavior = YES;
-                scrollView.km_shouldRestoreContentInsetAdjustmentBehavior = YES;
+                scrollView.reversePaint = YES;
             }
         }
     }

@@ -1478,8 +1478,8 @@ JovialTerminalRemoveClipEnqueueDelegate> {
         if ([contactItem respondsToSelector:@selector(nearStair)] && [contactItem nearStair].length) {
             //: SEL sel = NSSelectorFromString([contactItem selName]);
             SEL sel = NSSelectorFromString([contactItem nearStair]);
-            //: SuppressPerformSelectorLeakWarning([self performSelector:sel withObject:nil]);
-            SuppressPerformSelectorLeakWarning([self performSelector:sel withObject:nil]);
+            //:  ([self performSelector:sel withObject:nil]);
+             ([self performSelector:sel withObject:nil]);
         }
         //: else if (contactItem.vcName.length) {
         else if (contactItem.fundamentalForget.length) {

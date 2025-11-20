@@ -655,8 +655,8 @@ typedef void (^AFURLSessionTaskCompletionHandler)(NSURLResponse *response, id re
 //: @property (nonatomic, weak) AFURLSessionManager *manager;
 @property (nonatomic, weak) AFURLSessionManager *insert;
 //: @property (nonatomic, strong) NSURLSessionTaskMetrics *sessionTaskMetrics API_AVAILABLE(ios(10), macosx(10.12), watchos(3), tvos(10));
-@property (nonatomic, strong) NSURLSessionTaskMetrics *harmony//: @property (nonatomic, copy) NSURL *downloadFileURL;
-@property (nonatomic, copy) NSURL *down;
+@property (nonatomic, strong) NSURLSessionTaskMetrics *harmony;//: @property (nonatomic, copy) NSURL *downloadFileURL;
+@property (nonatomic, copy) NSURL *down
 API_AVAILABLE(ios(10), macosx(10.12), watchos(3), tvos(10));
 
 //: @property (nonatomic, copy) AFURLSessionDownloadTaskDidFinishDownloadingBlock downloadTaskDidFinishDownloading;
@@ -1221,7 +1221,7 @@ static NSString * const moduleKeepStarPage (NSString *value) {
 //: @property (readwrite, nonatomic, copy) AFURLSessionDataTaskDidReceiveDataBlock dataTaskDidReceiveData;
 @property (readwrite, nonatomic, copy) AFURLSessionDataTaskDidReceiveDataBlock hill;
 //: @property (readwrite, nonatomic, copy) AFURLSessionTaskDidFinishCollectingMetricsBlock taskDidFinishCollectingMetrics API_AVAILABLE(ios(10), macosx(10.12), watchos(3), tvos(10));
-@property (readwrite, nonatomic, copy) AFURLSessionTaskDidFinishCollectingMetricsBlock compound//: @property (readwrite, nonatomic, copy) AFURLSessionTaskDidSendBodyDataBlock taskDidSendBodyData;
+@property (readwrite, nonatomic, copy) AFURLSessionTaskDidFinishCollectingMetricsBlock compound;//: @property (readwrite, nonatomic, copy) AFURLSessionTaskDidSendBodyDataBlock taskDidSendBodyData;
 @property (readwrite, nonatomic, copy) AFURLSessionTaskDidSendBodyDataBlock limit;
 //: @property (readonly, nonatomic, copy) NSString *taskDescriptionForSessionTasks;
 @property (readonly, nonatomic, copy) NSString *programRoot;
@@ -1232,7 +1232,7 @@ static NSString * const moduleKeepStarPage (NSString *value) {
 //: @property (readwrite, nonatomic, strong) NSURLSessionConfiguration *sessionConfiguration;
 @property (readwrite, nonatomic, strong) NSURLSessionConfiguration *replacement;
 //: @property (readwrite, nonatomic, copy) AFURLSessionTaskDidCompleteBlock taskDidComplete;
-@property (readwrite, nonatomic, copy) AFURLSessionTaskDidCompleteBlock complete;
+@property (readwrite, nonatomic, copy) AFURLSessionTaskDidCompleteBlock complete
  API_UNAVAILABLE(macos);
 //: @property (readwrite, nonatomic, copy) AFURLSessionTaskWillPerformHTTPRedirectionBlock taskWillPerformHTTPRedirection;
 @property (readwrite, nonatomic, copy) AFURLSessionTaskWillPerformHTTPRedirectionBlock his;
@@ -1243,8 +1243,7 @@ static NSString * const moduleKeepStarPage (NSString *value) {
 //: @property (readwrite, nonatomic, strong) NSLock *lock;
 @property (readwrite, nonatomic, strong) NSLock *fire;
 //: @property (readwrite, nonatomic, copy) AFURLSessionDownloadTaskDidFinishDownloadingBlock downloadTaskDidFinishDownloading;
-@property (readwrite, nonatomic, copy) AFURLSessionDownloadTaskDidFinishDownloadingBlock nowNear;
-
+@property (readwrite, nonatomic, copy) AFURLSessionDownloadTaskDidFinishDownloadingBlock nowNear
 API_AVAILABLE(ios(10), macosx(10.12), watchos(3), tvos(10));
 
 //: @property (readwrite, nonatomic, copy) AFURLSessionDataTaskDidReceiveResponseBlock dataTaskDidReceiveResponse;
@@ -1258,7 +1257,7 @@ API_AVAILABLE(ios(10), macosx(10.12), watchos(3), tvos(10));
 //: @property (readwrite, nonatomic, copy) AFURLSessionTaskNeedNewBodyStreamBlock taskNeedNewBodyStream;
 @property (readwrite, nonatomic, copy) AFURLSessionTaskNeedNewBodyStreamBlock compareSectionWork;
 //: @property (readwrite, nonatomic, copy) AFURLSessionDidFinishEventsForBackgroundURLSessionBlock didFinishEventsForBackgroundURLSession API_UNAVAILABLE(macos);
-@property (readwrite, nonatomic, copy) AFURLSessionDidFinishEventsForBackgroundURLSessionBlock calculate//: @property (readwrite, nonatomic, copy) AFURLSessionDownloadTaskDidResumeBlock downloadTaskDidResume;
+@property (readwrite, nonatomic, copy) AFURLSessionDidFinishEventsForBackgroundURLSessionBlock calculate;//: @property (readwrite, nonatomic, copy) AFURLSessionDownloadTaskDidResumeBlock downloadTaskDidResume;
 @property (readwrite, nonatomic, copy) AFURLSessionDownloadTaskDidResumeBlock objectResumeBlock;
 //: @property (readwrite, nonatomic, copy) AFURLSessionDataTaskDidBecomeDownloadTaskBlock dataTaskDidBecomeDownloadTask;
 @property (readwrite, nonatomic, copy) AFURLSessionDataTaskDidBecomeDownloadTaskBlock length;

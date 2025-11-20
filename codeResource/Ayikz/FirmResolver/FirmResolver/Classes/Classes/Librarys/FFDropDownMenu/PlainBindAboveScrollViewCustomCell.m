@@ -93,7 +93,7 @@ Byte widgetOperaText[] = {31, 7, 54, 13, 43, 64, 178, 100, 135, 181, 168, 64, 22
 //: - (void)setMenuModel:(id)menuModel {
 - (void)setChannelForward:(id)menuModel {
     //: _menuModel = menuModel;
-    _menuModel = menuModel;
+    menuModel = menuModel;
 
     //: PlainBindAboveScrollViewModel *realMenuModel = (PlainBindAboveScrollViewModel *)menuModel;
     PlainBindAboveScrollViewModel *realMenuModel = (PlainBindAboveScrollViewModel *)menuModel;
