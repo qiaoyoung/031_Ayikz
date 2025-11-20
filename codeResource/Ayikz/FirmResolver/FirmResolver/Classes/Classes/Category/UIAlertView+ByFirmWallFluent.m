@@ -40,8 +40,7 @@ static char featureUnderAlert;
     objc_setAssociatedObject(self, &featureUnderAlert, nil, OBJC_ASSOCIATION_COPY);
 }
 
-//: - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
-- (void)that:(UIAlertView *)alertView scoff:(NSInteger)buttonIndex
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
     //: AlertBlock block = objc_getAssociatedObject(self, &kUIAlertViewBlockAddress);
     AlertBlock block = objc_getAssociatedObject(self, &featureUnderAlert);

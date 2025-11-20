@@ -1195,9 +1195,9 @@ JovialTerminalRemoveClipEnqueueDelegate> {
         //: id<ConstructListenerThroughPlanner> contactItem = (id<ConstructListenerThroughPlanner>)[_contacts memberOfIndex:indexPath];
         id<ConstructListenerThroughPlanner> contactItem = (id<ConstructListenerThroughPlanner>)[_snapContacts lawyerClientRelation:indexPath];
         //: if([contactItem respondsToSelector:@selector(userId)]){
-        if([contactItem respondsToSelector:@selector(lancewoodDomed)]){
+        if([contactItem respondsToSelector:@selector(userId)]){
             //: NSString * friendId = contactItem.userId;
-            NSString * friendId = contactItem.tenseId;
+            NSString * friendId = contactItem.userId;
             //: if ([ids containsObject:friendId]) {
             if ([ids containsObject:friendId]) {
                 //: [indexPaths addObject:indexPath];
@@ -1482,17 +1482,17 @@ JovialTerminalRemoveClipEnqueueDelegate> {
              ([self performSelector:sel withObject:nil]);
         }
         //: else if (contactItem.vcName.length) {
-        else if (contactItem.fundamentalForget.length) {
+        else if (contactItem.vcName.length) {
             //: Class clazz = NSClassFromString(contactItem.vcName);
-            Class clazz = NSClassFromString(contactItem.fundamentalForget);
+            Class clazz = NSClassFromString(contactItem.vcName);
             //: UIViewController * vc = [[clazz alloc] initWithNibName:nil bundle:nil];
             UIViewController * vc = [[clazz alloc] initWithNibName:nil bundle:nil];
             //: [self.navigationController pushViewController:vc animated:YES];
             [self.navigationController pushViewController:vc animated:YES];
         //: }else if([contactItem respondsToSelector:@selector(userId)]){
-        }else if([contactItem respondsToSelector:@selector(lancewoodDomed)]){
+        }else if([contactItem respondsToSelector:@selector(userId)]){
             //: NSString * friendId = contactItem.userId;
-            NSString * friendId = contactItem.tenseId;
+            NSString * friendId = contactItem.userId;
             //: [self enterPersonalCard:friendId];
             [self bind:friendId];
         }

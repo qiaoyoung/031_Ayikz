@@ -280,7 +280,7 @@
     //: if (self.link == nil) {
     if (self.trustFast == nil) {
         //: self.link = [CADisplayLink displayLinkWithTarget:[RadarResizeScopeMarsh weakProxyWithTarget:self] selector:@selector(updateUI)];
-        self.trustFast = [CADisplayLink displayLinkWithTarget:[RadarResizeScopeMarsh edgeTarget:self] selector:@selector(updateUI)];
+        self.trustFast = [CADisplayLink displayLinkWithTarget:[RadarResizeScopeMarsh edgeTarget:self] selector:@selector(exception)];
         //: [self.link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
         [self.trustFast addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
     }

@@ -154,7 +154,7 @@ typedef struct {
 }
 
 //: - (NSString *)userId{
-- (NSString *)near{
+- (NSString *)userId{
     //: return self.info.infoId;
     return self.white.be;
 }
@@ -186,7 +186,7 @@ typedef struct {
 //userId和Vcname必有一个有值，根据有值的状态push进不同的页面
 
 //: - (NSString *)vcName{
-- (NSString *)upperCrust{
+- (NSString *)vcName{
     //: return nil;
     return nil;
 }

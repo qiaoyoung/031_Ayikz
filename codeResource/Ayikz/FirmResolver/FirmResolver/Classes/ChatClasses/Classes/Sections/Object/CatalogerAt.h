@@ -137,7 +137,7 @@
 - (void)nim:(CGFloat)inputViewHeight;
 
 //: - (void)setDelegate:(id<FrameworkFocus>)delegate;
-- (void)setDate:(id<FrameworkFocus>)delegate;
+- (void)setDelegate:(id<FrameworkFocus>)delegate;
 
 //: - (void)layoutAfterRefresh;
 - (void)quantityro;

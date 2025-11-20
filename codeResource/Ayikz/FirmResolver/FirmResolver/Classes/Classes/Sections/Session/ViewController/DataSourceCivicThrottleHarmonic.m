@@ -217,7 +217,7 @@
 }
 
 //: - (id<WishDisplayWeightlessTrim>)sessionConfig
-- (id<WishDisplayWeightlessTrim>)original
+- (id<WishDisplayWeightlessTrim>)load
 {
     //: if (_sessionConfig == nil) {
     if (_original == nil) {

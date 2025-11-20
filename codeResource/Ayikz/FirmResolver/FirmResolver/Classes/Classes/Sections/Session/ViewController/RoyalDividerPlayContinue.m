@@ -1861,7 +1861,7 @@ QualityViewModelConstructGraciousNextDelegate>
 }
 
 //: - (void)showVideo:(NIMMessage *)message
-- (void)customLabel:(NIMMessage *)message
+- (void)showVideo:(NIMMessage *)message
 {
     //: NIMVideoObject *object = message.messageObject;
     NIMVideoObject *object = message.messageObject;
@@ -1902,7 +1902,7 @@ QualityViewModelConstructGraciousNextDelegate>
     }
 }
 //: - (void)onTapMenuItemPin:(StylerConfigTexture *)item
-- (void)recaptureSelected:(StylerConfigTexture *)item
+- (void)onTapMenuItemPin:(StylerConfigTexture *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self balloon];
@@ -1972,7 +1972,7 @@ QualityViewModelConstructGraciousNextDelegate>
 //: #pragma mark - 菜单
 #pragma mark - 菜单
 //: - (void)onTapMenuItemReply:(StylerConfigTexture *)item
-- (void)isVoice:(StylerConfigTexture *)item
+- (void)onTapMenuItemReply:(StylerConfigTexture *)item
 {
     //: NIMMessage *menuMessage = [self messageForMenu];
     NIMMessage *menuMessage = [self balloon];
@@ -2304,7 +2304,7 @@ QualityViewModelConstructGraciousNextDelegate>
 }
 
 //: - (void)onTapMenuItemDelete:(StylerConfigTexture *)item
-- (void)data:(StylerConfigTexture *)item
+- (void)onTapMenuItemDelete:(StylerConfigTexture *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self balloon];
@@ -2429,7 +2429,7 @@ QualityViewModelConstructGraciousNextDelegate>
 }
 
 //: - (void)onTapMenuItemReport:(StylerConfigTexture *)item
-- (void)chemical:(StylerConfigTexture *)item
+- (void)onTapMenuItemReport:(StylerConfigTexture *)item
 {
     //: [self.view addSubview:self.translateView];
     [self.view addSubview:self.hill];
@@ -2581,7 +2581,7 @@ QualityViewModelConstructGraciousNextDelegate>
 
 
 //: - (void)onTapMenuItemAudio2Text:(StylerConfigTexture *)item
-- (void)adjust:(StylerConfigTexture *)item
+- (void)onTapMenuItemAudio2Text:(StylerConfigTexture *)item
 {
 
 }
@@ -2731,7 +2731,7 @@ QualityViewModelConstructGraciousNextDelegate>
 }
 
 //: - (void)onTapMenuItemUnpin:(StylerConfigTexture *)item
-- (void)parsnip:(StylerConfigTexture *)item
+- (void)onTapMenuItemUnpin:(StylerConfigTexture *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self balloon];
@@ -2764,7 +2764,7 @@ QualityViewModelConstructGraciousNextDelegate>
 }
 
 //: - (void)onTapMenuItemRevoke:(StylerConfigTexture *)item
-- (void)albumRevoke:(StylerConfigTexture *)item
+- (void)onTapMenuItemRevoke:(StylerConfigTexture *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self balloon];
@@ -2926,7 +2926,7 @@ QualityViewModelConstructGraciousNextDelegate>
 }
 
 //: - (void)onTapMenuItemTranslation:(StylerConfigTexture *)item
-- (void)filter:(StylerConfigTexture *)item
+- (void)onTapMenuItemTranslation:(StylerConfigTexture *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self balloon];
@@ -3065,7 +3065,7 @@ QualityViewModelConstructGraciousNextDelegate>
 }
 
 //: - (void)showCustom:(NIMMessage *)message
-- (void)reload:(NIMMessage *)message
+- (void)showCustom:(NIMMessage *)message
 {
    //普通的自定义消息点击事件可以在这里做哦~
 
@@ -3229,7 +3229,7 @@ QualityViewModelConstructGraciousNextDelegate>
 
 
 //: - (void)onTapMenuItemForword:(StylerConfigTexture *)item
-- (void)supercilium:(StylerConfigTexture *)item
+- (void)onTapMenuItemForword:(StylerConfigTexture *)item
 {
     //: DapperPlayOutline *vc = [[DapperPlayOutline alloc]init];
     DapperPlayOutline *vc = [[DapperPlayOutline alloc]init];
@@ -3249,7 +3249,7 @@ QualityViewModelConstructGraciousNextDelegate>
 //: #pragma mark - Cell Actions
 #pragma mark - Cell Actions
 //: - (void)showImage:(NIMMessage *)message
-- (void)showFromPicture:(NIMMessage *)message
+- (void)showImage:(NIMMessage *)message
 {
     //: NIMImageObject *object = message.messageObject;
     NIMImageObject *object = message.messageObject;
@@ -3653,7 +3653,7 @@ QualityViewModelConstructGraciousNextDelegate>
 }
 
 //: - (void)onTapMenuItemMutiSelect:(StylerConfigTexture *)item
-- (void)mutiNotebook:(StylerConfigTexture *)item
+- (void)onTapMenuItemMutiSelect:(StylerConfigTexture *)item
 {
     //: [self switchUIWithSessionState:DropdownSpringEndExtractSelect];
     [self rate:DropdownSpringEndExtractSelect];
@@ -4198,7 +4198,7 @@ QualityViewModelConstructGraciousNextDelegate>
 }
 
  //: - (void)onTapMenuItemMark:(StylerConfigTexture *)item
-- (void)sectionTap:(StylerConfigTexture *)item
+- (void)onTapMenuItemMark:(StylerConfigTexture *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self balloon];
@@ -4606,7 +4606,7 @@ QualityViewModelConstructGraciousNextDelegate>
 }
 
 //: - (id<WishDisplayWeightlessTrim>)sessionConfig
-- (id<WishDisplayWeightlessTrim>)original
+- (id<WishDisplayWeightlessTrim>)load
 {
     //: if (_sessionConfig == nil) {
     if (_original == nil) {

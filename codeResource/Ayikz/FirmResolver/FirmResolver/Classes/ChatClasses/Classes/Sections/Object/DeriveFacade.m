@@ -104,7 +104,7 @@
     _year.current = layout;
 
     //: [layout setDelegate:_interactor];
-    [layout setDate:_year];
+    [layout setDelegate:_year];
 
     //: _tableAdapter = [[CreekConsolidateAgent alloc] init];
     _handwrittenAdapter = [[CreekConsolidateAgent alloc] init];

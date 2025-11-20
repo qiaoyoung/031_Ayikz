@@ -118,7 +118,7 @@
 @property (nonatomic,strong) id<WishDisplayWeightlessTrim> permission;
 
 //: @property (nonatomic,weak) id<FrameworkFocus> delegate;
-@property (nonatomic,weak) id<FrameworkFocus> manHiveTransformerses;
+@property (nonatomic,weak) id<FrameworkFocus> delegate;
 
 //: @end
 @end
@@ -589,10 +589,10 @@
 - (void)resolves:(id)sender
 {
     //: if ([self.delegate respondsToSelector:@selector(onRefresh)])
-    if ([self.manHiveTransformerses respondsToSelector:@selector(convertDisplay)])
+    if ([self.delegate respondsToSelector:@selector(convertDisplay)])
     {
         //: [self.delegate onRefresh];
-        [self.manHiveTransformerses convertDisplay];
+        [self.delegate convertDisplay];
     }
 }
 

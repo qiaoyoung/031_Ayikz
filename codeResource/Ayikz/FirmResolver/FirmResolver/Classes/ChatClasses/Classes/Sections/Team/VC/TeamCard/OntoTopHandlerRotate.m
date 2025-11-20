@@ -704,7 +704,7 @@
 //    cell.imageView.image = bodyData.img;
 
     //: if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
-    if ([bodyData respondsToSelector:@selector(remainApplies)] && bodyData.counterrupt) {
+    if ([bodyData respondsToSelector:@selector(counterrupt)] && bodyData.counterrupt) {
         //: cell.accessoryType = UITableViewCellAccessoryNone;
         cell.accessoryType = UITableViewCellAccessoryNone;
     //: }else{
@@ -971,7 +971,7 @@
     //: id<PreloadHelperGreenEpisode> bodyData = [self bodyDataAtIndexPath:indexPath];
     id<PreloadHelperGreenEpisode> bodyData = [self refuse:indexPath];
     //: if ([bodyData respondsToSelector:@selector(actionDisabled)] && bodyData.actionDisabled) {
-    if ([bodyData respondsToSelector:@selector(remainApplies)] && bodyData.counterrupt) {
+    if ([bodyData respondsToSelector:@selector(counterrupt)] && bodyData.counterrupt) {
         //: return;
         return;
     }
@@ -995,7 +995,7 @@
     //: } else {
     } else {
         //: if ([bodyData respondsToSelector:@selector(action)]) {
-        if ([bodyData respondsToSelector:@selector(personPured)]) {
+        if ([bodyData respondsToSelector:@selector(share)]) {
             //: if (bodyData.action) {
             if (bodyData.share) {
                 //: do {

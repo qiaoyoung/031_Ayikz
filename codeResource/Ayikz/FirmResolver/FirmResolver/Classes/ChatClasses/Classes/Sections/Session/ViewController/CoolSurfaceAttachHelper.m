@@ -1568,7 +1568,7 @@ Byte featureCurveId[] = {54, 6, 28, 11, 94, 232, 191, 56, 144, 210, 76, 83, 83, 
 }
 
 //: - (void)onTapMenuItemCopy:(StylerConfigTexture *)item
-- (void)ovals:(StylerConfigTexture *)item
+- (void)onTapMenuItemCopy:(StylerConfigTexture *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self balloon];
